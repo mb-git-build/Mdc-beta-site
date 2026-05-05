@@ -1,0 +1,143 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum VendorStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+enum LeadStatus {
+  NEW
+  REVIEWED
+  CONTACTED
+  MATCHED
+  ARCHIVED
+}
+
+enum SubmissionStatus {
+  NEW
+  IN_REVIEW
+  APPROVED
+  CHANGES_REQUESTED
+  REJECTED
+}
+
+enum SubmissionType {
+  SUBMIT
+  CLAIM
+}
+
+enum GuideStatus {
+  DRAFT
+  PUBLISHED
+}
+
+model Vendor {
+  id               String           @id @default(cuid())
+  slug             String           @unique
+  name             String
+  websiteUrl       String?
+  logoUrl          String?
+  shortDescription String?
+  longDescription  String?
+  headquarters     String?
+  regionsServed    String?
+  offerings        String?
+  aiReadyNotes     String?
+  status           VendorStatus     @default(DRAFT)
+  featured         Boolean          @default(false)
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
+  categories       VendorCategory[]
+  relatedSubmits   VendorSubmission[]
+}
+
+model Category {
+  id          String           @id @default(cuid())
+  slug        String           @unique
+  name        String
+  description String?
+  sortOrder   Int              @default(0)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  vendors     VendorCategory[]
+}
+
+model VendorCategory {
+  vendorId    String
+  categoryId  String
+  vendor      Vendor   @relation(fields: [vendorId], references: [id], onDelete: Cascade)
+  category    Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@id([vendorId, categoryId])
+}
+
+model Lead {
+  id                String     @id @default(cuid())
+  type              String
+  fullName          String
+  email             String
+  phone             String?
+  company           String?
+  roleTitle         String?
+  region            String?
+  projectType       String?
+  timeline          String?
+  budgetRange       String?
+  deploymentGoal    String?
+  requirementsNotes String?
+  consent           Boolean    @default(false)
+  sourcePage        String?
+  status            LeadStatus @default(NEW)
+  createdAt         DateTime   @default(now())
+  updatedAt         DateTime   @updatedAt
+  downloads         ResourceDownload[]
+}
+
+model VendorSubmission {
+  id             String           @id @default(cuid())
+  submissionType SubmissionType
+  companyName    String
+  websiteUrl     String?
+  contactName    String
+  contactEmail   String
+  roleTitle      String?
+  categoryInterest String?
+  summary        String?
+  regionsServed  String?
+  offerings      String?
+  aiRelevance    String?
+  notes          String?
+  status         SubmissionStatus @default(NEW)
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  relatedVendorId String?
+  relatedVendor  Vendor?          @relation(fields: [relatedVendorId], references: [id], onDelete: SetNull)
+}
+
+model Guide {
+  id          String      @id @default(cuid())
+  slug        String      @unique
+  title       String
+  excerpt     String?
+  body        String
+  status      GuideStatus @default(DRAFT)
+  publishedAt DateTime?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+}
+
+model ResourceDownload {
+  id         String   @id @default(cuid())
+  resourceKey String
+  createdAt  DateTime @default(now())
+  leadId     String
+  lead       Lead     @relation(fields: [leadId], references: [id], onDelete: Cascade)
+}

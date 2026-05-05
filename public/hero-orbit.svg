@@ -1,0 +1,43 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#0B1822"/>
+  <rect x="72" y="72" width="1056" height="756" rx="32" fill="#102633" stroke="#2A4E62" stroke-width="2"/>
+  <g opacity="0.18" stroke="#8ED1E8" stroke-width="1">
+    <path d="M120 184H1080"/>
+    <path d="M120 296H1080"/>
+    <path d="M120 408H1080"/>
+    <path d="M120 520H1080"/>
+    <path d="M120 632H1080"/>
+    <path d="M120 744H1080"/>
+    <path d="M232 120V780"/>
+    <path d="M408 120V780"/>
+    <path d="M584 120V780"/>
+    <path d="M760 120V780"/>
+    <path d="M936 120V780"/>
+  </g>
+  <rect x="146" y="160" width="250" height="144" rx="22" fill="#143446" stroke="#8ED1E8" stroke-opacity="0.25"/>
+  <rect x="474" y="214" width="250" height="144" rx="22" fill="#173C4D" stroke="#8ED1E8" stroke-opacity="0.25"/>
+  <rect x="802" y="148" width="250" height="144" rx="22" fill="#123245" stroke="#8ED1E8" stroke-opacity="0.25"/>
+  <rect x="260" y="500" width="286" height="164" rx="22" fill="#13384A" stroke="#8ED1E8" stroke-opacity="0.25"/>
+  <rect x="696" y="486" width="286" height="164" rx="22" fill="#173F52" stroke="#8ED1E8" stroke-opacity="0.25"/>
+  <path d="M396 232C446 232 472 218 505 194C550 160 595 136 673 136C751 136 812 165 858 191C897 213 932 228 976 228" stroke="#73E0FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M546 563C609 563 649 523 700 485C751 447 805 420 870 420C929 420 974 441 1010 466" stroke="#ADEFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M260 561C215 561 184 536 160 510C142 491 130 482 118 482" stroke="#73E0FF" stroke-width="8" stroke-linecap="round" opacity="0.75"/>
+  <g fill="#E8F6FB">
+    <circle cx="396" cy="232" r="8"/>
+    <circle cx="505" cy="194" r="8"/>
+    <circle cx="673" cy="136" r="8"/>
+    <circle cx="858" cy="191" r="8"/>
+    <circle cx="976" cy="228" r="8"/>
+    <circle cx="546" cy="563" r="8"/>
+    <circle cx="700" cy="485" r="8"/>
+    <circle cx="870" cy="420" r="8"/>
+    <circle cx="1010" cy="466" r="8"/>
+    <circle cx="260" cy="561" r="8"/>
+    <circle cx="118" cy="482" r="8"/>
+  </g>
+  <text x="156" y="214" fill="#E8F6FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1.5">BUYER DEMAND</text>
+  <text x="484" y="268" fill="#E8F6FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1.5">CATEGORY ROUTING</text>
+  <text x="812" y="202" fill="#E8F6FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1.5">VENDOR SHORTLISTS</text>
+  <text x="280" y="552" fill="#E8F6FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1.5">TRUST + MODERATION</text>
+  <text x="716" y="538" fill="#E8F6FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1.5">DELIVERY SIGNALS</text>
+</svg>

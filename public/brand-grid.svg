@@ -1,0 +1,41 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="40" fill="#0F2230"/>
+  <g opacity="0.22" stroke="#8ED1E8" stroke-width="1">
+    <path d="M80 120H1520"/>
+    <path d="M80 240H1520"/>
+    <path d="M80 360H1520"/>
+    <path d="M80 480H1520"/>
+    <path d="M80 600H1520"/>
+    <path d="M80 720H1520"/>
+    <path d="M220 60V840"/>
+    <path d="M420 60V840"/>
+    <path d="M620 60V840"/>
+    <path d="M820 60V840"/>
+    <path d="M1020 60V840"/>
+    <path d="M1220 60V840"/>
+    <path d="M1420 60V840"/>
+  </g>
+  <g>
+    <rect x="154" y="166" width="310" height="182" rx="22" fill="#143446" stroke="#8ED1E8" stroke-opacity="0.35"/>
+    <rect x="520" y="250" width="264" height="150" rx="22" fill="#1A465A" stroke="#8ED1E8" stroke-opacity="0.35"/>
+    <rect x="896" y="146" width="356" height="210" rx="22" fill="#12384C" stroke="#8ED1E8" stroke-opacity="0.35"/>
+    <rect x="1036" y="430" width="300" height="176" rx="22" fill="#1D5369" stroke="#8ED1E8" stroke-opacity="0.35"/>
+    <rect x="246" y="464" width="398" height="222" rx="22" fill="#15394B" stroke="#8ED1E8" stroke-opacity="0.35"/>
+  </g>
+  <g opacity="0.9">
+    <path d="M464 257C540 257 588 226 648 189C720 144 796 112 913 112C1029 112 1118 160 1188 209C1255 256 1307 298 1392 298" stroke="#73E0FF" stroke-width="8" stroke-linecap="round"/>
+    <path d="M398 576C482 576 532 547 591 506C660 458 735 418 842 418C958 418 1037 462 1100 505C1168 551 1221 596 1318 596" stroke="#ADEFFF" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+  </g>
+  <g fill="#E8F6FB">
+    <circle cx="464" cy="257" r="9"/>
+    <circle cx="648" cy="189" r="9"/>
+    <circle cx="913" cy="112" r="9"/>
+    <circle cx="1188" cy="209" r="9"/>
+    <circle cx="1392" cy="298" r="9"/>
+    <circle cx="398" cy="576" r="9"/>
+    <circle cx="591" cy="506" r="9"/>
+    <circle cx="842" cy="418" r="9"/>
+    <circle cx="1100" cy="505" r="9"/>
+    <circle cx="1318" cy="596" r="9"/>
+  </g>
+</svg>

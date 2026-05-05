@@ -1,0 +1,25 @@
+
+> modulardatacenters-app@0.1.0 build
+> next build --webpack
+
+Γû▓ Next.js 16.2.1 (webpack)
+- Environments: .env
+- Experiments (use with caution):
+  Γ£ô externalDir
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 62s
+  Running TypeScript ...
+  Finished TypeScript in 33.0s ...
+  Collecting page data using 1 worker ...
+  Generating static pages using 1 worker (0/55) ...
+  Generating static pages using 1 worker (7/55) 
+Failed to build /for-vendors/claim/page: /for-vendors/claim (attempt 1 of 3) because it took more than 60 seconds. Retrying again shortly.
+Failed to build /for-vendors/submit/page: /for-vendors/submit (attempt 1 of 3) because it took more than 60 seconds. Retrying again shortly.
+Failed to build /guides/[slug]/page: /guides/modular-ai-data-center (attempt 1 of 3) because it took more than 60 seconds. Retrying again shortly.
+Failed to build /guides/[slug]/page: /guides/ai-data-center-cooling (attempt 1 of 3) because it took more than 60 seconds. Retrying again shortly.
+Failed to build /guides/[slug]/page: /guides/ai-colocation-vs-modular (attempt 1 of 3) because it took more than 60 seconds. Retrying again shortly.
+  Generating static pages using 1 worker (13/55) 
+  Generating static pages using 1 worker (27/55) 
+  Generating static pages using 1 worker (41/55) 
+Γ£ô Generating static pages using 1 worker (55/55) in 99s
