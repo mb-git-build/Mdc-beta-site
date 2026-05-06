@@ -41,10 +41,14 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
-          <header className="sticky top-0 z-40 border-b border-[var(--border)] bg-[rgba(15,20,26,0.94)] backdrop-blur-md">
+          <header className="sticky top-0 z-40 border-b border-[var(--border-strong)] bg-[rgba(15,20,26,0.97)] backdrop-blur-md">
             <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-4 lg:flex-row lg:items-center lg:justify-between lg:px-8">
-              <Link href="/" className="flex items-center">
-                <Image src="/site-wordmark.svg" alt={siteMeta.name} width={500} height={86} className="h-9 w-auto sm:h-10" priority />
+              <Link href="/" className="flex items-center gap-3">
+                <Image src="/site-mark.svg" alt="modulardatacenters.ai" width={40} height={40} className="h-10 w-10 rounded-xl" priority />
+                <div>
+                  <p className="text-base font-semibold tracking-tight text-white">modulardatacenters.ai</p>
+                  <p className="text-xs text-[var(--muted)]">Infrastructure company directory</p>
+                </div>
               </Link>
 
               <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-[var(--muted-strong)]">
@@ -59,11 +63,14 @@ export default function RootLayout({
 
           {children}
 
-          <footer className="border-t border-[var(--border)] bg-[#0b1015] text-[#d6dde6]">
+          <footer className="border-t border-[var(--border-strong)] bg-[#0b1015] text-[#d6dde6]">
             <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-8 lg:flex-row lg:items-center lg:justify-between lg:px-10">
-              <div>
-                <p className="text-sm font-semibold text-white">modulardatacenters.ai</p>
-                <p className="mt-2 max-w-2xl text-sm text-[var(--muted)]">Curated directory for modular data centers, AI infrastructure, cooling, power, and hosting.</p>
+              <div className="flex items-center gap-3">
+                <Image src="/site-mark.svg" alt="modulardatacenters.ai" width={32} height={32} className="h-8 w-8 rounded-lg" />
+                <div>
+                  <p className="text-sm font-semibold text-white">modulardatacenters.ai</p>
+                  <p className="mt-1 text-sm text-[var(--muted)]">Curated directory for modular data centers, AI infrastructure, cooling, power, and hosting.</p>
+                </div>
               </div>
               <nav className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-[var(--muted-strong)]">
                 {navItems.map((item) => (
