@@ -14,21 +14,22 @@ const sortLabels: Record<DirectorySort, string> = {
   name: "Alphabetical",
 };
 
-const sourcingPrompts = [
+const quickStarts = [
   {
-    question: "Planning a modular AI site?",
-    href: "/categories",
-    answer: "Start with the full graph, then move through site strategy, modular systems, power, liquid cooling, and monitoring.",
+    label: "Modular & prefab",
+    href: "/directory/modular-prefab",
   },
   {
-    question: "Retrofitting dense racks?",
-    href: "/directory/rack-power-density",
-    answer: "Begin with rack power density, then compare adjacent electrical distribution, direct cooling, and heat rejection layers.",
+    label: "Power & electrical",
+    href: "/directory/power-and-electrical",
   },
   {
-    question: "Building distributed edge capacity?",
-    href: "/directory/edge-micro-data-centers",
-    answer: "Use edge and micro data centers as the anchor, then branch into enclosures, connectivity, security, and automation.",
+    label: "Liquid cooling",
+    href: "/directory/liquid-cooling",
+  },
+  {
+    label: "DCIM & monitoring",
+    href: "/directory/dcim-and-monitoring",
   },
 ];
 
@@ -72,9 +73,9 @@ function matchesSearch(category: { name: string; description: string }, term: st
 
 function StatPill({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-[1.35rem] border border-[var(--border)] bg-white/72 px-4 py-4">
+    <div className="rounded-[1rem] border border-[var(--border)] bg-[#f8fbfd] px-4 py-4">
       <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--muted)]">{label}</p>
-      <p className="mt-2 text-2xl font-semibold tracking-tight text-[var(--foreground)]">{value}</p>
+      <p className="mt-2 text-lg font-semibold tracking-tight text-[var(--foreground)]">{value}</p>
     </div>
   );
 }
@@ -91,7 +92,6 @@ export default async function DirectoryPage({
 
   const page = getMarkdownPageBySlug("/vendors");
   const featuredCategories = page?.sections.find((section) => section.heading === "Featured categories");
-  const usageSection = page?.sections.find((section) => section.heading === "How to use this directory");
 
   const visibleCategories = categories
     .filter((category) => matchesSearch(category, q))
@@ -104,29 +104,29 @@ export default async function DirectoryPage({
   const totalVendorCount = vendors.length;
 
   return (
-    <main className="min-h-screen bg-[var(--background)] px-6 py-14 lg:px-10">
+    <main className="min-h-screen bg-[var(--background)] px-5 py-12 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <div className="rounded-[2rem] border border-[var(--border)] bg-[rgba(255,255,255,0.88)] p-8 shadow-[var(--shadow-soft)] backdrop-blur-sm">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">Directory</p>
-          <h1 className="mt-3 text-4xl font-semibold tracking-tight">Supplier discovery organized around real infrastructure decisions.</h1>
-          <p className="mt-5 max-w-3xl text-sm leading-7 text-[var(--muted)]">
-            Browse launch categories, explore vendor profiles, and move toward a stronger supplier shortlist with clearer buyer guidance.
+        <section className="rounded-[2rem] border border-[var(--border)] bg-white p-8 shadow-[var(--shadow-soft)]">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">Directory</p>
+          <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">A straightforward directory for categories and vendors.</h1>
+          <p className="mt-5 max-w-3xl text-base leading-8 text-[var(--muted)]">
+            Search a category, sort the list, and click through. The goal here is simple navigation, not a complicated visual experience.
           </p>
-          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            <StatPill label="Active categories" value={String(sortedCategories.length)} />
+          <div className="mt-8 grid gap-3 sm:grid-cols-4">
+            <StatPill label="Visible categories" value={String(sortedCategories.length)} />
             <StatPill label="Vendor profiles" value={String(totalVendorCount)} />
-            <StatPill label="Top sort" value={normalizedSort === "vendor_count" ? "Most vendors" : "Alphabetical"} />
-            <StatPill label="Intent" value="Shortlist faster" />
+            <StatPill label="Sort" value={sortLabels[normalizedSort]} />
+            <StatPill label="Use" value="Browse faster" />
           </div>
-        </div>
+        </section>
 
-        <form method="get" className="mt-8 grid gap-4 rounded-[1.5rem] border border-[var(--border)] bg-[rgba(255,255,255,0.88)] p-6 shadow-[var(--shadow-card)] backdrop-blur-sm sm:grid-cols-3">
+        <form method="get" className="mt-8 grid gap-4 rounded-[1.5rem] border border-[var(--border)] bg-white p-6 shadow-[var(--shadow-card)] sm:grid-cols-3">
           <label className="grid gap-2 text-sm font-medium text-[var(--foreground)]">
             Search categories
             <input
               name="q"
               defaultValue={q}
-              placeholder="modular, cooling, power..."
+              placeholder="cooling, power, modular..."
               className="rounded-2xl border border-[var(--border)] bg-white px-4 py-3 text-sm"
             />
           </label>
@@ -150,77 +150,55 @@ export default async function DirectoryPage({
           </div>
         </form>
 
-        <section className="mt-6 rounded-[1.5rem] border border-[var(--border)] bg-[rgba(255,255,255,0.9)] p-6 shadow-[var(--shadow-card)] backdrop-blur-sm">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">Quick exploration actions</p>
-          <h2 className="mt-2 text-xl font-semibold tracking-tight">Need a stronger next move?</h2>
-          <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
-            Open the broader category graph, follow a common sourcing path, continue through vendor profiles, or submit your own listing to deepen the map.
-          </p>
-          <div className="mt-5 grid gap-3 lg:grid-cols-3">
-            {sourcingPrompts.map((prompt) => (
-              <Link key={prompt.question} href={prompt.href} className="rounded-[1.15rem] border border-[var(--border)] bg-white p-4 transition hover:-translate-y-0.5 hover:border-[var(--accent)]">
-                <p className="text-sm font-semibold text-[var(--foreground)]">{prompt.question}</p>
-                <p className="mt-2 text-xs leading-5 text-[var(--muted)]">{prompt.answer}</p>
+        <section className="mt-6 rounded-[1.5rem] border border-[var(--border)] bg-white p-6 shadow-[var(--shadow-card)]">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">Quick starts</p>
+              <h2 className="mt-2 text-xl font-semibold tracking-tight">Popular places to begin</h2>
+            </div>
+            <Link href="/vendors" className="text-sm font-semibold text-[var(--accent)]">
+              Or skip to vendors
+            </Link>
+          </div>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {quickStarts.map((item) => (
+              <Link key={item.href} href={item.href} className="rounded-full border border-[var(--border)] bg-[#f8fbfd] px-4 py-2 text-sm font-medium transition hover:border-[var(--accent)]">
+                {item.label}
               </Link>
             ))}
           </div>
-          <div className="mt-5 flex flex-wrap gap-2">
-            <Link href="/categories" className="rounded-full bg-[var(--accent-strong)] px-4 py-2 text-sm font-semibold text-white">
-              Open category graph
-            </Link>
-            <Link href="/for-vendors/submit" className="rounded-full bg-[#f8fafc] px-4 py-2 text-sm font-semibold text-[var(--foreground)]">
-              Submit vendor details
-            </Link>
-            <Link href="/for-vendors/claim" className="rounded-full bg-[#eef2ff] px-4 py-2 text-sm font-semibold text-[var(--foreground)]">
-              File a claim
-            </Link>
-          </div>
+          {featuredCategories?.bullets?.length ? (
+            <div className="mt-5 grid gap-3 lg:grid-cols-2">
+              {featuredCategories.bullets.slice(0, 4).map((item) => (
+                <div key={item} className="rounded-[1rem] border border-[var(--border)] bg-[#fbfcfd] p-4 text-sm leading-6 text-[var(--muted)]">
+                  {item}
+                </div>
+              ))}
+            </div>
+          ) : null}
         </section>
 
-        <section className="mt-6 grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
-          <div className="space-y-6">
-            <section className="rounded-[1.5rem] border border-[var(--border)] bg-[rgba(255,255,255,0.88)] p-6 shadow-[var(--shadow-card)] backdrop-blur-sm">
-              <h2 className="text-xl font-semibold tracking-tight">Featured categories</h2>
-              <ul className="mt-4 grid gap-3 text-sm leading-7 text-[var(--muted)]">
-                {(featuredCategories?.bullets ?? []).map((item) => (
-                  <li key={item}>• {item}</li>
-                ))}
-              </ul>
-            </section>
-
-            <section className="rounded-[1.5rem] border border-[var(--border)] bg-[rgba(255,255,255,0.88)] p-6 shadow-[var(--shadow-card)] backdrop-blur-sm">
-              <h2 className="text-xl font-semibold tracking-tight">How to use this directory</h2>
-              <ul className="mt-4 grid gap-3 text-sm leading-7 text-[var(--muted)]">
-                {(usageSection?.bullets ?? []).map((item) => (
-                  <li key={item}>• {item}</li>
-                ))}
-              </ul>
-            </section>
-          </div>
-
-          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-2">
-            {sortedCategories.length > 0 ? (
-              sortedCategories.map((category) => {
-                const count = categoryVendorCount.get(category.slug) ?? 0;
-                return (
-                  <Link
-                    key={category.slug}
-                    href={`/directory/${category.slug}`}
-                    className="rounded-[1.5rem] border border-[var(--border)] bg-[rgba(255,255,255,0.92)] p-6 shadow-[var(--shadow-card)] transition hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_18px_44px_rgba(16,44,60,0.1)] backdrop-blur-sm"
-                  >
-                    <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Category</p>
-                    <h3 className="mt-3 text-lg font-semibold tracking-tight">{category.name}</h3>
-                    <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{category.description}</p>
-                    <p className="mt-4 text-sm font-semibold text-[var(--foreground)]">{count} vendor profiles</p>
-                  </Link>
-                );
-              })
-            ) : (
-              <div className="rounded-[1.5rem] border border-[var(--border)] bg-white p-6 text-sm text-[var(--muted)]">
-                No categories match your filter.
-              </div>
-            )}
-          </div>
+        <section className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {sortedCategories.length > 0 ? (
+            sortedCategories.map((category) => {
+              const count = categoryVendorCount.get(category.slug) ?? 0;
+              return (
+                <Link
+                  key={category.slug}
+                  href={`/directory/${category.slug}`}
+                  className="rounded-[1.35rem] border border-[var(--border)] bg-white p-5 shadow-[var(--shadow-card)] transition hover:-translate-y-0.5 hover:border-[var(--accent)]"
+                >
+                  <h3 className="text-lg font-semibold tracking-tight">{category.name}</h3>
+                  <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{category.description}</p>
+                  <p className="mt-4 text-sm font-semibold text-[var(--foreground)]">{count} vendor profiles</p>
+                </Link>
+              );
+            })
+          ) : (
+            <div className="rounded-[1.5rem] border border-[var(--border)] bg-white p-6 text-sm text-[var(--muted)]">
+              No categories match your filter.
+            </div>
+          )}
         </section>
       </div>
     </main>
