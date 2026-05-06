@@ -31,7 +31,7 @@ export default function CategoriesPage() {
           <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Categories</p>
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">Browse infrastructure categories.</h1>
           <p className="mt-5 text-lg leading-8 text-[var(--muted-strong)]">
-            A clean, enterprise-grade directory of modular, cooling, power, hosting, and adjacent infrastructure categories.
+            Explore the modular infrastructure ecosystem by segment, with company counts and direct paths into each category directory.
           </p>
         </section>
 
@@ -46,7 +46,11 @@ export default function CategoriesPage() {
                 }
                 shown.add(category.slug);
                 return true;
-              });
+              })
+              .map((category) => ({
+                ...category,
+                companies: getVendorsForCategory(category.slug),
+              }));
 
             if (!rows.length) return null;
 
@@ -60,7 +64,14 @@ export default function CategoriesPage() {
                     <Link key={category.slug} href={`/directory/${category.slug}`} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 transition hover:border-[var(--border-strong)]">
                       <h3 className="text-base font-semibold tracking-tight text-white">{category.name}</h3>
                       <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{category.description}</p>
-                      <p className="mt-4 text-sm font-medium text-[var(--muted-strong)]">{getVendorsForCategory(category.slug).length} companies</p>
+                      <p className="mt-4 text-sm font-medium text-[var(--muted-strong)]">{category.companies.length} companies</p>
+                      <div className="mt-4 flex flex-wrap gap-2 text-xs text-[var(--muted)]">
+                        {category.companies.slice(0, 4).map((company) => (
+                          <span key={company.slug} className="rounded-full bg-[var(--card-soft)] px-2.5 py-1">
+                            {company.name}
+                          </span>
+                        ))}
+                      </div>
                     </Link>
                   ))}
                 </div>
