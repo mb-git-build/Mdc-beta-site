@@ -80,29 +80,29 @@ export default async function VendorsPage({
   const sortedVendors = vendorSortOrder(filteredVendors, normalizedSort);
 
   return (
-    <main className="min-h-screen bg-[var(--background)] px-5 py-12 lg:px-8">
-      <div className="mx-auto max-w-7xl space-y-8">
-        <section className="rounded-[1.75rem] border border-[var(--border)] bg-[var(--card)] p-8 shadow-[var(--shadow-soft)]">
+    <main className="min-h-screen bg-[var(--background)] px-5 py-14 lg:px-8">
+      <div className="mx-auto max-w-6xl space-y-10">
+        <section className="max-w-4xl">
           <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Companies</p>
-          <h1 className="mt-3 text-4xl font-semibold tracking-tight text-white sm:text-5xl">Browse infrastructure companies.</h1>
-          <p className="mt-4 max-w-3xl text-base leading-8 text-[var(--muted-strong)]">
-            Search by company name, hosting model, cooling approach, deployment type, or category.
+          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">Browse infrastructure companies.</h1>
+          <p className="mt-5 text-lg leading-8 text-[var(--muted-strong)]">
+            Search by company, hosting model, cooling approach, deployment type, or infrastructure category.
           </p>
         </section>
 
-        <form method="get" className="grid gap-4 rounded-[1.35rem] border border-[var(--border)] bg-[var(--card)] p-6 shadow-[var(--shadow-card)] lg:grid-cols-[1.2fr_0.6fr_auto_auto]">
+        <form method="get" className="grid gap-4 rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 lg:grid-cols-[1.2fr_0.6fr_auto_auto]">
           <label className="grid gap-2 text-sm font-medium text-[var(--muted-strong)]">
             Search companies
             <input
               name="q"
               defaultValue={q}
               placeholder="GPU hosting, immersion, modular, bitcoin, colocation..."
-              className="rounded-2xl border border-[var(--border)] bg-[rgba(255,255,255,0.03)] px-4 py-3 text-sm text-white"
+              className="rounded-xl border border-[var(--border)] bg-[var(--background-strong)] px-4 py-3 text-sm text-white"
             />
           </label>
           <label className="grid gap-2 text-sm font-medium text-[var(--muted-strong)]">
             Sort by
-            <select name="sort" defaultValue={normalizedSort} className="rounded-2xl border border-[var(--border)] bg-[rgba(255,255,255,0.03)] px-4 py-3 text-sm text-white">
+            <select name="sort" defaultValue={normalizedSort} className="rounded-xl border border-[var(--border)] bg-[var(--background-strong)] px-4 py-3 text-sm text-white">
               {(Object.entries(sortLabels) as [VendorSort, string][]).map(([value, label]) => (
                 <option key={value} value={value}>
                   {label}
@@ -111,7 +111,7 @@ export default async function VendorsPage({
             </select>
           </label>
           <div className="grid content-end">
-            <button type="submit" className="rounded-full bg-white px-4 py-3 text-sm font-semibold text-[#071017]">
+            <button type="submit" className="rounded-xl bg-white px-4 py-3 text-sm font-semibold text-[#0f141a]">
               Search
             </button>
           </div>
@@ -125,13 +125,13 @@ export default async function VendorsPage({
         <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {sortedVendors.length > 0 ? (
             sortedVendors.map((vendor) => (
-              <article key={vendor.slug} className="rounded-[1.35rem] border border-[var(--border)] bg-[var(--card)] p-5 shadow-[var(--shadow-card)] transition hover:border-[var(--accent)]">
+              <article key={vendor.slug} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 transition hover:border-[var(--border-strong)]">
                 <div className="flex items-start gap-4">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-[var(--border)] bg-[rgba(255,255,255,0.04)] text-sm font-semibold tracking-[0.12em] text-white">
+                  <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--card-soft)] text-sm font-semibold tracking-[0.12em] text-white">
                     {vendorGlyph(vendor.slug)}
                   </div>
                   <div>
-                    <h2 className="text-lg font-semibold tracking-tight text-white">{vendor.name}</h2>
+                    <h2 className="text-base font-semibold tracking-tight text-white">{vendor.name}</h2>
                     <p className="mt-1 text-sm text-[var(--muted)]">{vendor.verified ? "Verified company" : "Company listing"}</p>
                   </div>
                 </div>
@@ -141,7 +141,7 @@ export default async function VendorsPage({
                     <Link
                       key={categorySlug}
                       href={`/directory/${categorySlug}`}
-                      className="rounded-full border border-[var(--border)] bg-[rgba(255,255,255,0.03)] px-3 py-1 text-xs font-medium text-[var(--muted-strong)]"
+                      className="rounded-full bg-[var(--card-soft)] px-3 py-1 text-xs font-medium text-[var(--muted-strong)]"
                     >
                       {categories.find((category) => category.slug === categorySlug)?.name ?? categorySlug}
                     </Link>
@@ -153,7 +153,7 @@ export default async function VendorsPage({
               </article>
             ))
           ) : (
-            <div className="rounded-[1.5rem] border border-[var(--border)] bg-[var(--card)] p-6 text-sm text-[var(--muted)]">
+            <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6 text-sm text-[var(--muted)]">
               No companies match your current filters.
             </div>
           )}

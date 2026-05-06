@@ -41,15 +41,15 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
-          <header className="sticky top-0 z-40 border-b border-[var(--border)] bg-[rgba(7,16,23,0.92)] backdrop-blur-xl">
+          <header className="sticky top-0 z-40 border-b border-[var(--border)] bg-[rgba(15,20,26,0.94)] backdrop-blur-md">
             <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-4 lg:flex-row lg:items-center lg:justify-between lg:px-8">
               <Link href="/" className="flex items-center">
-                <Image src="/site-wordmark.svg" alt={siteMeta.name} width={500} height={86} className="h-10 w-auto sm:h-11" priority />
+                <Image src="/site-wordmark.svg" alt={siteMeta.name} width={500} height={86} className="h-9 w-auto sm:h-10" priority />
               </Link>
 
-              <nav className="flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-[var(--muted-strong)]">
+              <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-[var(--muted-strong)]">
                 {navItems.map((item) => (
-                  <Link key={item.href} href={item.href} className="transition hover:text-[var(--foreground)]">
+                  <Link key={item.href} href={item.href} className="transition hover:text-white">
                     {item.label}
                   </Link>
                 ))}
@@ -59,13 +59,13 @@ export default function RootLayout({
 
           {children}
 
-          <footer className="border-t border-[var(--border)] bg-[#050b10] text-[#d6e2e9]">
+          <footer className="border-t border-[var(--border)] bg-[#0b1015] text-[#d6dde6]">
             <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-8 lg:flex-row lg:items-center lg:justify-between lg:px-10">
               <div>
                 <p className="text-sm font-semibold text-white">modulardatacenters.ai</p>
-                <p className="mt-2 text-sm text-[#9cb0bc]">Curated directory for modular data centers, AI infrastructure, cooling, power, and hosting.</p>
+                <p className="mt-2 max-w-2xl text-sm text-[var(--muted)]">Curated directory for modular data centers, AI infrastructure, cooling, power, and hosting.</p>
               </div>
-              <nav className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#d6e2e9]">
+              <nav className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-[var(--muted-strong)]">
                 {navItems.map((item) => (
                   <Link key={item.href} href={item.href} className="transition hover:text-white">
                     {item.label}
