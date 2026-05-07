@@ -1,0 +1,16 @@
+[
+  { "slug": "/", "title": "Home", "type": "page", "source": "content/pages/home.md" },
+  { "slug": "/about", "title": "About", "type": "page", "source": "content/pages/about.md" },
+  { "slug": "/categories", "title": "Categories", "type": "page", "source": "content/pages/categories.md" },
+  { "slug": "/compare", "title": "Compare", "type": "page", "source": "content/pages/compare.md" },
+  { "slug": "/directory", "title": "Directory", "type": "page", "source": "content/pages/directory.md" },
+  { "slug": "/for-vendors", "title": "For Vendors", "type": "page", "source": "content/pages/for-vendors.md" },
+  { "slug": "/for-vendors/submit", "title": "Submit Company", "type": "page", "source": "content/pages/for-vendors-submit.md" },
+  { "slug": "/for-vendors/claim", "title": "Claim Company", "type": "page", "source": "content/pages/for-vendors-claim.md" },
+  { "slug": "/get-matched", "title": "Get Matched (Legacy)", "type": "page", "source": "content/pages/get-matched.md" },
+  { "slug": "/guides/ai-colocation-vs-modular", "title": "AI Colocation vs. Modular", "type": "guide", "source": "content/guides/ai-colocation-vs-modular.md" },
+  { "slug": "/guides/ai-data-center-cooling", "title": "AI Data Center Cooling", "type": "guide", "source": "content/guides/ai-data-center-cooling.md" },
+  { "slug": "/guides/modular-ai-data-center", "title": "Modular AI Data Center", "type": "guide", "source": "content/guides/modular-ai-data-center.md" },
+  { "slug": "/guides/modular-vs-traditional-data-center-build", "title": "Modular vs. Traditional Data Center Build", "type": "guide", "source": "content/guides/modular-vs-traditional-data-center-build.md" },
+  { "slug": "/methodology", "title": "Methodology", "type": "page", "source": "content/pages/methodology.md" }
+]

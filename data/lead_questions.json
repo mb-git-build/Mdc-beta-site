@@ -1,0 +1,7 @@
+[
+  { "id": "name", "label": "Name", "type": "text" },
+  { "id": "email", "label": "Email", "type": "email" },
+  { "id": "company", "label": "Company", "type": "text" },
+  { "id": "project_type", "label": "Project type", "type": "select", "options": ["New AI deployment", "Retrofit", "Colocation search", "Mining infrastructure", "Edge deployment"] },
+  { "id": "notes", "label": "What are you looking for?", "type": "textarea" }
+]

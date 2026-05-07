@@ -8,6 +8,11 @@ export type Category = {
   slug: string;
   name: string;
   description: string;
+  parent_slug?: string;
+  layer?: "segment" | "subcategory";
+  tags?: string[];
+  adjacent_category_slugs?: string[];
+  often_used_with?: string[];
 };
 
 export type Vendor = {
@@ -29,6 +34,19 @@ export type Vendor = {
   hq?: string;
   service_area?: string;
   project_scale?: string;
+  subcategories?: string[];
+  tags?: string[];
+  infrastructure_types?: string[];
+  cooling_types?: string[];
+  power_specializations?: string[];
+  focus_areas?: string[];
+  scale_focus?: string[];
+  ecosystem_roles?: string[];
+  company_types?: string[];
+  related_company_slugs?: string[];
+  dependency_category_slugs?: string[];
+  often_used_with_category_slugs?: string[];
+  logo_url?: string;
 };
 
 export type NavigationLink = {
@@ -264,6 +282,10 @@ export function getVendorsForCategory(slug: string) {
 
 export function getFeaturedVendors() {
   return vendors.filter((vendor) => vendor.featured);
+}
+
+export function getChildCategories(parentSlug: string) {
+  return categories.filter((category) => category.parent_slug === parentSlug);
 }
 
 export function getPageIndexEntry(slug: string) {

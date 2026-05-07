@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getAdjacentCategoriesForSlug, getRelatedCompanies, inferVendorRoleProfile } from "@/lib/ecosystem";
 import { categories, getGuides, getMarkdownVendorBySlug, getVendorBySlug, vendors } from "@/lib/site-data";
 import { slugToAccent, vendorGlyph, vendorPrimaryCategory } from "@/lib/visuals";
 
@@ -72,6 +73,9 @@ export default async function VendorPage({
   const relatedGuides = getRelatedGuides(vendor.categories);
   const listedInPrimaryCategory = vendor.categories[0] ? `/directory/${vendor.categories[0]}` : "/directory";
   const tone = slugToAccent(vendorPrimaryCategory(vendor.categories));
+  const inferredProfile = inferVendorRoleProfile(vendor);
+  const relatedCompanies = getRelatedCompanies(vendor, vendors);
+  const adjacentCategoryLinks = vendor.categories.flatMap((slug) => getAdjacentCategoriesForSlug(slug)).filter((value, index, array) => array.findIndex((item) => item.slug === value.slug) === index).slice(0, 6);
 
   return (
     <main className="min-h-screen bg-[var(--background)] px-6 py-14 lg:px-10">
@@ -230,6 +234,87 @@ export default async function VendorPage({
                     <li key={item}>• {item}</li>
                   ))}
                 </ul>
+              </div>
+            ) : null}
+
+            <div className="mt-4 grid gap-4 sm:grid-cols-2">
+              {inferredProfile.ecosystemRoles?.length ? (
+                <div className="rounded-[1.25rem] bg-[#f7fafc] p-4">
+                  <h2 className="text-base font-semibold tracking-tight">Ecosystem role</h2>
+                  <div className="mt-3 flex flex-wrap gap-2 text-sm">
+                    {inferredProfile.ecosystemRoles.map((item) => (
+                      <span key={item} className="rounded-full bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.08em] text-[var(--accent-strong)]">
+                        {item.replaceAll("_", " ")}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+
+              {inferredProfile.focusAreas?.length ? (
+                <div className="rounded-[1.25rem] bg-[#f7fafc] p-4">
+                  <h2 className="text-base font-semibold tracking-tight">Focus areas</h2>
+                  <div className="mt-3 flex flex-wrap gap-2 text-sm">
+                    {inferredProfile.focusAreas.map((item) => (
+                      <span key={item} className="rounded-full bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.08em] text-[var(--foreground)]">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+            </div>
+
+            {inferredProfile.subcategories?.length ? (
+              <div className="mt-4 rounded-[1.25rem] bg-[#f7fafc] p-4">
+                <h2 className="text-base font-semibold tracking-tight">Mapped subcategories</h2>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {inferredProfile.subcategories.map((slug) => (
+                    <span key={slug} className="rounded-full bg-white px-3 py-1 text-xs font-medium text-[var(--muted-strong)]">
+                      {slug.replaceAll("-", " ")}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+
+            {inferredProfile.tags?.length ? (
+              <div className="mt-4 rounded-[1.25rem] bg-[#f7fafc] p-4">
+                <h2 className="text-base font-semibold tracking-tight">Metadata tags</h2>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {inferredProfile.tags.map((tag) => (
+                    <span key={tag} className="rounded-full bg-white px-3 py-1 text-xs font-medium text-[var(--muted-strong)]">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+
+            {relatedCompanies.length ? (
+              <div className="mt-4 rounded-[1.25rem] bg-[#f7fafc] p-4">
+                <h2 className="text-base font-semibold tracking-tight">Related companies</h2>
+                <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                  {relatedCompanies.map((company) => (
+                    <Link key={company.slug} href={`/vendors/${company.slug}`} className="rounded-xl border border-[var(--border)] bg-white p-3 text-sm font-medium text-[var(--foreground)] transition hover:border-[var(--accent)]">
+                      <div>{company.name}</div>
+                      <div className="mt-1 text-xs text-[var(--muted)]">{company.headline}</div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+
+            {adjacentCategoryLinks.length ? (
+              <div className="mt-4 rounded-[1.25rem] bg-[#f7fafc] p-4">
+                <h2 className="text-base font-semibold tracking-tight">Adjacent infrastructure</h2>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {adjacentCategoryLinks.map((category) => (
+                    <Link key={category.slug} href={`/directory/${category.slug}`} className="rounded-full bg-white px-3 py-1 text-xs font-medium text-[var(--accent-strong)]">
+                      {category.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
             ) : null}
 

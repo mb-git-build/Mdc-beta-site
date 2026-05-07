@@ -47,7 +47,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-10 max-w-4xl rounded-2xl border border-[var(--border)] bg-[var(--card)] p-4 shadow-[var(--shadow-soft)]">
+          <div className="mt-10 max-w-5xl rounded-2xl border border-[var(--border)] bg-[var(--card)] p-4 shadow-[var(--shadow-soft)]">
             <form action="/vendors" method="get" className="flex flex-col gap-3 lg:flex-row">
               <input
                 name="q"
@@ -64,6 +64,20 @@ export default function Home() {
                   {chip}
                 </span>
               ))}
+            </div>
+            <div className="mt-5 grid gap-3 border-t border-[var(--border)] pt-5 md:grid-cols-3">
+              <Link href="/categories" className="rounded-2xl border border-[var(--border)] bg-[var(--card-soft)] p-4 transition hover:border-[var(--border-strong)]">
+                <p className="text-sm font-semibold text-white">Start with categories</p>
+                <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Jump straight into power, cooling, modular, hosting, edge, and operations segments.</p>
+              </Link>
+              <Link href="/directory" className="rounded-2xl border border-[var(--border)] bg-[var(--card-soft)] p-4 transition hover:border-[var(--border-strong)]">
+                <p className="text-sm font-semibold text-white">Use the market map</p>
+                <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Follow common buyer paths for new AI deployments, retrofits, and distributed capacity buildouts.</p>
+              </Link>
+              <Link href="/for-vendors" className="rounded-2xl border border-[#31536a] bg-[#15384d] p-4 transition hover:border-[#4a6c83] hover:bg-[#1b4a63]">
+                <p className="text-sm font-semibold text-white">Submit your company</p>
+                <p className="mt-2 text-sm leading-6 text-[#d6e2e9]">Get listed with clearer review expectations, stronger trust signals, and a direct path into the directory.</p>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,0 +1,17 @@
+{
+  "main": [
+    { "label": "Home", "href": "/" },
+    { "label": "Categories", "href": "/categories" },
+    { "label": "Companies", "href": "/vendors" },
+    { "label": "Market Map", "href": "/directory" },
+    { "label": "Guides", "href": "/guides" },
+    { "label": "Submit Company", "href": "/for-vendors" }
+  ],
+  "footer": [
+    { "label": "About", "href": "/about" },
+    { "label": "Methodology", "href": "/methodology" },
+    { "label": "For Vendors", "href": "/for-vendors" },
+    { "label": "Categories", "href": "/categories" },
+    { "label": "Companies", "href": "/vendors" }
+  ]
+}
