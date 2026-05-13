@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { categories, getVendorsForCategory } from "@/lib/site-data";
+import { categories, getCategoryLineage, getVendorsForCategory } from "@/lib/site-data";
 
 const featuredGroups = [
   {
@@ -60,20 +60,28 @@ export default function CategoriesPage() {
                   <h2 className="text-2xl font-semibold tracking-tight text-white">{group.title}</h2>
                 </div>
                 <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-                  {rows.map((category) => (
-                    <Link key={category.slug} href={`/directory/${category.slug}`} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 transition hover:border-[var(--border-strong)]">
-                      <h3 className="text-base font-semibold tracking-tight text-white">{category.name}</h3>
-                      <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{category.description}</p>
-                      <p className="mt-4 text-sm font-medium text-[var(--muted-strong)]">{category.companies.length} companies</p>
-                      <div className="mt-4 flex flex-wrap gap-2 text-xs text-[var(--muted)]">
-                        {category.companies.slice(0, 4).map((company) => (
-                          <span key={company.slug} className="rounded-full bg-[var(--card-soft)] px-2.5 py-1">
-                            {company.name}
-                          </span>
-                        ))}
-                      </div>
-                    </Link>
-                  ))}
+                  {rows.map((category) => {
+                    const lineage = getCategoryLineage(category.slug);
+
+                    return (
+                      <Link key={category.slug} href={`/directory/${category.slug}`} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 transition hover:border-[var(--border-strong)]">
+                        <div className="flex flex-wrap items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--muted)]">
+                          <span>{category.layer === "subcategory" ? "Subcategory" : "Category"}</span>
+                          {lineage.parent ? <span>• {lineage.parent.name}</span> : null}
+                        </div>
+                        <h3 className="mt-2 text-base font-semibold tracking-tight text-white">{category.name}</h3>
+                        <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{category.description}</p>
+                        <p className="mt-4 text-sm font-medium text-[var(--muted-strong)]">{category.companies.length} companies</p>
+                        <div className="mt-4 flex flex-wrap gap-2 text-xs text-[var(--muted)]">
+                          {category.companies.slice(0, 4).map((company) => (
+                            <span key={company.slug} className="rounded-full bg-[var(--card-soft)] px-2.5 py-1">
+                              {company.name}
+                            </span>
+                          ))}
+                        </div>
+                      </Link>
+                    );
+                  })}
                 </div>
               </section>
             );

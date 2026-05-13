@@ -2,6 +2,7 @@ import Link from "next/link";
 import {
   categories,
   getCategory,
+  getCategoryLineage,
   getGuides,
   getMarkdownCategoryBySlug,
   getVendorsForCategory,
@@ -106,10 +107,23 @@ export default async function CategoryPage({
   const vendors = getVendorsForCategory(categorySlug);
   const relatedGuides = getRelatedGuides(category.slug);
   const adjacentCategories = getAdjacentCategories(category.slug);
+  const lineage = getCategoryLineage(category.slug);
 
   const featuredCompanies = vendors.slice(0, Math.min(6, vendors.length));
   const directoryCompanies = vendors.slice(featuredCompanies.length);
   const quickPoints = compareSection?.bullets.slice(0, 4) ?? [];
+  const childCategories = lineage.children.map((child) => ({
+    ...child,
+    vendorCount: getVendorsForCategory(child.slug).length,
+  }));
+  const siblingCategories = lineage.parent
+    ? getCategoryLineage(lineage.parent.slug).children
+        .filter((child) => child.slug !== category.slug)
+        .map((child) => ({
+          ...child,
+          vendorCount: getVendorsForCategory(child.slug).length,
+        }))
+    : [];
 
   return (
     <main className="min-h-screen bg-[var(--background)] px-5 py-12 lg:px-8">
@@ -197,6 +211,46 @@ export default async function CategoryPage({
                 ))}
               </div>
             </section>
+
+            {lineage.parent ? (
+              <section className="rounded-2xl border border-[var(--border-strong)] bg-[var(--card)] p-6">
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Parent category</p>
+                <div className="mt-4 grid gap-3">
+                  <Link href={`/directory/${lineage.parent.slug}`} className="rounded-xl border border-[var(--border)] bg-[#1a2129] p-4 transition hover:border-[#5e7285]">
+                    <h3 className="text-sm font-semibold text-white">{lineage.parent.name}</h3>
+                    <p className="mt-1 text-xs text-[var(--muted)]">Return to the broader segment</p>
+                  </Link>
+                </div>
+              </section>
+            ) : null}
+
+            {childCategories.length ? (
+              <section className="rounded-2xl border border-[var(--border-strong)] bg-[var(--card)] p-6">
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Explore subcategories</p>
+                <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
+                  {childCategories.map((child) => (
+                    <Link key={child.slug} href={`/directory/${child.slug}`} className="rounded-xl border border-[var(--border)] bg-[#1a2129] p-4 transition hover:border-[#5e7285]">
+                      <h3 className="text-sm font-semibold text-white">{child.name}</h3>
+                      <p className="mt-1 text-xs text-[var(--muted)]">{child.vendorCount} companies</p>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            ) : null}
+
+            {siblingCategories.length ? (
+              <section className="rounded-2xl border border-[var(--border-strong)] bg-[var(--card)] p-6">
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Related subcategories</p>
+                <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
+                  {siblingCategories.map((sibling) => (
+                    <Link key={sibling.slug} href={`/directory/${sibling.slug}`} className="rounded-xl border border-[var(--border)] bg-[#1a2129] p-4 transition hover:border-[#5e7285]">
+                      <h3 className="text-sm font-semibold text-white">{sibling.name}</h3>
+                      <p className="mt-1 text-xs text-[var(--muted)]">{sibling.vendorCount} companies</p>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            ) : null}
 
             {adjacentCategories.length ? (
               <section className="rounded-2xl border border-[var(--border-strong)] bg-[var(--card)] p-6">

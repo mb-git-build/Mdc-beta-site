@@ -257,6 +257,17 @@
     "often_used_with": ["network-fabric-and-connectivity"]
   },
   {
+    "id": "cat_managed_ai_colo",
+    "slug": "managed-ai-colocation",
+    "name": "Managed AI Colocation",
+    "description": "Operators delivering powered shells, managed environments, and AI-ready colocation capacity for GPU clusters and dense inference infrastructure.",
+    "parent_slug": "ai-colocation-gpu-hosting",
+    "layer": "subcategory",
+    "tags": ["colocation", "managed-services", "gpu-hosting"],
+    "adjacent_category_slugs": ["ai-colocation-gpu-hosting", "site-selection-and-land-strategy"],
+    "often_used_with": ["liquid-cooling", "high-density-rack-power"]
+  },
+  {
     "id": "cat_dtc",
     "slug": "direct-to-chip-cooling",
     "name": "Direct-to-Chip Cooling",
@@ -279,6 +290,28 @@
     "often_used_with": ["direct-to-chip-cooling"]
   },
   {
+    "id": "cat_single_phase_immersion",
+    "slug": "single-phase-immersion",
+    "name": "Single-Phase Immersion",
+    "description": "Single-phase immersion tanks, coolant ecosystems, and deployment platforms for dense AI, HPC, and mining infrastructure.",
+    "parent_slug": "immersion-cooling",
+    "layer": "subcategory",
+    "tags": ["single-phase", "immersion"],
+    "adjacent_category_slugs": ["immersion-cooling", "thermal-optimization-controls"],
+    "often_used_with": ["field-services-and-maintenance", "high-density-rack-power"]
+  },
+  {
+    "id": "cat_two_phase_immersion",
+    "slug": "two-phase-immersion",
+    "name": "Two-Phase Immersion",
+    "description": "Two-phase immersion systems and refrigerant-based thermal platforms for extreme density and specialized compute environments.",
+    "parent_slug": "immersion-cooling",
+    "layer": "subcategory",
+    "tags": ["two-phase", "immersion"],
+    "adjacent_category_slugs": ["immersion-cooling", "liquid-cooling"],
+    "often_used_with": ["thermal-optimization-controls", "high-density-rack-power"]
+  },
+  {
     "id": "cat_therm_ctrl",
     "slug": "thermal-optimization-controls",
     "name": "Thermal Optimization Controls",
@@ -299,5 +332,27 @@
     "tags": ["enclosures", "fabrication"],
     "adjacent_category_slugs": ["containerized-data-centers", "modular-prefab"],
     "often_used_with": ["infrastructure-logistics"]
+  },
+  {
+    "id": "cat_prefab_power_blocks",
+    "slug": "prefabricated-power-blocks",
+    "name": "Prefabricated Power Blocks",
+    "description": "Skid-based electrical rooms, e-houses, packaged power trains, and prefabricated distribution blocks used in rapid compute deployments.",
+    "parent_slug": "modular-prefab",
+    "layer": "subcategory",
+    "tags": ["e-house", "power-skids", "prefabrication"],
+    "adjacent_category_slugs": ["modular-prefab", "power-and-electrical", "modular-substations"],
+    "often_used_with": ["switchgear-pdu-busway", "electrical-integration-services"]
+  },
+  {
+    "id": "cat_microgrid_controls",
+    "slug": "microgrid-controls-and-integration",
+    "name": "Microgrid Controls & Integration",
+    "description": "Control systems, orchestration layers, and integration partners coordinating on-site generation, storage, switching, and flexible compute loads.",
+    "parent_slug": "generators-and-microgrids",
+    "layer": "subcategory",
+    "tags": ["microgrids", "controls", "integration"],
+    "adjacent_category_slugs": ["generators-and-microgrids", "power-monitoring-and-energy-management", "sustainability-and-energy-strategy"],
+    "often_used_with": ["ups-and-battery-storage", "site-selection-and-land-strategy"]
   }
 ]

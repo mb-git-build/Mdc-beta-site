@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { categories, getMarkdownPageBySlug, vendors } from "@/lib/site-data";
+import { categories, getCategoryLineage, getMarkdownPageBySlug, vendors } from "@/lib/site-data";
 
 type DirectorySearchParams = {
   q?: string;
@@ -182,13 +182,18 @@ export default async function DirectoryPage({
           {sortedCategories.length > 0 ? (
             sortedCategories.map((category) => {
               const count = categoryVendorCount.get(category.slug) ?? 0;
+              const lineage = getCategoryLineage(category.slug);
               return (
                 <Link
                   key={category.slug}
                   href={`/directory/${category.slug}`}
                   className="rounded-[1.35rem] border border-[var(--border)] bg-white p-5 shadow-[var(--shadow-card)] transition hover:-translate-y-0.5 hover:border-[var(--accent)]"
                 >
-                  <h3 className="text-lg font-semibold tracking-tight">{category.name}</h3>
+                  <div className="flex flex-wrap items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--muted)]">
+                    <span>{category.layer === "subcategory" ? "Subcategory" : "Category"}</span>
+                    {lineage.parent ? <span>• {lineage.parent.name}</span> : null}
+                  </div>
+                  <h3 className="mt-2 text-lg font-semibold tracking-tight">{category.name}</h3>
                   <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{category.description}</p>
                   <p className="mt-4 text-sm font-semibold text-[var(--foreground)]">{count} vendor profiles</p>
                 </Link>

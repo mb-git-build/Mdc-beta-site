@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-import { getContentDataPath, getDataPath } from "@/lib/storage-paths";
+import { getContentDataPath, getContentDirectory, getDataPath } from "@/lib/storage-paths";
 
 export type Category = {
   id: string;
@@ -13,6 +13,11 @@ export type Category = {
   tags?: string[];
   adjacent_category_slugs?: string[];
   often_used_with?: string[];
+};
+
+export type CategoryLineage = {
+  parent?: Category;
+  children: Category[];
 };
 
 export type Vendor = {
@@ -154,7 +159,7 @@ export const siteMeta = {
 };
 
 function getRepoRoot() {
-  return path.join(process.cwd(), "..");
+  return process.cwd();
 }
 
 function readJsonFile<T>(filename: string): T {
@@ -173,13 +178,21 @@ function readAdminJsonFile<T>(filename: string): T | null {
   return JSON.parse(fileContents) as T;
 }
 
+function resolveContentPath(relativePath: string) {
+  if (relativePath.startsWith("content/")) {
+    return path.join(getContentDirectory(), relativePath.slice("content/".length));
+  }
+
+  return path.join(getRepoRoot(), relativePath);
+}
+
 function readContentFile(relativePath: string) {
-  const filePath = path.join(getRepoRoot(), relativePath);
+  const filePath = resolveContentPath(relativePath);
   return fs.readFileSync(filePath, "utf8");
 }
 
 function readOptionalContentFile(relativePath: string) {
-  const filePath = path.join(getRepoRoot(), relativePath);
+  const filePath = resolveContentPath(relativePath);
   if (!fs.existsSync(filePath)) {
     return null;
   }
@@ -286,6 +299,17 @@ export function getFeaturedVendors() {
 
 export function getChildCategories(parentSlug: string) {
   return categories.filter((category) => category.parent_slug === parentSlug);
+}
+
+export function getCategoryLineage(slug: string): CategoryLineage {
+  const current = getCategory(slug);
+  const parent = current?.parent_slug ? getCategory(current.parent_slug) : undefined;
+  const children = getChildCategories(slug);
+
+  return {
+    parent,
+    children,
+  };
 }
 
 export function getPageIndexEntry(slug: string) {

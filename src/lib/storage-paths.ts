@@ -1,8 +1,13 @@
 import fs from "node:fs";
 import path from "path";
 
-const REPO_DATA_DIR = path.join(process.cwd(), "..", "data");
-const LOCAL_DATA_DIR = path.join(process.cwd(), "data");
+const LOCAL_REPO_ROOT = process.cwd();
+const LEGACY_PARENT_ROOT = path.join(process.cwd(), "..");
+
+const LOCAL_DATA_DIR = path.join(LOCAL_REPO_ROOT, "data");
+const LEGACY_DATA_DIR = path.join(LEGACY_PARENT_ROOT, "data");
+const LOCAL_CONTENT_DIR = path.join(LOCAL_REPO_ROOT, "content");
+const LEGACY_CONTENT_DIR = path.join(LEGACY_PARENT_ROOT, "content");
 
 function resolveAbsolutePath(value: string) {
   if (path.isAbsolute(value)) {
@@ -29,14 +34,18 @@ function getConfiguredDataDirectory() {
     process.env.DATA_DIR?.trim();
 
   if (!fromEnv) {
-    return getExistingDirectory([REPO_DATA_DIR, LOCAL_DATA_DIR]);
+    return getExistingDirectory([LOCAL_DATA_DIR, LEGACY_DATA_DIR]);
   }
 
   return resolveAbsolutePath(fromEnv);
 }
 
+export function getContentDirectory() {
+  return getExistingDirectory([LOCAL_CONTENT_DIR, LEGACY_CONTENT_DIR]);
+}
+
 export function getContentDataPath(filename: string) {
-  return path.join(getExistingDirectory([REPO_DATA_DIR, LOCAL_DATA_DIR]), filename);
+  return path.join(getExistingDirectory([LOCAL_DATA_DIR, LEGACY_DATA_DIR]), filename);
 }
 
 export function getDataPath(filename: string) {
