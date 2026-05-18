@@ -7,19 +7,20 @@ vendor_id: integra-mission-critical
 
 # Integra
 
-**Category:** Modular / Prefabricated, Power Infrastructure, Liquid Cooling, Construction and Systems Integration
+**Category:** Modular / Prefabricated, Power Infrastructure, Liquid Cooling, Construction and Integration, Supply Chain and Logistics
 **Website:** https://integra.com/
 
 ## Headline
 Mission-critical builder with modular facilities, power systems, cooling infrastructure, and supply-chain-controlled delivery.
 
 ## Overview
-Integra adds useful density to the modular mission-critical build layer because it combines facility delivery with power and cooling infrastructure. It helps support the thesis that the site covers not just categories, but the real firms that make integrated modular deployment happen.
+Integra adds useful density to the modular mission-critical build layer because it combines facility delivery with power and cooling infrastructure. It helps support the thesis that the site covers not just categories, but the real firms that make integrated modular deployment happen under actual execution and supply-chain constraints.
 
 ## Key capabilities
 - mission-critical modular facilities
 - power and cooling infrastructure delivery
 - supply-chain-controlled project execution
+- integrated deployment continuity across build stages
 
 ## Best fit for
 - buyers wanting integrated modular delivery
