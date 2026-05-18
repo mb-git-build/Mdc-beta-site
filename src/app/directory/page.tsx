@@ -110,7 +110,7 @@ export default async function DirectoryPage({
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">Directory</p>
           <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">A straightforward directory for categories and vendors.</h1>
           <p className="mt-5 max-w-3xl text-base leading-8 text-[var(--muted)]">
-            Search a category, sort the list, and click through. The goal here is simple navigation, not a complicated visual experience.
+            Use the directory as a market map: start with a category, follow adjacent infrastructure layers, and move into vendor profiles with more context than a flat list provides.
           </p>
           <div className="mt-8 grid gap-3 sm:grid-cols-4">
             <StatPill label="Visible categories" value={String(sortedCategories.length)} />

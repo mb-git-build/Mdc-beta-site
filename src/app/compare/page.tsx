@@ -147,7 +147,7 @@ export default function ComparePage() {
               <h2 className="mt-2 text-3xl font-semibold tracking-tight">Start with the buying situation, not the logo list.</h2>
             </div>
             <p className="max-w-2xl text-sm leading-7 text-[var(--muted)]">
-              This is the part that makes the site feel valuable: it helps buyers choose how to compare, not just who to click.
+              This is where the site becomes more useful than a static list: it helps buyers choose how to compare, not just which company to click first.
             </p>
           </div>
           <div className="grid gap-5 lg:grid-cols-3">

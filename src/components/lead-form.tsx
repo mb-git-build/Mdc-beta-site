@@ -123,8 +123,8 @@ export function LeadForm({ questions }: LeadFormProps) {
             <Link href="/vendors" className="rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-[var(--foreground)]">
               Browse curated vendors
             </Link>
-            <Link href="/get-matched" className="rounded-full border border-emerald-200 bg-white px-3 py-1.5 text-xs font-semibold text-emerald-900">
-              Edit your submission
+            <Link href="/categories" className="rounded-full border border-emerald-200 bg-white px-3 py-1.5 text-xs font-semibold text-emerald-900">
+              Explore categories
             </Link>
           </div>
         </div>

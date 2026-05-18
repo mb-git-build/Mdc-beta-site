@@ -156,19 +156,27 @@ export function VendorSubmissionForm() {
         {status === "submitting" ? "Submitting..." : "Submit for Review"}
       </button>
       {status === "success" ? (
-        <div className="rounded-2xl border border-emerald-100 bg-emerald-50 p-3 text-sm text-emerald-800">
-          <p className="font-semibold">Thanks — your submission has been received and queued.</p>
+        <div className="rounded-2xl border border-emerald-100 bg-emerald-50 p-4 text-sm text-emerald-800">
+          <p className="font-semibold">Thanks — your submission has been received and queued for review.</p>
           <p className="mt-1">Reference: {submissionId}</p>
-          <p className="mt-3 text-[var(--muted)]">Want to see where you fit?</p>
+          <div className="mt-3 rounded-2xl border border-emerald-100 bg-white/80 p-3 text-emerald-900">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em]">What happens next</p>
+            <div className="mt-2 grid gap-1.5 text-sm">
+              <p>• We review category fit, trust signals, and listing clarity.</p>
+              <p>• If follow-up is needed, this reference helps tie future updates to the same submission.</p>
+              <p>• Approved listings are shaped into cleaner buyer-facing directory context, not dumped in raw.</p>
+            </div>
+          </div>
+          <p className="mt-3 text-[var(--muted)]">Helpful next steps while review is in progress:</p>
           <div className="mt-2 flex flex-wrap gap-2">
             <Link href="/directory" className="rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-[var(--foreground)]">
               Browse the directory
             </Link>
-            <Link href="/vendors" className="rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-[var(--foreground)]">
-              Visit all vendor profiles
+            <Link href="/categories" className="rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-[var(--foreground)]">
+              Review category fit
             </Link>
             <Link href="/for-vendors/claim" className="rounded-full border border-emerald-200 bg-white px-3 py-1.5 text-xs font-semibold text-emerald-900">
-              File or update a claim
+              Claim an existing listing
             </Link>
           </div>
         </div>

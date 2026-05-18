@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { categories, getGuides, getFeaturedVendors, vendors } from "@/lib/site-data";
+import { categories, getGuides, vendors } from "@/lib/site-data";
 import { vendorGlyph } from "@/lib/visuals";
 
-const featuredVendors = getFeaturedVendors().slice(0, 6);
 const guides = getGuides().slice(0, 3);
 
 const homepageCategorySlugs = [

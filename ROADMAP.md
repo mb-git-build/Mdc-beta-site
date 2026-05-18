@@ -68,11 +68,22 @@ Prefer work that increases:
 - discoverability
 - graph quality
 - long-tail ecosystem intelligence
+- believable operational pathways
+- upstream/downstream realism
+- deployment-stack coherence
+- adjacent-system traversal
 
 over work that only increases:
 - page count
 - design novelty
 - abstract editorial surface area
+- raw vendor count without connective tissue
+
+### Governing execution doctrine
+Graph legitimacy emerges from operational connective tissue, not merely entity count.
+
+Operational realism, deployment pathways, supporting-system visibility, and relationship density should be treated as more important than simple list growth.
+The immersion/high-density cooling vertical is the current proving ground for this principle.
 
 ---
 

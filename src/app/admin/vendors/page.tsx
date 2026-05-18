@@ -1,9 +1,11 @@
 import Link from "next/link";
-import { categories, vendors } from "@/lib/site-data";
+import { categories, getVendorMarkdownSlugs, vendors } from "@/lib/site-data";
 
 export default function AdminVendorsPage() {
   const featuredCount = vendors.filter((vendor) => vendor.featured).length;
   const verifiedCount = vendors.filter((vendor) => vendor.verified).length;
+  const vendorSlugs = new Set(vendors.map((vendor) => vendor.slug));
+  const markdownOnlySlugs = getVendorMarkdownSlugs().filter((slug) => !vendorSlugs.has(slug));
 
   return (
     <main className="min-h-screen bg-[var(--background)] px-6 py-14 lg:px-10">
@@ -13,6 +15,44 @@ export default function AdminVendorsPage() {
           <h1 className="text-3xl font-semibold tracking-tight">Vendor records</h1>
           <p className="text-sm leading-7 text-[var(--muted)]">{vendors.length} total vendors · {featuredCount} featured · {verifiedCount} verified</p>
         </div>
+
+        <div className="mt-6 grid gap-3 sm:grid-cols-4">
+          <div className="rounded-[1rem] border border-[var(--border)] bg-[#f7fafc] px-4 py-3">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--muted)]">Structured vendors</p>
+            <p className="mt-1 text-lg font-semibold tracking-tight">{vendors.length}</p>
+          </div>
+          <div className="rounded-[1rem] border border-[var(--border)] bg-[#f7fafc] px-4 py-3">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--muted)]">Featured</p>
+            <p className="mt-1 text-lg font-semibold tracking-tight">{featuredCount}</p>
+          </div>
+          <div className="rounded-[1rem] border border-[var(--border)] bg-[#f7fafc] px-4 py-3">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--muted)]">Verified</p>
+            <p className="mt-1 text-lg font-semibold tracking-tight">{verifiedCount}</p>
+          </div>
+          <div className="rounded-[1rem] border border-[var(--border)] bg-[#f7fafc] px-4 py-3">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--muted)]">Markdown-only backlog</p>
+            <p className="mt-1 text-lg font-semibold tracking-tight">{markdownOnlySlugs.length}</p>
+          </div>
+        </div>
+
+        {markdownOnlySlugs.length ? (
+          <section className="mt-6 rounded-[1.25rem] border border-[var(--border)] bg-[#f7fafc] p-4">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Promotion backlog</p>
+                <h2 className="mt-1 text-lg font-semibold tracking-tight">Vendor profiles written in content, but not yet promoted into structured data</h2>
+              </div>
+              <p className="text-sm text-[var(--muted)]">Useful next-wave candidates for taxonomy-first expansion</p>
+            </div>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {markdownOnlySlugs.map((slug) => (
+                <span key={slug} className="rounded-full bg-white px-3 py-1 text-xs font-medium text-[var(--foreground)]">
+                  {slug}
+                </span>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           {vendors.map((vendor) => {

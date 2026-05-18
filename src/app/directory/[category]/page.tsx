@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   categories,
@@ -104,6 +105,8 @@ export default async function CategoryPage({
 
   const categoryContent = getMarkdownCategoryBySlug(category.slug);
   const compareSection = categoryContent?.sections.find((section) => section.heading === "What to compare");
+  const ecosystemMapSection = categoryContent?.sections.find((section) => section.heading === "Ecosystem map");
+  const deploymentStacksSection = categoryContent?.sections.find((section) => section.heading === "Operational deployment stacks");
   const vendors = getVendorsForCategory(categorySlug);
   const relatedGuides = getRelatedGuides(category.slug);
   const adjacentCategories = getAdjacentCategories(category.slug);
@@ -111,7 +114,11 @@ export default async function CategoryPage({
 
   const featuredCompanies = vendors.slice(0, Math.min(6, vendors.length));
   const directoryCompanies = vendors.slice(featuredCompanies.length);
-  const quickPoints = compareSection?.bullets.slice(0, 4) ?? [];
+  const quickPoints = [
+    ...(compareSection?.bullets ?? []),
+    ...(ecosystemMapSection?.bullets ?? []),
+    ...(deploymentStacksSection?.body ?? []),
+  ].slice(0, 6);
   const childCategories = lineage.children.map((child) => ({
     ...child,
     vendorCount: getVendorsForCategory(child.slug).length,
@@ -168,8 +175,12 @@ export default async function CategoryPage({
                     className={`rounded-2xl border border-[var(--border-strong)] bg-[#1a2129] p-5 transition hover:border-[#5e7285] ${index < 2 ? "md:p-6" : ""}`}
                   >
                     <div className="flex items-start gap-4">
-                      <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white text-sm font-semibold tracking-[0.12em] text-[#0f141a]">
-                        {vendorGlyph(vendor.slug)}
+                      <div className="inline-flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-white text-sm font-semibold tracking-[0.12em] text-[#0f141a]">
+                        {vendor.logo_url ? (
+                          <Image src={vendor.logo_url} alt={`${vendor.name} logo`} width={48} height={48} className="h-full w-full object-contain p-1.5" unoptimized />
+                        ) : (
+                          vendorGlyph(vendor.slug)
+                        )}
                       </div>
                       <div>
                         <h3 className="text-base font-semibold tracking-tight text-white">{vendor.name}</h3>
@@ -281,8 +292,12 @@ export default async function CategoryPage({
               {(directoryCompanies.length ? directoryCompanies : featuredCompanies).map((vendor) => (
                 <article key={vendor.slug} className="rounded-2xl border border-[var(--border-strong)] bg-[#1a2129] p-5 transition hover:border-[#5e7285]">
                   <div className="flex items-start gap-4">
-                    <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-white text-sm font-semibold tracking-[0.12em] text-[#0f141a]">
-                      {vendorGlyph(vendor.slug)}
+                    <div className="inline-flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl bg-white text-sm font-semibold tracking-[0.12em] text-[#0f141a]">
+                      {vendor.logo_url ? (
+                        <Image src={vendor.logo_url} alt={`${vendor.name} logo`} width={44} height={44} className="h-full w-full object-contain p-1.5" unoptimized />
+                      ) : (
+                        vendorGlyph(vendor.slug)
+                      )}
                     </div>
                     <div>
                       <h3 className="text-base font-semibold tracking-tight text-white">{vendor.name}</h3>
@@ -315,6 +330,9 @@ export default async function CategoryPage({
 
             <section className="rounded-2xl border border-[var(--border-strong)] bg-[var(--card)] p-6">
               <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Browse pathways</p>
+              <div className="mt-4 rounded-xl border border-[var(--border)] bg-[#1a2129] p-4 text-sm leading-7 text-[var(--muted-strong)]">
+                Best next move: review a few companies here, then widen the decision set through related categories and guides before narrowing to outreach.
+              </div>
               <div className="mt-4 grid gap-3">
                 <Link href="/categories" className="rounded-xl border border-[var(--border)] bg-[#1a2129] p-4 text-sm font-medium text-white transition hover:border-[#5e7285]">
                   Explore all categories

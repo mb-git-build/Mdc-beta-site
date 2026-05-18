@@ -5,9 +5,19 @@
     "name": "Modular & Prefabricated Infrastructure",
     "description": "Factory-built modules, skids, enclosure systems, and prefabricated infrastructure packages for AI, edge, and industrial compute deployments.",
     "layer": "segment",
-    "tags": ["prefabrication", "modular"],
-    "adjacent_category_slugs": ["containerized-data-centers", "power-and-electrical", "liquid-cooling"],
-    "often_used_with": ["generators-and-microgrids", "field-services-and-maintenance"]
+    "tags": [
+      "prefabrication",
+      "modular"
+    ],
+    "adjacent_category_slugs": [
+      "containerized-data-centers",
+      "power-and-electrical",
+      "liquid-cooling"
+    ],
+    "often_used_with": [
+      "generators-and-microgrids",
+      "field-services-and-maintenance"
+    ]
   },
   {
     "id": "cat_containerized",
@@ -15,9 +25,18 @@
     "name": "Containerized Data Centers",
     "description": "Container-based and transportable data center systems for rapid deployment, mining, edge, and remote workloads.",
     "layer": "segment",
-    "tags": ["containerized", "rapid-deployment"],
-    "adjacent_category_slugs": ["modular-prefab", "edge-micro-data-centers"],
-    "often_used_with": ["power-and-electrical", "hvac-and-thermal-rejection"]
+    "tags": [
+      "containerized",
+      "rapid-deployment"
+    ],
+    "adjacent_category_slugs": [
+      "modular-prefab",
+      "edge-micro-data-centers"
+    ],
+    "often_used_with": [
+      "power-and-electrical",
+      "hvac-and-thermal-rejection"
+    ]
   },
   {
     "id": "cat_gpu_hosting",
@@ -25,19 +44,45 @@
     "name": "AI Colocation & GPU Hosting",
     "description": "Providers offering GPU capacity, AI colocation, bare-metal clusters, and deployment-ready compute environments.",
     "layer": "segment",
-    "tags": ["gpu", "hosting", "ai"],
-    "adjacent_category_slugs": ["network-fabric-and-connectivity", "high-density-rack-power", "liquid-cooling"],
-    "often_used_with": ["monitoring-and-controls", "site-selection-and-land-strategy"]
+    "tags": [
+      "gpu",
+      "hosting",
+      "ai"
+    ],
+    "adjacent_category_slugs": [
+      "network-fabric-and-connectivity",
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "often_used_with": [
+      "monitoring-and-controls",
+      "site-selection-and-land-strategy"
+    ]
   },
   {
     "id": "cat_immersion",
     "slug": "immersion-cooling",
     "name": "Immersion Cooling",
-    "description": "Single-phase and two-phase immersion vendors serving dense AI, HPC, and mining infrastructure.",
+    "description": "Tank-based and fluid-managed cooling ecosystems for dense AI, HPC, and bitcoin infrastructure, spanning tanks, coolants, pumps, controls, integrators, and rejection-side support.",
     "layer": "segment",
-    "tags": ["immersion", "cooling"],
-    "adjacent_category_slugs": ["liquid-cooling", "high-density-rack-power"],
-    "often_used_with": ["monitoring-and-controls", "field-services-and-maintenance"]
+    "tags": [
+      "immersion",
+      "cooling"
+    ],
+    "adjacent_category_slugs": [
+      "liquid-cooling",
+      "hvac-and-thermal-rejection",
+      "monitoring-and-controls",
+      "high-density-rack-power",
+      "containerized-data-centers"
+    ],
+    "often_used_with": [
+      "field-services-and-maintenance",
+      "single-phase-immersion",
+      "two-phase-immersion",
+      "thermal-optimization-controls",
+      "liquid-loop-systems"
+    ]
   },
   {
     "id": "cat_liquid",
@@ -45,9 +90,19 @@
     "name": "Liquid Cooling",
     "description": "Direct-to-chip, cold-plate, CDU, and liquid loop providers for high-density compute environments.",
     "layer": "segment",
-    "tags": ["liquid-cooling", "thermal"],
-    "adjacent_category_slugs": ["rear-door-direct-to-chip-cooling", "hvac-and-thermal-rejection", "monitoring-and-controls"],
-    "often_used_with": ["high-density-rack-power", "power-and-electrical"]
+    "tags": [
+      "liquid-cooling",
+      "thermal"
+    ],
+    "adjacent_category_slugs": [
+      "rear-door-direct-to-chip-cooling",
+      "hvac-and-thermal-rejection",
+      "monitoring-and-controls"
+    ],
+    "often_used_with": [
+      "high-density-rack-power",
+      "power-and-electrical"
+    ]
   },
   {
     "id": "cat_power",
@@ -55,9 +110,19 @@
     "name": "Power & Electrical Infrastructure",
     "description": "Electrical backbone vendors across switchgear, PDUs, busway, substations, ATS, and site power systems.",
     "layer": "segment",
-    "tags": ["power", "electrical"],
-    "adjacent_category_slugs": ["generators-and-microgrids", "ups-and-battery-storage", "monitoring-and-controls"],
-    "often_used_with": ["site-selection-and-land-strategy", "field-services-and-maintenance"]
+    "tags": [
+      "power",
+      "electrical"
+    ],
+    "adjacent_category_slugs": [
+      "generators-and-microgrids",
+      "ups-and-battery-storage",
+      "monitoring-and-controls"
+    ],
+    "often_used_with": [
+      "site-selection-and-land-strategy",
+      "field-services-and-maintenance"
+    ]
   },
   {
     "id": "cat_gens",
@@ -65,9 +130,18 @@
     "name": "Generators & Microgrids",
     "description": "Backup generation, distributed energy, microgrids, and resiliency systems for power-constrained deployments.",
     "layer": "segment",
-    "tags": ["backup-power", "microgrids"],
-    "adjacent_category_slugs": ["power-and-electrical", "sustainability-and-energy-strategy"],
-    "often_used_with": ["ups-and-battery-storage", "modular-prefab"]
+    "tags": [
+      "backup-power",
+      "microgrids"
+    ],
+    "adjacent_category_slugs": [
+      "power-and-electrical",
+      "sustainability-and-energy-strategy"
+    ],
+    "often_used_with": [
+      "ups-and-battery-storage",
+      "modular-prefab"
+    ]
   },
   {
     "id": "cat_ups",
@@ -75,9 +149,18 @@
     "name": "UPS & Battery Storage",
     "description": "UPS systems, battery-backed resiliency, and energy storage products supporting uptime and power smoothing.",
     "layer": "segment",
-    "tags": ["ups", "batteries"],
-    "adjacent_category_slugs": ["power-and-electrical", "generators-and-microgrids"],
-    "often_used_with": ["monitoring-and-controls", "high-density-rack-power"]
+    "tags": [
+      "ups",
+      "batteries"
+    ],
+    "adjacent_category_slugs": [
+      "power-and-electrical",
+      "generators-and-microgrids"
+    ],
+    "often_used_with": [
+      "monitoring-and-controls",
+      "high-density-rack-power"
+    ]
   },
   {
     "id": "cat_switchgear",
@@ -86,9 +169,18 @@
     "description": "Critical distribution components spanning low/medium-voltage switchgear, rack PDUs, remote power panels, and busway.",
     "parent_slug": "power-and-electrical",
     "layer": "subcategory",
-    "tags": ["switchgear", "pdu", "busway"],
-    "adjacent_category_slugs": ["power-and-electrical", "high-density-rack-power"],
-    "often_used_with": ["monitoring-and-controls"]
+    "tags": [
+      "switchgear",
+      "pdu",
+      "busway"
+    ],
+    "adjacent_category_slugs": [
+      "power-and-electrical",
+      "high-density-rack-power"
+    ],
+    "often_used_with": [
+      "monitoring-and-controls"
+    ]
   },
   {
     "id": "cat_substation",
@@ -97,9 +189,17 @@
     "description": "Packaged substation systems and electrical yard modules for fast-track compute and industrial energy deployments.",
     "parent_slug": "power-and-electrical",
     "layer": "subcategory",
-    "tags": ["substations", "modular-power"],
-    "adjacent_category_slugs": ["generators-and-microgrids", "site-selection-and-land-strategy"],
-    "often_used_with": ["field-services-and-maintenance"]
+    "tags": [
+      "substations",
+      "modular-power"
+    ],
+    "adjacent_category_slugs": [
+      "generators-and-microgrids",
+      "site-selection-and-land-strategy"
+    ],
+    "often_used_with": [
+      "field-services-and-maintenance"
+    ]
   },
   {
     "id": "cat_ats",
@@ -108,9 +208,17 @@
     "description": "Automatic transfer switches and related switching systems used across resilient compute infrastructure.",
     "parent_slug": "power-and-electrical",
     "layer": "subcategory",
-    "tags": ["ats", "transfer-switch"],
-    "adjacent_category_slugs": ["power-and-electrical", "generators-and-microgrids"],
-    "often_used_with": ["ups-and-battery-storage"]
+    "tags": [
+      "ats",
+      "transfer-switch"
+    ],
+    "adjacent_category_slugs": [
+      "power-and-electrical",
+      "generators-and-microgrids"
+    ],
+    "often_used_with": [
+      "ups-and-battery-storage"
+    ]
   },
   {
     "id": "cat_pm",
@@ -119,9 +227,17 @@
     "description": "Metering, telemetry, and energy software for power quality, visibility, and infrastructure optimization.",
     "parent_slug": "power-and-electrical",
     "layer": "subcategory",
-    "tags": ["metering", "energy-management"],
-    "adjacent_category_slugs": ["monitoring-and-controls", "power-and-electrical"],
-    "often_used_with": ["sustainability-and-energy-strategy"]
+    "tags": [
+      "metering",
+      "energy-management"
+    ],
+    "adjacent_category_slugs": [
+      "monitoring-and-controls",
+      "power-and-electrical"
+    ],
+    "often_used_with": [
+      "sustainability-and-energy-strategy"
+    ]
   },
   {
     "id": "cat_hvac",
@@ -129,9 +245,21 @@
     "name": "HVAC & Thermal Rejection",
     "description": "Heat rejection, mechanical cooling, chillers, dry coolers, and HVAC infrastructure for dense compute loads.",
     "layer": "segment",
-    "tags": ["hvac", "thermal"],
-    "adjacent_category_slugs": ["liquid-cooling", "immersion-cooling"],
-    "often_used_with": ["monitoring-and-controls", "field-services-and-maintenance"]
+    "tags": [
+      "hvac",
+      "thermal"
+    ],
+    "adjacent_category_slugs": [
+      "liquid-cooling",
+      "immersion-cooling",
+      "monitoring-and-controls",
+      "power-and-electrical"
+    ],
+    "often_used_with": [
+      "thermal-optimization-controls",
+      "liquid-loop-systems",
+      "site-selection-and-land-strategy"
+    ]
   },
   {
     "id": "cat_rdhx",
@@ -139,9 +267,17 @@
     "name": "Rear-Door & Direct-to-Chip Cooling",
     "description": "Rear-door heat exchangers and chip-level cooling systems for dense AI rack environments.",
     "layer": "segment",
-    "tags": ["rear-door", "direct-to-chip"],
-    "adjacent_category_slugs": ["liquid-cooling", "high-density-rack-power"],
-    "often_used_with": ["monitoring-and-controls"]
+    "tags": [
+      "rear-door",
+      "direct-to-chip"
+    ],
+    "adjacent_category_slugs": [
+      "liquid-cooling",
+      "high-density-rack-power"
+    ],
+    "often_used_with": [
+      "monitoring-and-controls"
+    ]
   },
   {
     "id": "cat_high_density",
@@ -149,9 +285,18 @@
     "name": "High-Density Rack Power",
     "description": "Rack-level power architecture and distribution for AI, HPC, and dense infrastructure deployments.",
     "layer": "segment",
-    "tags": ["rack-power", "high-density"],
-    "adjacent_category_slugs": ["power-and-electrical", "liquid-cooling"],
-    "often_used_with": ["network-fabric-and-connectivity", "monitoring-and-controls"]
+    "tags": [
+      "rack-power",
+      "high-density"
+    ],
+    "adjacent_category_slugs": [
+      "power-and-electrical",
+      "liquid-cooling"
+    ],
+    "often_used_with": [
+      "network-fabric-and-connectivity",
+      "monitoring-and-controls"
+    ]
   },
   {
     "id": "cat_edge",
@@ -159,9 +304,18 @@
     "name": "Edge & Micro Data Centers",
     "description": "Distributed, regional, and micro data center systems for edge AI, industrial, and field-deployed capacity.",
     "layer": "segment",
-    "tags": ["edge", "micro-datacenter"],
-    "adjacent_category_slugs": ["containerized-data-centers", "network-fabric-and-connectivity"],
-    "often_used_with": ["field-services-and-maintenance", "generators-and-microgrids"]
+    "tags": [
+      "edge",
+      "micro-datacenter"
+    ],
+    "adjacent_category_slugs": [
+      "containerized-data-centers",
+      "network-fabric-and-connectivity"
+    ],
+    "often_used_with": [
+      "field-services-and-maintenance",
+      "generators-and-microgrids"
+    ]
   },
   {
     "id": "cat_network",
@@ -169,9 +323,17 @@
     "name": "Network Fabric & Connectivity",
     "description": "Optics, switching, structured cabling, and network infrastructure that supports AI compute environments.",
     "layer": "segment",
-    "tags": ["networking", "connectivity"],
-    "adjacent_category_slugs": ["ai-colocation-gpu-hosting", "monitoring-and-controls"],
-    "often_used_with": ["high-density-rack-power"]
+    "tags": [
+      "networking",
+      "connectivity"
+    ],
+    "adjacent_category_slugs": [
+      "ai-colocation-gpu-hosting",
+      "monitoring-and-controls"
+    ],
+    "often_used_with": [
+      "high-density-rack-power"
+    ]
   },
   {
     "id": "cat_monitoring",
@@ -179,9 +341,21 @@
     "name": "Monitoring & Controls",
     "description": "DCIM, observability, controls, telemetry, and automation layers for infrastructure operations.",
     "layer": "segment",
-    "tags": ["dcim", "controls"],
-    "adjacent_category_slugs": ["power-and-electrical", "liquid-cooling", "network-fabric-and-connectivity"],
-    "often_used_with": ["power-monitoring-and-energy-management", "thermal-optimization-controls"]
+    "tags": [
+      "dcim",
+      "controls"
+    ],
+    "adjacent_category_slugs": [
+      "power-and-electrical",
+      "liquid-cooling",
+      "immersion-cooling",
+      "network-fabric-and-connectivity"
+    ],
+    "often_used_with": [
+      "power-monitoring-and-energy-management",
+      "thermal-optimization-controls",
+      "dcim-and-observability"
+    ]
   },
   {
     "id": "cat_field",
@@ -189,9 +363,18 @@
     "name": "Field Services & Maintenance",
     "description": "Commissioning, field support, deployment services, and ongoing maintenance for critical infrastructure.",
     "layer": "segment",
-    "tags": ["services", "maintenance"],
-    "adjacent_category_slugs": ["epc-and-commissioning", "power-and-electrical"],
-    "often_used_with": ["infrastructure-logistics", "electrical-integration-services"]
+    "tags": [
+      "services",
+      "maintenance"
+    ],
+    "adjacent_category_slugs": [
+      "epc-and-commissioning",
+      "power-and-electrical"
+    ],
+    "often_used_with": [
+      "infrastructure-logistics",
+      "electrical-integration-services"
+    ]
   },
   {
     "id": "cat_electrical_integration",
@@ -200,9 +383,17 @@
     "description": "Integrators and contractors stitching power, controls, and facility systems together on site.",
     "parent_slug": "field-services-and-maintenance",
     "layer": "subcategory",
-    "tags": ["integration", "electrical"],
-    "adjacent_category_slugs": ["power-and-electrical", "modular-substations"],
-    "often_used_with": ["ats-and-transfer-systems"]
+    "tags": [
+      "integration",
+      "electrical"
+    ],
+    "adjacent_category_slugs": [
+      "power-and-electrical",
+      "modular-substations"
+    ],
+    "often_used_with": [
+      "ats-and-transfer-systems"
+    ]
   },
   {
     "id": "cat_logistics",
@@ -211,9 +402,17 @@
     "description": "Heavy-haul, rigging, transport, and deployment logistics supporting physical AI infrastructure buildouts.",
     "parent_slug": "field-services-and-maintenance",
     "layer": "subcategory",
-    "tags": ["logistics", "transport"],
-    "adjacent_category_slugs": ["modular-prefab", "containerized-data-centers"],
-    "often_used_with": ["site-selection-and-land-strategy"]
+    "tags": [
+      "logistics",
+      "transport"
+    ],
+    "adjacent_category_slugs": [
+      "modular-prefab",
+      "containerized-data-centers"
+    ],
+    "often_used_with": [
+      "site-selection-and-land-strategy"
+    ]
   },
   {
     "id": "cat_epc",
@@ -221,9 +420,18 @@
     "name": "EPC & Commissioning",
     "description": "Engineering, procurement, commissioning, and delivery partners for complex infrastructure programs.",
     "layer": "segment",
-    "tags": ["epc", "commissioning"],
-    "adjacent_category_slugs": ["field-services-and-maintenance", "modular-prefab"],
-    "often_used_with": ["power-and-electrical", "liquid-cooling"]
+    "tags": [
+      "epc",
+      "commissioning"
+    ],
+    "adjacent_category_slugs": [
+      "field-services-and-maintenance",
+      "modular-prefab"
+    ],
+    "often_used_with": [
+      "power-and-electrical",
+      "liquid-cooling"
+    ]
   },
   {
     "id": "cat_site",
@@ -231,9 +439,18 @@
     "name": "Site Selection & Land Strategy",
     "description": "Land, utility, and siting specialists supporting new AI, mining, and industrial compute deployment decisions.",
     "layer": "segment",
-    "tags": ["site-selection", "land"],
-    "adjacent_category_slugs": ["modular-substations", "generators-and-microgrids"],
-    "often_used_with": ["ai-colocation-gpu-hosting", "modular-prefab"]
+    "tags": [
+      "site-selection",
+      "land"
+    ],
+    "adjacent_category_slugs": [
+      "modular-substations",
+      "generators-and-microgrids"
+    ],
+    "often_used_with": [
+      "ai-colocation-gpu-hosting",
+      "modular-prefab"
+    ]
   },
   {
     "id": "cat_sust",
@@ -241,9 +458,17 @@
     "name": "Sustainability & Energy Strategy",
     "description": "Energy sourcing, load planning, and sustainability strategy providers for infrastructure-intensive compute programs.",
     "layer": "segment",
-    "tags": ["energy-strategy", "sustainability"],
-    "adjacent_category_slugs": ["power-monitoring-and-energy-management", "generators-and-microgrids"],
-    "often_used_with": ["site-selection-and-land-strategy"]
+    "tags": [
+      "energy-strategy",
+      "sustainability"
+    ],
+    "adjacent_category_slugs": [
+      "power-monitoring-and-energy-management",
+      "generators-and-microgrids"
+    ],
+    "often_used_with": [
+      "site-selection-and-land-strategy"
+    ]
   },
   {
     "id": "cat_dcim",
@@ -252,9 +477,19 @@
     "description": "Software and monitoring systems that surface infrastructure health, telemetry, alarms, and capacity trends.",
     "parent_slug": "monitoring-and-controls",
     "layer": "subcategory",
-    "tags": ["dcim", "observability"],
-    "adjacent_category_slugs": ["power-monitoring-and-energy-management"],
-    "often_used_with": ["network-fabric-and-connectivity"]
+    "tags": [
+      "dcim",
+      "observability"
+    ],
+    "adjacent_category_slugs": [
+      "monitoring-and-controls",
+      "power-monitoring-and-energy-management",
+      "immersion-cooling"
+    ],
+    "often_used_with": [
+      "thermal-optimization-controls",
+      "network-fabric-and-connectivity"
+    ]
   },
   {
     "id": "cat_managed_ai_colo",
@@ -263,9 +498,19 @@
     "description": "Operators delivering powered shells, managed environments, and AI-ready colocation capacity for GPU clusters and dense inference infrastructure.",
     "parent_slug": "ai-colocation-gpu-hosting",
     "layer": "subcategory",
-    "tags": ["colocation", "managed-services", "gpu-hosting"],
-    "adjacent_category_slugs": ["ai-colocation-gpu-hosting", "site-selection-and-land-strategy"],
-    "often_used_with": ["liquid-cooling", "high-density-rack-power"]
+    "tags": [
+      "colocation",
+      "managed-services",
+      "gpu-hosting"
+    ],
+    "adjacent_category_slugs": [
+      "ai-colocation-gpu-hosting",
+      "site-selection-and-land-strategy"
+    ],
+    "often_used_with": [
+      "liquid-cooling",
+      "high-density-rack-power"
+    ]
   },
   {
     "id": "cat_dtc",
@@ -274,9 +519,16 @@
     "description": "Chip-level liquid cooling systems for dense AI, HPC, and advanced compute racks.",
     "parent_slug": "liquid-cooling",
     "layer": "subcategory",
-    "tags": ["direct-to-chip", "cold-plate"],
-    "adjacent_category_slugs": ["rear-door-direct-to-chip-cooling"],
-    "often_used_with": ["high-density-rack-power"]
+    "tags": [
+      "direct-to-chip",
+      "cold-plate"
+    ],
+    "adjacent_category_slugs": [
+      "rear-door-direct-to-chip-cooling"
+    ],
+    "often_used_with": [
+      "high-density-rack-power"
+    ]
   },
   {
     "id": "cat_loop",
@@ -285,9 +537,21 @@
     "description": "CDUs, distribution units, and loop management systems for liquid-cooled compute deployments.",
     "parent_slug": "liquid-cooling",
     "layer": "subcategory",
-    "tags": ["cdu", "liquid-loop"],
-    "adjacent_category_slugs": ["liquid-cooling", "power-monitoring-and-energy-management"],
-    "often_used_with": ["direct-to-chip-cooling"]
+    "tags": [
+      "cdu",
+      "liquid-loop"
+    ],
+    "adjacent_category_slugs": [
+      "liquid-cooling",
+      "immersion-cooling",
+      "hvac-and-thermal-rejection",
+      "monitoring-and-controls"
+    ],
+    "often_used_with": [
+      "direct-to-chip-cooling",
+      "thermal-optimization-controls",
+      "high-density-rack-power"
+    ]
   },
   {
     "id": "cat_single_phase_immersion",
@@ -296,9 +560,20 @@
     "description": "Single-phase immersion tanks, coolant ecosystems, and deployment platforms for dense AI, HPC, and mining infrastructure.",
     "parent_slug": "immersion-cooling",
     "layer": "subcategory",
-    "tags": ["single-phase", "immersion"],
-    "adjacent_category_slugs": ["immersion-cooling", "thermal-optimization-controls"],
-    "often_used_with": ["field-services-and-maintenance", "high-density-rack-power"]
+    "tags": [
+      "single-phase",
+      "immersion"
+    ],
+    "adjacent_category_slugs": [
+      "immersion-cooling",
+      "liquid-loop-systems",
+      "thermal-optimization-controls"
+    ],
+    "often_used_with": [
+      "field-services-and-maintenance",
+      "high-density-rack-power",
+      "containerized-data-centers"
+    ]
   },
   {
     "id": "cat_two_phase_immersion",
@@ -307,9 +582,20 @@
     "description": "Two-phase immersion systems and refrigerant-based thermal platforms for extreme density and specialized compute environments.",
     "parent_slug": "immersion-cooling",
     "layer": "subcategory",
-    "tags": ["two-phase", "immersion"],
-    "adjacent_category_slugs": ["immersion-cooling", "liquid-cooling"],
-    "often_used_with": ["thermal-optimization-controls", "high-density-rack-power"]
+    "tags": [
+      "two-phase",
+      "immersion"
+    ],
+    "adjacent_category_slugs": [
+      "immersion-cooling",
+      "liquid-cooling",
+      "hvac-and-thermal-rejection"
+    ],
+    "often_used_with": [
+      "thermal-optimization-controls",
+      "high-density-rack-power",
+      "monitoring-and-controls"
+    ]
   },
   {
     "id": "cat_therm_ctrl",
@@ -318,9 +604,20 @@
     "description": "Control layers and optimization systems for thermal performance and cooling efficiency.",
     "parent_slug": "liquid-cooling",
     "layer": "subcategory",
-    "tags": ["thermal-controls", "optimization"],
-    "adjacent_category_slugs": ["monitoring-and-controls", "hvac-and-thermal-rejection"],
-    "often_used_with": ["immersion-cooling"]
+    "tags": [
+      "thermal-controls",
+      "optimization"
+    ],
+    "adjacent_category_slugs": [
+      "monitoring-and-controls",
+      "hvac-and-thermal-rejection",
+      "immersion-cooling",
+      "liquid-cooling"
+    ],
+    "often_used_with": [
+      "dcim-and-observability",
+      "power-monitoring-and-energy-management"
+    ]
   },
   {
     "id": "cat_enclosures",
@@ -329,9 +626,17 @@
     "description": "Physical shell, enclosure, and fabrication vendors producing modular housings and packaged infrastructure containers.",
     "parent_slug": "modular-prefab",
     "layer": "subcategory",
-    "tags": ["enclosures", "fabrication"],
-    "adjacent_category_slugs": ["containerized-data-centers", "modular-prefab"],
-    "often_used_with": ["infrastructure-logistics"]
+    "tags": [
+      "enclosures",
+      "fabrication"
+    ],
+    "adjacent_category_slugs": [
+      "containerized-data-centers",
+      "modular-prefab"
+    ],
+    "often_used_with": [
+      "infrastructure-logistics"
+    ]
   },
   {
     "id": "cat_prefab_power_blocks",
@@ -340,9 +645,20 @@
     "description": "Skid-based electrical rooms, e-houses, packaged power trains, and prefabricated distribution blocks used in rapid compute deployments.",
     "parent_slug": "modular-prefab",
     "layer": "subcategory",
-    "tags": ["e-house", "power-skids", "prefabrication"],
-    "adjacent_category_slugs": ["modular-prefab", "power-and-electrical", "modular-substations"],
-    "often_used_with": ["switchgear-pdu-busway", "electrical-integration-services"]
+    "tags": [
+      "e-house",
+      "power-skids",
+      "prefabrication"
+    ],
+    "adjacent_category_slugs": [
+      "modular-prefab",
+      "power-and-electrical",
+      "modular-substations"
+    ],
+    "often_used_with": [
+      "switchgear-pdu-busway",
+      "electrical-integration-services"
+    ]
   },
   {
     "id": "cat_microgrid_controls",
@@ -351,8 +667,85 @@
     "description": "Control systems, orchestration layers, and integration partners coordinating on-site generation, storage, switching, and flexible compute loads.",
     "parent_slug": "generators-and-microgrids",
     "layer": "subcategory",
-    "tags": ["microgrids", "controls", "integration"],
-    "adjacent_category_slugs": ["generators-and-microgrids", "power-monitoring-and-energy-management", "sustainability-and-energy-strategy"],
-    "often_used_with": ["ups-and-battery-storage", "site-selection-and-land-strategy"]
+    "tags": [
+      "microgrids",
+      "controls",
+      "integration"
+    ],
+    "adjacent_category_slugs": [
+      "generators-and-microgrids",
+      "power-monitoring-and-energy-management",
+      "sustainability-and-energy-strategy"
+    ],
+    "often_used_with": [
+      "ups-and-battery-storage",
+      "site-selection-and-land-strategy"
+    ]
+  },
+  {
+    "id": "cat_construction_integration",
+    "slug": "construction-and-integration",
+    "name": "Construction & Integration",
+    "description": "Mechanical, electrical, and system-integration partners translating dense compute designs into working deployment packages across retrofit, modular, and greenfield environments.",
+    "layer": "segment",
+    "tags": [
+      "integration",
+      "deployment"
+    ],
+    "adjacent_category_slugs": [
+      "epc-and-commissioning",
+      "field-services-and-maintenance",
+      "liquid-cooling",
+      "immersion-cooling"
+    ],
+    "often_used_with": [
+      "electrical-integration-services",
+      "liquid-loop-systems",
+      "modular-prefab"
+    ]
+  },
+  {
+    "id": "cat_commissioning_ops",
+    "slug": "commissioning-and-operations",
+    "name": "Commissioning & Operations",
+    "description": "Operational readiness, startup, service-transition, and steady-state operations support for high-density cooling, power, and modular infrastructure programs.",
+    "layer": "segment",
+    "tags": [
+      "commissioning",
+      "operations"
+    ],
+    "adjacent_category_slugs": [
+      "field-services-and-maintenance",
+      "monitoring-and-controls",
+      "immersion-cooling",
+      "liquid-cooling"
+    ],
+    "often_used_with": [
+      "dcim-and-observability",
+      "thermal-optimization-controls",
+      "electrical-integration-services"
+    ]
+  },
+  {
+    "id": "cat_supply_chain_logistics",
+    "slug": "supply-chain-and-logistics",
+    "name": "Supply Chain & Logistics",
+    "description": "Procurement, parts availability, industrial distribution, fluid sourcing, and logistics layers that determine whether dense compute infrastructure can be built and maintained at scale.",
+    "layer": "segment",
+    "tags": [
+      "supply-chain",
+      "logistics"
+    ],
+    "adjacent_category_slugs": [
+      "infrastructure-logistics",
+      "field-services-and-maintenance",
+      "immersion-cooling",
+      "liquid-cooling"
+    ],
+    "often_used_with": [
+      "construction-and-integration",
+      "commissioning-and-operations",
+      "sustainability-and-energy-strategy"
+    ]
   }
 ]

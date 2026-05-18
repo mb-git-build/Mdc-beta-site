@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { getAdjacentCategoriesForSlug, getRelatedCompanies, inferVendorRoleProfile } from "@/lib/ecosystem";
 import { categories, getGuides, getMarkdownVendorBySlug, getVendorBySlug, vendors } from "@/lib/site-data";
@@ -76,6 +77,12 @@ export default async function VendorPage({
   const inferredProfile = inferVendorRoleProfile(vendor);
   const relatedCompanies = getRelatedCompanies(vendor, vendors);
   const adjacentCategoryLinks = vendor.categories.flatMap((slug) => getAdjacentCategoriesForSlug(slug)).filter((value, index, array) => array.findIndex((item) => item.slug === value.slug) === index).slice(0, 6);
+  const dependencyCategories = (vendor.dependency_category_slugs ?? [])
+    .map((slug) => categories.find((category) => category.slug === slug))
+    .filter((category): category is (typeof categories)[number] => Boolean(category));
+  const oftenUsedWithCategories = (vendor.often_used_with_category_slugs ?? [])
+    .map((slug) => categories.find((category) => category.slug === slug))
+    .filter((category): category is (typeof categories)[number] => Boolean(category));
 
   return (
     <main className="min-h-screen bg-[var(--background)] px-6 py-14 lg:px-10">
@@ -84,8 +91,12 @@ export default async function VendorPage({
           <div className="p-8 text-white" style={{ background: tone.gradient }}>
             <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
               <div className="flex items-start gap-5">
-                <div className="inline-flex h-18 w-18 items-center justify-center rounded-[1.75rem] border border-white/15 bg-white/10 text-2xl font-semibold tracking-[0.14em]">
-                  {vendorGlyph(vendor.slug)}
+                <div className="inline-flex h-18 w-18 items-center justify-center overflow-hidden rounded-[1.75rem] border border-white/15 bg-white/10 text-2xl font-semibold tracking-[0.14em]">
+                  {vendor.logo_url ? (
+                    <Image src={vendor.logo_url} alt={`${vendor.name} logo`} width={72} height={72} className="h-full w-full object-contain bg-white p-2" unoptimized />
+                  ) : (
+                    vendorGlyph(vendor.slug)
+                  )}
                 </div>
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/80">Vendor Profile</p>
@@ -315,6 +326,42 @@ export default async function VendorPage({
                     </Link>
                   ))}
                 </div>
+              </div>
+            ) : null}
+
+            {(dependencyCategories.length || oftenUsedWithCategories.length) ? (
+              <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                {dependencyCategories.length ? (
+                  <div className="rounded-[1.25rem] bg-[#f7fafc] p-4">
+                    <h2 className="text-base font-semibold tracking-tight">Often depends on</h2>
+                    <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
+                      These categories commonly need to be solved upstream or alongside this vendor’s role in a real deployment.
+                    </p>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {dependencyCategories.map((category) => (
+                        <Link key={category.slug} href={`/directory/${category.slug}`} className="rounded-full bg-white px-3 py-1 text-xs font-medium text-[var(--accent-strong)]">
+                          {category.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+
+                {oftenUsedWithCategories.length ? (
+                  <div className="rounded-[1.25rem] bg-[#f7fafc] p-4">
+                    <h2 className="text-base font-semibold tracking-tight">Commonly deployed with</h2>
+                    <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
+                      These neighboring categories are frequently part of the same buyer path, shortlist, or deployment package.
+                    </p>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {oftenUsedWithCategories.map((category) => (
+                        <Link key={category.slug} href={`/directory/${category.slug}`} className="rounded-full bg-white px-3 py-1 text-xs font-medium text-[var(--accent-strong)]">
+                          {category.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
               </div>
             ) : null}
 

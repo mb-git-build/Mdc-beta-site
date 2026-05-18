@@ -352,3 +352,16 @@ export function getGuides() {
     .filter((entry) => entry.type === "guide" && entry.source.startsWith("content/"))
     .map((entry) => ({ ...entry, page: getMarkdownPageBySource(entry.source) }));
 }
+
+export function getVendorMarkdownSlugs() {
+  const vendorDirectory = resolveContentPath("content/vendors");
+  if (!fs.existsSync(vendorDirectory)) {
+    return [] as string[];
+  }
+
+  return fs
+    .readdirSync(vendorDirectory, { withFileTypes: true })
+    .filter((entry) => entry.isFile() && entry.name.endsWith(".md"))
+    .map((entry) => entry.name.replace(/\.md$/, ""))
+    .sort((a, b) => a.localeCompare(b));
+}

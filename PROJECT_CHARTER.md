@@ -128,6 +128,31 @@ The product should continuously improve its ability to support:
 - comparing ecosystem roles
 - following dependency chains
 
+### 5. Graph legitimacy comes from operational connective tissue
+Graph legitimacy emerges from operational connective tissue, not merely entity count.
+
+That means the project should not optimize for:
+- raw vendor count
+- shallow category inflation
+- meaningless metadata accumulation
+- disconnected entity growth
+
+Instead, it should optimize for:
+- believable operational pathways
+- upstream/downstream realism
+- deployment-stack coherence
+- dependency visibility
+- adjacent-system traversal
+- infrastructure interconnection
+- rabbit-hole discoverability
+- ecosystem realism
+
+The right ingestion question is usually not:
+> Does this add another logo?
+
+It is:
+> What operational path, dependency chain, deployment flow, or ecosystem traversal does this make more believable?
+
 ---
 
 ## UX Philosophy

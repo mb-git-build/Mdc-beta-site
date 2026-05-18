@@ -133,21 +133,32 @@ export function ClaimForm() {
         {status === "submitting" ? "Submitting..." : "Submit Claim Request"}
       </button>
       {status === "success" ? (
-        <div className="rounded-2xl border border-emerald-100 bg-emerald-50 p-3 text-sm text-emerald-800">
+        <div className="rounded-2xl border border-emerald-100 bg-emerald-50 p-4 text-sm text-emerald-800">
           <p className="font-semibold">Thanks — your claim request has been received and queued.</p>
           <p className="mt-1">Reference: {submissionId}</p>
           <p className="mt-1">Status: {claimStatus}</p>
           {claimToken ? (
             <>
-              <p className="mt-1">Claim token: {claimToken}</p>
-              <p className="mt-1">
-                Verification link: <Link href={verificationLink} className="font-semibold text-emerald-900 underline">
-                  Open verification page
-                </Link>
-              </p>
+              <div className="mt-3 rounded-2xl border border-emerald-100 bg-white/80 p-3 text-emerald-900">
+                <p className="text-xs font-semibold uppercase tracking-[0.14em]">Verification details</p>
+                <p className="mt-2 break-all text-sm">Token: {claimToken}</p>
+                <p className="mt-2 text-sm">
+                  Verification link: <Link href={verificationLink} className="font-semibold underline">
+                    Open verification page
+                  </Link>
+                </p>
+              </div>
             </>
           ) : null}
-          <p className="mt-1 text-[var(--muted)]">Keep this ID and token for claim verification or follow-up.</p>
+          <p className="mt-3 text-[var(--muted)]">Keep this reference and token handy — they are the cleanest path for verification and follow-up.</p>
+          <div className="mt-3 rounded-2xl border border-emerald-100 bg-white/80 p-3 text-emerald-900">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em]">What happens next</p>
+            <div className="mt-2 grid gap-1.5 text-sm">
+              <p>• Complete token verification to prove control of the listing request.</p>
+              <p>• Verified claims move into a stronger trust state for review and publishing.</p>
+              <p>• If the listing needs changes, this trail keeps ownership and edits auditable.</p>
+            </div>
+          </div>
           <p className="mt-3 text-[var(--muted)]">Need to verify now? Or submit another listing?</p>
           <div className="mt-2 flex flex-wrap gap-2">
             <Link href="/for-vendors/claim/verify" className="rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-[var(--foreground)]">

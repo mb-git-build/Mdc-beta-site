@@ -33,6 +33,20 @@ export default function CategoriesPage() {
           <p className="mt-5 text-lg leading-8 text-[var(--muted-strong)]">
             Explore the modular infrastructure ecosystem by segment, with company counts and direct paths into each category directory.
           </p>
+          <div className="mt-8 grid gap-3 md:grid-cols-3">
+            <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Start here when</p>
+              <p className="mt-2 text-sm leading-7 text-[var(--muted-strong)]">You know the infrastructure layer you need, but not yet which vendors or adjacent systems to compare.</p>
+            </div>
+            <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Best next step</p>
+              <p className="mt-2 text-sm leading-7 text-[var(--muted-strong)]">Open a category page, scan the company set, then follow related categories to widen the sourcing path.</p>
+            </div>
+            <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Need faster browsing?</p>
+              <p className="mt-2 text-sm leading-7 text-[var(--muted-strong)]">Use the market map for guided buyer pathways or jump straight to company search if you already know the lane.</p>
+            </div>
+          </div>
         </section>
 
         <section className="mt-12 space-y-12">

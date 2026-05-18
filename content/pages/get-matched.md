@@ -1,41 +1,32 @@
 # Get Matched
 
-Need infrastructure quickly, with less guesswork.
+This is now a legacy route.
 
-Tell us your deployment need, timeline, and constraints, and we’ll help route you toward the right modular and AI-ready options.
+The public buyer intake flow has been retired. Instead of filling out a match request, start with the category graph, supplier directory, and buyer guides to build your own sourcing path.
 
-## What this does for you
+## Where to start instead
 
-- turns rough requirements into a buyer-ready shortlist
-- connects your use case to category-level guidance
-- avoids one-size-fits-all lead dumps
-- creates a qualification trail for faster vendor follow-up
+- **Categories**: browse the infrastructure layers that matter most first
+- **Directory**: move from categories into vendor coverage and adjacent segments
+- **Compare**: use decision paths to separate quick-capacity, hybrid, and long-term control options
+- **Guides**: sharpen your shortlist with practical context before outreach
 
-## What you should expect
+## Best use cases for the current site
 
-1. You tell us your primary deployment objective (private AI infra, edge, or hybrid model).
-2. We capture timeline, region, and critical constraints (power, cooling, footprint, uptime).
-3. We match your requirements to relevant categories and candidate vendors.
-4. You receive a practical shortlist path and next questions.
+1. Exploring a new infrastructure segment quickly.
+2. Mapping adjacent systems that are commonly deployed together.
+3. Building a smarter vendor shortlist before direct outreach.
+4. Understanding how modular, cooling, power, hosting, and operations intersect.
 
-## What fields mean
+## Why the intake flow was retired
 
-- **Use case**: what you are trying to build (and why now)
-- **Workload / model size**: helps avoid oversizing and undersizing
-- **Timeline**: determines urgency and packaging
-- **Region**: impacts power source, transport, and colocation options
-- **Power budget**: catches infrastructure assumptions early
-- **Cooling posture**: indicates operational model and footprint requirements
-- **Budget stage**: helps prioritize realistic options
-
-## After you submit
-
-- we map your answers to category routing
-- we surface a practical shortlist approach
-- you can still browse `/compare` and `/vendors` for manual due diligence
+- the site now prioritizes market-map research over lead capture
+- category exploration is more useful earlier in the buying process
+- buyers often need context and adjacency, not just a form
+- vendor discovery works better when the path starts broad and narrows deliberately
 
 ## Privacy and trust
 
-This form is qualification-first, not a guaranteed sale.
+Legacy intake references remain only where needed for internal analytics and moderation history.
 
-Submission creates a moderation trail and routed record so we can keep the process auditable and transparent.
+Public use of the site is now research-first and directory-led.

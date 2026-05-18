@@ -468,6 +468,31 @@ Examples:
 
 ## Relationship Quality Rules
 
+### Governing doctrine
+**Graph legitimacy emerges from operational connective tissue, not merely entity count.**
+
+The graph should not optimize for:
+- raw vendor count
+- shallow category inflation
+- meaningless metadata accumulation
+- disconnected entity growth
+
+The graph should optimize for:
+- believable operational pathways
+- upstream/downstream realism
+- deployment-stack coherence
+- dependency visibility
+- adjacent-system traversal
+- infrastructure interconnection
+- rabbit-hole discoverability
+- ecosystem realism
+
+A new entity should ideally answer:
+> What operational path, dependency chain, deployment flow, or ecosystem traversal does this make more believable?
+
+not merely:
+> Does this add another logo?
+
 ### 1. Typed beats implied
 If a relationship matters repeatedly, it should eventually be modeled explicitly.
 
@@ -480,6 +505,9 @@ A simpler consistent model is better than an elaborate inconsistent one.
 ### 4. Avoid speculative relationship inflation
 Do not invent too many exotic relationship types prematurely.
 Add structure when it solves a real repeated problem.
+
+### 5. Operational connective tissue beats shallow density
+Vendor ingestion, category expansion, adjacency logic, deployment-stack modeling, and traversal UX should all be evaluated through operational realism rather than list growth alone.
 
 ---
 

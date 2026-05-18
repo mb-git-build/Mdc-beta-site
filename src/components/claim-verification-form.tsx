@@ -106,13 +106,21 @@ export function ClaimVerificationForm({ initialSubmissionId = "", initialClaimTo
       ) : null}
 
       {status === "success" ? (
-        <div className="rounded-2xl border border-emerald-100 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
+        <div className="rounded-2xl border border-emerald-100 bg-emerald-50 px-4 py-4 text-sm text-emerald-800">
           <p className="font-semibold">Verification successful</p>
           <p className="mt-1">Submission: {submission?.id}</p>
           <p className="mt-1">Status: {submission?.status}</p>
           {submission?.vendorSlug ? <p className="mt-1">Vendor match: {submission.vendorSlug}</p> : null}
           {submission?.validationState ? <p className="mt-1">Validation: {submission.validationState}</p> : null}
-          <p className="mt-1">Result API: <a href={verificationLink ?? "#"} className="text-emerald-900 underline">Return link</a></p>
+          <div className="mt-3 rounded-2xl border border-emerald-100 bg-white/80 p-3 text-emerald-900">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em]">What this means</p>
+            <div className="mt-2 grid gap-1.5 text-sm">
+              <p>• The claim token was accepted and the submission moved into a verified state.</p>
+              <p>• Review can now proceed with a stronger ownership trail.</p>
+              <p>• Keep this submission ID for any later follow-up about the same listing.</p>
+            </div>
+          </div>
+          <p className="mt-3">Return link: <a href={verificationLink ?? "#"} className="text-emerald-900 underline">Open this verification state again</a></p>
         </div>
       ) : null}
 
