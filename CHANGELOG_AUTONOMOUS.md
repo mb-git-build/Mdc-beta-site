@@ -136,3 +136,50 @@ For each meaningful autonomous pass, append an entry with:
   - build verification required a clean rerun because prior status reporting ended before final completion
 - **Next likely expansion vectors:**
   - continue into deeper logistics, utility interconnection, and regional electrical execution only after this deployable unit is shipped
+
+---
+
+## 2026-05-20 23:10 UTC
+
+- **Active ecosystem focus:** power-delivery execution stack saturation
+- **Categories strengthened:**
+  - `prefabricated-power-blocks`
+  - `modular-substations`
+  - `ats-and-transfer-systems`
+  - `electrical-integration-services`
+  - `infrastructure-logistics`
+- **Vendors added:**
+  - Siemens eHouse
+  - Powell Industries
+  - ASCO Power Technologies
+  - Rosendin
+  - Mammoet
+  - Barnhart Crane & Rigging
+  - Mammoth Freight Solutions
+- **Relationships added or strengthened:**
+  - promoted execution-oriented incumbents and integrators into direct occupancy where the graph previously relied on thin subcategory references
+  - strengthened packaged-power -> substation -> ATS -> field integration continuity with explicit related-company, dependency, and often-used-with metadata
+  - added heavy-haul / rigging / project-cargo actors so modular power and electrical-room delivery now has a believable physical movement layer
+  - upgraded existing execution-side vendors (Mission Critical Group, nVent TRACHTE, Compu Dynamics Modular, Integra, Eaton, ElectroTempo) to better express deployment-chain adjacency rather than isolated categorical placement
+- **Ontology changes:**
+  - no new ontology primitives added
+  - occupancy and relationship density were increased inside the existing execution-layer schema
+- **Deployment chains improved:**
+  - generation / utility access -> ATS -> packaged power block -> electrical integration -> commissioning
+  - modular substation -> prefabricated power room -> field placement -> energization
+  - fabricated modular systems -> heavy-haul / rigging -> site set -> electrical hookup
+  - AI site concept -> packaged power delivery -> field execution -> operational turnover
+- **Deployment/build result:**
+  - `npm run lint` passed
+  - `npm run build` passed successfully after the saturation pass
+- **Commit hash:** `PENDING`
+- **Notable graph improvements:**
+  - direct occupancy gaps in the five-category focus cluster were materially reduced
+  - the graph now reads more credibly through the time-to-power and last-mile delivery layers
+  - logistics and set-in-place execution are now part of the deployment story instead of implied background activity
+- **Blockers encountered:**
+  - none at validation time
+- **Next likely expansion vectors:**
+  - deepen utility interconnection and bridge-to-grid operators around the new packaged-power layer
+  - add more regional electrical contractors and packaged substation vendors only where they improve chain realism rather than list volume
+  - revisit managed AI colocation only after the physical delivery stack feels fully unavoidable
