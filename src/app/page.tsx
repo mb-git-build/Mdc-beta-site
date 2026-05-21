@@ -24,6 +24,27 @@ const topicChips = [
   "Microgrids",
 ];
 
+const ecosystemLanes = [
+  {
+    title: "Launch a modular AI site",
+    description:
+      "Start with prefabricated infrastructure, then trace the power, cooling, and delivery layers that usually determine time-to-capacity.",
+    categorySlugs: ["modular-prefab", "prefabricated-power-blocks", "liquid-cooling", "construction-and-integration"],
+  },
+  {
+    title: "Retrofit for higher rack density",
+    description:
+      "Use the directory to compare thermal upgrade paths, rack power implications, and the controls needed to run denser halls safely.",
+    categorySlugs: ["rear-door-direct-to-chip-cooling", "liquid-cooling", "high-density-rack-power", "monitoring-and-controls"],
+  },
+  {
+    title: "Build around constrained power",
+    description:
+      "Follow the energy side of the graph when utility access, resilience, or behind-the-meter strategy is the real bottleneck.",
+    categorySlugs: ["generators-and-microgrids", "ups-and-battery-storage", "site-selection-and-land-strategy", "sustainability-and-energy-strategy"],
+  },
+];
+
 export default function Home() {
   const homepageCategories = categories.filter((category) => homepageCategorySlugs.includes(category.slug));
   const trendingCompanies = vendors.filter((vendor) => vendor.featured).slice(0, 9);
@@ -33,6 +54,20 @@ export default function Home() {
     companyCount: vendors.filter((vendor) => vendor.categories.includes(category.slug)).length,
     sampleCompanies: vendors.filter((vendor) => vendor.categories.includes(category.slug)).slice(0, 4),
   }));
+
+  const laneRows = ecosystemLanes.map((lane) => {
+    const laneCategories = lane.categorySlugs
+      .map((slug) => categories.find((category) => category.slug === slug))
+      .filter((category): category is NonNullable<(typeof categories)[number]> => Boolean(category));
+
+    const vendorCount = vendors.filter((vendor) => lane.categorySlugs.some((slug) => vendor.categories.includes(slug))).length;
+
+    return {
+      ...lane,
+      laneCategories,
+      vendorCount,
+    };
+  });
 
   return (
     <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
@@ -105,6 +140,37 @@ export default function Home() {
                 ))}
               </div>
             </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-6 lg:px-8 lg:py-8">
+        <div className="mb-6 flex items-end justify-between gap-4">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Ecosystem lanes</p>
+            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Start with a real build problem, not a flat list.</h2>
+          </div>
+          <Link href="/directory" className="text-sm font-semibold text-[var(--accent)]">Open the market map</Link>
+        </div>
+
+        <div className="grid gap-4 lg:grid-cols-3">
+          {laneRows.map((lane) => (
+            <article key={lane.title} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 transition hover:border-[var(--border-strong)]">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">{lane.vendorCount} connected companies</p>
+              <h3 className="mt-2 text-lg font-semibold tracking-tight text-white">{lane.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{lane.description}</p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {lane.laneCategories.map((category) => (
+                  <Link
+                    key={category.slug}
+                    href={`/directory/${category.slug}`}
+                    className="rounded-full bg-[var(--card-soft)] px-3 py-1.5 text-xs font-medium text-[var(--muted-strong)] transition hover:bg-[#1f303c] hover:text-white"
+                  >
+                    {category.name}
+                  </Link>
+                ))}
+              </div>
+            </article>
           ))}
         </div>
       </section>
