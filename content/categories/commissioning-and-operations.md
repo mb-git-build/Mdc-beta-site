@@ -25,6 +25,7 @@ This work matters because many projects are technically complete before they are
 - experience with modular, high-density, or mission-critical environments
 - ability to support phased activation and live-facility constraints
 - connection between commissioning outcomes and ongoing operations workflows
+- strength in relay/protection testing, acceptance procedures, energization sequencing, and turnover ownership
 
 ## Typical buyer questions
 
@@ -33,6 +34,13 @@ This work matters because many projects are technically complete before they are
 - What hidden risks usually appear late in turnover?
 - Can this approach support phased live-up without creating rework?
 - How much of the commissioning work actually improves long-term reliability?
+
+## Deployment signals
+
+- Installed electrical gear exists, but protection testing, witness testing, or acceptance sequencing is now the real blocker.
+- Utility or owner energization windows are fixed enough that failed first-pass acceptance would materially delay go-live.
+- The site can be mechanically complete while still lacking trustworthy turnover artifacts, runbooks, and acceptance signoff.
+- Multiple vendors can commission their own scope, but no one yet owns cross-system energization and handover discipline.
 
 ## Related categories
 

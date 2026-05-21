@@ -25,6 +25,7 @@ This category matters because many infrastructure plans fail long before vendor 
 - fiber access, transport constraints, and site-servicing realities
 - environmental limits around water, noise, emissions, and land use
 - suitability for phased modular growth versus long-term campus development
+- whether the site has a believable path through interconnection studies, substation scope, utility coordination, and energization sequencing
 
 ## Typical buyer questions
 

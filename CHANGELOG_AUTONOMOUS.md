@@ -139,6 +139,45 @@ For each meaningful autonomous pass, append an entry with:
 
 ---
 
+## 2026-05-21 23:20 UTC
+
+- **Active ecosystem focus:** utility-to-energization execution layer
+- **Categories strengthened:**
+  - `power-and-electrical`
+  - `epc-and-commissioning`
+  - `commissioning-and-operations`
+  - `site-selection-and-land-strategy`
+- **Vendors added:**
+  - Quanta Services
+  - Shermco
+  - OMICRON
+- **Relationships added or strengthened:**
+  - strengthened utility-facing field execution between site feasibility, electrical integration, and energization handoff
+  - added explicit protection / relay testing and acceptance-testing actors where the graph previously jumped from packaged power to operations too cleanly
+  - improved commissioning realism around energization sequencing, field acceptance, and turnover ownership
+  - tightened the interconnection and site-feasibility narrative so utility coordination now appears as a real gating layer rather than background assumption
+- **Ontology changes:**
+  - no new ontology primitives added
+  - increased occupancy and deployment specificity inside the existing execution-layer schema
+- **Deployment chains improved:**
+  - site selection -> utility coordination -> substation / packaged power -> electrical integration -> energization -> turnover
+  - ATS / protection scope -> relay testing -> field acceptance -> commissioning handoff
+  - packaged electrical delivery -> field execution -> witness / acceptance testing -> live-site readiness
+- **Deployment/build result:**
+  - `npm run build` passed successfully after the pass
+- **Commit hash:** `PENDING`
+- **Notable graph improvements:**
+  - `electrical-integration-services` gained a stronger utility-adjacent execution bridge
+  - `commissioning-and-operations` now includes energization and acceptance-specific realism rather than only generic turnover language
+  - the graph is less likely to skip directly from installed power equipment to trusted operations without showing who validates, tests, and hands it over
+- **Blockers encountered:**
+  - none at validation time
+- **Next likely expansion vectors:**
+  - deepen regional contractor density and owner’s-engineer / acceptance-witness layers only where they improve energization realism
+  - add more utility-interconnection and field-testing actors if the chain still feels too top-heavy around national brands
+
+---
+
 ## 2026-05-20 23:10 UTC
 
 - **Active ecosystem focus:** power-delivery execution stack saturation

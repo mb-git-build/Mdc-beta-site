@@ -40,6 +40,14 @@ For modular and hybrid environments, EPC depth often becomes the difference betw
 - Can they execute modular or hybrid projects without treating them like generic builds?
 - What evidence is there that they can support turnover into live operations cleanly?
 - Is this the right EPC partner for this scale and geography, or just a recognizable name?
+- Who coordinates utility-facing milestones, protection testing, energization windows, and field acceptance before handoff?
+
+## Deployment signals
+
+- Packaged power systems are defined, but the energization plan still depends on utility coordination and field sequencing.
+- Substation, ATS, or relay/protection scope is becoming a gating activity rather than a downstream detail.
+- The project can be built on paper, but turnover into live operation still lacks a clear acceptance owner.
+- Site teams need a partner that can bridge procurement, field execution, commissioning, and final acceptance instead of handing each phase to a different silo.
 
 ## Related categories
 

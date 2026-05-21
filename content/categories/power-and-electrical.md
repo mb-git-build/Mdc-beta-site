@@ -45,10 +45,10 @@ In practice, power is often the real constraint behind growth plans. Teams may h
 
 Power decisions usually become urgent when the site plan, density target, and utility timeline stop lining up. Use these scenarios to decide which adjacent categories to research next.
 
-- Utility-constrained greenfield site: compare site selection, interconnection timing, generators, microgrids, and staged modular blocks before choosing a final electrical topology.
-- High-density AI retrofit: evaluate switchgear, busway, UPS, rack density, and thermal rejection together so the power upgrade does not strand cooling capacity.
-- Temporary or phased capacity expansion: prioritize vendors that can support packaged electrical rooms, modular skids, commissioning, and monitoring during live operations.
-- Resilience-first deployment: map redundancy, maintenance bypass, generator runtime, battery autonomy, monitoring, and incident response as one operating model.
+- Utility-constrained greenfield site: compare site selection, interconnection timing, generators, microgrids, staged modular blocks, and utility-facing field execution before choosing a final electrical topology.
+- High-density AI retrofit: evaluate switchgear, busway, UPS, rack density, thermal rejection, relay/protection impacts, and acceptance-testing burden together so the power upgrade does not strand cooling capacity.
+- Temporary or phased capacity expansion: prioritize vendors that can support packaged electrical rooms, modular skids, commissioning, energization sequencing, and monitoring during live operations.
+- Resilience-first deployment: map redundancy, maintenance bypass, generator runtime, battery autonomy, monitoring, protection testing, and incident response as one operating model.
 
 ## Deployment signals
 

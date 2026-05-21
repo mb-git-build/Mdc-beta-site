@@ -4472,6 +4472,108 @@
     "logo_url": "https://logo.clearbit.com/powellind.com"
   },
   {
+    "id": "ven_quanta",
+    "slug": "quanta-services",
+    "name": "Quanta Services",
+    "website_url": "https://www.quantaservices.com",
+    "headline": "Utility-adjacent field execution and electrical infrastructure delivery platform relevant to interconnection, substation buildout, and energization-critical site work.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "electrical-integration-services",
+      "epc-and-commissioning",
+      "site-selection-and-land-strategy",
+      "power-and-electrical"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Utility-adjacent",
+      "Campus",
+      "Mission-critical",
+      "Industrial"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Operators",
+      "Utilities",
+      "Program teams"
+    ],
+    "specialties": [
+      "Field execution",
+      "Substation delivery",
+      "Utility coordination",
+      "Electrical infrastructure construction"
+    ],
+    "proof_points": [
+      "Major real-world bridge between utility-side work and site energization"
+    ],
+    "featured_capabilities": [
+      "Utility-facing electrical delivery",
+      "Substation and field build coordination",
+      "Energization-critical execution"
+    ],
+    "comparison_notes": [
+      "Useful where power realism depends on who can actually get infrastructure built and energized, not only specified"
+    ],
+    "hq": "Houston, Texas, USA",
+    "service_area": "North America",
+    "project_scale": "Regional to megaproject",
+    "subcategories": [
+      "electrical-integration-services",
+      "modular-substations"
+    ],
+    "tags": [
+      "utility-execution",
+      "substation-delivery",
+      "energization"
+    ],
+    "infrastructure_types": [
+      "power",
+      "services",
+      "facility"
+    ],
+    "power_specializations": [
+      "substation",
+      "switchgear",
+      "interconnection"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "hyperscale",
+      "enterprise",
+      "regional"
+    ],
+    "ecosystem_roles": [
+      "integrator",
+      "service_provider"
+    ],
+    "company_types": [
+      "public"
+    ],
+    "related_company_slugs": [
+      "rosendin",
+      "powell-industries",
+      "siemens-energy-ehouse",
+      "hdr",
+      "jacobs"
+    ],
+    "dependency_category_slugs": [
+      "modular-substations",
+      "ats-and-transfer-systems"
+    ],
+    "often_used_with_category_slugs": [
+      "commissioning-and-operations",
+      "field-services-and-maintenance",
+      "site-selection-and-land-strategy"
+    ],
+    "logo_url": "https://logo.clearbit.com/quantaservices.com"
+  },
+  {
     "id": "ven_qts",
     "slug": "qts",
     "name": "QTS",
@@ -4542,6 +4644,107 @@
       "crusoe",
       "soluna"
     ]
+  },
+  {
+    "id": "ven_omicron",
+    "slug": "omicron",
+    "name": "OMICRON",
+    "website_url": "https://www.omicronenergy.com",
+    "headline": "Protection, relay testing, and power-system validation specialist relevant to substation acceptance, interconnection readiness, and energization-critical commissioning workflows.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "power-and-electrical",
+      "epc-and-commissioning",
+      "commissioning-and-operations"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "Middle East",
+      "APAC"
+    ],
+    "deployment_types": [
+      "Utility-adjacent",
+      "Mission-critical",
+      "Industrial"
+    ],
+    "buyer_types": [
+      "Electrical engineers",
+      "Commissioning teams",
+      "Utilities",
+      "Operators"
+    ],
+    "specialties": [
+      "Relay testing",
+      "Protection validation",
+      "Power-system diagnostics",
+      "Acceptance testing"
+    ],
+    "proof_points": [
+      "Makes protection testing visible in the energization chain"
+    ],
+    "featured_capabilities": [
+      "Relay and protection validation",
+      "Acceptance testing support",
+      "Electrical diagnostics"
+    ],
+    "comparison_notes": [
+      "Not a broad infrastructure vendor, but exactly the kind of specialist that determines whether energization proceeds cleanly"
+    ],
+    "hq": "Klaus, Austria",
+    "service_area": "Global",
+    "project_scale": "Substation to campus-scale power systems",
+    "subcategories": [
+      "modular-substations",
+      "ats-and-transfer-systems"
+    ],
+    "tags": [
+      "relay-testing",
+      "protection",
+      "energization"
+    ],
+    "infrastructure_types": [
+      "power",
+      "controls",
+      "services"
+    ],
+    "power_specializations": [
+      "substation",
+      "ats",
+      "protection",
+      "monitoring"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "service_provider",
+      "manufacturer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "asco-power-technologies",
+      "powell-industries",
+      "siemens-energy-ehouse",
+      "shermco"
+    ],
+    "dependency_category_slugs": [
+      "modular-substations",
+      "electrical-integration-services"
+    ],
+    "often_used_with_category_slugs": [
+      "commissioning-and-operations",
+      "field-services-and-maintenance"
+    ],
+    "logo_url": "https://logo.clearbit.com/omicronenergy.com"
   },
   {
     "id": "ven_raritan",
@@ -4798,6 +5001,105 @@
       "commissioning-and-operations"
     ],
     "logo_url": "https://logo.clearbit.com/rosendin.com"
+  },
+  {
+    "id": "ven_shermco",
+    "slug": "shermco",
+    "name": "Shermco",
+    "website_url": "https://www.shermco.com",
+    "headline": "Testing, maintenance, commissioning, and electrical services specialist relevant to energization, field acceptance, and turnover of mission-critical power systems.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "commissioning-and-operations",
+      "field-services-and-maintenance",
+      "power-and-electrical"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Mission-critical",
+      "Campus",
+      "Industrial",
+      "Utility-adjacent"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Electrical teams",
+      "Developers",
+      "Commissioning leads"
+    ],
+    "specialties": [
+      "Acceptance testing",
+      "Electrical maintenance",
+      "Commissioning support",
+      "Power-system turnover"
+    ],
+    "proof_points": [
+      "Brings a real field-acceptance layer into the power delivery chain"
+    ],
+    "featured_capabilities": [
+      "Field testing and acceptance",
+      "Commissioning and energization support",
+      "Post-install power-system validation"
+    ],
+    "comparison_notes": [
+      "Useful where the real question is whether installed gear can be trusted, energized, and handed over without surprises"
+    ],
+    "hq": "Irving, Texas, USA",
+    "service_area": "North America",
+    "project_scale": "Facility to regional portfolio",
+    "subcategories": [
+      "ats-and-transfer-systems",
+      "modular-substations"
+    ],
+    "tags": [
+      "acceptance-testing",
+      "commissioning",
+      "turnover"
+    ],
+    "infrastructure_types": [
+      "power",
+      "services"
+    ],
+    "power_specializations": [
+      "switchgear",
+      "ats",
+      "substation",
+      "testing"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "regional",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "omicron",
+      "rosendin",
+      "quanta-services",
+      "asco-power-technologies"
+    ],
+    "dependency_category_slugs": [
+      "electrical-integration-services",
+      "modular-substations"
+    ],
+    "often_used_with_category_slugs": [
+      "commissioning-and-operations",
+      "field-services-and-maintenance",
+      "power-and-electrical"
+    ],
+    "logo_url": "https://logo.clearbit.com/shermco.com"
   },
   {
     "id": "ven_scale_microgrids",
