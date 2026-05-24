@@ -45,6 +45,21 @@ const ecosystemLanes = [
   },
 ];
 
+const proofPoints = [
+  {
+    title: "Research by infrastructure layer",
+    description: "Move from a single vendor search to a category-level view of power, thermal, modular delivery, controls, and adjacent dependencies.",
+  },
+  {
+    title: "Follow adjacent decisions",
+    description: "See what is commonly sourced together so cooling, rack power, controls, and deployment strategy are considered as one system.",
+  },
+  {
+    title: "Shortlist faster",
+    description: "Use featured companies, category pages, and company detail pages to get to a tighter first-pass shortlist without starting from scratch.",
+  },
+];
+
 export default function Home() {
   const homepageCategories = categories.filter((category) => homepageCategorySlugs.includes(category.slug));
   const trendingCompanies = vendors.filter((vendor) => vendor.featured).slice(0, 9);
@@ -111,6 +126,37 @@ export default function Home() {
               <Link href="/for-vendors" className="rounded-2xl border border-[#31536a] bg-[#15384d] p-4 transition hover:border-[#4a6c83] hover:bg-[#1b4a63]">
                 <p className="text-sm font-semibold text-white">Submit your company</p>
                 <p className="mt-2 text-sm leading-6 text-[#d6e2e9]">Get listed with clearer review expectations, stronger trust signals, and a direct path into the directory.</p>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-6 lg:px-8 lg:py-8">
+        <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="rounded-3xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-[var(--shadow-soft)]">
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Why teams use this directory</p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white">It is built for infrastructure research, not generic browsing.</h2>
+            <div className="mt-6 grid gap-4 md:grid-cols-3">
+              {proofPoints.map((point) => (
+                <article key={point.title} className="rounded-2xl border border-[var(--border)] bg-[var(--card-soft)] p-4">
+                  <h3 className="text-sm font-semibold text-white">{point.title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{point.description}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <div className="rounded-3xl border border-[#31536a] bg-[linear-gradient(180deg,rgba(21,56,77,0.88),rgba(11,16,21,0.96))] p-6 shadow-[var(--shadow-soft)]">
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#9edcf0]">Best next steps</p>
+            <div className="mt-5 space-y-4">
+              <Link href="/categories" className="block rounded-2xl border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.04)] p-4 transition hover:bg-[rgba(255,255,255,0.08)]">
+                <p className="text-sm font-semibold text-white">Browse categories</p>
+                <p className="mt-2 text-sm leading-6 text-[#d6e2e9]">Start from cooling, power, modular deployment, edge, or hosting and expand outward.</p>
+              </Link>
+              <Link href="/vendors" className="block rounded-2xl border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.04)] p-4 transition hover:bg-[rgba(255,255,255,0.08)]">
+                <p className="text-sm font-semibold text-white">Browse companies</p>
+                <p className="mt-2 text-sm leading-6 text-[#d6e2e9]">Go straight into company profiles when you already know the segment you want to investigate.</p>
               </Link>
             </div>
           </div>

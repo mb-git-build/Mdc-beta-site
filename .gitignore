@@ -26,6 +26,7 @@
 
 # operational artifacts
 /ops/*.csv
+/token-alerts-*.csv
 
 # debug
 npm-debug.log*
