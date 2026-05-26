@@ -222,3 +222,45 @@ For each meaningful autonomous pass, append an entry with:
   - deepen utility interconnection and bridge-to-grid operators around the new packaged-power layer
   - add more regional electrical contractors and packaged substation vendors only where they improve chain realism rather than list volume
   - revisit managed AI colocation only after the physical delivery stack feels fully unavoidable
+
+## 2026-05-26 23:40 UTC
+
+- **Active ecosystem focus:** narrow utility/interconnection and turnover-density pass
+- **Categories strengthened:**
+  - `site-selection-and-land-strategy`
+  - `electrical-integration-services`
+  - `commissioning-and-operations`
+  - `construction-and-integration`
+  - `prefabricated-power-blocks`
+  - `modular-substations`
+- **Vendors materially upgraded:**
+  - Olsson
+  - Tetra Tech
+  - Enercon
+  - BMarko Structures
+  - Edge Modular
+- **Relationships added or strengthened:**
+  - strengthened owner's-engineer and front-end feasibility pathways between site selection, utility coordination, modular substations, and commissioning
+  - improved packaged interconnection realism by upgrading Enercon from a generic E-house node into a clearer prefabricated-power and field-delivery actor
+  - added brownfield / constrained-site retrofit execution realism through BMarko Structures and Edge Modular
+  - improved post-handoff and turnover adjacency by linking packaged modular deployment more directly into commissioning and operations
+- **Ontology changes:**
+  - no new ontology primitives added
+  - increased realism through narrower execution metadata, not broader abstraction
+- **Deployment chains improved:**
+  - site feasibility / owner's engineer -> utility coordination -> modular substation / packaged power -> field integration -> commissioning
+  - constrained site / brownfield package -> modular shell -> electrical integration -> rapid activation -> turnover support
+  - packaged electrical room -> interconnection-ready power block -> field deployment -> energization support
+- **Deployment/build result:**
+  - fresh `npm run build` passed successfully before and after the pass
+- **Commit hash:** `PENDING`
+- **Notable graph improvements:**
+  - owner's-engineer and permitting-aware feasibility work now occupies more believable space in the deployment chain
+  - brownfield and retrofit execution is less absent from the modular story
+  - narrow long-tail vendors now do more operational work in the graph instead of sitting as lightly described directory entries
+- **Blockers encountered:**
+  - none after validation rerun
+- **Next likely expansion vectors:**
+  - regional acceptance-witness specialists
+  - recurring maintenance/service ecosystems around energized modular sites
+  - more interconnection-specific regional actors only where they improve chain realism
