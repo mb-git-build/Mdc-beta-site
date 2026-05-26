@@ -6352,5 +6352,477 @@
       "liquid-loop-systems"
     ],
     "logo_url": "https://logo.clearbit.com/zutacore.com"
+  },
+  {
+    "slug": "olsson",
+    "name": "Olsson",
+    "website_url": "https://www.olsson.com/industries-expertise/data-centers",
+    "headline": "Owner's-engineering and site-development partner relevant to utility-facing feasibility, infrastructure planning, and early execution realism for data center programs.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "site-selection-and-land-strategy",
+      "epc-and-commissioning",
+      "electrical-integration-services"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "AI",
+      "Hyperscale",
+      "Colocation",
+      "Regional"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Operators",
+      "Program teams"
+    ],
+    "specialties": [
+      "owners engineering",
+      "site feasibility",
+      "utility coordination",
+      "civil and infrastructure planning"
+    ],
+    "proof_points": [
+      "Useful owners-engineer and front-end infrastructure planning layer for data center delivery"
+    ],
+    "featured_capabilities": [
+      "Site feasibility and owners engineering support",
+      "Utility and infrastructure coordination",
+      "Development-stage delivery planning"
+    ],
+    "comparison_notes": [
+      "Adds realism where early engineering judgement and utility-facing feasibility work shape whether a project is actually buildable"
+    ],
+    "hq": "Lincoln, Nebraska, USA",
+    "service_area": "North America",
+    "project_scale": "Regional to hyperscale programs",
+    "subcategories": [
+      "modular-substations"
+    ],
+    "tags": [
+      "owners-engineer",
+      "site-feasibility",
+      "utility-coordination"
+    ],
+    "infrastructure_types": [
+      "services",
+      "power",
+      "facility"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "integrator",
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "tetra-tech",
+      "quanta-services",
+      "hdr",
+      "jacobs"
+    ],
+    "dependency_category_slugs": [
+      "modular-substations",
+      "power-and-electrical"
+    ],
+    "often_used_with_category_slugs": [
+      "site-selection-and-land-strategy",
+      "commissioning-and-operations"
+    ],
+    "logo_url": "https://logo.clearbit.com/olsson.com"
+  },
+  {
+    "slug": "tetra-tech",
+    "name": "Tetra Tech",
+    "website_url": "https://www.tetratech.com/solutions/data-center-solutions/",
+    "headline": "Owner's-engineering and permitting-aware delivery partner relevant to utility coordination, environmental feasibility, and early execution planning for power-intensive sites.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "site-selection-and-land-strategy",
+      "epc-and-commissioning",
+      "sustainability-and-energy-strategy",
+      "hvac-and-thermal-rejection"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "Middle East",
+      "APAC"
+    ],
+    "deployment_types": [
+      "AI",
+      "Hyperscale",
+      "Colocation",
+      "Regional"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Operators",
+      "Infrastructure teams"
+    ],
+    "specialties": [
+      "owners engineering",
+      "environmental and permitting support",
+      "water and cooling feasibility",
+      "program delivery planning"
+    ],
+    "proof_points": [
+      "Useful owners-engineer and permitting-aware planning layer for data center and energy-intensive site delivery"
+    ],
+    "featured_capabilities": [
+      "Permitting and environmental coordination",
+      "Cooling and water feasibility",
+      "Program delivery planning"
+    ],
+    "comparison_notes": [
+      "Strengthens the graph where land, permitting, water, and cooling realities shape deployment before equipment is chosen"
+    ],
+    "hq": "Pasadena, California, USA",
+    "service_area": "Global",
+    "project_scale": "Regional to hyperscale programs",
+    "subcategories": [
+      "modular-substations"
+    ],
+    "tags": [
+      "owners-engineer",
+      "permitting",
+      "environmental-planning"
+    ],
+    "infrastructure_types": [
+      "services",
+      "facility",
+      "cooling"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "integrator",
+      "service_provider"
+    ],
+    "company_types": [
+      "public"
+    ],
+    "related_company_slugs": [
+      "olsson",
+      "hdr",
+      "jacobs",
+      "enercon"
+    ],
+    "dependency_category_slugs": [
+      "site-selection-and-land-strategy",
+      "hvac-and-thermal-rejection"
+    ],
+    "often_used_with_category_slugs": [
+      "power-and-electrical",
+      "commissioning-and-operations"
+    ],
+    "logo_url": "https://logo.clearbit.com/tetratech.com"
+  },
+  {
+    "slug": "enercon",
+    "name": "Enercon",
+    "website_url": "https://www.enerconpower.com/ehouses",
+    "headline": "Packaged interconnection and transportable electrical enclosure provider relevant to prefabricated power delivery and field-ready energization support.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "prefabricated-power-blocks",
+      "modular-substations",
+      "power-and-electrical",
+      "electrical-integration-services"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Modular",
+      "Mission-critical",
+      "Industrial",
+      "Regional"
+    ],
+    "buyer_types": [
+      "Electrical teams",
+      "Developers",
+      "Operators"
+    ],
+    "specialties": [
+      "e-houses",
+      "transportable electrical rooms",
+      "interconnection-ready packaged power",
+      "field deployment support"
+    ],
+    "proof_points": [
+      "Useful packaged-power and interconnection-adjacent vendor for modular energization paths"
+    ],
+    "featured_capabilities": [
+      "Transportable electrical rooms",
+      "Packaged interconnection support",
+      "Field deployment coordination"
+    ],
+    "comparison_notes": [
+      "Improves realism between packaged electrical gear and field-ready power delivery for modular and utility-adjacent sites"
+    ],
+    "hq": "Blaine, Minnesota, USA",
+    "service_area": "North America",
+    "project_scale": "Skid to site programs",
+    "subcategories": [
+      "prefabricated-power-blocks",
+      "modular-substations"
+    ],
+    "tags": [
+      "e-house",
+      "packaged-power",
+      "interconnection-ready"
+    ],
+    "infrastructure_types": [
+      "power",
+      "facility",
+      "services"
+    ],
+    "power_specializations": [
+      "substation",
+      "switchgear",
+      "prefab-power"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "manufacturer",
+      "integrator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "siemens-energy-ehouse",
+      "powell-industries",
+      "mission-critical-group",
+      "electrotempo"
+    ],
+    "dependency_category_slugs": [
+      "electrical-integration-services",
+      "infrastructure-logistics"
+    ],
+    "often_used_with_category_slugs": [
+      "ats-and-transfer-systems",
+      "commissioning-and-operations"
+    ],
+    "logo_url": "https://logo.clearbit.com/enerconpower.com"
+  },
+  {
+    "slug": "bmarko-structures",
+    "name": "BMarko Structures",
+    "website_url": "https://bmarkostructures.com/modular-data-centers/",
+    "headline": "Containerized and constrained-site deployment-shell provider relevant to brownfield modular execution and physical packaging realism.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "modular-prefab",
+      "containerized-data-centers",
+      "edge-micro-data-centers",
+      "construction-and-integration"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Modular",
+      "Edge",
+      "Regional",
+      "Brownfield"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Edge operators",
+      "Infrastructure teams"
+    ],
+    "specialties": [
+      "containerized retrofit structures",
+      "deployment shells",
+      "rapid structural packaging",
+      "brownfield-friendly modular placement"
+    ],
+    "proof_points": [
+      "Useful physical-shell vendor where retrofit and constrained-site packaging matter more than campus-scale buildouts"
+    ],
+    "featured_capabilities": [
+      "Brownfield-friendly modular packaging",
+      "Containerized deployment shells",
+      "Rapid placement support"
+    ],
+    "comparison_notes": [
+      "Adds realism to retrofit and constrained-site deployment scenarios that do not start from empty greenfield campuses"
+    ],
+    "hq": "Atlanta, Georgia, USA",
+    "service_area": "North America",
+    "project_scale": "Container to regional rollout",
+    "subcategories": [
+      "fabricated-enclosures-and-shells"
+    ],
+    "tags": [
+      "brownfield",
+      "containerized",
+      "retrofit-shells"
+    ],
+    "infrastructure_types": [
+      "facility",
+      "services"
+    ],
+    "focus_areas": [
+      "ai",
+      "edge",
+      "general"
+    ],
+    "scale_focus": [
+      "edge",
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "manufacturer",
+      "integrator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "edge-modular",
+      "compu-dynamics-modular",
+      "barnhart-crane-rigging"
+    ],
+    "dependency_category_slugs": [
+      "infrastructure-logistics",
+      "field-services-and-maintenance"
+    ],
+    "often_used_with_category_slugs": [
+      "electrical-integration-services",
+      "commissioning-and-operations"
+    ],
+    "logo_url": "https://logo.clearbit.com/bmarkostructures.com"
+  },
+  {
+    "slug": "edge-modular",
+    "name": "Edge Modular",
+    "website_url": "https://edgemodular.com/",
+    "headline": "Packaged modular deployment provider relevant to constrained-site AI rollout, rapid activation, and turnover-aware handoff support.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "modular-prefab",
+      "containerized-data-centers",
+      "edge-micro-data-centers",
+      "liquid-cooling",
+      "construction-and-integration",
+      "commissioning-and-operations"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "AI",
+      "Edge",
+      "Modular",
+      "Brownfield"
+    ],
+    "buyer_types": [
+      "Edge operators",
+      "AI builders",
+      "Infrastructure teams"
+    ],
+    "specialties": [
+      "brownfield-compatible modular deployment",
+      "liquid-cooled packaged systems",
+      "rapid site activation",
+      "post-handoff support framing"
+    ],
+    "proof_points": [
+      "Useful packaged deployment node for retrofit, edge, and fast-turn AI capacity additions"
+    ],
+    "featured_capabilities": [
+      "Rapid modular activation",
+      "Packaged liquid-cooled systems",
+      "Deployment and turnover coordination"
+    ],
+    "comparison_notes": [
+      "Improves realism where buyers need packaged AI-ready systems that can be deployed into constrained or retrofit conditions without full campus development"
+    ],
+    "hq": "North America",
+    "service_area": "North America",
+    "project_scale": "Pod to regional rollout",
+    "subcategories": [
+      "fabricated-enclosures-and-shells"
+    ],
+    "tags": [
+      "brownfield",
+      "edge-modular",
+      "rapid-activation"
+    ],
+    "infrastructure_types": [
+      "facility",
+      "cooling",
+      "services"
+    ],
+    "cooling_types": [
+      "liquid_loop"
+    ],
+    "focus_areas": [
+      "ai",
+      "edge"
+    ],
+    "scale_focus": [
+      "edge",
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "integrator",
+      "developer",
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "bmarko-structures",
+      "compu-dynamics-modular",
+      "integra-mission-critical",
+      "shermco"
+    ],
+    "dependency_category_slugs": [
+      "electrical-integration-services",
+      "field-services-and-maintenance"
+    ],
+    "often_used_with_category_slugs": [
+      "commissioning-and-operations",
+      "site-selection-and-land-strategy"
+    ],
+    "logo_url": "https://logo.clearbit.com/edgemodular.com"
   }
 ]
