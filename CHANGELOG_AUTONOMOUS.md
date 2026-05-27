@@ -264,3 +264,48 @@ For each meaningful autonomous pass, append an entry with:
   - regional acceptance-witness specialists
   - recurring maintenance/service ecosystems around energized modular sites
   - more interconnection-specific regional actors only where they improve chain realism
+
+## 2026-05-27 23:58 UTC
+
+- **Active ecosystem focus:** post-turnover service continuity for energized modular AI, bitcoin, and high-density compute sites
+- **Categories strengthened:**
+  - `field-services-and-maintenance`
+  - `commissioning-and-operations`
+  - `monitoring-and-controls`
+  - `power-monitoring-and-energy-management`
+  - `hvac-and-thermal-rejection`
+  - `ups-and-battery-storage`
+  - `liquid-cooling`
+  - `supply-chain-and-logistics`
+- **Vendors added:**
+  - Eos Energy Enterprises
+  - RESA Power
+  - MTA
+  - GDS Associates
+  - Trane
+- **Relationships added or strengthened:**
+  - strengthened machine-readable service continuity metadata across monitoring, thermal service, immersion operations, electrical testing, prefab power, and modular deployment actors
+  - improved explicit adjacency between preventive maintenance, emergency response, relay/testing follow-on work, coolant support, DCIM/observability, and post-turnover operating workflows
+  - tightened the graph around serviceable storage, thermal plant maintenance, switchgear support, spare-parts continuity, and operating analytics instead of broadening into new unrelated sectors
+- **Ontology changes:**
+  - no new ontology primitives added
+  - realism increased through denser `related_company_slugs`, `dependency_category_slugs`, and `often_used_with_category_slugs` on existing operating-layer vendors
+- **Deployment chains improved:**
+  - energization -> acceptance testing -> preventive maintenance -> emergency response -> replacement support
+  - liquid-cooled or immersion deployment -> fluid lifecycle support -> monitoring / DCIM -> thermal service continuity -> retrofit support
+  - prefab power / modular electrical room -> turnover -> field-service contracts -> uptime monitoring -> ongoing operating optimization
+  - modular AI or bitcoin package -> activation -> O&M support -> spare-parts continuity -> steady-state serviceability
+- **Deployment/build result:**
+  - `npm run build` passed successfully after the pass
+- **Commit hash:** `PENDING`
+- **Notable graph improvements:**
+  - the graph now reads less like a one-time installation map and more like an environment that can stay operational after go-live
+  - service organizations, monitoring layers, fluid lifecycle support, and parts-aware operating continuity are more visible in the ecosystem surface
+  - modular power and cooling stacks now have stronger post-handoff realism instead of ending cleanly at commissioning
+- **Blockers encountered:**
+  - no validation blockers
+  - current limitation remains density, not structure: post-turnover realism is improved but still stronger in North American power/cooling service patterns than in globally saturated regional service coverage
+- **Next likely expansion vectors:**
+  - regional thermal service contractors and mechanical uptime partners
+  - OEM-authorized replacement-parts and refurb / reman support around power and cooling systems
+  - denser O&M contract and uptime-service actors for operating portfolios rather than single-site turnover

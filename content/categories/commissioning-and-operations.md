@@ -26,6 +26,8 @@ This work matters because many projects are technically complete before they are
 - ability to support phased activation and live-facility constraints
 - connection between commissioning outcomes and ongoing operations workflows
 - strength in relay/protection testing, acceptance procedures, energization sequencing, and turnover ownership
+- quality of preventive-maintenance planning, service escalation paths, spare-parts continuity, and O&M contract coverage after handoff
+- whether thermal, electrical, battery, controls, and fluid-support layers remain coordinated once the site enters steady-state operations
 
 ## Typical buyer questions
 

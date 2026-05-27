@@ -248,15 +248,23 @@
     "related_company_slugs": [
       "green-revolution-cooling",
       "engineered-fluids",
-      "soluna"
+      "soluna",
+      "sunbird-software",
+      "nlyte",
+      "midas-immersion-cooling"
     ],
     "dependency_category_slugs": [
       "high-density-rack-power",
-      "field-services-and-maintenance"
+      "field-services-and-maintenance",
+      "monitoring-and-controls",
+      "supply-chain-and-logistics"
     ],
     "often_used_with_category_slugs": [
       "commissioning-and-operations",
-      "monitoring-and-controls"
+      "monitoring-and-controls",
+      "single-phase-immersion",
+      "dcim-and-observability",
+      "field-services-and-maintenance"
     ],
     "logo_url": "https://logo.clearbit.com/allied-control.com"
   },
@@ -937,6 +945,97 @@
     ]
   },
   {
+    "slug": "bmarko-structures",
+    "name": "BMarko Structures",
+    "website_url": "https://bmarkostructures.com/modular-data-centers/",
+    "headline": "Containerized and constrained-site deployment-shell provider relevant to brownfield modular execution and physical packaging realism.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "modular-prefab",
+      "containerized-data-centers",
+      "edge-micro-data-centers",
+      "construction-and-integration"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Modular",
+      "Edge",
+      "Regional",
+      "Brownfield"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Edge operators",
+      "Infrastructure teams"
+    ],
+    "specialties": [
+      "containerized retrofit structures",
+      "deployment shells",
+      "rapid structural packaging",
+      "brownfield-friendly modular placement"
+    ],
+    "proof_points": [
+      "Useful physical-shell vendor where retrofit and constrained-site packaging matter more than campus-scale buildouts"
+    ],
+    "featured_capabilities": [
+      "Brownfield-friendly modular packaging",
+      "Containerized deployment shells",
+      "Rapid placement support"
+    ],
+    "comparison_notes": [
+      "Adds realism to retrofit and constrained-site deployment scenarios that do not start from empty greenfield campuses"
+    ],
+    "hq": "Atlanta, Georgia, USA",
+    "service_area": "North America",
+    "project_scale": "Container to regional rollout",
+    "subcategories": [
+      "fabricated-enclosures-and-shells"
+    ],
+    "tags": [
+      "brownfield",
+      "containerized",
+      "retrofit-shells"
+    ],
+    "infrastructure_types": [
+      "facility",
+      "services"
+    ],
+    "focus_areas": [
+      "ai",
+      "edge",
+      "general"
+    ],
+    "scale_focus": [
+      "edge",
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "manufacturer",
+      "integrator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "edge-modular",
+      "compu-dynamics-modular",
+      "barnhart-crane-rigging"
+    ],
+    "dependency_category_slugs": [
+      "infrastructure-logistics",
+      "field-services-and-maintenance"
+    ],
+    "often_used_with_category_slugs": [
+      "electrical-integration-services",
+      "commissioning-and-operations"
+    ],
+    "logo_url": "https://logo.clearbit.com/bmarkostructures.com"
+  },
+  {
     "slug": "boyd",
     "name": "Boyd",
     "website_url": "https://www.boydcorp.com",
@@ -1118,17 +1217,24 @@
       "nvent-trachte",
       "siemens-energy-ehouse",
       "rosendin",
-      "mammoet"
+      "mammoet",
+      "resa-power",
+      "trane",
+      "sunbird-software"
     ],
     "dependency_category_slugs": [
       "electrical-integration-services",
       "infrastructure-logistics",
-      "ats-and-transfer-systems"
+      "ats-and-transfer-systems",
+      "commissioning-and-operations",
+      "power-monitoring-and-energy-management"
     ],
     "often_used_with_category_slugs": [
       "prefabricated-power-blocks",
       "modular-substations",
-      "field-services-and-maintenance"
+      "field-services-and-maintenance",
+      "dcim-and-observability",
+      "commissioning-and-operations"
     ],
     "logo_url": "https://logo.clearbit.com/cd-modular.com"
   },
@@ -1723,6 +1829,112 @@
     ]
   },
   {
+    "slug": "edge-modular",
+    "name": "Edge Modular",
+    "website_url": "https://edgemodular.com/",
+    "headline": "Packaged modular deployment provider relevant to constrained-site AI rollout, rapid activation, and turnover-aware handoff support.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "modular-prefab",
+      "containerized-data-centers",
+      "edge-micro-data-centers",
+      "liquid-cooling",
+      "construction-and-integration",
+      "commissioning-and-operations"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "AI",
+      "Edge",
+      "Modular",
+      "Brownfield"
+    ],
+    "buyer_types": [
+      "Edge operators",
+      "AI builders",
+      "Infrastructure teams"
+    ],
+    "specialties": [
+      "brownfield-compatible modular deployment",
+      "liquid-cooled packaged systems",
+      "rapid site activation",
+      "post-handoff support framing"
+    ],
+    "proof_points": [
+      "Useful packaged deployment node for retrofit, edge, and fast-turn AI capacity additions"
+    ],
+    "featured_capabilities": [
+      "Rapid modular activation",
+      "Packaged liquid-cooled systems",
+      "Deployment and turnover coordination"
+    ],
+    "comparison_notes": [
+      "Improves realism where buyers need packaged AI-ready systems that can be deployed into constrained or retrofit conditions without full campus development"
+    ],
+    "hq": "North America",
+    "service_area": "North America",
+    "project_scale": "Pod to regional rollout",
+    "subcategories": [
+      "fabricated-enclosures-and-shells"
+    ],
+    "tags": [
+      "brownfield",
+      "edge-modular",
+      "rapid-activation"
+    ],
+    "infrastructure_types": [
+      "facility",
+      "cooling",
+      "services"
+    ],
+    "cooling_types": [
+      "liquid_loop"
+    ],
+    "focus_areas": [
+      "ai",
+      "edge"
+    ],
+    "scale_focus": [
+      "edge",
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "integrator",
+      "developer",
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "bmarko-structures",
+      "compu-dynamics-modular",
+      "integra-mission-critical",
+      "shermco",
+      "trane",
+      "sunbird-software",
+      "nlyte"
+    ],
+    "dependency_category_slugs": [
+      "electrical-integration-services",
+      "field-services-and-maintenance",
+      "monitoring-and-controls",
+      "power-monitoring-and-energy-management"
+    ],
+    "often_used_with_category_slugs": [
+      "commissioning-and-operations",
+      "site-selection-and-land-strategy",
+      "field-services-and-maintenance",
+      "dcim-and-observability",
+      "power-monitoring-and-energy-management"
+    ],
+    "logo_url": "https://logo.clearbit.com/edgemodular.com"
+  },
+  {
     "id": "ven_electrotempo",
     "slug": "electrotempo",
     "name": "ElectroTempo",
@@ -1802,18 +2014,122 @@
       "siemens-energy-ehouse",
       "powell-industries",
       "rosendin",
-      "mammoth-freight-solutions"
+      "mammoth-freight-solutions",
+      "resa-power",
+      "shermco"
     ],
     "dependency_category_slugs": [
       "prefabricated-power-blocks",
       "ats-and-transfer-systems",
-      "field-services-and-maintenance"
+      "field-services-and-maintenance",
+      "commissioning-and-operations",
+      "power-monitoring-and-energy-management"
     ],
     "often_used_with_category_slugs": [
       "modular-substations",
       "power-and-electrical",
-      "infrastructure-logistics"
+      "infrastructure-logistics",
+      "field-services-and-maintenance",
+      "commissioning-and-operations",
+      "power-monitoring-and-energy-management"
     ]
+  },
+  {
+    "slug": "enercon",
+    "name": "Enercon",
+    "website_url": "https://www.enerconpower.com/ehouses",
+    "headline": "Packaged interconnection and transportable electrical enclosure provider relevant to prefabricated power delivery and field-ready energization support.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "prefabricated-power-blocks",
+      "modular-substations",
+      "power-and-electrical",
+      "electrical-integration-services"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Modular",
+      "Mission-critical",
+      "Industrial",
+      "Regional"
+    ],
+    "buyer_types": [
+      "Electrical teams",
+      "Developers",
+      "Operators"
+    ],
+    "specialties": [
+      "e-houses",
+      "transportable electrical rooms",
+      "interconnection-ready packaged power",
+      "field deployment support"
+    ],
+    "proof_points": [
+      "Useful packaged-power and interconnection-adjacent vendor for modular energization paths"
+    ],
+    "featured_capabilities": [
+      "Transportable electrical rooms",
+      "Packaged interconnection support",
+      "Field deployment coordination"
+    ],
+    "comparison_notes": [
+      "Improves realism between packaged electrical gear and field-ready power delivery for modular and utility-adjacent sites"
+    ],
+    "hq": "Blaine, Minnesota, USA",
+    "service_area": "North America",
+    "project_scale": "Skid to site programs",
+    "subcategories": [
+      "prefabricated-power-blocks",
+      "modular-substations"
+    ],
+    "tags": [
+      "e-house",
+      "packaged-power",
+      "interconnection-ready"
+    ],
+    "infrastructure_types": [
+      "power",
+      "facility",
+      "services"
+    ],
+    "power_specializations": [
+      "substation",
+      "switchgear",
+      "prefab-power"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "manufacturer",
+      "integrator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "siemens-energy-ehouse",
+      "powell-industries",
+      "mission-critical-group",
+      "electrotempo"
+    ],
+    "dependency_category_slugs": [
+      "electrical-integration-services",
+      "infrastructure-logistics"
+    ],
+    "often_used_with_category_slugs": [
+      "ats-and-transfer-systems",
+      "commissioning-and-operations"
+    ],
+    "logo_url": "https://logo.clearbit.com/enerconpower.com"
   },
   {
     "slug": "engineered-fluids",
@@ -1896,16 +2212,115 @@
     "related_company_slugs": [
       "submer",
       "liquidstack",
-      "shell-immersion-cooling-fluid"
+      "shell-immersion-cooling-fluid",
+      "mta",
+      "liquidcool-solutions",
+      "allied-control"
     ],
     "dependency_category_slugs": [
-      "thermal-optimization-controls"
+      "thermal-optimization-controls",
+      "supply-chain-and-logistics",
+      "commissioning-and-operations"
     ],
     "often_used_with_category_slugs": [
       "field-services-and-maintenance",
-      "monitoring-and-controls"
+      "monitoring-and-controls",
+      "single-phase-immersion",
+      "commissioning-and-operations",
+      "supply-chain-and-logistics"
     ],
     "logo_url": "https://logo.clearbit.com/engineeredfluids.com"
+  },
+  {
+    "slug": "eos-energy-enterprises",
+    "name": "Eos Energy Enterprises",
+    "website_url": "https://www.eose.com",
+    "headline": "Long-duration battery and field-service-backed energy storage provider relevant to uptime continuity, replacement cycles, and behind-the-meter resilience for power-constrained compute sites.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ups-and-battery-storage",
+      "field-services-and-maintenance",
+      "commissioning-and-operations"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Campus",
+      "Industrial",
+      "Mission-critical"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Energy teams",
+      "Infrastructure developers"
+    ],
+    "specialties": [
+      "Battery storage service support",
+      "Field maintenance",
+      "Power continuity resilience"
+    ],
+    "proof_points": [
+      "Useful durability layer where uptime depends on serviceable storage systems rather than one-time install"
+    ],
+    "featured_capabilities": [
+      "Battery lifecycle support",
+      "Field response coordination",
+      "Resilience-oriented storage deployment"
+    ],
+    "comparison_notes": [
+      "Adds post-turnover realism around storage upkeep and uptime continuity rather than only initial battery selection"
+    ],
+    "hq": "Edison, New Jersey, USA",
+    "service_area": "North America",
+    "project_scale": "Site to campus",
+    "subcategories": [
+      "power-monitoring-and-energy-management"
+    ],
+    "tags": [
+      "battery-service",
+      "uptime-continuity",
+      "storage-maintenance"
+    ],
+    "infrastructure_types": [
+      "power",
+      "services"
+    ],
+    "power_specializations": [
+      "ups",
+      "storage"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "manufacturer",
+      "service_provider"
+    ],
+    "company_types": [
+      "public"
+    ],
+    "related_company_slugs": [
+      "fluence",
+      "schneider-electric",
+      "vertiv",
+      "eaton"
+    ],
+    "dependency_category_slugs": [
+      "power-and-electrical",
+      "monitoring-and-controls"
+    ],
+    "often_used_with_category_slugs": [
+      "generators-and-microgrids",
+      "field-services-and-maintenance",
+      "commissioning-and-operations"
+    ]
   },
   {
     "id": "ven_equinix",
@@ -2159,6 +2574,99 @@
     ]
   },
   {
+    "slug": "gds-associates",
+    "name": "GDS Associates",
+    "website_url": "https://www.gdsassociates.com",
+    "headline": "Utility analytics, demand-side operations, and energy program support firm relevant to ongoing power optimization and operating continuity for compute-heavy sites.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "power-monitoring-and-energy-management",
+      "commissioning-and-operations",
+      "monitoring-and-controls"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Utility-adjacent",
+      "Campus",
+      "Industrial"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Utilities",
+      "Energy managers"
+    ],
+    "specialties": [
+      "Energy operations analytics",
+      "Demand-side optimization",
+      "Utility program support"
+    ],
+    "proof_points": [
+      "Improves the under-modeled operating layer between energization and steady-state efficiency"
+    ],
+    "featured_capabilities": [
+      "Operational energy visibility",
+      "Power optimization support",
+      "Continuity-oriented analytics"
+    ],
+    "comparison_notes": [
+      "Adds durable operating realism where power quality, utility interaction, and ongoing optimization continue after go-live"
+    ],
+    "hq": "Marietta, Georgia, USA",
+    "service_area": "North America",
+    "project_scale": "Single site to portfolio",
+    "subcategories": [
+      "power-monitoring-and-energy-management",
+      "dcim-and-observability"
+    ],
+    "tags": [
+      "energy-analytics",
+      "operations-optimization",
+      "utility-programs"
+    ],
+    "infrastructure_types": [
+      "power",
+      "controls",
+      "services"
+    ],
+    "power_specializations": [
+      "monitoring",
+      "optimization"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "regional"
+    ],
+    "ecosystem_roles": [
+      "service_provider",
+      "developer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "schneider-electric-ecostruxure-it",
+      "sunbird-software",
+      "nlyte",
+      "schneider-electric"
+    ],
+    "dependency_category_slugs": [
+      "power-and-electrical",
+      "network-fabric-and-connectivity"
+    ],
+    "often_used_with_category_slugs": [
+      "power-monitoring-and-energy-management",
+      "monitoring-and-controls",
+      "field-services-and-maintenance"
+    ]
+  },
+  {
     "slug": "gigaio-immersion",
     "name": "GigaIO",
     "website_url": "https://www.gigaio.com",
@@ -2329,15 +2837,23 @@
     "related_company_slugs": [
       "submer",
       "engineered-fluids",
-      "dcx-the-liquid-cooling-company"
+      "dcx-the-liquid-cooling-company",
+      "shell-immersion-cooling-fluid",
+      "sunbird-software",
+      "trane"
     ],
     "dependency_category_slugs": [
       "high-density-rack-power",
-      "hvac-and-thermal-rejection"
+      "hvac-and-thermal-rejection",
+      "commissioning-and-operations",
+      "supply-chain-and-logistics"
     ],
     "often_used_with_category_slugs": [
       "field-services-and-maintenance",
-      "monitoring-and-controls"
+      "monitoring-and-controls",
+      "single-phase-immersion",
+      "commissioning-and-operations",
+      "dcim-and-observability"
     ],
     "logo_url": "https://logo.clearbit.com/grcooling.com"
   },
@@ -2772,17 +3288,24 @@
       "nvent-trachte",
       "mission-critical-group",
       "rosendin",
-      "mammoth-freight-solutions"
+      "mammoth-freight-solutions",
+      "resa-power",
+      "trane",
+      "eos-energy-enterprises"
     ],
     "dependency_category_slugs": [
       "electrical-integration-services",
       "ats-and-transfer-systems",
-      "field-services-and-maintenance"
+      "field-services-and-maintenance",
+      "commissioning-and-operations",
+      "power-monitoring-and-energy-management"
     ],
     "often_used_with_category_slugs": [
       "prefabricated-power-blocks",
       "infrastructure-logistics",
-      "commissioning-and-operations"
+      "commissioning-and-operations",
+      "field-services-and-maintenance",
+      "dcim-and-observability"
     ],
     "logo_url": "https://logo.clearbit.com/integra.com"
   },
@@ -3200,15 +3723,22 @@
     "related_company_slugs": [
       "green-revolution-cooling",
       "iceotope",
-      "submer"
+      "submer",
+      "engineered-fluids",
+      "sunbird-software",
+      "trane"
     ],
     "dependency_category_slugs": [
       "high-density-rack-power",
-      "monitoring-and-controls"
+      "monitoring-and-controls",
+      "field-services-and-maintenance",
+      "supply-chain-and-logistics"
     ],
     "often_used_with_category_slugs": [
       "field-services-and-maintenance",
-      "commissioning-and-operations"
+      "commissioning-and-operations",
+      "dcim-and-observability",
+      "single-phase-immersion"
     ],
     "logo_url": "https://logo.clearbit.com/liquidcoolsolutions.com"
   },
@@ -3648,15 +4178,23 @@
     "related_company_slugs": [
       "green-revolution-cooling",
       "engineered-fluids",
-      "allied-control"
+      "allied-control",
+      "shell-immersion-cooling-fluid",
+      "sunbird-software",
+      "liquidcool-solutions"
     ],
     "dependency_category_slugs": [
       "high-density-rack-power",
-      "field-services-and-maintenance"
+      "field-services-and-maintenance",
+      "commissioning-and-operations",
+      "supply-chain-and-logistics"
     ],
     "often_used_with_category_slugs": [
       "monitoring-and-controls",
-      "commissioning-and-operations"
+      "commissioning-and-operations",
+      "single-phase-immersion",
+      "dcim-and-observability",
+      "field-services-and-maintenance"
     ],
     "logo_url": "https://logo.clearbit.com/midasgt.com"
   },
@@ -3737,15 +4275,22 @@
     "related_company_slugs": [
       "allied-control",
       "soluna",
-      "green-revolution-cooling"
+      "green-revolution-cooling",
+      "engineered-fluids",
+      "sunbird-software"
     ],
     "dependency_category_slugs": [
       "containerized-data-centers",
-      "high-density-rack-power"
+      "high-density-rack-power",
+      "field-services-and-maintenance",
+      "monitoring-and-controls"
     ],
     "often_used_with_category_slugs": [
       "field-services-and-maintenance",
-      "supply-chain-and-logistics"
+      "supply-chain-and-logistics",
+      "single-phase-immersion",
+      "dcim-and-observability",
+      "commissioning-and-operations"
     ],
     "logo_url": "https://logo.clearbit.com/midasimmersioncooling.com"
   },
@@ -3936,6 +4481,101 @@
     "logo_url": "https://logo.clearbit.com/motivaircorp.com"
   },
   {
+    "slug": "mta",
+    "name": "MTA",
+    "website_url": "https://www.mta-it.com",
+    "headline": "Process cooling and chiller support company relevant to service continuity, spare parts, and operational upkeep around liquid-cooled compute plants.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "hvac-and-thermal-rejection",
+      "field-services-and-maintenance",
+      "liquid-cooling"
+    ],
+    "regions": [
+      "Europe",
+      "North America"
+    ],
+    "deployment_types": [
+      "Industrial",
+      "AI",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "Facility teams",
+      "Mechanical operators",
+      "Cooling integrators"
+    ],
+    "specialties": [
+      "Chiller service",
+      "Thermal plant maintenance",
+      "Spare parts continuity"
+    ],
+    "proof_points": [
+      "Adds a lived-in mechanical service layer beyond initial thermal design"
+    ],
+    "featured_capabilities": [
+      "Mechanical plant support",
+      "Replacement-parts continuity",
+      "Service-oriented thermal upkeep"
+    ],
+    "comparison_notes": [
+      "Useful because post-turnover realism needs cooling service and parts actors, not only thermal OEMs"
+    ],
+    "hq": "Bagnoli di Sopra, Italy",
+    "service_area": "Europe and North America",
+    "project_scale": "Facility to campus",
+    "subcategories": [
+      "thermal-optimization-controls",
+      "liquid-loop-systems"
+    ],
+    "tags": [
+      "thermal-service",
+      "spare-parts",
+      "chiller-support"
+    ],
+    "infrastructure_types": [
+      "cooling",
+      "services",
+      "facility"
+    ],
+    "cooling_types": [
+      "chilled_water",
+      "liquid_loop"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "regional"
+    ],
+    "ecosystem_roles": [
+      "manufacturer",
+      "service_provider"
+    ],
+    "company_types": [
+      "private",
+      "industrial_supplier"
+    ],
+    "related_company_slugs": [
+      "stulz",
+      "munters",
+      "kelvion",
+      "schneider-electric-uniflair"
+    ],
+    "dependency_category_slugs": [
+      "power-and-electrical",
+      "monitoring-and-controls"
+    ],
+    "often_used_with_category_slugs": [
+      "hvac-and-thermal-rejection",
+      "field-services-and-maintenance",
+      "commissioning-and-operations"
+    ]
+  },
+  {
     "slug": "munters",
     "name": "Munters",
     "website_url": "https://www.munters.com",
@@ -4096,14 +4736,19 @@
     "related_company_slugs": [
       "schneider-electric-ecostruxure-it",
       "sunbird-software",
-      "submer"
+      "submer",
+      "gds-associates",
+      "vertiv"
     ],
     "dependency_category_slugs": [
-      "network-fabric-and-connectivity"
+      "network-fabric-and-connectivity",
+      "field-services-and-maintenance"
     ],
     "often_used_with_category_slugs": [
       "monitoring-and-controls",
-      "field-services-and-maintenance"
+      "field-services-and-maintenance",
+      "commissioning-and-operations",
+      "power-monitoring-and-energy-management"
     ],
     "logo_url": "https://logo.clearbit.com/nlyte.com"
   },
@@ -4185,9 +4830,21 @@
       "coolit-systems",
       "liquidstack",
       "iceotope",
-      "motivair"
+      "motivair",
+      "trane",
+      "stulz",
+      "sunbird-software"
     ],
-    "logo_url": "https://logo.clearbit.com/nvent.com"
+    "logo_url": "https://logo.clearbit.com/nvent.com",
+    "dependency_category_slugs": [
+      "field-services-and-maintenance",
+      "commissioning-and-operations"
+    ],
+    "often_used_with_category_slugs": [
+      "power-monitoring-and-energy-management",
+      "field-services-and-maintenance",
+      "commissioning-and-operations"
+    ]
   },
   {
     "slug": "nvent-trachte",
@@ -4284,6 +4941,204 @@
       "field-services-and-maintenance"
     ],
     "logo_url": "https://logo.clearbit.com/nvent.com"
+  },
+  {
+    "slug": "olsson",
+    "name": "Olsson",
+    "website_url": "https://www.olsson.com/industries-expertise/data-centers",
+    "headline": "Owner's-engineering and site-development partner relevant to utility-facing feasibility, infrastructure planning, and early execution realism for data center programs.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "site-selection-and-land-strategy",
+      "epc-and-commissioning",
+      "electrical-integration-services"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "AI",
+      "Hyperscale",
+      "Colocation",
+      "Regional"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Operators",
+      "Program teams"
+    ],
+    "specialties": [
+      "owners engineering",
+      "site feasibility",
+      "utility coordination",
+      "civil and infrastructure planning"
+    ],
+    "proof_points": [
+      "Useful owners-engineer and front-end infrastructure planning layer for data center delivery"
+    ],
+    "featured_capabilities": [
+      "Site feasibility and owners engineering support",
+      "Utility and infrastructure coordination",
+      "Development-stage delivery planning"
+    ],
+    "comparison_notes": [
+      "Adds realism where early engineering judgement and utility-facing feasibility work shape whether a project is actually buildable"
+    ],
+    "hq": "Lincoln, Nebraska, USA",
+    "service_area": "North America",
+    "project_scale": "Regional to hyperscale programs",
+    "subcategories": [
+      "modular-substations"
+    ],
+    "tags": [
+      "owners-engineer",
+      "site-feasibility",
+      "utility-coordination"
+    ],
+    "infrastructure_types": [
+      "services",
+      "power",
+      "facility"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "integrator",
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "tetra-tech",
+      "quanta-services",
+      "hdr",
+      "jacobs"
+    ],
+    "dependency_category_slugs": [
+      "modular-substations",
+      "power-and-electrical"
+    ],
+    "often_used_with_category_slugs": [
+      "site-selection-and-land-strategy",
+      "commissioning-and-operations"
+    ],
+    "logo_url": "https://logo.clearbit.com/olsson.com"
+  },
+  {
+    "id": "ven_omicron",
+    "slug": "omicron",
+    "name": "OMICRON",
+    "website_url": "https://www.omicronenergy.com",
+    "headline": "Protection, relay testing, and power-system validation specialist relevant to substation acceptance, interconnection readiness, and energization-critical commissioning workflows.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "power-and-electrical",
+      "epc-and-commissioning",
+      "commissioning-and-operations"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "Middle East",
+      "APAC"
+    ],
+    "deployment_types": [
+      "Utility-adjacent",
+      "Mission-critical",
+      "Industrial"
+    ],
+    "buyer_types": [
+      "Electrical engineers",
+      "Commissioning teams",
+      "Utilities",
+      "Operators"
+    ],
+    "specialties": [
+      "Relay testing",
+      "Protection validation",
+      "Power-system diagnostics",
+      "Acceptance testing"
+    ],
+    "proof_points": [
+      "Makes protection testing visible in the energization chain"
+    ],
+    "featured_capabilities": [
+      "Relay and protection validation",
+      "Acceptance testing support",
+      "Electrical diagnostics"
+    ],
+    "comparison_notes": [
+      "Not a broad infrastructure vendor, but exactly the kind of specialist that determines whether energization proceeds cleanly"
+    ],
+    "hq": "Klaus, Austria",
+    "service_area": "Global",
+    "project_scale": "Substation to campus-scale power systems",
+    "subcategories": [
+      "modular-substations",
+      "ats-and-transfer-systems"
+    ],
+    "tags": [
+      "relay-testing",
+      "protection",
+      "energization"
+    ],
+    "infrastructure_types": [
+      "power",
+      "controls",
+      "services"
+    ],
+    "power_specializations": [
+      "substation",
+      "ats",
+      "protection",
+      "monitoring"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "service_provider",
+      "manufacturer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "asco-power-technologies",
+      "powell-industries",
+      "siemens-energy-ehouse",
+      "shermco",
+      "resa-power",
+      "gds-associates"
+    ],
+    "dependency_category_slugs": [
+      "modular-substations",
+      "electrical-integration-services",
+      "field-services-and-maintenance",
+      "power-monitoring-and-energy-management"
+    ],
+    "often_used_with_category_slugs": [
+      "commissioning-and-operations",
+      "field-services-and-maintenance",
+      "ats-and-transfer-systems",
+      "power-monitoring-and-energy-management"
+    ],
+    "logo_url": "https://logo.clearbit.com/omicronenergy.com"
   },
   {
     "slug": "parat-halvorsen",
@@ -4458,18 +5313,97 @@
       "eaton",
       "mission-critical-group",
       "electrotempo",
-      "rosendin"
+      "rosendin",
+      "resa-power",
+      "shermco",
+      "eos-energy-enterprises"
     ],
     "dependency_category_slugs": [
       "electrical-integration-services",
-      "infrastructure-logistics"
+      "infrastructure-logistics",
+      "commissioning-and-operations",
+      "field-services-and-maintenance"
     ],
     "often_used_with_category_slugs": [
       "prefabricated-power-blocks",
       "modular-substations",
-      "field-services-and-maintenance"
+      "field-services-and-maintenance",
+      "power-monitoring-and-energy-management",
+      "commissioning-and-operations"
     ],
     "logo_url": "https://logo.clearbit.com/powellind.com"
+  },
+  {
+    "id": "ven_qts",
+    "slug": "qts",
+    "name": "QTS",
+    "website_url": "https://www.qtsdatacenters.com",
+    "headline": "Large-scale data center operator serving cloud, hyperscale, and AI infrastructure demand.",
+    "featured": true,
+    "verified": true,
+    "categories": [
+      "ai-colocation-gpu-hosting",
+      "site-selection-and-land-strategy",
+      "network-fabric-and-connectivity"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Hyperscale",
+      "Colocation"
+    ],
+    "buyer_types": [
+      "Hyperscalers",
+      "Large enterprise buyers"
+    ],
+    "specialties": [
+      "Wholesale colocation",
+      "Campus development",
+      "Utility-rich capacity"
+    ],
+    "proof_points": [
+      "Strong campus-scale development profile"
+    ],
+    "featured_capabilities": [
+      "Land and power access",
+      "Operational colocation"
+    ],
+    "comparison_notes": [
+      "More operator/capacity story than equipment vendor"
+    ],
+    "hq": "Overland Park, Kansas, USA",
+    "service_area": "North America",
+    "project_scale": "Campus scale",
+    "subcategories": [
+      "managed-ai-colocation"
+    ],
+    "tags": [
+      "operator",
+      "capacity"
+    ],
+    "infrastructure_types": [
+      "compute",
+      "facility"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "operator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "cyrusone",
+      "crusoe",
+      "soluna"
+    ]
   },
   {
     "id": "ven_quanta",
@@ -4574,179 +5508,6 @@
     "logo_url": "https://logo.clearbit.com/quantaservices.com"
   },
   {
-    "id": "ven_qts",
-    "slug": "qts",
-    "name": "QTS",
-    "website_url": "https://www.qtsdatacenters.com",
-    "headline": "Large-scale data center operator serving cloud, hyperscale, and AI infrastructure demand.",
-    "featured": true,
-    "verified": true,
-    "categories": [
-      "ai-colocation-gpu-hosting",
-      "site-selection-and-land-strategy",
-      "network-fabric-and-connectivity"
-    ],
-    "regions": [
-      "North America"
-    ],
-    "deployment_types": [
-      "Hyperscale",
-      "Colocation"
-    ],
-    "buyer_types": [
-      "Hyperscalers",
-      "Large enterprise buyers"
-    ],
-    "specialties": [
-      "Wholesale colocation",
-      "Campus development",
-      "Utility-rich capacity"
-    ],
-    "proof_points": [
-      "Strong campus-scale development profile"
-    ],
-    "featured_capabilities": [
-      "Land and power access",
-      "Operational colocation"
-    ],
-    "comparison_notes": [
-      "More operator/capacity story than equipment vendor"
-    ],
-    "hq": "Overland Park, Kansas, USA",
-    "service_area": "North America",
-    "project_scale": "Campus scale",
-    "subcategories": [
-      "managed-ai-colocation"
-    ],
-    "tags": [
-      "operator",
-      "capacity"
-    ],
-    "infrastructure_types": [
-      "compute",
-      "facility"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "hyperscale"
-    ],
-    "ecosystem_roles": [
-      "operator"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "cyrusone",
-      "crusoe",
-      "soluna"
-    ]
-  },
-  {
-    "id": "ven_omicron",
-    "slug": "omicron",
-    "name": "OMICRON",
-    "website_url": "https://www.omicronenergy.com",
-    "headline": "Protection, relay testing, and power-system validation specialist relevant to substation acceptance, interconnection readiness, and energization-critical commissioning workflows.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "power-and-electrical",
-      "epc-and-commissioning",
-      "commissioning-and-operations"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "Middle East",
-      "APAC"
-    ],
-    "deployment_types": [
-      "Utility-adjacent",
-      "Mission-critical",
-      "Industrial"
-    ],
-    "buyer_types": [
-      "Electrical engineers",
-      "Commissioning teams",
-      "Utilities",
-      "Operators"
-    ],
-    "specialties": [
-      "Relay testing",
-      "Protection validation",
-      "Power-system diagnostics",
-      "Acceptance testing"
-    ],
-    "proof_points": [
-      "Makes protection testing visible in the energization chain"
-    ],
-    "featured_capabilities": [
-      "Relay and protection validation",
-      "Acceptance testing support",
-      "Electrical diagnostics"
-    ],
-    "comparison_notes": [
-      "Not a broad infrastructure vendor, but exactly the kind of specialist that determines whether energization proceeds cleanly"
-    ],
-    "hq": "Klaus, Austria",
-    "service_area": "Global",
-    "project_scale": "Substation to campus-scale power systems",
-    "subcategories": [
-      "modular-substations",
-      "ats-and-transfer-systems"
-    ],
-    "tags": [
-      "relay-testing",
-      "protection",
-      "energization"
-    ],
-    "infrastructure_types": [
-      "power",
-      "controls",
-      "services"
-    ],
-    "power_specializations": [
-      "substation",
-      "ats",
-      "protection",
-      "monitoring"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "hyperscale"
-    ],
-    "ecosystem_roles": [
-      "service_provider",
-      "manufacturer"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "asco-power-technologies",
-      "powell-industries",
-      "siemens-energy-ehouse",
-      "shermco"
-    ],
-    "dependency_category_slugs": [
-      "modular-substations",
-      "electrical-integration-services"
-    ],
-    "often_used_with_category_slugs": [
-      "commissioning-and-operations",
-      "field-services-and-maintenance"
-    ],
-    "logo_url": "https://logo.clearbit.com/omicronenergy.com"
-  },
-  {
     "id": "ven_raritan",
     "slug": "raritan",
     "name": "Raritan",
@@ -4825,6 +5586,103 @@
       "sunbird-software"
     ],
     "logo_url": "https://logo.clearbit.com/raritan.com"
+  },
+  {
+    "slug": "resa-power",
+    "name": "RESA Power",
+    "website_url": "https://www.resapower.com",
+    "headline": "Electrical testing, field service, switchgear maintenance, and replacement-parts provider relevant to energized modular sites that need sustained uptime after turnover.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "field-services-and-maintenance",
+      "commissioning-and-operations",
+      "power-and-electrical"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Mission-critical",
+      "Industrial",
+      "Campus"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Facility teams",
+      "Electrical teams"
+    ],
+    "specialties": [
+      "Preventive maintenance",
+      "Switchgear field service",
+      "Replacement parts",
+      "Emergency response"
+    ],
+    "proof_points": [
+      "Strong fit for the missing post-go-live power-service layer"
+    ],
+    "featured_capabilities": [
+      "Preventive electrical maintenance",
+      "Emergency outage response",
+      "Replacement and refurbishment support"
+    ],
+    "comparison_notes": [
+      "Important because real uptime depends on maintenance windows, field repairs, and parts availability after energization"
+    ],
+    "hq": "Houston, Texas, USA",
+    "service_area": "North America",
+    "project_scale": "Single facility to multi-site portfolio",
+    "subcategories": [
+      "switchgear-pdu-busway",
+      "ats-and-transfer-systems"
+    ],
+    "tags": [
+      "preventive-maintenance",
+      "switchgear-service",
+      "emergency-response"
+    ],
+    "infrastructure_types": [
+      "power",
+      "services"
+    ],
+    "power_specializations": [
+      "switchgear",
+      "ats",
+      "testing",
+      "maintenance"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "regional",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "service_provider",
+      "integrator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "shermco",
+      "omicron",
+      "asco-power-technologies",
+      "eaton",
+      "schneider-electric"
+    ],
+    "dependency_category_slugs": [
+      "electrical-integration-services",
+      "modular-substations"
+    ],
+    "often_used_with_category_slugs": [
+      "commissioning-and-operations",
+      "field-services-and-maintenance",
+      "power-monitoring-and-energy-management"
+    ]
   },
   {
     "id": "ven_rittal",
@@ -5003,105 +5861,6 @@
     "logo_url": "https://logo.clearbit.com/rosendin.com"
   },
   {
-    "id": "ven_shermco",
-    "slug": "shermco",
-    "name": "Shermco",
-    "website_url": "https://www.shermco.com",
-    "headline": "Testing, maintenance, commissioning, and electrical services specialist relevant to energization, field acceptance, and turnover of mission-critical power systems.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "commissioning-and-operations",
-      "field-services-and-maintenance",
-      "power-and-electrical"
-    ],
-    "regions": [
-      "North America"
-    ],
-    "deployment_types": [
-      "Mission-critical",
-      "Campus",
-      "Industrial",
-      "Utility-adjacent"
-    ],
-    "buyer_types": [
-      "Operators",
-      "Electrical teams",
-      "Developers",
-      "Commissioning leads"
-    ],
-    "specialties": [
-      "Acceptance testing",
-      "Electrical maintenance",
-      "Commissioning support",
-      "Power-system turnover"
-    ],
-    "proof_points": [
-      "Brings a real field-acceptance layer into the power delivery chain"
-    ],
-    "featured_capabilities": [
-      "Field testing and acceptance",
-      "Commissioning and energization support",
-      "Post-install power-system validation"
-    ],
-    "comparison_notes": [
-      "Useful where the real question is whether installed gear can be trusted, energized, and handed over without surprises"
-    ],
-    "hq": "Irving, Texas, USA",
-    "service_area": "North America",
-    "project_scale": "Facility to regional portfolio",
-    "subcategories": [
-      "ats-and-transfer-systems",
-      "modular-substations"
-    ],
-    "tags": [
-      "acceptance-testing",
-      "commissioning",
-      "turnover"
-    ],
-    "infrastructure_types": [
-      "power",
-      "services"
-    ],
-    "power_specializations": [
-      "switchgear",
-      "ats",
-      "substation",
-      "testing"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "regional",
-      "hyperscale"
-    ],
-    "ecosystem_roles": [
-      "service_provider"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "omicron",
-      "rosendin",
-      "quanta-services",
-      "asco-power-technologies"
-    ],
-    "dependency_category_slugs": [
-      "electrical-integration-services",
-      "modular-substations"
-    ],
-    "often_used_with_category_slugs": [
-      "commissioning-and-operations",
-      "field-services-and-maintenance",
-      "power-and-electrical"
-    ],
-    "logo_url": "https://logo.clearbit.com/shermco.com"
-  },
-  {
     "id": "ven_scale_microgrids",
     "slug": "scale-microgrids",
     "name": "Scale Microgrids",
@@ -5269,9 +6028,21 @@
       "schneider-electric-ecostruxure-it",
       "schneider-electric-uniflair",
       "raritan",
-      "vertiv"
+      "vertiv",
+      "resa-power",
+      "trane",
+      "eos-energy-enterprises"
     ],
-    "logo_url": "https://logo.clearbit.com/se.com"
+    "logo_url": "https://logo.clearbit.com/se.com",
+    "dependency_category_slugs": [
+      "field-services-and-maintenance",
+      "commissioning-and-operations"
+    ],
+    "often_used_with_category_slugs": [
+      "power-monitoring-and-energy-management",
+      "field-services-and-maintenance",
+      "commissioning-and-operations"
+    ]
   },
   {
     "slug": "schneider-electric-ecostruxure-it",
@@ -5349,15 +6120,22 @@
     "related_company_slugs": [
       "schneider-electric",
       "raritan",
-      "submer"
+      "submer",
+      "sunbird-software",
+      "nlyte",
+      "gds-associates"
     ],
     "dependency_category_slugs": [
-      "network-fabric-and-connectivity"
+      "network-fabric-and-connectivity",
+      "field-services-and-maintenance"
     ],
     "often_used_with_category_slugs": [
       "liquid-cooling",
       "immersion-cooling",
-      "hvac-and-thermal-rejection"
+      "hvac-and-thermal-rejection",
+      "commissioning-and-operations",
+      "power-monitoring-and-energy-management",
+      "field-services-and-maintenance"
     ],
     "logo_url": "https://logo.clearbit.com/se.com"
   },
@@ -5442,14 +6220,21 @@
     "related_company_slugs": [
       "schneider-electric",
       "stulz",
-      "vertiv"
+      "vertiv",
+      "trane",
+      "mta"
     ],
     "dependency_category_slugs": [
-      "power-and-electrical"
+      "power-and-electrical",
+      "field-services-and-maintenance",
+      "commissioning-and-operations"
     ],
     "often_used_with_category_slugs": [
       "monitoring-and-controls",
-      "hvac-and-thermal-rejection"
+      "hvac-and-thermal-rejection",
+      "thermal-optimization-controls",
+      "field-services-and-maintenance",
+      "commissioning-and-operations"
     ],
     "logo_url": "https://logo.clearbit.com/se.com"
   },
@@ -5534,16 +6319,126 @@
     "related_company_slugs": [
       "engineered-fluids",
       "submer",
-      "liquidstack"
+      "liquidstack",
+      "midas-green-technologies"
     ],
     "dependency_category_slugs": [
-      "sustainability-and-energy-strategy"
+      "sustainability-and-energy-strategy",
+      "field-services-and-maintenance",
+      "commissioning-and-operations"
     ],
     "often_used_with_category_slugs": [
       "field-services-and-maintenance",
-      "supply-chain-and-logistics"
+      "supply-chain-and-logistics",
+      "single-phase-immersion",
+      "commissioning-and-operations",
+      "monitoring-and-controls"
     ],
     "logo_url": "https://logo.clearbit.com/shell.com"
+  },
+  {
+    "id": "ven_shermco",
+    "slug": "shermco",
+    "name": "Shermco",
+    "website_url": "https://www.shermco.com",
+    "headline": "Testing, maintenance, commissioning, and electrical services specialist relevant to energization, field acceptance, and turnover of mission-critical power systems.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "commissioning-and-operations",
+      "field-services-and-maintenance",
+      "power-and-electrical"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Mission-critical",
+      "Campus",
+      "Industrial",
+      "Utility-adjacent"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Electrical teams",
+      "Developers",
+      "Commissioning leads"
+    ],
+    "specialties": [
+      "Acceptance testing",
+      "Electrical maintenance",
+      "Commissioning support",
+      "Power-system turnover"
+    ],
+    "proof_points": [
+      "Brings a real field-acceptance layer into the power delivery chain"
+    ],
+    "featured_capabilities": [
+      "Field testing and acceptance",
+      "Commissioning and energization support",
+      "Post-install power-system validation"
+    ],
+    "comparison_notes": [
+      "Useful where the real question is whether installed gear can be trusted, energized, and handed over without surprises"
+    ],
+    "hq": "Irving, Texas, USA",
+    "service_area": "North America",
+    "project_scale": "Facility to regional portfolio",
+    "subcategories": [
+      "ats-and-transfer-systems",
+      "modular-substations"
+    ],
+    "tags": [
+      "acceptance-testing",
+      "commissioning",
+      "turnover"
+    ],
+    "infrastructure_types": [
+      "power",
+      "services"
+    ],
+    "power_specializations": [
+      "switchgear",
+      "ats",
+      "substation",
+      "testing"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "regional",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "omicron",
+      "rosendin",
+      "quanta-services",
+      "asco-power-technologies",
+      "resa-power",
+      "eos-energy-enterprises"
+    ],
+    "dependency_category_slugs": [
+      "electrical-integration-services",
+      "modular-substations",
+      "ats-and-transfer-systems",
+      "field-services-and-maintenance"
+    ],
+    "often_used_with_category_slugs": [
+      "commissioning-and-operations",
+      "field-services-and-maintenance",
+      "power-and-electrical",
+      "power-monitoring-and-energy-management"
+    ],
+    "logo_url": "https://logo.clearbit.com/shermco.com"
   },
   {
     "id": "ven_siemens_ehouse",
@@ -5631,16 +6526,23 @@
       "eaton",
       "mission-critical-group",
       "schneider-electric",
-      "nvent-trachte"
+      "nvent-trachte",
+      "resa-power",
+      "shermco",
+      "eos-energy-enterprises"
     ],
     "dependency_category_slugs": [
       "electrical-integration-services",
-      "infrastructure-logistics"
+      "infrastructure-logistics",
+      "commissioning-and-operations",
+      "field-services-and-maintenance"
     ],
     "often_used_with_category_slugs": [
       "ats-and-transfer-systems",
       "field-services-and-maintenance",
-      "generators-and-microgrids"
+      "generators-and-microgrids",
+      "power-monitoring-and-energy-management",
+      "commissioning-and-operations"
     ],
     "logo_url": "https://logo.clearbit.com/siemens.com"
   },
@@ -5801,9 +6703,21 @@
       "bac",
       "kelvion",
       "munters",
-      "schneider-electric-uniflair"
+      "schneider-electric-uniflair",
+      "trane",
+      "mta",
+      "vertiv"
     ],
-    "logo_url": "https://logo.clearbit.com/stulz.com"
+    "logo_url": "https://logo.clearbit.com/stulz.com",
+    "dependency_category_slugs": [
+      "field-services-and-maintenance",
+      "power-and-electrical"
+    ],
+    "often_used_with_category_slugs": [
+      "commissioning-and-operations",
+      "field-services-and-maintenance",
+      "thermal-optimization-controls"
+    ]
   },
   {
     "id": "ven_submer",
@@ -5887,17 +6801,24 @@
       "asperitas",
       "engineered-fluids",
       "dcx-the-liquid-cooling-company",
-      "schneider-electric-ecostruxure-it"
+      "schneider-electric-ecostruxure-it",
+      "shell-immersion-cooling-fluid",
+      "sunbird-software"
     ],
     "dependency_category_slugs": [
       "high-density-rack-power",
       "hvac-and-thermal-rejection",
-      "network-fabric-and-connectivity"
+      "network-fabric-and-connectivity",
+      "field-services-and-maintenance",
+      "commissioning-and-operations"
     ],
     "often_used_with_category_slugs": [
       "monitoring-and-controls",
       "field-services-and-maintenance",
-      "liquid-loop-systems"
+      "liquid-loop-systems",
+      "commissioning-and-operations",
+      "dcim-and-observability",
+      "supply-chain-and-logistics"
     ],
     "logo_url": "https://logo.clearbit.com/submer.com"
   },
@@ -5972,17 +6893,118 @@
     "related_company_slugs": [
       "nlyte",
       "schneider-electric-ecostruxure-it",
-      "submer"
+      "submer",
+      "gds-associates",
+      "vertiv"
     ],
     "dependency_category_slugs": [
-      "network-fabric-and-connectivity"
+      "network-fabric-and-connectivity",
+      "field-services-and-maintenance"
     ],
     "often_used_with_category_slugs": [
       "immersion-cooling",
       "liquid-cooling",
-      "power-and-electrical"
+      "power-and-electrical",
+      "commissioning-and-operations",
+      "power-monitoring-and-energy-management",
+      "field-services-and-maintenance"
     ],
     "logo_url": "https://logo.clearbit.com/sunbirddcim.com"
+  },
+  {
+    "slug": "tetra-tech",
+    "name": "Tetra Tech",
+    "website_url": "https://www.tetratech.com/solutions/data-center-solutions/",
+    "headline": "Owner's-engineering and permitting-aware delivery partner relevant to utility coordination, environmental feasibility, and early execution planning for power-intensive sites.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "site-selection-and-land-strategy",
+      "epc-and-commissioning",
+      "sustainability-and-energy-strategy",
+      "hvac-and-thermal-rejection"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "Middle East",
+      "APAC"
+    ],
+    "deployment_types": [
+      "AI",
+      "Hyperscale",
+      "Colocation",
+      "Regional"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Operators",
+      "Infrastructure teams"
+    ],
+    "specialties": [
+      "owners engineering",
+      "environmental and permitting support",
+      "water and cooling feasibility",
+      "program delivery planning"
+    ],
+    "proof_points": [
+      "Useful owners-engineer and permitting-aware planning layer for data center and energy-intensive site delivery"
+    ],
+    "featured_capabilities": [
+      "Permitting and environmental coordination",
+      "Cooling and water feasibility",
+      "Program delivery planning"
+    ],
+    "comparison_notes": [
+      "Strengthens the graph where land, permitting, water, and cooling realities shape deployment before equipment is chosen"
+    ],
+    "hq": "Pasadena, California, USA",
+    "service_area": "Global",
+    "project_scale": "Regional to hyperscale programs",
+    "subcategories": [
+      "modular-substations"
+    ],
+    "tags": [
+      "owners-engineer",
+      "permitting",
+      "environmental-planning"
+    ],
+    "infrastructure_types": [
+      "services",
+      "facility",
+      "cooling"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "integrator",
+      "service_provider"
+    ],
+    "company_types": [
+      "public"
+    ],
+    "related_company_slugs": [
+      "olsson",
+      "hdr",
+      "jacobs",
+      "enercon"
+    ],
+    "dependency_category_slugs": [
+      "site-selection-and-land-strategy",
+      "hvac-and-thermal-rejection"
+    ],
+    "often_used_with_category_slugs": [
+      "power-and-electrical",
+      "commissioning-and-operations"
+    ],
+    "logo_url": "https://logo.clearbit.com/tetratech.com"
   },
   {
     "slug": "tmgcore",
@@ -6072,6 +7094,104 @@
       "monitoring-and-controls"
     ],
     "logo_url": "https://logo.clearbit.com/tmgcore.com"
+  },
+  {
+    "slug": "trane",
+    "name": "Trane",
+    "website_url": "https://www.trane.com",
+    "headline": "Global thermal plant and service organization relevant to preventive maintenance, retrofit support, controls continuity, and uptime durability for high-density cooling environments.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "hvac-and-thermal-rejection",
+      "field-services-and-maintenance",
+      "monitoring-and-controls"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "Middle East",
+      "APAC"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Hyperscale",
+      "Industrial"
+    ],
+    "buyer_types": [
+      "Facility teams",
+      "Operators",
+      "Mechanical engineers"
+    ],
+    "specialties": [
+      "Preventive thermal maintenance",
+      "Retrofit support",
+      "Building controls continuity"
+    ],
+    "proof_points": [
+      "Widens the graph from thermal equipment selection into actual service-organization realism"
+    ],
+    "featured_capabilities": [
+      "Lifecycle thermal service",
+      "Retrofit and efficiency upgrades",
+      "Controls-linked maintenance programs"
+    ],
+    "comparison_notes": [
+      "High leverage because operational durability needs mechanical service organizations, not just cooling product nodes"
+    ],
+    "hq": "Davidson, North Carolina, USA",
+    "service_area": "Global",
+    "project_scale": "Facility to campus portfolio",
+    "subcategories": [
+      "thermal-optimization-controls"
+    ],
+    "tags": [
+      "thermal-maintenance",
+      "retrofit-support",
+      "controls-service"
+    ],
+    "infrastructure_types": [
+      "cooling",
+      "controls",
+      "services",
+      "facility"
+    ],
+    "cooling_types": [
+      "chilled_water",
+      "dx",
+      "hybrid"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "manufacturer",
+      "service_provider"
+    ],
+    "company_types": [
+      "public"
+    ],
+    "related_company_slugs": [
+      "stulz",
+      "munters",
+      "schneider-electric-uniflair",
+      "vertiv",
+      "mta"
+    ],
+    "dependency_category_slugs": [
+      "power-and-electrical",
+      "sustainability-and-energy-strategy"
+    ],
+    "often_used_with_category_slugs": [
+      "hvac-and-thermal-rejection",
+      "commissioning-and-operations",
+      "field-services-and-maintenance"
+    ]
   },
   {
     "slug": "usystems",
@@ -6253,13 +7373,21 @@
       "bac",
       "kelvion",
       "schneider-electric-uniflair",
-      "liquidstack"
+      "liquidstack",
+      "trane",
+      "resa-power",
+      "schneider-electric"
     ],
     "dependency_category_slugs": [
-      "generators-and-microgrids"
+      "generators-and-microgrids",
+      "field-services-and-maintenance",
+      "commissioning-and-operations"
     ],
     "often_used_with_category_slugs": [
-      "network-fabric-and-connectivity"
+      "network-fabric-and-connectivity",
+      "power-monitoring-and-energy-management",
+      "commissioning-and-operations",
+      "field-services-and-maintenance"
     ],
     "logo_url": "https://logo.clearbit.com/vertiv.com"
   },
@@ -6352,477 +7480,5 @@
       "liquid-loop-systems"
     ],
     "logo_url": "https://logo.clearbit.com/zutacore.com"
-  },
-  {
-    "slug": "olsson",
-    "name": "Olsson",
-    "website_url": "https://www.olsson.com/industries-expertise/data-centers",
-    "headline": "Owner's-engineering and site-development partner relevant to utility-facing feasibility, infrastructure planning, and early execution realism for data center programs.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "site-selection-and-land-strategy",
-      "epc-and-commissioning",
-      "electrical-integration-services"
-    ],
-    "regions": [
-      "North America"
-    ],
-    "deployment_types": [
-      "AI",
-      "Hyperscale",
-      "Colocation",
-      "Regional"
-    ],
-    "buyer_types": [
-      "Developers",
-      "Operators",
-      "Program teams"
-    ],
-    "specialties": [
-      "owners engineering",
-      "site feasibility",
-      "utility coordination",
-      "civil and infrastructure planning"
-    ],
-    "proof_points": [
-      "Useful owners-engineer and front-end infrastructure planning layer for data center delivery"
-    ],
-    "featured_capabilities": [
-      "Site feasibility and owners engineering support",
-      "Utility and infrastructure coordination",
-      "Development-stage delivery planning"
-    ],
-    "comparison_notes": [
-      "Adds realism where early engineering judgement and utility-facing feasibility work shape whether a project is actually buildable"
-    ],
-    "hq": "Lincoln, Nebraska, USA",
-    "service_area": "North America",
-    "project_scale": "Regional to hyperscale programs",
-    "subcategories": [
-      "modular-substations"
-    ],
-    "tags": [
-      "owners-engineer",
-      "site-feasibility",
-      "utility-coordination"
-    ],
-    "infrastructure_types": [
-      "services",
-      "power",
-      "facility"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "regional",
-      "enterprise",
-      "hyperscale"
-    ],
-    "ecosystem_roles": [
-      "integrator",
-      "service_provider"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "tetra-tech",
-      "quanta-services",
-      "hdr",
-      "jacobs"
-    ],
-    "dependency_category_slugs": [
-      "modular-substations",
-      "power-and-electrical"
-    ],
-    "often_used_with_category_slugs": [
-      "site-selection-and-land-strategy",
-      "commissioning-and-operations"
-    ],
-    "logo_url": "https://logo.clearbit.com/olsson.com"
-  },
-  {
-    "slug": "tetra-tech",
-    "name": "Tetra Tech",
-    "website_url": "https://www.tetratech.com/solutions/data-center-solutions/",
-    "headline": "Owner's-engineering and permitting-aware delivery partner relevant to utility coordination, environmental feasibility, and early execution planning for power-intensive sites.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "site-selection-and-land-strategy",
-      "epc-and-commissioning",
-      "sustainability-and-energy-strategy",
-      "hvac-and-thermal-rejection"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "Middle East",
-      "APAC"
-    ],
-    "deployment_types": [
-      "AI",
-      "Hyperscale",
-      "Colocation",
-      "Regional"
-    ],
-    "buyer_types": [
-      "Developers",
-      "Operators",
-      "Infrastructure teams"
-    ],
-    "specialties": [
-      "owners engineering",
-      "environmental and permitting support",
-      "water and cooling feasibility",
-      "program delivery planning"
-    ],
-    "proof_points": [
-      "Useful owners-engineer and permitting-aware planning layer for data center and energy-intensive site delivery"
-    ],
-    "featured_capabilities": [
-      "Permitting and environmental coordination",
-      "Cooling and water feasibility",
-      "Program delivery planning"
-    ],
-    "comparison_notes": [
-      "Strengthens the graph where land, permitting, water, and cooling realities shape deployment before equipment is chosen"
-    ],
-    "hq": "Pasadena, California, USA",
-    "service_area": "Global",
-    "project_scale": "Regional to hyperscale programs",
-    "subcategories": [
-      "modular-substations"
-    ],
-    "tags": [
-      "owners-engineer",
-      "permitting",
-      "environmental-planning"
-    ],
-    "infrastructure_types": [
-      "services",
-      "facility",
-      "cooling"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "regional",
-      "enterprise",
-      "hyperscale"
-    ],
-    "ecosystem_roles": [
-      "integrator",
-      "service_provider"
-    ],
-    "company_types": [
-      "public"
-    ],
-    "related_company_slugs": [
-      "olsson",
-      "hdr",
-      "jacobs",
-      "enercon"
-    ],
-    "dependency_category_slugs": [
-      "site-selection-and-land-strategy",
-      "hvac-and-thermal-rejection"
-    ],
-    "often_used_with_category_slugs": [
-      "power-and-electrical",
-      "commissioning-and-operations"
-    ],
-    "logo_url": "https://logo.clearbit.com/tetratech.com"
-  },
-  {
-    "slug": "enercon",
-    "name": "Enercon",
-    "website_url": "https://www.enerconpower.com/ehouses",
-    "headline": "Packaged interconnection and transportable electrical enclosure provider relevant to prefabricated power delivery and field-ready energization support.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "prefabricated-power-blocks",
-      "modular-substations",
-      "power-and-electrical",
-      "electrical-integration-services"
-    ],
-    "regions": [
-      "North America"
-    ],
-    "deployment_types": [
-      "Modular",
-      "Mission-critical",
-      "Industrial",
-      "Regional"
-    ],
-    "buyer_types": [
-      "Electrical teams",
-      "Developers",
-      "Operators"
-    ],
-    "specialties": [
-      "e-houses",
-      "transportable electrical rooms",
-      "interconnection-ready packaged power",
-      "field deployment support"
-    ],
-    "proof_points": [
-      "Useful packaged-power and interconnection-adjacent vendor for modular energization paths"
-    ],
-    "featured_capabilities": [
-      "Transportable electrical rooms",
-      "Packaged interconnection support",
-      "Field deployment coordination"
-    ],
-    "comparison_notes": [
-      "Improves realism between packaged electrical gear and field-ready power delivery for modular and utility-adjacent sites"
-    ],
-    "hq": "Blaine, Minnesota, USA",
-    "service_area": "North America",
-    "project_scale": "Skid to site programs",
-    "subcategories": [
-      "prefabricated-power-blocks",
-      "modular-substations"
-    ],
-    "tags": [
-      "e-house",
-      "packaged-power",
-      "interconnection-ready"
-    ],
-    "infrastructure_types": [
-      "power",
-      "facility",
-      "services"
-    ],
-    "power_specializations": [
-      "substation",
-      "switchgear",
-      "prefab-power"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "regional",
-      "enterprise"
-    ],
-    "ecosystem_roles": [
-      "manufacturer",
-      "integrator"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "siemens-energy-ehouse",
-      "powell-industries",
-      "mission-critical-group",
-      "electrotempo"
-    ],
-    "dependency_category_slugs": [
-      "electrical-integration-services",
-      "infrastructure-logistics"
-    ],
-    "often_used_with_category_slugs": [
-      "ats-and-transfer-systems",
-      "commissioning-and-operations"
-    ],
-    "logo_url": "https://logo.clearbit.com/enerconpower.com"
-  },
-  {
-    "slug": "bmarko-structures",
-    "name": "BMarko Structures",
-    "website_url": "https://bmarkostructures.com/modular-data-centers/",
-    "headline": "Containerized and constrained-site deployment-shell provider relevant to brownfield modular execution and physical packaging realism.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "modular-prefab",
-      "containerized-data-centers",
-      "edge-micro-data-centers",
-      "construction-and-integration"
-    ],
-    "regions": [
-      "North America"
-    ],
-    "deployment_types": [
-      "Modular",
-      "Edge",
-      "Regional",
-      "Brownfield"
-    ],
-    "buyer_types": [
-      "Developers",
-      "Edge operators",
-      "Infrastructure teams"
-    ],
-    "specialties": [
-      "containerized retrofit structures",
-      "deployment shells",
-      "rapid structural packaging",
-      "brownfield-friendly modular placement"
-    ],
-    "proof_points": [
-      "Useful physical-shell vendor where retrofit and constrained-site packaging matter more than campus-scale buildouts"
-    ],
-    "featured_capabilities": [
-      "Brownfield-friendly modular packaging",
-      "Containerized deployment shells",
-      "Rapid placement support"
-    ],
-    "comparison_notes": [
-      "Adds realism to retrofit and constrained-site deployment scenarios that do not start from empty greenfield campuses"
-    ],
-    "hq": "Atlanta, Georgia, USA",
-    "service_area": "North America",
-    "project_scale": "Container to regional rollout",
-    "subcategories": [
-      "fabricated-enclosures-and-shells"
-    ],
-    "tags": [
-      "brownfield",
-      "containerized",
-      "retrofit-shells"
-    ],
-    "infrastructure_types": [
-      "facility",
-      "services"
-    ],
-    "focus_areas": [
-      "ai",
-      "edge",
-      "general"
-    ],
-    "scale_focus": [
-      "edge",
-      "regional",
-      "enterprise"
-    ],
-    "ecosystem_roles": [
-      "manufacturer",
-      "integrator"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "edge-modular",
-      "compu-dynamics-modular",
-      "barnhart-crane-rigging"
-    ],
-    "dependency_category_slugs": [
-      "infrastructure-logistics",
-      "field-services-and-maintenance"
-    ],
-    "often_used_with_category_slugs": [
-      "electrical-integration-services",
-      "commissioning-and-operations"
-    ],
-    "logo_url": "https://logo.clearbit.com/bmarkostructures.com"
-  },
-  {
-    "slug": "edge-modular",
-    "name": "Edge Modular",
-    "website_url": "https://edgemodular.com/",
-    "headline": "Packaged modular deployment provider relevant to constrained-site AI rollout, rapid activation, and turnover-aware handoff support.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "modular-prefab",
-      "containerized-data-centers",
-      "edge-micro-data-centers",
-      "liquid-cooling",
-      "construction-and-integration",
-      "commissioning-and-operations"
-    ],
-    "regions": [
-      "North America"
-    ],
-    "deployment_types": [
-      "AI",
-      "Edge",
-      "Modular",
-      "Brownfield"
-    ],
-    "buyer_types": [
-      "Edge operators",
-      "AI builders",
-      "Infrastructure teams"
-    ],
-    "specialties": [
-      "brownfield-compatible modular deployment",
-      "liquid-cooled packaged systems",
-      "rapid site activation",
-      "post-handoff support framing"
-    ],
-    "proof_points": [
-      "Useful packaged deployment node for retrofit, edge, and fast-turn AI capacity additions"
-    ],
-    "featured_capabilities": [
-      "Rapid modular activation",
-      "Packaged liquid-cooled systems",
-      "Deployment and turnover coordination"
-    ],
-    "comparison_notes": [
-      "Improves realism where buyers need packaged AI-ready systems that can be deployed into constrained or retrofit conditions without full campus development"
-    ],
-    "hq": "North America",
-    "service_area": "North America",
-    "project_scale": "Pod to regional rollout",
-    "subcategories": [
-      "fabricated-enclosures-and-shells"
-    ],
-    "tags": [
-      "brownfield",
-      "edge-modular",
-      "rapid-activation"
-    ],
-    "infrastructure_types": [
-      "facility",
-      "cooling",
-      "services"
-    ],
-    "cooling_types": [
-      "liquid_loop"
-    ],
-    "focus_areas": [
-      "ai",
-      "edge"
-    ],
-    "scale_focus": [
-      "edge",
-      "regional",
-      "enterprise"
-    ],
-    "ecosystem_roles": [
-      "integrator",
-      "developer",
-      "service_provider"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "bmarko-structures",
-      "compu-dynamics-modular",
-      "integra-mission-critical",
-      "shermco"
-    ],
-    "dependency_category_slugs": [
-      "electrical-integration-services",
-      "field-services-and-maintenance"
-    ],
-    "often_used_with_category_slugs": [
-      "commissioning-and-operations",
-      "site-selection-and-land-strategy"
-    ],
-    "logo_url": "https://logo.clearbit.com/edgemodular.com"
   }
 ]
