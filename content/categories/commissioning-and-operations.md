@@ -36,6 +36,8 @@ This work matters because many projects are technically complete before they are
 - What hidden risks usually appear late in turnover?
 - Can this approach support phased live-up without creating rework?
 - How much of the commissioning work actually improves long-term reliability?
+- Which regional service contractors will actually answer the first post-go-live electrical or thermal failure call?
+- If a breaker, relay, controls loop, generator, or cooling plant component fails, who diagnoses it, who repairs it, and who recommissions it?
 
 ## Deployment signals
 

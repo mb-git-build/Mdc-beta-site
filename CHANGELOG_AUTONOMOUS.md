@@ -309,3 +309,46 @@ For each meaningful autonomous pass, append an entry with:
   - regional thermal service contractors and mechanical uptime partners
   - OEM-authorized replacement-parts and refurb / reman support around power and cooling systems
   - denser O&M contract and uptime-service actors for operating portfolios rather than single-site turnover
+
+## 2026-05-28 00:07 UTC
+
+- **Active ecosystem focus:** regional post-handoff thermal and electrical service density
+- **Categories strengthened:**
+  - `field-services-and-maintenance`
+  - `commissioning-and-operations`
+  - `power-and-electrical`
+  - `generators-and-microgrids`
+  - `hvac-and-thermal-rejection`
+  - `monitoring-and-controls`
+- **Vendors added:**
+  - ROMCO Power Systems
+  - Western Electrical Services
+  - NEI Electric Power Engineering
+  - Climatec
+  - Temperature Control Services
+- **Relationships added or strengthened:**
+  - increased regional machine-readable adjacency around electrical diagnostics, relay testing, generator support, switchgear service, HVAC service, thermal controls continuity, and uptime response
+  - improved explicit chains between national anchors and regionally plausible service-call / diagnosis / repair / recommissioning actors
+  - tightened post-go-live coverage without broadening category scope or adding unrelated execution layers
+- **Ontology changes:**
+  - no new ontology primitives added
+  - realism increased through narrower regional service density inside existing `related_company_slugs`, `dependency_category_slugs`, and `often_used_with_category_slugs` fields
+- **Deployment chains improved:**
+  - energized site -> service call -> breaker / relay diagnosis -> field repair -> recommissioning -> uptime continuity
+  - energized site -> generator or ATS issue -> regional field dispatch -> repair / service -> return to resilient operation
+  - liquid or mechanical plant issue -> regional HVAC / controls response -> repair coordination -> thermal recommissioning -> continued operation
+  - modular compute site -> national platform vendor stack -> regional support partner -> ongoing local maintenance continuity
+- **Deployment/build result:**
+  - `npm run build` passed successfully after the pass
+- **Commit hash:** `PENDING`
+- **Notable graph improvements:**
+  - the operating graph now feels less like a national-directory abstraction and more like a site that exists in a geography with who-actually-shows-up realism
+  - regional field maintenance and thermal/electrical response paths are easier to infer from the graph surface
+  - recommissioning and repair continuity are now more believable after initial handoff
+- **Blockers encountered:**
+  - no validation blockers
+  - current limitation remains saturation depth: regional density is improved, but coverage is still selective rather than broad across every operating geography
+- **Next likely expansion vectors:**
+  - OEM-authorized parts / breaker / switchgear replacement ecosystems
+  - regional liquid-cooling and immersion-specific field-service specialists
+  - more explicit refurb / reman / replacement-part continuity around energized power trains and thermal plants

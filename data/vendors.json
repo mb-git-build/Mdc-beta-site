@@ -1126,6 +1126,102 @@
     "logo_url": "https://logo.clearbit.com/boydcorp.com"
   },
   {
+    "slug": "climatec",
+    "name": "Climatec",
+    "website_url": "https://www.climatec.com",
+    "headline": "Regional HVAC, controls, retrofit, and service organization relevant to uptime continuity for thermal plants and high-density facility environments.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "field-services-and-maintenance",
+      "hvac-and-thermal-rejection",
+      "monitoring-and-controls"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Regional",
+      "Enterprise",
+      "Mission-critical"
+    ],
+    "buyer_types": [
+      "Facility teams",
+      "Operators",
+      "Mechanical managers"
+    ],
+    "specialties": [
+      "HVAC service",
+      "Controls retrofit",
+      "Regional mechanical response",
+      "Maintenance programs"
+    ],
+    "proof_points": [
+      "Adds regional thermal service density where post-go-live uptime depends on local mechanical support"
+    ],
+    "featured_capabilities": [
+      "Regional thermal maintenance",
+      "Controls continuity support",
+      "Retrofit and repair response"
+    ],
+    "comparison_notes": [
+      "Strengthens the graph where operational durability depends on mechanical and controls service coverage, not just cooling OEM presence"
+    ],
+    "hq": "Phoenix, Arizona, USA",
+    "service_area": "Southwest and Western U.S. regional markets",
+    "project_scale": "Single facility to regional portfolio",
+    "subcategories": [
+      "thermal-optimization-controls"
+    ],
+    "tags": [
+      "regional-hvac-service",
+      "controls-retrofit",
+      "mechanical-response"
+    ],
+    "infrastructure_types": [
+      "cooling",
+      "controls",
+      "services",
+      "facility"
+    ],
+    "cooling_types": [
+      "chilled_water",
+      "dx",
+      "hybrid"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "service_provider",
+      "integrator"
+    ],
+    "company_types": [
+      "private",
+      "regional_provider"
+    ],
+    "related_company_slugs": [
+      "trane",
+      "stulz",
+      "schneider-electric-uniflair",
+      "mta"
+    ],
+    "dependency_category_slugs": [
+      "commissioning-and-operations",
+      "power-and-electrical"
+    ],
+    "often_used_with_category_slugs": [
+      "field-services-and-maintenance",
+      "hvac-and-thermal-rejection",
+      "monitoring-and-controls"
+    ]
+  },
+  {
     "slug": "compu-dynamics-modular",
     "name": "Compu Dynamics Modular",
     "website_url": "https://cd-modular.com",
@@ -1220,7 +1316,9 @@
       "mammoet",
       "resa-power",
       "trane",
-      "sunbird-software"
+      "sunbird-software",
+      "romco-power-systems",
+      "climatec"
     ],
     "dependency_category_slugs": [
       "electrical-integration-services",
@@ -1234,7 +1332,9 @@
       "modular-substations",
       "field-services-and-maintenance",
       "dcim-and-observability",
-      "commissioning-and-operations"
+      "commissioning-and-operations",
+      "hvac-and-thermal-rejection",
+      "generators-and-microgrids"
     ],
     "logo_url": "https://logo.clearbit.com/cd-modular.com"
   },
@@ -1917,7 +2017,9 @@
       "shermco",
       "trane",
       "sunbird-software",
-      "nlyte"
+      "nlyte",
+      "romco-power-systems",
+      "climatec"
     ],
     "dependency_category_slugs": [
       "electrical-integration-services",
@@ -1930,7 +2032,9 @@
       "site-selection-and-land-strategy",
       "field-services-and-maintenance",
       "dcim-and-observability",
-      "power-monitoring-and-energy-management"
+      "power-monitoring-and-energy-management",
+      "hvac-and-thermal-rejection",
+      "generators-and-microgrids"
     ],
     "logo_url": "https://logo.clearbit.com/edgemodular.com"
   },
@@ -2016,7 +2120,9 @@
       "rosendin",
       "mammoth-freight-solutions",
       "resa-power",
-      "shermco"
+      "shermco",
+      "western-electrical-services",
+      "nei-electric-power-engineering"
     ],
     "dependency_category_slugs": [
       "prefabricated-power-blocks",
@@ -2654,7 +2760,10 @@
       "schneider-electric-ecostruxure-it",
       "sunbird-software",
       "nlyte",
-      "schneider-electric"
+      "schneider-electric",
+      "romco-power-systems",
+      "western-electrical-services",
+      "climatec"
     ],
     "dependency_category_slugs": [
       "power-and-electrical",
@@ -2663,7 +2772,9 @@
     "often_used_with_category_slugs": [
       "power-monitoring-and-energy-management",
       "monitoring-and-controls",
-      "field-services-and-maintenance"
+      "field-services-and-maintenance",
+      "generators-and-microgrids",
+      "hvac-and-thermal-rejection"
     ]
   },
   {
@@ -4563,7 +4674,9 @@
       "stulz",
       "munters",
       "kelvion",
-      "schneider-electric-uniflair"
+      "schneider-electric-uniflair",
+      "climatec",
+      "temperature-control-services"
     ],
     "dependency_category_slugs": [
       "power-and-electrical",
@@ -4572,7 +4685,8 @@
     "often_used_with_category_slugs": [
       "hvac-and-thermal-rejection",
       "field-services-and-maintenance",
-      "commissioning-and-operations"
+      "commissioning-and-operations",
+      "monitoring-and-controls"
     ]
   },
   {
@@ -4664,6 +4778,103 @@
       "monitoring-and-controls"
     ],
     "logo_url": "https://logo.clearbit.com/munters.com"
+  },
+  {
+    "slug": "nei-electric-power-engineering",
+    "name": "NEI Electric Power Engineering",
+    "website_url": "https://www.neieng.com",
+    "headline": "Regional power engineering, relay testing, and field-services partner relevant to fault diagnosis, commissioning follow-on work, and operating continuity in utility-adjacent sites.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "field-services-and-maintenance",
+      "commissioning-and-operations",
+      "power-and-electrical"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Regional",
+      "Utility-adjacent",
+      "Mission-critical"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Utilities",
+      "Electrical teams"
+    ],
+    "specialties": [
+      "Relay testing",
+      "Power engineering",
+      "Fault diagnostics",
+      "Field services"
+    ],
+    "proof_points": [
+      "Adds a more believable regional follow-on layer after acceptance and energization"
+    ],
+    "featured_capabilities": [
+      "Regional relay and protection support",
+      "Fault analysis",
+      "Recommissioning-oriented field engineering"
+    ],
+    "comparison_notes": [
+      "Important because many real operating failures are resolved by regional engineering/service firms rather than original build partners"
+    ],
+    "hq": "Lakewood, Colorado, USA",
+    "service_area": "Mountain West and surrounding regions",
+    "project_scale": "Single substation to regional site portfolio",
+    "subcategories": [
+      "modular-substations",
+      "ats-and-transfer-systems"
+    ],
+    "tags": [
+      "regional-power-engineering",
+      "relay-testing",
+      "fault-diagnostics"
+    ],
+    "infrastructure_types": [
+      "power",
+      "services",
+      "controls"
+    ],
+    "power_specializations": [
+      "substation",
+      "testing",
+      "protection",
+      "ats"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "service_provider",
+      "integrator"
+    ],
+    "company_types": [
+      "private",
+      "regional_provider"
+    ],
+    "related_company_slugs": [
+      "omicron",
+      "shermco",
+      "quanta-services",
+      "western-electrical-services"
+    ],
+    "dependency_category_slugs": [
+      "electrical-integration-services",
+      "commissioning-and-operations"
+    ],
+    "often_used_with_category_slugs": [
+      "field-services-and-maintenance",
+      "modular-substations",
+      "power-monitoring-and-energy-management"
+    ]
   },
   {
     "slug": "nlyte",
@@ -5124,7 +5335,9 @@
       "siemens-energy-ehouse",
       "shermco",
       "resa-power",
-      "gds-associates"
+      "gds-associates",
+      "nei-electric-power-engineering",
+      "western-electrical-services"
     ],
     "dependency_category_slugs": [
       "modular-substations",
@@ -5136,7 +5349,9 @@
       "commissioning-and-operations",
       "field-services-and-maintenance",
       "ats-and-transfer-systems",
-      "power-monitoring-and-energy-management"
+      "power-monitoring-and-energy-management",
+      "modular-substations",
+      "power-and-electrical"
     ],
     "logo_url": "https://logo.clearbit.com/omicronenergy.com"
   },
@@ -5672,16 +5887,21 @@
       "omicron",
       "asco-power-technologies",
       "eaton",
-      "schneider-electric"
+      "schneider-electric",
+      "romco-power-systems",
+      "western-electrical-services",
+      "nei-electric-power-engineering"
     ],
     "dependency_category_slugs": [
       "electrical-integration-services",
-      "modular-substations"
+      "modular-substations",
+      "field-services-and-maintenance"
     ],
     "often_used_with_category_slugs": [
       "commissioning-and-operations",
       "field-services-and-maintenance",
-      "power-monitoring-and-energy-management"
+      "power-monitoring-and-energy-management",
+      "generators-and-microgrids"
     ]
   },
   {
@@ -5763,6 +5983,102 @@
       "nvent-liquid-cooling",
       "legrand",
       "vertiv"
+    ]
+  },
+  {
+    "slug": "romco-power-systems",
+    "name": "ROMCO Power Systems",
+    "website_url": "https://romco.com/power-systems/",
+    "headline": "Regional generator, switchgear, and emergency-power service organization relevant to uptime response and field support for energized compute sites in Texas and surrounding markets.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "field-services-and-maintenance",
+      "generators-and-microgrids",
+      "power-and-electrical"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Regional",
+      "Mission-critical",
+      "Industrial"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Facility teams",
+      "Regional developers"
+    ],
+    "specialties": [
+      "Emergency power service",
+      "Generator maintenance",
+      "Regional field response",
+      "Switchgear support"
+    ],
+    "proof_points": [
+      "Adds believable regional emergency-power density instead of another national umbrella provider"
+    ],
+    "featured_capabilities": [
+      "Regional uptime response",
+      "Generator and switchgear field support",
+      "Service-backed resilience continuity"
+    ],
+    "comparison_notes": [
+      "Useful because real post-handoff operations often depend on who can actually get a tech on site quickly in a given region"
+    ],
+    "hq": "Dallas, Texas, USA",
+    "service_area": "Texas and surrounding regional markets",
+    "project_scale": "Single site to regional portfolio",
+    "subcategories": [
+      "ats-and-transfer-systems",
+      "power-monitoring-and-energy-management"
+    ],
+    "tags": [
+      "regional-service",
+      "emergency-power",
+      "field-response"
+    ],
+    "infrastructure_types": [
+      "power",
+      "services"
+    ],
+    "power_specializations": [
+      "generator",
+      "ats",
+      "switchgear",
+      "maintenance"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "service_provider",
+      "integrator"
+    ],
+    "company_types": [
+      "private",
+      "regional_provider"
+    ],
+    "related_company_slugs": [
+      "resa-power",
+      "shermco",
+      "asco-power-technologies",
+      "eaton"
+    ],
+    "dependency_category_slugs": [
+      "commissioning-and-operations",
+      "electrical-integration-services"
+    ],
+    "often_used_with_category_slugs": [
+      "field-services-and-maintenance",
+      "generators-and-microgrids",
+      "power-monitoring-and-energy-management"
     ]
   },
   {
@@ -6123,7 +6439,9 @@
       "submer",
       "sunbird-software",
       "nlyte",
-      "gds-associates"
+      "gds-associates",
+      "climatec",
+      "temperature-control-services"
     ],
     "dependency_category_slugs": [
       "network-fabric-and-connectivity",
@@ -6222,7 +6540,9 @@
       "stulz",
       "vertiv",
       "trane",
-      "mta"
+      "mta",
+      "climatec",
+      "temperature-control-services"
     ],
     "dependency_category_slugs": [
       "power-and-electrical",
@@ -6424,7 +6744,10 @@
       "quanta-services",
       "asco-power-technologies",
       "resa-power",
-      "eos-energy-enterprises"
+      "eos-energy-enterprises",
+      "romco-power-systems",
+      "western-electrical-services",
+      "nei-electric-power-engineering"
     ],
     "dependency_category_slugs": [
       "electrical-integration-services",
@@ -6436,7 +6759,8 @@
       "commissioning-and-operations",
       "field-services-and-maintenance",
       "power-and-electrical",
-      "power-monitoring-and-energy-management"
+      "power-monitoring-and-energy-management",
+      "modular-substations"
     ],
     "logo_url": "https://logo.clearbit.com/shermco.com"
   },
@@ -6706,7 +7030,9 @@
       "schneider-electric-uniflair",
       "trane",
       "mta",
-      "vertiv"
+      "vertiv",
+      "climatec",
+      "temperature-control-services"
     ],
     "logo_url": "https://logo.clearbit.com/stulz.com",
     "dependency_category_slugs": [
@@ -6716,7 +7042,9 @@
     "often_used_with_category_slugs": [
       "commissioning-and-operations",
       "field-services-and-maintenance",
-      "thermal-optimization-controls"
+      "thermal-optimization-controls",
+      "monitoring-and-controls",
+      "hvac-and-thermal-rejection"
     ]
   },
   {
@@ -6895,7 +7223,9 @@
       "schneider-electric-ecostruxure-it",
       "submer",
       "gds-associates",
-      "vertiv"
+      "vertiv",
+      "climatec",
+      "temperature-control-services"
     ],
     "dependency_category_slugs": [
       "network-fabric-and-connectivity",
@@ -6907,9 +7237,103 @@
       "power-and-electrical",
       "commissioning-and-operations",
       "power-monitoring-and-energy-management",
-      "field-services-and-maintenance"
+      "field-services-and-maintenance",
+      "hvac-and-thermal-rejection"
     ],
     "logo_url": "https://logo.clearbit.com/sunbirddcim.com"
+  },
+  {
+    "slug": "temperature-control-services",
+    "name": "Temperature Control Services",
+    "website_url": "https://tcsbasys.com",
+    "headline": "Regional HVAC controls, maintenance, and service partner relevant to thermal diagnosis, repair coordination, and steady-state uptime response in data-intense facilities.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "field-services-and-maintenance",
+      "hvac-and-thermal-rejection",
+      "monitoring-and-controls"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Regional",
+      "Enterprise",
+      "Industrial"
+    ],
+    "buyer_types": [
+      "Facility operators",
+      "Mechanical teams",
+      "Regional developers"
+    ],
+    "specialties": [
+      "HVAC controls service",
+      "Mechanical diagnostics",
+      "Regional maintenance response",
+      "Repair coordination"
+    ],
+    "proof_points": [
+      "Adds a more local-feeling thermal service layer without broadening outside the operational continuity target"
+    ],
+    "featured_capabilities": [
+      "Thermal diagnosis and controls support",
+      "Regional maintenance dispatch",
+      "Repair and uptime continuity"
+    ],
+    "comparison_notes": [
+      "Useful because real sites often rely on local controls and HVAC partners for continuity between major retrofit cycles"
+    ],
+    "hq": "Irving, Texas, USA",
+    "service_area": "Texas regional markets",
+    "project_scale": "Single facility to regional estate",
+    "subcategories": [
+      "thermal-optimization-controls"
+    ],
+    "tags": [
+      "regional-thermal-service",
+      "hvac-controls",
+      "local-response"
+    ],
+    "infrastructure_types": [
+      "cooling",
+      "controls",
+      "services"
+    ],
+    "cooling_types": [
+      "chilled_water",
+      "dx"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "service_provider"
+    ],
+    "company_types": [
+      "private",
+      "regional_provider"
+    ],
+    "related_company_slugs": [
+      "climatec",
+      "trane",
+      "stulz",
+      "schneider-electric-ecostruxure-it"
+    ],
+    "dependency_category_slugs": [
+      "commissioning-and-operations",
+      "monitoring-and-controls"
+    ],
+    "often_used_with_category_slugs": [
+      "field-services-and-maintenance",
+      "hvac-and-thermal-rejection",
+      "commissioning-and-operations"
+    ]
   },
   {
     "slug": "tetra-tech",
@@ -7181,16 +7605,21 @@
       "munters",
       "schneider-electric-uniflair",
       "vertiv",
-      "mta"
+      "mta",
+      "climatec",
+      "temperature-control-services"
     ],
     "dependency_category_slugs": [
       "power-and-electrical",
-      "sustainability-and-energy-strategy"
+      "sustainability-and-energy-strategy",
+      "field-services-and-maintenance"
     ],
     "often_used_with_category_slugs": [
       "hvac-and-thermal-rejection",
       "commissioning-and-operations",
-      "field-services-and-maintenance"
+      "field-services-and-maintenance",
+      "monitoring-and-controls",
+      "thermal-optimization-controls"
     ]
   },
   {
@@ -7376,7 +7805,9 @@
       "liquidstack",
       "trane",
       "resa-power",
-      "schneider-electric"
+      "schneider-electric",
+      "climatec",
+      "romco-power-systems"
     ],
     "dependency_category_slugs": [
       "generators-and-microgrids",
@@ -7387,9 +7818,106 @@
       "network-fabric-and-connectivity",
       "power-monitoring-and-energy-management",
       "commissioning-and-operations",
-      "field-services-and-maintenance"
+      "field-services-and-maintenance",
+      "generators-and-microgrids",
+      "hvac-and-thermal-rejection"
     ],
     "logo_url": "https://logo.clearbit.com/vertiv.com"
+  },
+  {
+    "slug": "western-electrical-services",
+    "name": "Western Electrical Services",
+    "website_url": "https://www.westernelectricalservices.com",
+    "headline": "Regional electrical testing, breaker maintenance, and switchgear field-service provider relevant to diagnosis, repair, recommissioning, and uptime continuity in Western U.S. markets.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "field-services-and-maintenance",
+      "commissioning-and-operations",
+      "power-and-electrical"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Regional",
+      "Mission-critical",
+      "Industrial"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Electrical teams",
+      "Facility managers"
+    ],
+    "specialties": [
+      "Breaker testing",
+      "Switchgear service",
+      "Regional diagnostics",
+      "Recommissioning support"
+    ],
+    "proof_points": [
+      "Improves regional realism for the service-call -> diagnosis -> repair chain"
+    ],
+    "featured_capabilities": [
+      "Field diagnosis and repair",
+      "Regional breaker and switchgear maintenance",
+      "Recommissioning support"
+    ],
+    "comparison_notes": [
+      "Adds the kind of regional electrical service density that makes ongoing operations feel less nationally abstract"
+    ],
+    "hq": "Phoenix, Arizona, USA",
+    "service_area": "Western United States",
+    "project_scale": "Single facility to multi-site regional coverage",
+    "subcategories": [
+      "switchgear-pdu-busway",
+      "ats-and-transfer-systems"
+    ],
+    "tags": [
+      "regional-electrical",
+      "breaker-service",
+      "recommissioning"
+    ],
+    "infrastructure_types": [
+      "power",
+      "services"
+    ],
+    "power_specializations": [
+      "switchgear",
+      "ats",
+      "testing",
+      "maintenance"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "service_provider"
+    ],
+    "company_types": [
+      "private",
+      "regional_provider"
+    ],
+    "related_company_slugs": [
+      "resa-power",
+      "shermco",
+      "omicron",
+      "romco-power-systems"
+    ],
+    "dependency_category_slugs": [
+      "electrical-integration-services",
+      "power-monitoring-and-energy-management"
+    ],
+    "often_used_with_category_slugs": [
+      "field-services-and-maintenance",
+      "commissioning-and-operations",
+      "power-and-electrical"
+    ]
   },
   {
     "slug": "zyntra",
