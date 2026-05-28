@@ -515,16 +515,22 @@
       "eaton",
       "schneider-electric",
       "mission-critical-group",
-      "powell-industries"
+      "powell-industries",
+      "group-cbs",
+      "electrical-power-support"
     ],
     "dependency_category_slugs": [
       "electrical-integration-services",
-      "prefabricated-power-blocks"
+      "prefabricated-power-blocks",
+      "field-services-and-maintenance",
+      "switchgear-pdu-busway"
     ],
     "often_used_with_category_slugs": [
       "ups-and-battery-storage",
       "generators-and-microgrids",
-      "modular-substations"
+      "modular-substations",
+      "commissioning-and-operations",
+      "power-monitoring-and-energy-management"
     ],
     "logo_url": "https://logo.clearbit.com/ascopower.com"
   },
@@ -1916,16 +1922,23 @@
       "abb",
       "asco-power-technologies",
       "mission-critical-group",
-      "siemens-energy-ehouse"
+      "siemens-energy-ehouse",
+      "group-cbs",
+      "national-switchgear",
+      "rewind-electric"
     ],
     "dependency_category_slugs": [
       "modular-substations",
-      "electrical-integration-services"
+      "electrical-integration-services",
+      "field-services-and-maintenance",
+      "switchgear-pdu-busway"
     ],
     "often_used_with_category_slugs": [
       "ups-and-battery-storage",
       "generators-and-microgrids",
-      "prefabricated-power-blocks"
+      "prefabricated-power-blocks",
+      "commissioning-and-operations",
+      "power-monitoring-and-energy-management"
     ]
   },
   {
@@ -2037,6 +2050,103 @@
       "generators-and-microgrids"
     ],
     "logo_url": "https://logo.clearbit.com/edgemodular.com"
+  },
+  {
+    "slug": "electrical-power-support",
+    "name": "Electrical Power Support",
+    "website_url": "https://epscoinc.com",
+    "headline": "Aftermarket breaker, relay, testing, and outage-support provider relevant to replacement integration and uptime restoration across energized mission-critical power systems.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "field-services-and-maintenance",
+      "commissioning-and-operations",
+      "power-and-electrical"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Mission-critical",
+      "Utility-adjacent",
+      "Regional"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Electrical teams",
+      "Regional service managers"
+    ],
+    "specialties": [
+      "Outage support",
+      "Breaker replacement integration",
+      "Relay/test continuity",
+      "Field recommissioning"
+    ],
+    "proof_points": [
+      "Strengthens the outage-response workflow from failure through restoration"
+    ],
+    "featured_capabilities": [
+      "Emergency power recovery support",
+      "Replacement integration",
+      "Testing and return-to-service workflows"
+    ],
+    "comparison_notes": [
+      "Useful because the hard part is often not just finding parts, but getting them integrated, tested, and returned to service cleanly"
+    ],
+    "hq": "Greensboro, North Carolina, USA",
+    "service_area": "Southeast and Mid-Atlantic regional markets",
+    "project_scale": "Single event to regional operating portfolio",
+    "subcategories": [
+      "ats-and-transfer-systems",
+      "modular-substations"
+    ],
+    "tags": [
+      "outage-support",
+      "replacement-integration",
+      "return-to-service"
+    ],
+    "infrastructure_types": [
+      "power",
+      "services",
+      "controls"
+    ],
+    "power_specializations": [
+      "breaker",
+      "ats",
+      "substation",
+      "testing"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "service_provider",
+      "integrator"
+    ],
+    "company_types": [
+      "private",
+      "regional_provider"
+    ],
+    "related_company_slugs": [
+      "group-cbs",
+      "nei-electric-power-engineering",
+      "omicron",
+      "shermco"
+    ],
+    "dependency_category_slugs": [
+      "field-services-and-maintenance",
+      "power-monitoring-and-energy-management"
+    ],
+    "often_used_with_category_slugs": [
+      "commissioning-and-operations",
+      "switchgear-pdu-busway",
+      "modular-substations"
+    ]
   },
   {
     "id": "ven_electrotempo",
@@ -2763,7 +2873,9 @@
       "schneider-electric",
       "romco-power-systems",
       "western-electrical-services",
-      "climatec"
+      "climatec",
+      "romac-industrial-controls",
+      "electrical-power-support"
     ],
     "dependency_category_slugs": [
       "power-and-electrical",
@@ -2774,7 +2886,9 @@
       "monitoring-and-controls",
       "field-services-and-maintenance",
       "generators-and-microgrids",
-      "hvac-and-thermal-rejection"
+      "hvac-and-thermal-rejection",
+      "switchgear-pdu-busway",
+      "supply-chain-and-logistics"
     ]
   },
   {
@@ -2967,6 +3081,104 @@
       "dcim-and-observability"
     ],
     "logo_url": "https://logo.clearbit.com/grcooling.com"
+  },
+  {
+    "slug": "group-cbs",
+    "name": "Group CBS",
+    "website_url": "https://www.groupcbs.com",
+    "headline": "Low- and medium-voltage circuit breaker lifecycle, retrofit, repair, and replacement ecosystem relevant to maintaining and modernizing energized critical-power infrastructure over time.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "field-services-and-maintenance",
+      "power-and-electrical",
+      "commissioning-and-operations"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Mission-critical",
+      "Industrial",
+      "Regional"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Electrical teams",
+      "Facility managers"
+    ],
+    "specialties": [
+      "Breaker lifecycle support",
+      "Switchgear retrofit",
+      "Aftermarket replacement",
+      "Emergency outage response"
+    ],
+    "proof_points": [
+      "Directly strengthens breaker replacement and modernization realism instead of staying at generic service level"
+    ],
+    "featured_capabilities": [
+      "Breaker refurbishment and replacement",
+      "Switchgear modernization",
+      "Outage-response support"
+    ],
+    "comparison_notes": [
+      "Useful because long-lived energized sites eventually need aftermarket continuity, not just original equipment relationships"
+    ],
+    "hq": "Dallas, Texas, USA",
+    "service_area": "North America",
+    "project_scale": "Single site to fleet",
+    "subcategories": [
+      "switchgear-pdu-busway",
+      "ats-and-transfer-systems"
+    ],
+    "tags": [
+      "breaker-replacement",
+      "switchgear-modernization",
+      "aftermarket-power"
+    ],
+    "infrastructure_types": [
+      "power",
+      "services"
+    ],
+    "power_specializations": [
+      "switchgear",
+      "breaker",
+      "ats",
+      "retrofit"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "regional",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "service_provider",
+      "distributor",
+      "integrator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "resa-power",
+      "western-electrical-services",
+      "shermco",
+      "eaton",
+      "schneider-electric"
+    ],
+    "dependency_category_slugs": [
+      "commissioning-and-operations",
+      "power-monitoring-and-energy-management"
+    ],
+    "often_used_with_category_slugs": [
+      "field-services-and-maintenance",
+      "power-and-electrical",
+      "switchgear-pdu-busway"
+    ]
   },
   {
     "id": "ven_hdr",
@@ -4493,7 +4705,10 @@
       "siemens-energy-ehouse",
       "powell-industries",
       "electrotempo",
-      "nvent-trachte"
+      "nvent-trachte",
+      "group-cbs",
+      "national-switchgear",
+      "romac-industrial-controls"
     ],
     "dependency_category_slugs": [
       "electrical-integration-services",
@@ -4503,7 +4718,9 @@
     "often_used_with_category_slugs": [
       "prefabricated-power-blocks",
       "modular-substations",
-      "ats-and-transfer-systems"
+      "ats-and-transfer-systems",
+      "switchgear-pdu-busway",
+      "power-monitoring-and-energy-management"
     ],
     "logo_url": "https://logo.clearbit.com/missioncriticalgroup.com"
   },
@@ -4780,6 +4997,100 @@
     "logo_url": "https://logo.clearbit.com/munters.com"
   },
   {
+    "slug": "national-switchgear",
+    "name": "National Switchgear",
+    "website_url": "https://www.nationalswitchgear.com",
+    "headline": "Aftermarket switchgear inventory, breaker replacement, legacy gear support, and emergency sourcing provider relevant to uptime restoration after power failures.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "field-services-and-maintenance",
+      "power-and-electrical",
+      "supply-chain-and-logistics"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Mission-critical",
+      "Industrial",
+      "Regional"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Electrical contractors",
+      "Facility teams"
+    ],
+    "specialties": [
+      "Legacy switchgear support",
+      "Emergency replacement sourcing",
+      "Breaker inventory continuity",
+      "Aftermarket power parts"
+    ],
+    "proof_points": [
+      "Makes the replacement-sourcing step in outage response materially more believable"
+    ],
+    "featured_capabilities": [
+      "Emergency breaker sourcing",
+      "Legacy gear continuity",
+      "Aftermarket switchgear support"
+    ],
+    "comparison_notes": [
+      "Important because outage recovery often hinges on who can source compatible replacement gear fast, not just who can diagnose the fault"
+    ],
+    "hq": "Denver, Colorado, USA",
+    "service_area": "North America",
+    "project_scale": "Single breaker to fleet refresh",
+    "subcategories": [
+      "switchgear-pdu-busway"
+    ],
+    "tags": [
+      "legacy-gear",
+      "emergency-sourcing",
+      "aftermarket-switchgear"
+    ],
+    "infrastructure_types": [
+      "power",
+      "services",
+      "logistics"
+    ],
+    "power_specializations": [
+      "switchgear",
+      "breaker",
+      "replacement"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "distributor",
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "group-cbs",
+      "resa-power",
+      "western-electrical-services",
+      "eaton"
+    ],
+    "dependency_category_slugs": [
+      "field-services-and-maintenance",
+      "commissioning-and-operations"
+    ],
+    "often_used_with_category_slugs": [
+      "supply-chain-and-logistics",
+      "switchgear-pdu-busway",
+      "power-and-electrical"
+    ]
+  },
+  {
     "slug": "nei-electric-power-engineering",
     "name": "NEI Electric Power Engineering",
     "website_url": "https://www.neieng.com",
@@ -4864,7 +5175,9 @@
       "omicron",
       "shermco",
       "quanta-services",
-      "western-electrical-services"
+      "western-electrical-services",
+      "electrical-power-support",
+      "rewind-electric"
     ],
     "dependency_category_slugs": [
       "electrical-integration-services",
@@ -4873,7 +5186,9 @@
     "often_used_with_category_slugs": [
       "field-services-and-maintenance",
       "modular-substations",
-      "power-monitoring-and-energy-management"
+      "power-monitoring-and-energy-management",
+      "switchgear-pdu-busway",
+      "commissioning-and-operations"
     ]
   },
   {
@@ -5337,13 +5652,16 @@
       "resa-power",
       "gds-associates",
       "nei-electric-power-engineering",
-      "western-electrical-services"
+      "western-electrical-services",
+      "electrical-power-support",
+      "rewind-electric"
     ],
     "dependency_category_slugs": [
       "modular-substations",
       "electrical-integration-services",
       "field-services-and-maintenance",
-      "power-monitoring-and-energy-management"
+      "power-monitoring-and-energy-management",
+      "switchgear-pdu-busway"
     ],
     "often_used_with_category_slugs": [
       "commissioning-and-operations",
@@ -5351,7 +5669,8 @@
       "ats-and-transfer-systems",
       "power-monitoring-and-energy-management",
       "modular-substations",
-      "power-and-electrical"
+      "power-and-electrical",
+      "supply-chain-and-logistics"
     ],
     "logo_url": "https://logo.clearbit.com/omicronenergy.com"
   },
@@ -5531,20 +5850,25 @@
       "rosendin",
       "resa-power",
       "shermco",
-      "eos-energy-enterprises"
+      "eos-energy-enterprises",
+      "group-cbs",
+      "national-switchgear",
+      "rewind-electric"
     ],
     "dependency_category_slugs": [
       "electrical-integration-services",
       "infrastructure-logistics",
       "commissioning-and-operations",
-      "field-services-and-maintenance"
+      "field-services-and-maintenance",
+      "switchgear-pdu-busway"
     ],
     "often_used_with_category_slugs": [
       "prefabricated-power-blocks",
       "modular-substations",
       "field-services-and-maintenance",
       "power-monitoring-and-energy-management",
-      "commissioning-and-operations"
+      "commissioning-and-operations",
+      "supply-chain-and-logistics"
     ],
     "logo_url": "https://logo.clearbit.com/powellind.com"
   },
@@ -5890,7 +6214,10 @@
       "schneider-electric",
       "romco-power-systems",
       "western-electrical-services",
-      "nei-electric-power-engineering"
+      "nei-electric-power-engineering",
+      "group-cbs",
+      "national-switchgear",
+      "electrical-power-support"
     ],
     "dependency_category_slugs": [
       "electrical-integration-services",
@@ -5901,7 +6228,104 @@
       "commissioning-and-operations",
       "field-services-and-maintenance",
       "power-monitoring-and-energy-management",
-      "generators-and-microgrids"
+      "generators-and-microgrids",
+      "switchgear-pdu-busway",
+      "supply-chain-and-logistics"
+    ]
+  },
+  {
+    "slug": "rewind-electric",
+    "name": "Rewinding Electric",
+    "website_url": "https://www.rewindingelectric.com",
+    "headline": "OEM-authorized switchgear modernization, breaker rebuild, and field-service organization relevant to aging power trains that need repairable continuity instead of wholesale replacement.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "field-services-and-maintenance",
+      "commissioning-and-operations",
+      "power-and-electrical"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Mission-critical",
+      "Industrial",
+      "Regional"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Electrical teams",
+      "Service managers"
+    ],
+    "specialties": [
+      "Breaker rebuilds",
+      "Switchgear modernization",
+      "Field retrofits",
+      "Lifecycle continuity"
+    ],
+    "proof_points": [
+      "Improves realism around repairable and upgradeable long-lived gear rather than simple rip-and-replace assumptions"
+    ],
+    "featured_capabilities": [
+      "Authorized gear modernization",
+      "Field retrofit support",
+      "Repair and recommissioning continuity"
+    ],
+    "comparison_notes": [
+      "Useful because many real power systems survive through refurbishment and modernization programs, not only clean-slate replacement cycles"
+    ],
+    "hq": "San Jose, California, USA",
+    "service_area": "Western United States",
+    "project_scale": "Single lineup to multi-site retrofit programs",
+    "subcategories": [
+      "switchgear-pdu-busway",
+      "ats-and-transfer-systems"
+    ],
+    "tags": [
+      "breaker-rebuild",
+      "switchgear-retrofit",
+      "authorized-service"
+    ],
+    "infrastructure_types": [
+      "power",
+      "services"
+    ],
+    "power_specializations": [
+      "switchgear",
+      "breaker",
+      "retrofit",
+      "testing"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "service_provider",
+      "integrator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "group-cbs",
+      "western-electrical-services",
+      "omicron",
+      "schneider-electric"
+    ],
+    "dependency_category_slugs": [
+      "commissioning-and-operations",
+      "power-monitoring-and-energy-management"
+    ],
+    "often_used_with_category_slugs": [
+      "field-services-and-maintenance",
+      "switchgear-pdu-busway",
+      "commissioning-and-operations"
     ]
   },
   {
@@ -5983,6 +6407,102 @@
       "nvent-liquid-cooling",
       "legrand",
       "vertiv"
+    ]
+  },
+  {
+    "slug": "romac-industrial-controls",
+    "name": "ROMAC Industrial Controls",
+    "website_url": "https://www.romac.net",
+    "headline": "Legacy industrial controls, switchgear support, and modernization partner relevant to life-extension, parts continuity, and upgrade execution for aging energized infrastructure.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "field-services-and-maintenance",
+      "power-and-electrical",
+      "monitoring-and-controls"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Industrial",
+      "Regional",
+      "Mission-critical"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Maintenance teams",
+      "Retrofit programs"
+    ],
+    "specialties": [
+      "Legacy gear support",
+      "Controls continuity",
+      "Modernization projects",
+      "Parts support"
+    ],
+    "proof_points": [
+      "Extends realism into the aging-infrastructure layer where compatibility and life-extension matter"
+    ],
+    "featured_capabilities": [
+      "Legacy equipment continuity",
+      "Upgrade planning",
+      "Modernization-linked support"
+    ],
+    "comparison_notes": [
+      "Important because older energized infrastructure often persists through controls and component continuity rather than full platform replacement"
+    ],
+    "hq": "Dallas, Texas, USA",
+    "service_area": "North America",
+    "project_scale": "Single site to phased modernization program",
+    "subcategories": [
+      "power-monitoring-and-energy-management",
+      "switchgear-pdu-busway"
+    ],
+    "tags": [
+      "legacy-support",
+      "controls-modernization",
+      "life-extension"
+    ],
+    "infrastructure_types": [
+      "power",
+      "controls",
+      "services"
+    ],
+    "power_specializations": [
+      "switchgear",
+      "monitoring",
+      "retrofit"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "service_provider",
+      "distributor",
+      "integrator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "group-cbs",
+      "schneider-electric-ecostruxure-it",
+      "gds-associates",
+      "rewind-electric"
+    ],
+    "dependency_category_slugs": [
+      "commissioning-and-operations",
+      "field-services-and-maintenance"
+    ],
+    "often_used_with_category_slugs": [
+      "monitoring-and-controls",
+      "power-monitoring-and-energy-management",
+      "field-services-and-maintenance"
     ]
   },
   {
@@ -6069,16 +6589,22 @@
       "resa-power",
       "shermco",
       "asco-power-technologies",
-      "eaton"
+      "eaton",
+      "group-cbs",
+      "national-switchgear"
     ],
     "dependency_category_slugs": [
       "commissioning-and-operations",
-      "electrical-integration-services"
+      "electrical-integration-services",
+      "switchgear-pdu-busway",
+      "supply-chain-and-logistics"
     ],
     "often_used_with_category_slugs": [
       "field-services-and-maintenance",
       "generators-and-microgrids",
-      "power-monitoring-and-energy-management"
+      "power-monitoring-and-energy-management",
+      "commissioning-and-operations",
+      "supply-chain-and-logistics"
     ]
   },
   {
@@ -6347,17 +6873,22 @@
       "vertiv",
       "resa-power",
       "trane",
-      "eos-energy-enterprises"
+      "eos-energy-enterprises",
+      "group-cbs",
+      "rewind-electric",
+      "romac-industrial-controls"
     ],
     "logo_url": "https://logo.clearbit.com/se.com",
     "dependency_category_slugs": [
       "field-services-and-maintenance",
-      "commissioning-and-operations"
+      "commissioning-and-operations",
+      "switchgear-pdu-busway"
     ],
     "often_used_with_category_slugs": [
       "power-monitoring-and-energy-management",
       "field-services-and-maintenance",
-      "commissioning-and-operations"
+      "commissioning-and-operations",
+      "switchgear-pdu-busway"
     ]
   },
   {
@@ -6441,7 +6972,9 @@
       "nlyte",
       "gds-associates",
       "climatec",
-      "temperature-control-services"
+      "temperature-control-services",
+      "romac-industrial-controls",
+      "group-cbs"
     ],
     "dependency_category_slugs": [
       "network-fabric-and-connectivity",
@@ -6453,7 +6986,8 @@
       "hvac-and-thermal-rejection",
       "commissioning-and-operations",
       "power-monitoring-and-energy-management",
-      "field-services-and-maintenance"
+      "field-services-and-maintenance",
+      "switchgear-pdu-busway"
     ],
     "logo_url": "https://logo.clearbit.com/se.com"
   },
@@ -6747,20 +7281,27 @@
       "eos-energy-enterprises",
       "romco-power-systems",
       "western-electrical-services",
-      "nei-electric-power-engineering"
+      "nei-electric-power-engineering",
+      "group-cbs",
+      "electrical-power-support",
+      "national-switchgear"
     ],
     "dependency_category_slugs": [
       "electrical-integration-services",
       "modular-substations",
       "ats-and-transfer-systems",
-      "field-services-and-maintenance"
+      "field-services-and-maintenance",
+      "switchgear-pdu-busway",
+      "supply-chain-and-logistics"
     ],
     "often_used_with_category_slugs": [
       "commissioning-and-operations",
       "field-services-and-maintenance",
       "power-and-electrical",
       "power-monitoring-and-energy-management",
-      "modular-substations"
+      "modular-substations",
+      "supply-chain-and-logistics",
+      "switchgear-pdu-busway"
     ],
     "logo_url": "https://logo.clearbit.com/shermco.com"
   },
@@ -6853,20 +7394,25 @@
       "nvent-trachte",
       "resa-power",
       "shermco",
-      "eos-energy-enterprises"
+      "eos-energy-enterprises",
+      "group-cbs",
+      "national-switchgear",
+      "romac-industrial-controls"
     ],
     "dependency_category_slugs": [
       "electrical-integration-services",
       "infrastructure-logistics",
       "commissioning-and-operations",
-      "field-services-and-maintenance"
+      "field-services-and-maintenance",
+      "switchgear-pdu-busway"
     ],
     "often_used_with_category_slugs": [
       "ats-and-transfer-systems",
       "field-services-and-maintenance",
       "generators-and-microgrids",
       "power-monitoring-and-energy-management",
-      "commissioning-and-operations"
+      "commissioning-and-operations",
+      "supply-chain-and-logistics"
     ],
     "logo_url": "https://logo.clearbit.com/siemens.com"
   },
@@ -7907,16 +8453,23 @@
       "resa-power",
       "shermco",
       "omicron",
-      "romco-power-systems"
+      "romco-power-systems",
+      "group-cbs",
+      "national-switchgear",
+      "rewind-electric"
     ],
     "dependency_category_slugs": [
       "electrical-integration-services",
-      "power-monitoring-and-energy-management"
+      "power-monitoring-and-energy-management",
+      "switchgear-pdu-busway",
+      "supply-chain-and-logistics"
     ],
     "often_used_with_category_slugs": [
       "field-services-and-maintenance",
       "commissioning-and-operations",
-      "power-and-electrical"
+      "power-and-electrical",
+      "power-monitoring-and-energy-management",
+      "supply-chain-and-logistics"
     ]
   },
   {

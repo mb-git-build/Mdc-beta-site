@@ -352,3 +352,45 @@ For each meaningful autonomous pass, append an entry with:
   - OEM-authorized parts / breaker / switchgear replacement ecosystems
   - regional liquid-cooling and immersion-specific field-service specialists
   - more explicit refurb / reman / replacement-part continuity around energized power trains and thermal plants
+
+## 2026-05-28 00:18 UTC
+
+- **Active ecosystem focus:** aftermarket breaker, switchgear, modernization, and outage-restoration continuity
+- **Categories strengthened:**
+  - `field-services-and-maintenance`
+  - `power-and-electrical`
+  - `commissioning-and-operations`
+  - `monitoring-and-controls`
+  - `supply-chain-and-logistics`
+- **Vendors added:**
+  - Group CBS
+  - National Switchgear
+  - Rewinding Electric
+  - Electrical Power Support
+  - ROMAC Industrial Controls
+- **Relationships added or strengthened:**
+  - increased machine-readable continuity around breaker replacement, switchgear refurbishment, emergency sourcing, legacy gear support, replacement integration, and outage return-to-service workflows
+  - improved explicit adjacency between OEM/platform power vendors and aftermarket lifecycle / modernization actors that keep energized infrastructure supportable over time
+  - strengthened the repairable / upgradeable gear story so the graph does not assume greenfield replacement whenever power equipment ages or fails
+- **Ontology changes:**
+  - no new ontology primitives added
+  - realism increased through denser `related_company_slugs`, `dependency_category_slugs`, and `often_used_with_category_slugs` across the aftermarket power layer
+- **Deployment chains improved:**
+  - energized site -> fault / failure -> diagnosis -> replacement sourcing -> breaker or switchgear service -> recommissioning -> uptime restoration
+  - aging infrastructure -> modernization / retrofit -> replacement integration -> testing -> return to service -> ongoing support continuity
+  - OEM power platform -> aftermarket inventory / authorized-style service ecosystem -> field integration -> outage recovery
+  - legacy gear constraint -> compatible parts continuity -> service execution -> life-extension rather than forced rip-and-replace
+- **Deployment/build result:**
+  - `npm run build` passed successfully after the pass
+- **Commit hash:** `PENDING`
+- **Notable graph improvements:**
+  - the power graph now feels more maintainable and supportable over time instead of ending at initial energization
+  - outage-restoration and life-extension workflows are more believable because replacement sourcing and modernization actors now occupy explicit graph space
+  - aging energized infrastructure now reads as something that can be repaired, upgraded, and kept alive rather than simply replaced wholesale
+- **Blockers encountered:**
+  - no validation blockers
+  - current limitation remains downstream density around liquid-cooling-specific aftermarket support and deeper regional legacy-gear ecosystems
+- **Next likely expansion vectors:**
+  - regional liquid-cooling and immersion-specific field-service specialists
+  - OEM-authorized cooling and thermal plant replacement-part continuity
+  - more explicit reman / refurb / spare-part ecosystems around dense cooling plants and control systems

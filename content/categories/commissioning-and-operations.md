@@ -45,6 +45,8 @@ This work matters because many projects are technically complete before they are
 - Utility or owner energization windows are fixed enough that failed first-pass acceptance would materially delay go-live.
 - The site can be mechanically complete while still lacking trustworthy turnover artifacts, runbooks, and acceptance signoff.
 - Multiple vendors can commission their own scope, but no one yet owns cross-system energization and handover discipline.
+- The site is already live, but breaker availability, legacy switchgear support, or aftermarket parts continuity now shape outage duration more than the original install path.
+- Aging energized infrastructure is forcing modernization, refurbishment, or replacement-integration work that must happen without breaking operating continuity.
 
 ## Related categories
 
