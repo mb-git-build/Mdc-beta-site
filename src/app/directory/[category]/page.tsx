@@ -17,6 +17,11 @@ type RelatedGuide = {
   slug: string;
 };
 
+type DecisionFrame = {
+  title: string;
+  body: string;
+};
+
 const guideByCategory: Record<string, string[]> = {
   "modular-prefab": ["Modular AI Data Center", "Modular vs. Traditional Data Center Build", "AI Colocation vs. Modular"],
   "liquid-cooling": ["AI Data Center Cooling", "AI Colocation vs. Modular"],
@@ -47,6 +52,39 @@ const categoryClusters = [
     slugs: ["dcim-and-monitoring", "orchestration-and-automation", "network-fabric-and-connectivity", "physical-security-and-fire-protection"],
   },
 ];
+
+const decisionFramesByCategory: Record<string, DecisionFrame[]> = {
+  "modular-prefab": [
+    { title: "Open this when", body: "You want faster time-to-capacity and need to understand which power, cooling, and integration layers travel with a modular build." },
+    { title: "Compare against", body: "Traditional site build, hosted GPU capacity, and phased hybrid approaches where near-term speed and long-term control compete." },
+    { title: "Do not stop here", body: "Widen immediately into prefab power, cooling, construction, logistics, and commissioning before you shortlist suppliers." },
+  ],
+  "ai-colocation-gpu-hosting": [
+    { title: "Open this when", body: "You need capacity quickly, want an operating environment instead of building from scratch, or need a bridge before longer-term deployment." },
+    { title: "Compare against", body: "Modular deployment and phased hybrid paths where control, cost structure, and speed to capacity need to be weighed together." },
+    { title: "Do not stop here", body: "Check adjacent power, cooling, and siting layers so hosted capacity is compared against what a build path would actually require." },
+  ],
+  "liquid-cooling": [
+    { title: "Open this when", body: "Your density target or GPU profile has already pushed you beyond conventional air assumptions." },
+    { title: "Compare against", body: "Rear-door, direct-to-chip, immersion, and supporting thermal rejection or controls paths before locking on one cooling narrative." },
+    { title: "Do not stop here", body: "Widen into rack power, monitoring, commissioning, and thermal plant categories so the shortlist reflects the full operating stack." },
+  ],
+  "power-and-electrical": [
+    { title: "Open this when", body: "Utility access, resilience, rack power, energization, or delivery speed is the real gating factor in the project." },
+    { title: "Compare against", body: "On-site generation bridges, prefab power packages, ATS / switchgear paths, and hosting alternatives when utility delay is severe." },
+    { title: "Do not stop here", body: "Widen into substations, microgrids, commissioning, and site-selection context before assuming the power answer lives in one vendor lane." },
+  ],
+  "rear-door-direct-to-chip-cooling": [
+    { title: "Open this when", body: "You are evaluating retrofit density upgrades and need a more incremental thermal path than a full immersion shift." },
+    { title: "Compare against", body: "Liquid cooling and immersion paths where density, operational disruption, and plant complexity trade off differently." },
+    { title: "Do not stop here", body: "Widen into rack power, controls, construction, and operations so the retrofit plan is not evaluated as a cooling-only decision." },
+  ],
+  "generators-and-microgrids": [
+    { title: "Open this when", body: "Constrained utility power, resilience requirements, or behind-the-meter strategy may determine whether deployment is feasible at all." },
+    { title: "Compare against", body: "Grid-first, bridge-power, and packaged-generation approaches depending on schedule pressure and operating model." },
+    { title: "Do not stop here", body: "Widen into UPS, site selection, sustainability, and electrical integration before you assume generation solves the whole problem." },
+  ],
+};
 
 function getRelatedGuides(categorySlug: string): RelatedGuide[] {
   const guides = getGuides();
@@ -80,6 +118,29 @@ function getAdjacentCategories(categorySlug: string) {
     }));
 }
 
+function getDecisionFrames(categorySlug: string, categoryDescription: string): DecisionFrame[] {
+  const frames = decisionFramesByCategory[categorySlug];
+
+  if (frames?.length) {
+    return frames;
+  }
+
+  return [
+    {
+      title: "Open this when",
+      body: `This category becomes useful when ${categoryDescription.charAt(0).toLowerCase()}${categoryDescription.slice(1)}`,
+    },
+    {
+      title: "Compare against",
+      body: "Use adjacent categories and related guides to decide whether this is the right path or just one layer inside a broader deployment choice.",
+    },
+    {
+      title: "Do not stop here",
+      body: "Widen into neighboring facility, thermal, power, delivery, and operations layers before narrowing to a vendor shortlist.",
+    },
+  ];
+}
+
 export function generateStaticParams() {
   return categories.map((category) => ({ category: category.slug }));
 }
@@ -111,6 +172,7 @@ export default async function CategoryPage({
   const relatedGuides = getRelatedGuides(category.slug);
   const adjacentCategories = getAdjacentCategories(category.slug);
   const lineage = getCategoryLineage(category.slug);
+  const decisionFrames = getDecisionFrames(category.slug, category.description);
 
   const featuredCompanies = vendors.slice(0, Math.min(6, vendors.length));
   const directoryCompanies = vendors.slice(featuredCompanies.length);
@@ -155,6 +217,26 @@ export default async function CategoryPage({
               <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--muted)]">Related</p>
               <p className="mt-2 text-lg font-semibold text-white">{adjacentCategories.length}</p>
             </div>
+          </div>
+        </section>
+
+        <section className="mt-8 rounded-2xl border border-[var(--border-strong)] bg-[var(--card)] p-6">
+          <div className="mb-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Decision frame</p>
+              <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">When this category matters in the decision process</h2>
+            </div>
+            <Link href="/compare" className="text-sm font-semibold text-[var(--accent)]">
+              Open executive workflows
+            </Link>
+          </div>
+          <div className="grid gap-4 md:grid-cols-3">
+            {decisionFrames.map((frame) => (
+              <article key={frame.title} className="rounded-2xl border border-[var(--border)] bg-[#1a2129] p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">{frame.title}</p>
+                <p className="mt-3 text-sm leading-7 text-[var(--muted-strong)]">{frame.body}</p>
+              </article>
+            ))}
           </div>
         </section>
 
@@ -334,6 +416,9 @@ export default async function CategoryPage({
                 Best next move: review a few companies here, then widen the decision set through related categories and guides before narrowing to outreach.
               </div>
               <div className="mt-4 grid gap-3">
+                <Link href="/compare" className="rounded-xl border border-[var(--border)] bg-[#1a2129] p-4 text-sm font-medium text-white transition hover:border-[#5e7285]">
+                  Open decision paths
+                </Link>
                 <Link href="/categories" className="rounded-xl border border-[var(--border)] bg-[#1a2129] p-4 text-sm font-medium text-white transition hover:border-[#5e7285]">
                   Explore all categories
                 </Link>

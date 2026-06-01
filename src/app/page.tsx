@@ -15,13 +15,45 @@ const homepageCategorySlugs = [
   "liquid-cooling",
 ];
 
-const topicChips = [
-  "GPU hosting",
-  "Immersion cooling",
-  "Bitcoin mining",
-  "Modular data centers",
-  "Edge data centers",
-  "Microgrids",
+const topicChips = ["GPU hosting", "Immersion cooling", "Bitcoin mining", "Modular data centers", "Edge data centers", "Microgrids"];
+
+const executiveQuestions = [
+  {
+    title: "Need capacity fast",
+    description: "Start with hosting, modular deployment, and power-constrained options before you sink time into the wrong build path.",
+    href: "/compare",
+    cta: "Open fast-capacity paths",
+  },
+  {
+    title: "Have constrained power",
+    description: "Follow the utility, generation, packaged-power, and siting layers that usually determine what is actually feasible.",
+    href: "/directory/generators-and-microgrids",
+    cta: "Explore constrained-power options",
+  },
+  {
+    title: "Need liquid cooling",
+    description: "Compare liquid, immersion, rear-door, and supporting thermal layers before narrowing suppliers.",
+    href: "/directory/liquid-cooling",
+    cta: "Open cooling paths",
+  },
+  {
+    title: "Need modular deployment",
+    description: "Move from modular shell to prefab power, integration, logistics, and commissioning as one deployment chain.",
+    href: "/directory/modular-prefab",
+    cta: "Open modular path",
+  },
+  {
+    title: "Need GPU hosting",
+    description: "Start with operator and hosting environments when time-to-capacity matters more than owning every infrastructure layer.",
+    href: "/directory/ai-colocation-gpu-hosting",
+    cta: "Browse hosting options",
+  },
+  {
+    title: "Need retrofit guidance",
+    description: "Use cooling, rack power, controls, and integration layers to map higher-density retrofit options.",
+    href: "/directory/rear-door-direct-to-chip-cooling",
+    cta: "Open retrofit path",
+  },
 ];
 
 const ecosystemLanes = [
@@ -47,8 +79,8 @@ const ecosystemLanes = [
 
 const proofPoints = [
   {
-    title: "Research by infrastructure layer",
-    description: "Move from a single vendor search to a category-level view of power, thermal, modular delivery, controls, and adjacent dependencies.",
+    title: "Start from the deployment problem",
+    description: "Use executive questions and market-map entry paths when you need to frame the decision before comparing specific brands.",
   },
   {
     title: "Follow adjacent decisions",
@@ -56,7 +88,7 @@ const proofPoints = [
   },
   {
     title: "Shortlist faster",
-    description: "Use featured companies, category pages, and company detail pages to get to a tighter first-pass shortlist without starting from scratch.",
+    description: "Use category pages, decision paths, and company detail pages to get to a tighter first-pass shortlist without starting from scratch.",
   },
 ];
 
@@ -89,10 +121,10 @@ export default function Home() {
       <section>
         <div className="mx-auto max-w-6xl px-5 py-14 lg:px-8 lg:py-18">
           <div className="max-w-4xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Curated infrastructure directory</p>
-            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">A serious industry directory for modular infrastructure, cooling, power, and AI compute.</h1>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Executive infrastructure research</p>
+            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">Answer deployment questions faster across modular infrastructure, cooling, power, and AI compute.</h1>
             <p className="mt-5 max-w-3xl text-lg leading-8 text-[var(--muted-strong)]">
-              Use the site as a discovery and research gateway: browse categories, compare credible companies, and map the modular infrastructure ecosystem more efficiently.
+              Start with the infrastructure problem you are trying to solve, compare plausible paths, then move into categories and suppliers with more context than a flat directory provides.
             </p>
           </div>
 
@@ -115,9 +147,9 @@ export default function Home() {
               ))}
             </div>
             <div className="mt-5 grid gap-3 border-t border-[var(--border)] pt-5 md:grid-cols-3">
-              <Link href="/categories" className="rounded-2xl border border-[var(--border)] bg-[var(--card-soft)] p-4 transition hover:border-[var(--border-strong)]">
-                <p className="text-sm font-semibold text-white">Start with categories</p>
-                <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Jump straight into power, cooling, modular, hosting, edge, and operations segments.</p>
+              <Link href="/compare" className="rounded-2xl border border-[var(--border)] bg-[var(--card-soft)] p-4 transition hover:border-[var(--border-strong)]">
+                <p className="text-sm font-semibold text-white">Start with your problem</p>
+                <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Use decision paths for fast capacity, constrained power, hosted GPU, modular build, and retrofit questions.</p>
               </Link>
               <Link href="/directory" className="rounded-2xl border border-[var(--border)] bg-[var(--card-soft)] p-4 transition hover:border-[var(--border-strong)]">
                 <p className="text-sm font-semibold text-white">Use the market map</p>
@@ -150,9 +182,9 @@ export default function Home() {
           <div className="rounded-3xl border border-[#31536a] bg-[linear-gradient(180deg,rgba(21,56,77,0.88),rgba(11,16,21,0.96))] p-6 shadow-[var(--shadow-soft)]">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#9edcf0]">Best next steps</p>
             <div className="mt-5 space-y-4">
-              <Link href="/categories" className="block rounded-2xl border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.04)] p-4 transition hover:bg-[rgba(255,255,255,0.08)]">
-                <p className="text-sm font-semibold text-white">Browse categories</p>
-                <p className="mt-2 text-sm leading-6 text-[#d6e2e9]">Start from cooling, power, modular deployment, edge, or hosting and expand outward.</p>
+              <Link href="/compare" className="block rounded-2xl border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.04)] p-4 transition hover:bg-[rgba(255,255,255,0.08)]">
+                <p className="text-sm font-semibold text-white">Use decision paths</p>
+                <p className="mt-2 text-sm leading-6 text-[#d6e2e9]">Start from fast capacity, constrained power, modular delivery, hosting, or retrofit instead of guessing the right category first.</p>
               </Link>
               <Link href="/vendors" className="block rounded-2xl border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.04)] p-4 transition hover:bg-[rgba(255,255,255,0.08)]">
                 <p className="text-sm font-semibold text-white">Browse companies</p>
@@ -160,6 +192,28 @@ export default function Home() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-6 lg:px-8 lg:py-8">
+        <div className="mb-6 flex items-end justify-between gap-4">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Executive questions</p>
+            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Start with the decision you need to make.</h2>
+          </div>
+          <Link href="/compare" className="text-sm font-semibold text-[var(--accent)]">
+            View comparison paths
+          </Link>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {executiveQuestions.map((question) => (
+            <Link key={question.title} href={question.href} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 transition hover:border-[var(--border-strong)]">
+              <h3 className="text-base font-semibold tracking-tight text-white">{question.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{question.description}</p>
+              <p className="mt-5 text-sm font-semibold text-[var(--accent)]">{question.cta}</p>
+            </Link>
+          ))}
         </div>
       </section>
 

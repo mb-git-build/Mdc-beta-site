@@ -6,21 +6,42 @@ import { categories, getGuides, getMarkdownPageBySlug, vendors } from "@/lib/sit
 const page = getMarkdownPageBySlug("/compare/");
 const guides = getGuides();
 
-const decisionPaths = [
+const executiveWorkflows = [
   {
     title: "Need capacity quickly",
-    body: "Start with colocation / GPU hosting options when timeline pressure matters more than owning every infrastructure layer.",
-    categorySlugs: ["ai-colocation-gpu-hosting"],
+    body: "Start with hosting, modular deployment, and hybrid paths when time-to-capacity matters more than designing every layer from scratch.",
+    categorySlugs: ["ai-colocation-gpu-hosting", "modular-prefab", "power-and-electrical"],
+    compare: ["Timeline pressure", "Operational control", "Near-term availability"],
   },
   {
-    title: "Need long-term control",
-    body: "Bias toward modular, power, cooling, and EPC combinations when the goal is control over deployment shape and operating model.",
-    categorySlugs: ["modular-prefab", "power-and-electrical", "liquid-cooling", "epc-and-commissioning"],
+    title: "Need liquid cooling",
+    body: "Compare direct-to-chip, immersion, rear-door, and thermal rejection paths before you narrow vendors too early.",
+    categorySlugs: ["liquid-cooling", "immersion-cooling", "rear-door-direct-to-chip-cooling", "hvac-and-thermal-rejection"],
+    compare: ["Density target", "Retrofit fit", "Cooling plant complexity"],
   },
   {
-    title: "Need a phased approach",
-    body: "Compare hybrid paths that let teams combine near-term colo access with a longer-term modular or retrofit roadmap.",
-    categorySlugs: ["ai-colocation-gpu-hosting", "modular-prefab", "liquid-cooling"],
+    title: "Need GPU hosting",
+    body: "Use hosting-first paths when speed, managed environment, or operational outsourcing matter more than owning the full stack.",
+    categorySlugs: ["ai-colocation-gpu-hosting", "site-selection-and-land-strategy", "liquid-cooling"],
+    compare: ["Speed to capacity", "Control vs convenience", "Expansion path"],
+  },
+  {
+    title: "Have constrained power",
+    body: "Follow generation, packaged electrical, siting, and sustainability paths when utility access is the real bottleneck.",
+    categorySlugs: ["generators-and-microgrids", "ups-and-battery-storage", "site-selection-and-land-strategy", "sustainability-and-energy-strategy"],
+    compare: ["Utility delay", "Bridge strategy", "Resilience posture"],
+  },
+  {
+    title: "Need modular deployment",
+    body: "Treat shell, power, integration, logistics, and commissioning as one deployment chain rather than separate shopping lists.",
+    categorySlugs: ["modular-prefab", "prefabricated-power-blocks", "construction-and-integration", "commissioning-and-operations"],
+    compare: ["Factory scope", "Field integration", "Time-to-deployment"],
+  },
+  {
+    title: "Need retrofit guidance",
+    body: "Use higher-density retrofit paths when the question is how far an existing site can be pushed before greenfield becomes cleaner.",
+    categorySlugs: ["rear-door-direct-to-chip-cooling", "high-density-rack-power", "monitoring-and-controls", "construction-and-integration"],
+    compare: ["Thermal upgrade path", "Electrical upgrade burden", "Operational disruption"],
   },
 ];
 
@@ -34,9 +55,24 @@ const comparisonChecks = [
 ];
 
 const buyerPrompts = [
-  "Compare categories first when the architecture path is still fuzzy.",
-  "Compare vendors inside a category when you already know the deployment model.",
+  "Start with the executive question when the architecture path is still fuzzy.",
+  "Compare categories before vendors when the real decision is the deployment model, not the logo list.",
   "Use guides and adjacent categories to widen the market view before narrowing a shortlist.",
+];
+
+const answerSteps = [
+  {
+    title: "Pick the executive problem",
+    body: "Choose the path that matches the real bottleneck: speed, power, cooling, hosting, retrofit, or deployment control.",
+  },
+  {
+    title: "Compare path families",
+    body: "Separate hosting, modular, retrofit, and energy-bridging options before comparing brands inside one narrow lane.",
+  },
+  {
+    title: "Open the supplier set",
+    body: "Use category and vendor links to move from answer framing into the actual companies behind that path.",
+  },
 ];
 
 export default function ComparePage() {
@@ -62,21 +98,21 @@ export default function ComparePage() {
           <div className="grid gap-0 lg:grid-cols-[1.05fr_0.95fr]">
             <div className="p-8 lg:p-10">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">Compare</p>
-              <h1 className="mt-3 text-4xl font-semibold tracking-tight">{page.title}</h1>
+              <h1 className="mt-3 text-4xl font-semibold tracking-tight">Start with the deployment question, not the logo list.</h1>
               {page.intro.map((paragraph) => (
                 <p key={paragraph} className="mt-4 max-w-3xl text-sm leading-8 text-[var(--muted)]">
                   {paragraph}
                 </p>
               ))}
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link href="/categories/" className="inline-flex rounded-full bg-[var(--accent-strong)] px-5 py-3 text-sm font-semibold text-white shadow-[0_14px_30px_rgba(16,44,60,0.18)]">
-                  Explore Category Graph
+                <Link href="/directory/" className="inline-flex rounded-full bg-[var(--accent-strong)] px-5 py-3 text-sm font-semibold text-white shadow-[0_14px_30px_rgba(16,44,60,0.18)]">
+                  Open market map
                 </Link>
                 <Link href="/vendors/" className="inline-flex rounded-full border border-[var(--border)] px-5 py-3 text-sm font-semibold text-[var(--accent)]">
-                  Browse Vendors
+                  Browse vendors
                 </Link>
                 <Link href="/guides/" className="inline-flex rounded-full border border-[var(--border)] px-5 py-3 text-sm font-semibold text-[var(--accent)]">
-                  Read Guides
+                  Read guides
                 </Link>
               </div>
               <div className="mt-8 grid gap-3 sm:grid-cols-3">
@@ -122,7 +158,7 @@ export default function ComparePage() {
                 <p className="text-sm font-semibold text-[var(--foreground)]">What to weigh first</p>
                 <ul className="mt-3 grid gap-3 text-sm leading-7 text-[var(--muted)]">
                   {(firstSection?.bullets?.length ? firstSection.bullets : comparisonChecks).map((item) => (
-                    <li key={item}>• {item}</li>
+                    <li key={item}> {item}</li>
                   ))}
                 </ul>
               </div>
@@ -131,11 +167,11 @@ export default function ComparePage() {
 
           <div className="rounded-[1.5rem] border border-[var(--border)] bg-[linear-gradient(180deg,#102c3c_0%,#17394a_100%)] p-6 text-white lg:p-8">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#8ed1e8]">Fastest useful path</p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-tight">Use the market in layers, not all at once.</h2>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight">Turn the graph into an answer flow.</h2>
             <div className="mt-5 grid gap-3">
-              <ProcessStep index={1} title="Pick the deployment path" body="Separate quick-capacity, long-term control, and hybrid paths before you compare brands." />
-              <ProcessStep index={2} title="Shortlist by category fit" body="Use category coverage, project scale, and region to shrink the field to something useful." />
-              <ProcessStep index={3} title="Expand into adjacent segments" body="Move into related categories and guides so the shortlist reflects the broader infrastructure market, not just one narrow lane." />
+              {answerSteps.map((step, index) => (
+                <ProcessStep key={step.title} index={index + 1} title={step.title} body={step.body} />
+              ))}
             </div>
           </div>
         </section>
@@ -143,29 +179,35 @@ export default function ComparePage() {
         <section className="mt-8">
           <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Decision paths</p>
-              <h2 className="mt-2 text-3xl font-semibold tracking-tight">Start with the buying situation, not the logo list.</h2>
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Executive workflows</p>
+              <h2 className="mt-2 text-3xl font-semibold tracking-tight">Answer the infrastructure question first.</h2>
             </div>
             <p className="max-w-2xl text-sm leading-7 text-[var(--muted)]">
-              This is where the site becomes more useful than a static list: it helps buyers choose how to compare, not just which company to click first.
+              Use these paths when you need to decide how to think about the deployment problem before comparing specific suppliers.
             </p>
           </div>
-          <div className="grid gap-5 lg:grid-cols-3">
-            {decisionPaths.map((path) => {
-              const relatedCategories = categories.filter((category) => path.categorySlugs.includes(category.slug));
-              const relatedVendors = vendors.filter((vendor) => vendor.categories.some((slug) => path.categorySlugs.includes(slug))).slice(0, 5);
+          <div className="grid gap-5 lg:grid-cols-2 xl:grid-cols-3">
+            {executiveWorkflows.map((workflow) => {
+              const relatedCategories = categories.filter((category) => workflow.categorySlugs.includes(category.slug));
+              const relatedVendors = vendors.filter((vendor) => vendor.categories.some((slug) => workflow.categorySlugs.includes(slug))).slice(0, 5);
 
               return (
-                <article key={path.title} className="rounded-[1.5rem] border border-[var(--border)] bg-white p-6 shadow-[0_10px_24px_rgba(16,44,60,0.04)]">
-                  <h3 className="text-xl font-semibold tracking-tight">{path.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{path.body}</p>
+                <article key={workflow.title} className="rounded-[1.5rem] border border-[var(--border)] bg-white p-6 shadow-[0_10px_24px_rgba(16,44,60,0.04)]">
+                  <h3 className="text-xl font-semibold tracking-tight">{workflow.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{workflow.body}</p>
+                  <div className="mt-4 rounded-[1rem] bg-[#f7fafc] p-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Compare first</p>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {workflow.compare.map((item) => (
+                        <span key={item} className="rounded-full border border-[var(--border)] bg-white px-3 py-1 text-xs font-medium text-[var(--foreground)]">
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {relatedCategories.map((category) => (
-                      <Link
-                        key={category.slug}
-                        href={`/directory/${category.slug}`}
-                        className="rounded-full bg-[var(--accent-soft)] px-3 py-1 text-xs font-medium text-[var(--accent-strong)]"
-                      >
+                      <Link key={category.slug} href={`/directory/${category.slug}`} className="rounded-full bg-[var(--accent-soft)] px-3 py-1 text-xs font-medium text-[var(--accent-strong)]">
                         {category.name}
                       </Link>
                     ))}
@@ -210,7 +252,7 @@ export default function ComparePage() {
                       <p className="mt-2 text-sm leading-7 text-[var(--muted)]">{category.description}</p>
                     </div>
                     <Link href={`/directory/${category.slug}`} className="text-sm font-semibold text-[var(--accent)]">
-                      Open category →
+                      Open category
                     </Link>
                   </div>
                   <div className="mt-4 grid gap-3 sm:grid-cols-3">
@@ -247,9 +289,9 @@ export default function ComparePage() {
 
           <div className="rounded-[1.5rem] border border-[var(--border)] bg-[var(--accent-strong)] p-6 text-white">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#b8cfdb]">Next action</p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-tight">Turn research into a stronger market map.</h2>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight">Turn research into a stronger decision path.</h2>
             <p className="mt-4 text-sm leading-8 text-[#dbe5eb]">
-              Once a buyer has a rough path in mind, the highest-value move is widening the comparison set, surfacing adjacent systems, and making the shortlist smarter before outreach.
+              Once you know the likely path, the highest-value move is widening the comparison set, surfacing adjacent systems, and making the shortlist smarter before outreach.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link href="/categories" className="rounded-full bg-white px-5 py-3 text-sm font-semibold text-[var(--accent-strong)]">

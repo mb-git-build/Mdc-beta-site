@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
-import { siteMeta } from "@/lib/site-data";
+import { navigation, siteMeta } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://modulardatacenters.ai"),
@@ -39,13 +39,34 @@ export const metadata: Metadata = {
   },
 };
 
-const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/categories", label: "Categories" },
-  { href: "/vendors", label: "Companies" },
-  { href: "/directory", label: "Market Map" },
-  { href: "/guides", label: "Guides" },
-  { href: "/for-vendors", label: "Submit Company", accent: true },
+const navItems = navigation.main.map((item) => ({
+  ...item,
+  accent: item.href === "/for-vendors",
+}));
+
+const footerDiscoveryLinks = [
+  { href: "/categories", label: "Browse by category" },
+  { href: "/directory", label: "Open the market map" },
+  { href: "/vendors", label: "Review company listings" },
+  { href: "/guides", label: "Read infrastructure guides" },
+];
+
+const footerPathways = [
+  {
+    title: "Cooling & density",
+    body: "Compare liquid, immersion, rear-door, and thermal-control paths before narrowing vendors.",
+    href: "/directory/liquid-cooling",
+  },
+  {
+    title: "Power & resilience",
+    body: "Start with electrical backbone, UPS, generation, and rack-density constraints.",
+    href: "/directory/power-and-electrical",
+  },
+  {
+    title: "Vendor participation",
+    body: "Submit or claim a listing with a moderated path that preserves buyer trust.",
+    href: "/for-vendors",
+  },
 ];
 
 export default function RootLayout({
@@ -84,33 +105,61 @@ export default function RootLayout({
           {children}
 
           <footer className="border-t border-[var(--border-strong)] bg-[#0b1015] text-[#d6dde6]">
-            <div className="mx-auto grid max-w-7xl gap-8 px-6 py-8 lg:grid-cols-[1.1fr_0.9fr] lg:px-10">
-              <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <Image src="/site-mark.svg" alt="modulardatacenters.ai" width={32} height={32} className="h-8 w-8 rounded-lg" />
-                  <div>
-                    <p className="text-sm font-semibold text-white">modulardatacenters.ai</p>
-                    <p className="mt-1 text-sm text-[var(--muted)]">Curated directory for modular data centers, AI infrastructure, cooling, power, and hosting.</p>
+            <div className="mx-auto max-w-7xl px-6 py-10 lg:px-10">
+              <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+                <div className="space-y-5">
+                  <div className="flex items-center gap-3">
+                    <Image src="/site-mark.svg" alt="modulardatacenters.ai" width={32} height={32} className="h-8 w-8 rounded-lg" />
+                    <div>
+                      <p className="text-sm font-semibold text-white">modulardatacenters.ai</p>
+                      <p className="mt-1 text-sm text-[var(--muted)]">Curated directory for modular data centers, AI infrastructure, cooling, power, hosting, and adjacent deployment layers.</p>
+                    </div>
+                  </div>
+
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    {footerDiscoveryLinks.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="rounded-2xl border border-[var(--border)] bg-[var(--card)] px-4 py-3 text-sm font-semibold text-white transition hover:border-[var(--border-strong)]"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
                   </div>
                 </div>
-                <div className="flex flex-wrap gap-3 text-sm">
-                  <Link href="/categories" className="rounded-full border border-[var(--border)] bg-[var(--card)] px-4 py-2 font-semibold text-white transition hover:border-[var(--border-strong)]">
-                    Start with categories
-                  </Link>
-                  <Link href="/vendors" className="rounded-full border border-transparent bg-transparent px-2 py-2 font-semibold text-[var(--accent)] transition hover:text-white">
-                    Browse companies
-                  </Link>
+
+                <div className="space-y-4">
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Suggested pathways</p>
+                  <div className="grid gap-3">
+                    {footerPathways.map((pathway) => (
+                      <Link key={pathway.href} href={pathway.href} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-4 transition hover:border-[var(--border-strong)]">
+                        <p className="text-sm font-semibold text-white">{pathway.title}</p>
+                        <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{pathway.body}</p>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </div>
-              <div className="space-y-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Explore the market map</p>
-                <nav className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-[var(--muted-strong)]">
-                  {navItems.map((item) => (
-                    <Link key={item.href} href={item.href} className="transition hover:text-white">
-                      {item.label}
-                    </Link>
-                  ))}
-                </nav>
+
+              <div className="mt-8 grid gap-6 border-t border-[var(--border-strong)] pt-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Explore</p>
+                  <nav className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[var(--muted-strong)]">
+                    {navigation.footer.map((item) => (
+                      <Link key={item.href} href={item.href} className="transition hover:text-white">
+                        {item.label}
+                      </Link>
+                    ))}
+                  </nav>
+                </div>
+
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">What this site is for</p>
+                  <p className="mt-3 max-w-3xl text-sm leading-7 text-[var(--muted)]">
+                    This is a research-first market map for buyers, operators, and infrastructure teams comparing categories, companies, and adjacent systems across modular delivery, thermal design, power strategy, controls, and deployment operations.
+                  </p>
+                </div>
               </div>
             </div>
           </footer>
