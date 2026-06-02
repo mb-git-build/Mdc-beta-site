@@ -33,6 +33,27 @@ const quickStarts = [
   },
 ];
 
+const entryModes = [
+  {
+    title: "Start with an executive workflow",
+    body: "Use this when the real question is speed, power, cooling, retrofit, or deployment model before you decide which category matters most.",
+    href: "/compare",
+    cta: "Open decision paths",
+  },
+  {
+    title: "Start with the category graph",
+    body: "Use this when you want the ecosystem grouped into compute delivery, cooling, power, operations, site strategy, and adjacent infrastructure lanes.",
+    href: "/categories",
+    cta: "Browse category lanes",
+  },
+  {
+    title: "Start with company research",
+    body: "Use this when you already know the type of supplier or capability you want to compare and want to move straight into company profiles.",
+    href: "/vendors",
+    cta: "Browse companies",
+  },
+];
+
 function normalizeSearch(value?: string) {
   return (value ?? "").trim().toLowerCase();
 }
@@ -120,7 +141,28 @@ export default async function DirectoryPage({
           </div>
         </section>
 
-        <form method="get" className="mt-8 grid gap-4 rounded-[1.5rem] border border-[var(--border)] bg-white p-6 shadow-[var(--shadow-card)] sm:grid-cols-3">
+        <section className="mt-8 rounded-[1.5rem] border border-[var(--border)] bg-white p-6 shadow-[var(--shadow-card)]">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">Choose your entry mode</p>
+              <h2 className="mt-2 text-xl font-semibold tracking-tight">Use the right surface for the question you have.</h2>
+            </div>
+            <p className="max-w-2xl text-sm leading-7 text-[var(--muted)]">
+              This page is best when you want to open a category directly. If the problem is still fuzzy, start from workflows or grouped category lanes first.
+            </p>
+          </div>
+          <div className="mt-5 grid gap-4 lg:grid-cols-3">
+            {entryModes.map((mode) => (
+              <Link key={mode.title} href={mode.href} className="rounded-[1.25rem] border border-[var(--border)] bg-[#fbfcfd] p-5 transition hover:border-[var(--accent)]">
+                <h3 className="text-base font-semibold tracking-tight text-[var(--foreground)]">{mode.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{mode.body}</p>
+                <p className="mt-5 text-sm font-semibold text-[var(--accent)]">{mode.cta}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <form method="get" className="mt-6 grid gap-4 rounded-[1.5rem] border border-[var(--border)] bg-white p-6 shadow-[var(--shadow-card)] sm:grid-cols-3">
           <label className="grid gap-2 text-sm font-medium text-[var(--foreground)]">
             Search categories
             <input
