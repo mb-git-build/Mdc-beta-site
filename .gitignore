@@ -26,6 +26,7 @@
 
 # operational artifacts
 /ops/*.csv
+/ops/build-capture-*.log
 /token-alerts-*.csv
 
 # debug

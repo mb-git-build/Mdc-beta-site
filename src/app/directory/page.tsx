@@ -2,6 +2,8 @@ import Link from "next/link";
 
 import { categories, getCategoryLineage, getMarkdownPageBySlug, vendors } from "@/lib/site-data";
 
+export const dynamic = "force-dynamic";
+
 type DirectorySearchParams = {
   q?: string;
   sort?: "vendor_count" | "name";

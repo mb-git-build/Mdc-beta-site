@@ -1,5 +1,7 @@
 import { ClaimVerificationForm } from "@/components/claim-verification-form";
 
+export const dynamic = "force-dynamic";
+
 type SearchParams = {
   submissionId?: string;
   claimToken?: string;
