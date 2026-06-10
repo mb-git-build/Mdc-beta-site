@@ -27,14 +27,14 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://modulardatacenters.ai",
     siteName: siteMeta.name,
-    title: "The market map for data center infrastructure",
-    description: "Explore suppliers, categories, and adjacent infrastructure layers across modular delivery, power, cooling, hosting, and operations.",
-    images: [{ url: "/og-card.svg", width: 1200, height: 630, alt: `${siteMeta.name} market map social card` }],
+    title: "The industry directory for data center infrastructure",
+    description: "Browse categories, subcategories, and companies across modular delivery, power, cooling, hosting, and operations.",
+    images: [{ url: "/og-card.svg", width: 1200, height: 630, alt: `${siteMeta.name} directory social card` }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "The market map for data center infrastructure",
-    description: "Explore suppliers, categories, and adjacent infrastructure layers across modular delivery, power, cooling, hosting, and operations.",
+    title: "The industry directory for data center infrastructure",
+    description: "Browse categories, subcategories, and companies across modular delivery, power, cooling, hosting, and operations.",
     images: ["/og-card.svg"],
   },
 };
@@ -45,28 +45,10 @@ const navItems = navigation.main.map((item) => ({
 }));
 
 const footerDiscoveryLinks = [
-  { href: "/categories", label: "Browse by category" },
-  { href: "/directory", label: "Open the market map" },
-  { href: "/vendors", label: "Review company listings" },
-  { href: "/guides", label: "Read infrastructure guides" },
-];
-
-const footerPathways = [
-  {
-    title: "Cooling & density",
-    body: "Compare liquid, immersion, rear-door, and thermal-control paths before narrowing vendors.",
-    href: "/directory/liquid-cooling",
-  },
-  {
-    title: "Power & resilience",
-    body: "Start with electrical backbone, UPS, generation, and rack-density constraints.",
-    href: "/directory/power-and-electrical",
-  },
-  {
-    title: "Vendor participation",
-    body: "Submit or claim a listing with a moderated path that preserves buyer trust.",
-    href: "/for-vendors",
-  },
+  { href: "/categories", label: "Browse categories" },
+  { href: "/vendors", label: "Browse companies" },
+  { href: "/methodology", label: "Review methodology" },
+  { href: "/for-vendors", label: "Submit or claim a company" },
 ];
 
 export default function RootLayout({
@@ -112,7 +94,7 @@ export default function RootLayout({
                     <Image src="/site-mark.svg" alt="modulardatacenters.ai" width={32} height={32} className="h-8 w-8 rounded-lg" />
                     <div>
                       <p className="text-sm font-semibold text-white">modulardatacenters.ai</p>
-                      <p className="mt-1 text-sm text-[var(--muted)]">Curated directory for modular data centers, AI infrastructure, cooling, power, hosting, and adjacent deployment layers.</p>
+                      <p className="mt-1 text-sm text-[var(--muted)]">Industry directory for modular data centers, AI infrastructure, cooling, power, hosting, and adjacent deployment layers.</p>
                     </div>
                   </div>
 
@@ -130,36 +112,21 @@ export default function RootLayout({
                 </div>
 
                 <div className="space-y-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Suggested pathways</p>
-                  <div className="grid gap-3">
-                    {footerPathways.map((pathway) => (
-                      <Link key={pathway.href} href={pathway.href} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-4 transition hover:border-[var(--border-strong)]">
-                        <p className="text-sm font-semibold text-white">{pathway.title}</p>
-                        <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{pathway.body}</p>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-8 grid gap-6 border-t border-[var(--border-strong)] pt-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-                <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Explore</p>
-                  <nav className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[var(--muted-strong)]">
+                  <nav className="grid gap-3 sm:grid-cols-2">
                     {navigation.footer.map((item) => (
-                      <Link key={item.href} href={item.href} className="transition hover:text-white">
+                      <Link key={item.href} href={item.href} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-4 text-sm font-medium text-white transition hover:border-[var(--border-strong)]">
                         {item.label}
                       </Link>
                     ))}
                   </nav>
                 </div>
+              </div>
 
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">What this site is for</p>
-                  <p className="mt-3 max-w-3xl text-sm leading-7 text-[var(--muted)]">
-                    This is a research-first market map for buyers, operators, and infrastructure teams comparing categories, companies, and adjacent systems across modular delivery, thermal design, power strategy, controls, and deployment operations.
-                  </p>
-                </div>
+              <div className="mt-8 border-t border-[var(--border-strong)] pt-6">
+                <p className="max-w-3xl text-sm leading-7 text-[var(--muted)]">
+                  Browse the market through categories, subcategories, and company listings. Companies remain the terminal destination.
+                </p>
               </div>
             </div>
           </footer>
