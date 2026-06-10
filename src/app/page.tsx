@@ -17,62 +17,7 @@ const homepageCategorySlugs = [
 
 const topicChips = ["GPU hosting", "Immersion cooling", "Bitcoin mining", "Modular data centers", "Edge data centers", "Microgrids"];
 
-const ecosystemLanes = [
-  {
-    title: "Compute delivery & capacity",
-    description:
-      "Explore operators, hosting environments, modular delivery models, and adjacent infrastructure layers that shape how compute capacity reaches the market.",
-    categorySlugs: ["ai-colocation-gpu-hosting", "modular-prefab", "containerized-data-centers", "edge-micro-data-centers"],
-  },
-  {
-    title: "Cooling, density & thermal operations",
-    description:
-      "Follow liquid, immersion, rack-density, rejection, and controls relationships to understand the thermal side of the ecosystem.",
-    categorySlugs: ["liquid-cooling", "immersion-cooling", "hvac-and-thermal-rejection", "monitoring-and-controls"],
-  },
-  {
-    title: "Power, resilience & site execution",
-    description:
-      "Trace the electrical backbone from packaged power and substations into generation, siting, commissioning, and long-term operational support.",
-    categorySlugs: ["power-and-electrical", "generators-and-microgrids", "site-selection-and-land-strategy", "commissioning-and-operations"],
-  },
-];
 
-const proofPoints = [
-  {
-    title: "See the market by category",
-    description: "Browse the ecosystem through real infrastructure segments instead of a flat directory or a narrow vendor list.",
-  },
-  {
-    title: "Follow relationships across the stack",
-    description: "Move through adjacent categories and supplier clusters to understand how cooling, power, deployment, and operations connect.",
-  },
-  {
-    title: "Use the map for supplier discovery",
-    description: "Find established and emerging suppliers with enough market context to make the discovery process more intelligent.",
-  },
-];
-
-const marketUtilities = [
-  {
-    title: "Compare paths",
-    description: "Use guided comparison only when you want help moving through the ecosystem from a specific infrastructure question.",
-    href: "/compare",
-    cta: "Open compare",
-  },
-  {
-    title: "Get matched",
-    description: "Use the routing surface when you want a fast suggestion for which ecosystem view to open first.",
-    href: "/get-matched",
-    cta: "Open get matched",
-  },
-  {
-    title: "Decision utilities",
-    description: "Treat workflow tools as secondary utilities layered on top of the market map, not as the product itself.",
-    href: "/directory",
-    cta: "Open utilities",
-  },
-];
 
 export default function Home() {
   const homepageCategories = categories.filter((category) => homepageCategorySlugs.includes(category.slug));
@@ -84,19 +29,6 @@ export default function Home() {
     sampleCompanies: vendors.filter((vendor) => vendor.categories.includes(category.slug)).slice(0, 4),
   }));
 
-  const laneRows = ecosystemLanes.map((lane) => {
-    const laneCategories = lane.categorySlugs
-      .map((slug) => categories.find((category) => category.slug === slug))
-      .filter((category): category is NonNullable<(typeof categories)[number]> => Boolean(category));
-
-    const vendorCount = vendors.filter((vendor) => lane.categorySlugs.some((slug) => vendor.categories.includes(slug))).length;
-
-    return {
-      ...lane,
-      laneCategories,
-      vendorCount,
-    };
-  });
 
   return (
     <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
@@ -151,32 +83,30 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-6 lg:px-8 lg:py-8">
-        <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="rounded-3xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-[var(--shadow-soft)]">
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Why teams use this market map</p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white">The product is the ecosystem, not just the workflow around it.</h2>
-            <div className="mt-6 grid gap-4 md:grid-cols-3">
-              {proofPoints.map((point) => (
-                <article key={point.title} className="rounded-2xl border border-[var(--border)] bg-[var(--card-soft)] p-4">
-                  <h3 className="text-sm font-semibold text-white">{point.title}</h3>
-                  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{point.description}</p>
-                </article>
-              ))}
+        <div className="rounded-3xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-[var(--shadow-soft)]">
+          <div className="mb-6 flex items-end justify-between gap-4">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Market coverage</p>
+              <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">A simple index of the ecosystem.</h2>
             </div>
           </div>
-
-          <div className="rounded-3xl border border-[#31536a] bg-[linear-gradient(180deg,rgba(21,56,77,0.88),rgba(11,16,21,0.96))] p-6 shadow-[var(--shadow-soft)]">
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#9edcf0]">Market coverage</p>
-            <div className="mt-5 space-y-4">
-              <div className="rounded-2xl border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.04)] p-4">
-                <p className="text-sm font-semibold text-white">{categories.length} categories mapped</p>
-                <p className="mt-2 text-sm leading-6 text-[#d6e2e9]">Coverage spans compute delivery, thermal systems, power infrastructure, monitoring, operations, and site strategy.</p>
-              </div>
-              <div className="rounded-2xl border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.04)] p-4">
-                <p className="text-sm font-semibold text-white">{vendors.length} suppliers visible</p>
-                <p className="mt-2 text-sm leading-6 text-[#d6e2e9]">Browse established vendors, emerging players, and supplier relationships across the infrastructure stack.</p>
-              </div>
-            </div>
+          <div className="grid gap-4 md:grid-cols-4">
+            <article className="rounded-2xl border border-[var(--border)] bg-[var(--card-soft)] p-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Categories</p>
+              <p className="mt-2 text-2xl font-semibold text-white">{categories.length}</p>
+            </article>
+            <article className="rounded-2xl border border-[var(--border)] bg-[var(--card-soft)] p-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Suppliers</p>
+              <p className="mt-2 text-2xl font-semibold text-white">{vendors.length}</p>
+            </article>
+            <article className="rounded-2xl border border-[var(--border)] bg-[var(--card-soft)] p-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Featured suppliers</p>
+              <p className="mt-2 text-2xl font-semibold text-white">{trendingCompanies.length}</p>
+            </article>
+            <article className="rounded-2xl border border-[var(--border)] bg-[var(--card-soft)] p-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Guides</p>
+              <p className="mt-2 text-2xl font-semibold text-white">{guides.length}</p>
+            </article>
           </div>
         </div>
       </section>
@@ -208,36 +138,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-6 lg:px-8 lg:py-8">
-        <div className="mb-6 flex items-end justify-between gap-4">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Ecosystem relationships</p>
-            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Follow how major infrastructure lanes connect.</h2>
-          </div>
-          <Link href="/directory" className="text-sm font-semibold text-[var(--accent)]">Open the market map</Link>
-        </div>
-
-        <div className="grid gap-4 lg:grid-cols-3">
-          {laneRows.map((lane) => (
-            <article key={lane.title} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 transition hover:border-[var(--border-strong)]">
-              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">{lane.vendorCount} connected companies</p>
-              <h3 className="mt-2 text-lg font-semibold tracking-tight text-white">{lane.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{lane.description}</p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {lane.laneCategories.map((category) => (
-                  <Link
-                    key={category.slug}
-                    href={`/directory/${category.slug}`}
-                    className="rounded-full bg-[var(--card-soft)] px-3 py-1.5 text-xs font-medium text-[var(--muted-strong)] transition hover:bg-[#1f303c] hover:text-white"
-                  >
-                    {category.name}
-                  </Link>
-                ))}
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
 
       <section className="mx-auto max-w-6xl px-5 py-10 lg:px-8 lg:py-12">
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
@@ -292,7 +192,7 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-6 lg:px-8 lg:py-8">
-        <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Market topics</p>
             <div className="mt-4 flex flex-wrap gap-2">
@@ -305,35 +205,27 @@ export default function Home() {
           </div>
 
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Market intelligence</p>
-            <div className="mt-4 grid gap-4 md:grid-cols-3">
-              {guides.map((guide) => (
-                <Link key={guide.slug} href={guide.slug} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 transition hover:border-[var(--border-strong)]">
-                  <h3 className="text-base font-semibold tracking-tight text-white">{guide.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{guide.page.intro[0]}</p>
-                </Link>
-              ))}
+            <div className="flex items-end justify-between gap-4">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Directory tools</p>
+                <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Go deeper from the index.</h2>
+              </div>
+            </div>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link href="/directory" className="rounded-full border border-[var(--border)] bg-[var(--card)] px-4 py-2 text-sm font-medium text-white transition hover:border-[var(--border-strong)]">
+                Market map
+              </Link>
+              <Link href="/compare" className="rounded-full border border-[var(--border)] bg-[var(--card)] px-4 py-2 text-sm font-medium text-white transition hover:border-[var(--border-strong)]">
+                Compare
+              </Link>
+              <Link href="/get-matched" className="rounded-full border border-[var(--border)] bg-[var(--card)] px-4 py-2 text-sm font-medium text-white transition hover:border-[var(--border-strong)]">
+                Get matched
+              </Link>
+              <Link href="/guides" className="rounded-full border border-[var(--border)] bg-[var(--card)] px-4 py-2 text-sm font-medium text-white transition hover:border-[var(--border-strong)]">
+                Guides
+              </Link>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-5 py-6 lg:px-8 lg:py-10">
-        <div className="mb-6 flex items-end justify-between gap-4">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Exploration utilities</p>
-            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Use workflow tools as secondary ways to explore the market.</h2>
-          </div>
-        </div>
-
-        <div className="grid gap-4 md:grid-cols-3">
-          {marketUtilities.map((utility) => (
-            <Link key={utility.title} href={utility.href} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 transition hover:border-[var(--border-strong)]">
-              <h3 className="text-base font-semibold tracking-tight text-white">{utility.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{utility.description}</p>
-              <p className="mt-5 text-sm font-semibold text-[var(--accent)]">{utility.cta}</p>
-            </Link>
-          ))}
         </div>
       </section>
     </main>
