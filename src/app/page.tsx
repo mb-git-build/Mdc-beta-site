@@ -17,78 +17,60 @@ const homepageCategorySlugs = [
 
 const topicChips = ["GPU hosting", "Immersion cooling", "Bitcoin mining", "Modular data centers", "Edge data centers", "Microgrids"];
 
-const executiveQuestions = [
-  {
-    title: "Need capacity fast",
-    description: "Start with hosting, modular deployment, and power-constrained options before you sink time into the wrong build path.",
-    href: "/compare",
-    cta: "Open fast-capacity paths",
-  },
-  {
-    title: "Have constrained power",
-    description: "Follow the utility, generation, packaged-power, and siting layers that usually determine what is actually feasible.",
-    href: "/directory/generators-and-microgrids",
-    cta: "Explore constrained-power options",
-  },
-  {
-    title: "Need liquid cooling",
-    description: "Compare liquid, immersion, rear-door, and supporting thermal layers before narrowing suppliers.",
-    href: "/directory/liquid-cooling",
-    cta: "Open cooling paths",
-  },
-  {
-    title: "Need modular deployment",
-    description: "Move from modular shell to prefab power, integration, logistics, and commissioning as one deployment chain.",
-    href: "/directory/modular-prefab",
-    cta: "Open modular path",
-  },
-  {
-    title: "Need GPU hosting",
-    description: "Start with operator and hosting environments when time-to-capacity matters more than owning every infrastructure layer.",
-    href: "/directory/ai-colocation-gpu-hosting",
-    cta: "Browse hosting options",
-  },
-  {
-    title: "Need retrofit guidance",
-    description: "Use cooling, rack power, controls, and integration layers to map higher-density retrofit options.",
-    href: "/directory/rear-door-direct-to-chip-cooling",
-    cta: "Open retrofit path",
-  },
-];
-
 const ecosystemLanes = [
   {
-    title: "Launch a modular AI site",
+    title: "Compute delivery & capacity",
     description:
-      "Start with prefabricated infrastructure, then trace the power, cooling, and delivery layers that usually determine time-to-capacity.",
-    categorySlugs: ["modular-prefab", "prefabricated-power-blocks", "liquid-cooling", "construction-and-integration"],
+      "Explore operators, hosting environments, modular delivery models, and adjacent infrastructure layers that shape how compute capacity reaches the market.",
+    categorySlugs: ["ai-colocation-gpu-hosting", "modular-prefab", "containerized-data-centers", "edge-micro-data-centers"],
   },
   {
-    title: "Retrofit for higher rack density",
+    title: "Cooling, density & thermal operations",
     description:
-      "Use the directory to compare thermal upgrade paths, rack power implications, and the controls needed to run denser halls safely.",
-    categorySlugs: ["rear-door-direct-to-chip-cooling", "liquid-cooling", "high-density-rack-power", "monitoring-and-controls"],
+      "Follow liquid, immersion, rack-density, rejection, and controls relationships to understand the thermal side of the ecosystem.",
+    categorySlugs: ["liquid-cooling", "immersion-cooling", "hvac-and-thermal-rejection", "monitoring-and-controls"],
   },
   {
-    title: "Build around constrained power",
+    title: "Power, resilience & site execution",
     description:
-      "Follow the energy side of the graph when utility access, resilience, or behind-the-meter strategy is the real bottleneck.",
-    categorySlugs: ["generators-and-microgrids", "ups-and-battery-storage", "site-selection-and-land-strategy", "sustainability-and-energy-strategy"],
+      "Trace the electrical backbone from packaged power and substations into generation, siting, commissioning, and long-term operational support.",
+    categorySlugs: ["power-and-electrical", "generators-and-microgrids", "site-selection-and-land-strategy", "commissioning-and-operations"],
   },
 ];
 
 const proofPoints = [
   {
-    title: "Start from the deployment problem",
-    description: "Use executive questions and market-map entry paths when you need to frame the decision before comparing specific brands.",
+    title: "See the market by category",
+    description: "Browse the ecosystem through real infrastructure segments instead of a flat directory or a narrow vendor list.",
   },
   {
-    title: "Follow adjacent decisions",
-    description: "See what is commonly sourced together so cooling, rack power, controls, and deployment strategy are considered as one system.",
+    title: "Follow relationships across the stack",
+    description: "Move through adjacent categories and supplier clusters to understand how cooling, power, deployment, and operations connect.",
   },
   {
-    title: "Shortlist faster",
-    description: "Use category pages, decision paths, and company detail pages to get to a tighter first-pass shortlist without starting from scratch.",
+    title: "Use the map for supplier discovery",
+    description: "Find established and emerging suppliers with enough market context to make the discovery process more intelligent.",
+  },
+];
+
+const marketUtilities = [
+  {
+    title: "Compare paths",
+    description: "Use guided comparison only when you want help moving through the ecosystem from a specific infrastructure question.",
+    href: "/compare",
+    cta: "Open compare",
+  },
+  {
+    title: "Get matched",
+    description: "Use the routing surface when you want a fast suggestion for which ecosystem view to open first.",
+    href: "/get-matched",
+    cta: "Open get matched",
+  },
+  {
+    title: "Decision utilities",
+    description: "Treat workflow tools as secondary utilities layered on top of the market map, not as the product itself.",
+    href: "/directory",
+    cta: "Open utilities",
   },
 ];
 
@@ -121,10 +103,10 @@ export default function Home() {
       <section>
         <div className="mx-auto max-w-6xl px-5 py-14 lg:px-8 lg:py-18">
           <div className="max-w-4xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Executive infrastructure research</p>
-            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">Answer deployment questions faster across modular infrastructure, cooling, power, and AI compute.</h1>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Data center ecosystem map</p>
+            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">Explore the market across categories, suppliers, and infrastructure relationships.</h1>
             <p className="mt-5 max-w-3xl text-lg leading-8 text-[var(--muted-strong)]">
-              Start with the infrastructure problem you are trying to solve, compare plausible paths, then move into categories and suppliers with more context than a flat directory provides.
+              Browse the ecosystem through power, cooling, modular delivery, hosting, operations, site strategy, and adjacent supplier networks with more context than a flat directory provides.
             </p>
           </div>
 
@@ -132,11 +114,11 @@ export default function Home() {
             <form action="/vendors" method="get" className="flex flex-col gap-3 lg:flex-row">
               <input
                 name="q"
-                placeholder="Search companies, cooling, GPU hosting, modular, bitcoin..."
+                placeholder="Search suppliers, categories, cooling, power, modular, GPU hosting..."
                 className="w-full rounded-xl border border-[var(--border)] bg-[var(--background-strong)] px-5 py-4 text-base text-white outline-none placeholder:text-[#7f8b99]"
               />
               <button type="submit" className="rounded-xl bg-white px-6 py-4 text-sm font-semibold text-[#0f141a]">
-                Search
+                Search market
               </button>
             </form>
             <div className="mt-4 flex flex-wrap gap-2">
@@ -146,18 +128,22 @@ export default function Home() {
                 </span>
               ))}
             </div>
-            <div className="mt-5 grid gap-3 border-t border-[var(--border)] pt-5 md:grid-cols-3">
-              <Link href="/compare" className="rounded-2xl border border-[var(--border)] bg-[var(--card-soft)] p-4 transition hover:border-[var(--border-strong)]">
-                <p className="text-sm font-semibold text-white">Start with your problem</p>
-                <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Use decision paths for fast capacity, constrained power, hosted GPU, modular build, and retrofit questions.</p>
+            <div className="mt-5 grid gap-3 border-t border-[var(--border)] pt-5 md:grid-cols-4">
+              <Link href="/categories" className="rounded-2xl border border-[var(--border)] bg-[var(--card-soft)] p-4 transition hover:border-[var(--border-strong)]">
+                <p className="text-sm font-semibold text-white">Browse categories</p>
+                <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Start with the ecosystem structure and move through the market by segment.</p>
+              </Link>
+              <Link href="/vendors" className="rounded-2xl border border-[var(--border)] bg-[var(--card-soft)] p-4 transition hover:border-[var(--border-strong)]">
+                <p className="text-sm font-semibold text-white">Browse suppliers</p>
+                <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Go straight into company profiles, category tags, and related market context.</p>
               </Link>
               <Link href="/directory" className="rounded-2xl border border-[var(--border)] bg-[var(--card-soft)] p-4 transition hover:border-[var(--border-strong)]">
-                <p className="text-sm font-semibold text-white">Use the market map</p>
-                <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Follow common buyer paths for new AI deployments, retrofits, and distributed capacity buildouts.</p>
+                <p className="text-sm font-semibold text-white">Open the market map</p>
+                <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Trace the market through categories, supplier counts, and connected infrastructure lanes.</p>
               </Link>
-              <Link href="/for-vendors" className="rounded-2xl border border-[#31536a] bg-[#15384d] p-4 transition hover:border-[#4a6c83] hover:bg-[#1b4a63]">
-                <p className="text-sm font-semibold text-white">Submit your company</p>
-                <p className="mt-2 text-sm leading-6 text-[#d6e2e9]">Get listed with clearer review expectations, stronger trust signals, and a direct path into the directory.</p>
+              <Link href="/compare" className="rounded-2xl border border-[#31536a] bg-[#15384d] p-4 transition hover:border-[#4a6c83] hover:bg-[#1b4a63]">
+                <p className="text-sm font-semibold text-white">Use comparison tools</p>
+                <p className="mt-2 text-sm leading-6 text-[#d6e2e9]">Open guided utilities only when you want help exploring the ecosystem from a specific angle.</p>
               </Link>
             </div>
           </div>
@@ -167,8 +153,8 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-5 py-6 lg:px-8 lg:py-8">
         <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="rounded-3xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-[var(--shadow-soft)]">
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Why teams use this directory</p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white">It is built for infrastructure research, not generic browsing.</h2>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Why teams use this market map</p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white">The product is the ecosystem, not just the workflow around it.</h2>
             <div className="mt-6 grid gap-4 md:grid-cols-3">
               {proofPoints.map((point) => (
                 <article key={point.title} className="rounded-2xl border border-[var(--border)] bg-[var(--card-soft)] p-4">
@@ -180,16 +166,16 @@ export default function Home() {
           </div>
 
           <div className="rounded-3xl border border-[#31536a] bg-[linear-gradient(180deg,rgba(21,56,77,0.88),rgba(11,16,21,0.96))] p-6 shadow-[var(--shadow-soft)]">
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#9edcf0]">Best next steps</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#9edcf0]">Market coverage</p>
             <div className="mt-5 space-y-4">
-              <Link href="/compare" className="block rounded-2xl border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.04)] p-4 transition hover:bg-[rgba(255,255,255,0.08)]">
-                <p className="text-sm font-semibold text-white">Use decision paths</p>
-                <p className="mt-2 text-sm leading-6 text-[#d6e2e9]">Start from fast capacity, constrained power, modular delivery, hosting, or retrofit instead of guessing the right category first.</p>
-              </Link>
-              <Link href="/vendors" className="block rounded-2xl border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.04)] p-4 transition hover:bg-[rgba(255,255,255,0.08)]">
-                <p className="text-sm font-semibold text-white">Browse companies</p>
-                <p className="mt-2 text-sm leading-6 text-[#d6e2e9]">Go straight into company profiles when you already know the segment you want to investigate.</p>
-              </Link>
+              <div className="rounded-2xl border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.04)] p-4">
+                <p className="text-sm font-semibold text-white">{categories.length} categories mapped</p>
+                <p className="mt-2 text-sm leading-6 text-[#d6e2e9]">Coverage spans compute delivery, thermal systems, power infrastructure, monitoring, operations, and site strategy.</p>
+              </div>
+              <div className="rounded-2xl border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.04)] p-4">
+                <p className="text-sm font-semibold text-white">{vendors.length} suppliers visible</p>
+                <p className="mt-2 text-sm leading-6 text-[#d6e2e9]">Browse established vendors, emerging players, and supplier relationships across the infrastructure stack.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -198,30 +184,8 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-5 py-6 lg:px-8 lg:py-8">
         <div className="mb-6 flex items-end justify-between gap-4">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Executive questions</p>
-            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Start with the decision you need to make.</h2>
-          </div>
-          <Link href="/compare" className="text-sm font-semibold text-[var(--accent)]">
-            View comparison paths
-          </Link>
-        </div>
-
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {executiveQuestions.map((question) => (
-            <Link key={question.title} href={question.href} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 transition hover:border-[var(--border-strong)]">
-              <h3 className="text-base font-semibold tracking-tight text-white">{question.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{question.description}</p>
-              <p className="mt-5 text-sm font-semibold text-[var(--accent)]">{question.cta}</p>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-5 py-6 lg:px-8 lg:py-8">
-        <div className="mb-6 flex items-end justify-between gap-4">
-          <div>
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Featured categories</p>
-            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Browse the ecosystem by segment.</h2>
+            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">See the market through its category structure.</h2>
           </div>
           <Link href="/categories" className="text-sm font-semibold text-[var(--accent)]">View all</Link>
         </div>
@@ -247,8 +211,8 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-5 py-6 lg:px-8 lg:py-8">
         <div className="mb-6 flex items-end justify-between gap-4">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Ecosystem lanes</p>
-            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Start with a real build problem, not a flat list.</h2>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Ecosystem relationships</p>
+            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Follow how major infrastructure lanes connect.</h2>
           </div>
           <Link href="/directory" className="text-sm font-semibold text-[var(--accent)]">Open the market map</Link>
         </div>
@@ -280,8 +244,8 @@ export default function Home() {
           <div>
             <div className="mb-6 flex items-end justify-between gap-4">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Trending companies</p>
-                <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">High-signal companies across key infrastructure segments.</h2>
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Featured suppliers</p>
+                <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Supplier discovery across key infrastructure segments.</h2>
               </div>
               <Link href="/vendors" className="text-sm font-semibold text-[var(--accent)]">Browse all</Link>
             </div>
@@ -307,8 +271,8 @@ export default function Home() {
 
           <div>
             <div className="mb-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Recently added companies</p>
-              <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Use the directory like a live industry watchlist.</h2>
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Recently added suppliers</p>
+              <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Track the market as the supplier map grows.</h2>
             </div>
             <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5">
               <div className="grid gap-4">
@@ -330,7 +294,7 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-5 py-6 lg:px-8 lg:py-8">
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Trending topics</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Market topics</p>
             <div className="mt-4 flex flex-wrap gap-2">
               {topicChips.map((chip) => (
                 <span key={chip} className="rounded-full bg-[var(--card-soft)] px-3 py-1.5 text-sm font-medium text-[var(--muted-strong)]">
@@ -341,7 +305,7 @@ export default function Home() {
           </div>
 
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Latest guides</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Market intelligence</p>
             <div className="mt-4 grid gap-4 md:grid-cols-3">
               {guides.map((guide) => (
                 <Link key={guide.slug} href={guide.slug} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 transition hover:border-[var(--border-strong)]">
@@ -351,6 +315,25 @@ export default function Home() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-6 lg:px-8 lg:py-10">
+        <div className="mb-6 flex items-end justify-between gap-4">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Exploration utilities</p>
+            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Use workflow tools as secondary ways to explore the market.</h2>
+          </div>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-3">
+          {marketUtilities.map((utility) => (
+            <Link key={utility.title} href={utility.href} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 transition hover:border-[var(--border-strong)]">
+              <h3 className="text-base font-semibold tracking-tight text-white">{utility.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{utility.description}</p>
+              <p className="mt-5 text-sm font-semibold text-[var(--accent)]">{utility.cta}</p>
+            </Link>
+          ))}
         </div>
       </section>
     </main>

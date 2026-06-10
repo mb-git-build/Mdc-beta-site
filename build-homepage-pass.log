@@ -1,0 +1,80 @@
+
+> modulardatacenters-app@0.1.0 build
+> next build --webpack
+
+Γû▓ Next.js 16.2.1 (webpack)
+- Environments: .env
+- Experiments (use with caution):
+  Γ£ô externalDir
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 15.0s
+  Running TypeScript ...
+  Finished TypeScript in 24.3s ...
+  Collecting page data using 1 worker ...
+  Generating static pages using 1 worker (0/159) ...
+  Generating static pages using 1 worker (39/159) 
+  Generating static pages using 1 worker (79/159) 
+  Generating static pages using 1 worker (119/159) 
+Γ£ô Generating static pages using 1 worker (159/159) in 30.8s
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+Γöî Γùï /
+Γö£ Γùï /_not-found
+Γö£ Γùï /about
+Γö£ ╞Æ /admin
+Γö£ ╞Æ /admin/analytics
+Γö£ ╞Æ /admin/audit
+Γö£ Γùï /admin/categories
+Γö£ ╞Æ /admin/leads
+Γö£ ╞Æ /admin/vendor-submissions
+Γö£ Γùï /admin/vendors
+Γö£ ╞Æ /api/admin/analytics/export
+Γö£ ╞Æ /api/admin/audit/export
+Γö£ ╞Æ /api/admin/audit/maintenance
+Γö£ ╞Æ /api/admin/leads/[id]/status
+Γö£ ╞Æ /api/admin/leads/batch-status
+Γö£ ╞Æ /api/admin/vendor-submissions/[id]/claim-token
+Γö£ ╞Æ /api/admin/vendor-submissions/[id]/status
+Γö£ ╞Æ /api/admin/vendor-submissions/batch-claim-token
+Γö£ ╞Æ /api/admin/vendor-submissions/batch-status
+Γö£ ╞Æ /api/admin/vendor-submissions/token-alerts
+Γö£ ╞Æ /api/conversion/events
+Γö£ ╞Æ /api/forms/submit
+Γö£ ╞Æ /api/vendor-claims/verify
+Γö£ Γùï /categories
+Γö£ Γùï /compare
+Γö£ ╞Æ /directory
+Γö£ ΓùÅ /directory/[category]
+Γöé Γö£ /directory/modular-prefab
+Γöé Γö£ /directory/containerized-data-centers
+Γöé Γö£ /directory/ai-colocation-gpu-hosting
+Γöé Γöö [+34 more paths]
+Γö£ Γùï /for-vendors
+Γö£ Γùï /for-vendors/claim
+Γö£ ╞Æ /for-vendors/claim/verify
+Γö£ Γùï /for-vendors/submit
+Γö£ Γùï /get-matched
+Γö£ Γùï /guides
+Γö£ ΓùÅ /guides/[slug]
+Γöé Γö£ /guides/ai-colocation-vs-modular
+Γöé Γö£ /guides/ai-data-center-cooling
+Γöé Γö£ /guides/modular-ai-data-center
+Γöé Γöö /guides/modular-vs-traditional-data-center-build
+Γö£ Γùï /methodology
+Γö£ ╞Æ /vendors
+Γöö ΓùÅ /vendors/[slug]
+  Γö£ /vendors/abb
+  Γö£ /vendors/aecom
+  Γö£ /vendors/allied-control
+  Γöö [+89 more paths]
+
+
+╞Æ Proxy (Middleware)
+
+Γùï  (Static)   prerendered as static content
+ΓùÅ  (SSG)      prerendered as static HTML (uses generateStaticParams)
+╞Æ  (Dynamic)  server-rendered on demand
+
