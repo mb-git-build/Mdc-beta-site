@@ -3,44 +3,23 @@ import { categories, getChildCategories, vendors, type Category } from "@/lib/si
 export type MainDomain = {
   slug: string;
   name: string;
-  description: string;
   categorySlugs: string[];
 };
 
 export const mainDomains: MainDomain[] = [
   {
-    slug: "modular-infrastructure",
-    name: "Modular Infrastructure",
-    description: "Factory-built, packaged, and rapidly deployable infrastructure systems spanning modular builds, containerized delivery, and prefabricated power blocks.",
-    categorySlugs: [
-      "modular-prefab",
-      "containerized-data-centers",
-    ],
-  },
-  {
-    slug: "ai-infrastructure-compute",
-    name: "AI Infrastructure & Compute",
-    description: "AI-ready deployment models, dense rack environments, hosted GPU capacity, and edge compute pathways for modern infrastructure programs.",
-    categorySlugs: [
-      "ai-colocation-gpu-hosting",
-      "edge-micro-data-centers",
-      "high-density-rack-power",
-    ],
-  },
-  {
     slug: "power-electrical",
     name: "Power & Electrical",
-    description: "Electrical backbone, resiliency systems, generation, storage, and packaged power delivery for compute-heavy environments.",
     categorySlugs: [
       "power-and-electrical",
       "generators-and-microgrids",
       "ups-and-battery-storage",
+      "high-density-rack-power",
     ],
   },
   {
     slug: "cooling-thermal",
     name: "Cooling & Thermal",
-    description: "Thermal management lanes covering liquid, immersion, HVAC, rejection systems, and dense rack cooling strategies.",
     categorySlugs: [
       "liquid-cooling",
       "immersion-cooling",
@@ -49,17 +28,16 @@ export const mainDomains: MainDomain[] = [
     ],
   },
   {
-    slug: "network-connectivity",
-    name: "Network & Connectivity",
-    description: "Network fabric, connectivity, and related infrastructure layers that support AI clusters, colocation, and distributed deployment footprints.",
+    slug: "modular-infrastructure",
+    name: "Modular Infrastructure",
     categorySlugs: [
-      "network-fabric-and-connectivity",
+      "modular-prefab",
+      "containerized-data-centers",
     ],
   },
   {
     slug: "operations-maintenance",
     name: "Operations & Maintenance",
-    description: "Delivery, integration, commissioning, controls, and operational layers that make infrastructure work in the field and stay reliable.",
     categorySlugs: [
       "monitoring-and-controls",
       "field-services-and-maintenance",
@@ -69,9 +47,23 @@ export const mainDomains: MainDomain[] = [
     ],
   },
   {
+    slug: "ai-infrastructure-compute",
+    name: "AI Infrastructure & Compute",
+    categorySlugs: [
+      "ai-colocation-gpu-hosting",
+      "edge-micro-data-centers",
+    ],
+  },
+  {
+    slug: "network-connectivity",
+    name: "Network & Connectivity",
+    categorySlugs: [
+      "network-fabric-and-connectivity",
+    ],
+  },
+  {
     slug: "site-strategy-energy",
     name: "Site Strategy & Energy",
-    description: "Site selection, land strategy, energy planning, and longer-horizon deployment decisions that shape infrastructure feasibility.",
     categorySlugs: [
       "site-selection-and-land-strategy",
       "sustainability-and-energy-strategy",
@@ -80,7 +72,6 @@ export const mainDomains: MainDomain[] = [
   {
     slug: "logistics-supply-chain",
     name: "Logistics & Supply Chain",
-    description: "Physical deployment logistics, procurement friction, and supply-chain realities that determine whether infrastructure ships and lands on time.",
     categorySlugs: [
       "supply-chain-and-logistics",
     ],
@@ -90,7 +81,6 @@ export const mainDomains: MainDomain[] = [
 export type MainDomainCategoryRow = Category & {
   subcategoryCount: number;
   companyCount: number;
-  representativeCompanies: typeof vendors;
 };
 
 export function getCategoryCompanySet(categorySlug: string) {
@@ -112,7 +102,6 @@ export function getMainDomainRows() {
           ...category,
           subcategoryCount: subcategories.length,
           companyCount: categoryCompanies.length,
-          representativeCompanies: categoryCompanies.slice(0, 5),
         };
       })
       .sort((a, b) => {
