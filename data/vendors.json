@@ -8473,7 +8473,7 @@
     ]
   },
   {
-    "slug": "zyntra",
+    "slug": "zutacore",
     "name": "ZutaCore",
     "website_url": "https://zutacore.com",
     "headline": "Two-phase direct liquid cooling company relevant to buyers comparing immersion with alternative ultra-dense thermal architectures for AI and HPC clusters.",
@@ -8560,7 +8560,8 @@
       "monitoring-and-controls",
       "liquid-loop-systems"
     ],
-    "logo_url": "https://logo.clearbit.com/zutacore.com"
+    "logo_url": "https://logo.clearbit.com/zutacore.com",
+    "id": "ven_zutacore"
   },
   {
     "slug": "nvidia-networking",

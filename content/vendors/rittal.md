@@ -1,23 +1,23 @@
 # Rittal
 
-**Category:** Modular / Prefabricated, Power Infrastructure
+**Category:** Modular & Prefabricated Infrastructure, Power & Electrical Infrastructure
 **Website:** https://www.rittal.com/
 
 ## Headline
-Prefab infrastructure partner useful for rapid deployment planning and electrical infrastructure relevance.
+Prefab infrastructure partner relevant to deployment planning, enclosure systems, and electrical infrastructure packaging.
 
 ## Overview
-Rittal appears in the directory as a practical option for buyers comparing component-level modularity against fully integrated building choices. It is most relevant where teams need repeatable enclosures, electrical enclosures, and modular physical infrastructure as part of their AI deployment path.
+Rittal improves the graph where buyers need repeatable enclosure systems, electrical control infrastructure, and modular physical packaging rather than a full turnkey campus owner. It is a stronger fit for componentized deployment paths than for end-to-end operator ownership.
 
 ## Key capabilities
 - prefabricated enclosures and infrastructure systems
-- power distribution and electrical control infrastructure
-- suitability for deployment-focused planning workflows
+- electrical enclosure and control infrastructure
+- packaged deployment elements for modular build programs
 
 ## Best fit for
 - modular project owners with rapid build requirements
-- teams standardizing around packaged infrastructure elements
-- buyers balancing speed and consistency
+- infrastructure teams standardizing around packaged physical systems
+- buyers comparing component-level modularity with more integrated delivery models
 
 ## Considerations
-Strongest fit is often around infrastructure modules rather than full end-to-end turnkey platform ownership.
+Strongest fit is usually around infrastructure modules, enclosure systems, and packaged deployment elements rather than full turnkey platform ownership.
