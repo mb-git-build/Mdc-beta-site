@@ -1,53 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getAdjacentCategoriesForSlug, getRelatedCompanies, inferVendorRoleProfile } from "@/lib/ecosystem";
-import { categories, getGuides, getMarkdownVendorBySlug, getVendorBySlug, vendors } from "@/lib/site-data";
+import { getRelatedCompanies, inferVendorRoleProfile } from "@/lib/ecosystem";
+import { categories, getMarkdownVendorBySlug, getVendorBySlug, vendors } from "@/lib/site-data";
 import { slugToAccent, vendorGlyph, vendorPrimaryCategory } from "@/lib/visuals";
 
-type RelatedGuide = {
-  title: string;
-  slug: string;
-};
-
-const guideByCategory: Record<string, string[]> = {
-  "modular-prefab": ["Modular AI Data Center", "Modular vs. Traditional Data Center Build", "AI Colocation vs. Modular"],
-  "liquid-cooling": ["AI Data Center Cooling", "AI Colocation vs. Modular"],
-  "ai-colocation-gpu-hosting": ["AI Colocation vs. Modular", "Modular vs. Traditional Data Center Build"],
-  "power-and-electrical": ["Modular vs. Traditional Data Center Build", "AI Data Center Cooling"],
-  "epc-and-commissioning": ["Modular AI Data Center", "AI Colocation vs. Modular"],
-};
+const surfaceClass = "rounded-[1.25rem] border border-[var(--border)] bg-[var(--card-soft)] p-4";
+const accentPillClass = "rounded-full border border-[rgba(127,179,213,0.18)] bg-[rgba(127,179,213,0.12)] px-3 py-1 text-xs font-semibold text-[var(--accent-strong)]";
 
 export function generateStaticParams() {
   return vendors.map((vendor) => ({ slug: vendor.slug }));
 }
-
-function getRelatedGuides(vendorCategorySlugs: string[]): RelatedGuide[] {
-  const guides = getGuides();
-  const seen = new Set<string>();
-
-  const prioritized = vendorCategorySlugs.flatMap((slug) => guideByCategory[slug] ?? []);
-  const byName = (prioritized
-    .map((title) => guides.find((guide) => guide.title === title))
-    .filter((guide): guide is (typeof guides)[number] => Boolean(guide))
-    .filter((guide) => {
-      if (seen.has(guide.slug)) {
-        return false;
-      }
-      seen.add(guide.slug);
-      return true;
-    })) as (typeof guides)[number][];
-
-  const fallback = guides.filter((guide) => !seen.has(guide.slug)).slice(0, 2);
-
-  return [...byName, ...fallback].map((guide) => ({
-    title: guide.title,
-    slug: guide.slug,
-  }));
-}
-
-const surfaceClass = "rounded-[1.25rem] border border-[var(--border)] bg-[var(--card-soft)] p-4";
-const pillClass = "rounded-full border border-[var(--border)] bg-[var(--background-strong)] px-3 py-1 text-xs font-medium text-[var(--muted-strong)]";
-const accentPillClass = "rounded-full border border-[rgba(127,179,213,0.18)] bg-[rgba(127,179,213,0.12)] px-3 py-1 text-xs font-semibold text-[var(--accent-strong)]";
 
 export default async function VendorPage({
   params,
@@ -74,21 +36,16 @@ export default async function VendorPage({
   const bestFit = vendorContent?.sections.find((section) => section.heading === "Best fit for")?.bullets ?? [];
   const considerations = vendorContent?.sections.find((section) => section.heading === "Considerations")?.bullets ?? [];
 
-  const relatedGuides = getRelatedGuides(vendor.categories);
   const listedInPrimaryCategory = vendor.categories[0] ? `/directory/${vendor.categories[0]}` : "/directory";
   const tone = slugToAccent(vendorPrimaryCategory(vendor.categories));
   const inferredProfile = inferVendorRoleProfile(vendor);
   const relatedCompanies = getRelatedCompanies(vendor, vendors);
-  const adjacentCategoryLinks = vendor.categories
-    .flatMap((categorySlug) => getAdjacentCategoriesForSlug(categorySlug))
-    .filter((value, index, array) => array.findIndex((item) => item.slug === value.slug) === index)
-    .slice(0, 6);
-  const dependencyCategories = (vendor.dependency_category_slugs ?? [])
-    .map((categorySlug) => categories.find((category) => category.slug === categorySlug))
-    .filter((category): category is (typeof categories)[number] => Boolean(category));
-  const oftenUsedWithCategories = (vendor.often_used_with_category_slugs ?? [])
-    .map((categorySlug) => categories.find((category) => category.slug === categorySlug))
-    .filter((category): category is (typeof categories)[number] => Boolean(category));
+
+  const companyType = inferredProfile.ecosystemRoles?.length
+    ? inferredProfile.ecosystemRoles.map((item) => item.replaceAll("_", " ")).join(", ")
+    : "Deployment-relevant infrastructure vendor";
+
+  const marketsServed = Array.from(new Set([...(vendor.deployment_types ?? []), ...(inferredProfile.focusAreas ?? [])])).slice(0, 6);
 
   return (
     <main className="min-h-screen bg-[var(--background)] px-6 py-12 lg:px-10">
@@ -131,11 +88,11 @@ export default async function VendorPage({
             </div>
 
             <div className="mt-4 flex flex-wrap gap-2 text-xs">
-              <Link href="/categories" className="rounded-full border border-[var(--border)] bg-[var(--background-strong)] px-4 py-2 text-sm font-semibold text-[var(--accent-strong)] transition hover:border-[var(--accent)]">
-                Explore adjacent categories
-              </Link>
               <Link href={listedInPrimaryCategory} className="rounded-full border border-[var(--border)] bg-[var(--background-strong)] px-4 py-2 text-sm font-semibold text-[var(--accent-strong)] transition hover:border-[var(--accent)]">
                 Browse this category
+              </Link>
+              <Link href="/for-vendors/claim" className="rounded-full border border-[var(--border)] bg-[var(--background-strong)] px-4 py-2 text-sm font-semibold text-[var(--accent-strong)] transition hover:border-[var(--accent)]">
+                Claim or update listing
               </Link>
             </div>
           </div>
@@ -150,8 +107,8 @@ export default async function VendorPage({
                 <dd className="mt-1 leading-6 text-[var(--muted-strong)]">{vendor.verified ? "Verified listing" : "Profile under review"}</dd>
               </div>
               <div>
-                <dt className="font-semibold text-white">Primary role</dt>
-                <dd className="mt-1 leading-6 text-[var(--muted-strong)]">Deployment-relevant infrastructure vendor</dd>
+                <dt className="font-semibold text-white">Company type</dt>
+                <dd className="mt-1 leading-6 text-[var(--muted-strong)]">{companyType}</dd>
               </div>
               <div>
                 <dt className="font-semibold text-white">Website</dt>
@@ -175,35 +132,23 @@ export default async function VendorPage({
                   <dd className="mt-1 leading-6 text-[var(--muted-strong)]">{vendor.regions.join(", ")}</dd>
                 </div>
               ) : null}
-              {overviewSection ? (
-                <div>
-                  <dt className="font-semibold text-white">Overview</dt>
-                  <dd className="mt-1 leading-7 text-[var(--muted-strong)]">
-                    {overviewSection.body[0] ?? "A concise company overview will appear here as profiles are expanded."}
-                  </dd>
-                </div>
-              ) : null}
             </dl>
-
-            <div className="mt-5 rounded-[1.25rem] border border-[var(--border)] bg-[var(--card-soft)] p-4">
-              <p className="text-sm font-semibold text-white">Recommended guides</p>
-              <ul className="mt-3 grid gap-2 text-sm text-[var(--muted-strong)]">
-                {relatedGuides.map((guide) => (
-                  <li key={guide.slug}>
-                    <Link href={guide.slug} className="font-medium text-[var(--accent-strong)] transition hover:text-white">
-                      {guide.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </aside>
 
           <section className="rounded-[1.5rem] border border-[var(--border)] bg-[var(--card)] p-6 shadow-[var(--shadow-card)]">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">Profile summary</p>
             <p className="mt-3 text-sm leading-7 text-[var(--muted-strong)]">{vendor.headline}</p>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            {overviewSection ? (
+              <div className={`mt-5 ${surfaceClass}`}>
+                <h2 className="text-base font-semibold tracking-tight text-white">Overview</h2>
+                <p className="mt-2 text-sm leading-7 text-[var(--muted-strong)]">
+                  {overviewSection.body[0] ?? "A concise company overview will appear here as profiles are expanded."}
+                </p>
+              </div>
+            ) : null}
+
+            <div className="mt-5 grid gap-4 sm:grid-cols-2">
               <div className={surfaceClass}>
                 <h2 className="text-base font-semibold tracking-tight text-white">Why it matters</h2>
                 <p className="mt-2 text-sm leading-7 text-[var(--muted-strong)]">
@@ -239,65 +184,13 @@ export default async function VendorPage({
               </div>
             ) : null}
 
-            {vendor.deployment_types?.length ? (
+            {marketsServed.length ? (
               <div className={`mt-4 ${surfaceClass}`}>
-                <h2 className="text-base font-semibold tracking-tight text-white">Deployment types</h2>
-                <ul className="mt-2 grid gap-1 text-sm leading-7 text-[var(--muted-strong)]">
-                  {vendor.deployment_types.map((item) => (
-                    <li key={item}>• {item}</li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-
-            <div className="mt-4 grid gap-4 sm:grid-cols-2">
-              {inferredProfile.ecosystemRoles?.length ? (
-                <div className={surfaceClass}>
-                  <h2 className="text-base font-semibold tracking-tight text-white">Ecosystem role</h2>
-                  <div className="mt-3 flex flex-wrap gap-2 text-sm">
-                    {inferredProfile.ecosystemRoles.map((item) => (
-                      <span key={item} className={accentPillClass}>
-                        {item.replaceAll("_", " ")}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ) : null}
-
-              {inferredProfile.focusAreas?.length ? (
-                <div className={surfaceClass}>
-                  <h2 className="text-base font-semibold tracking-tight text-white">Focus areas</h2>
-                  <div className="mt-3 flex flex-wrap gap-2 text-sm">
-                    {inferredProfile.focusAreas.map((item) => (
-                      <span key={item} className={pillClass}>
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ) : null}
-            </div>
-
-            {inferredProfile.subcategories?.length ? (
-              <div className={`mt-4 ${surfaceClass}`}>
-                <h2 className="text-base font-semibold tracking-tight text-white">Mapped subcategories</h2>
+                <h2 className="text-base font-semibold tracking-tight text-white">Typical deployment context</h2>
                 <div className="mt-3 flex flex-wrap gap-2">
-                  {inferredProfile.subcategories.map((categorySlug) => (
-                    <span key={categorySlug} className={pillClass}>
-                      {categorySlug.replaceAll("-", " ")}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ) : null}
-
-            {inferredProfile.tags?.length ? (
-              <div className={`mt-4 ${surfaceClass}`}>
-                <h2 className="text-base font-semibold tracking-tight text-white">Metadata tags</h2>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {inferredProfile.tags.map((tag) => (
-                    <span key={tag} className={pillClass}>
-                      {tag}
+                  {marketsServed.map((item) => (
+                    <span key={item} className="rounded-full border border-[var(--border)] bg-[var(--background-strong)] px-3 py-1 text-xs font-medium text-[var(--muted-strong)]">
+                      {item}
                     </span>
                   ))}
                 </div>
@@ -307,6 +200,9 @@ export default async function VendorPage({
             {relatedCompanies.length ? (
               <div className={`mt-4 ${surfaceClass}`}>
                 <h2 className="text-base font-semibold tracking-tight text-white">Related companies</h2>
+                <p className="mt-2 text-sm leading-7 text-[var(--muted-strong)]">
+                  These are other companies worth evaluating alongside this vendor in the same buyer workflow.
+                </p>
                 <div className="mt-3 grid gap-3 sm:grid-cols-2">
                   {relatedCompanies.map((company) => (
                     <Link
@@ -322,55 +218,6 @@ export default async function VendorPage({
               </div>
             ) : null}
 
-            {adjacentCategoryLinks.length ? (
-              <div className={`mt-4 ${surfaceClass}`}>
-                <h2 className="text-base font-semibold tracking-tight text-white">Adjacent infrastructure</h2>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {adjacentCategoryLinks.map((category) => (
-                    <Link key={category.slug} href={`/directory/${category.slug}`} className={accentPillClass}>
-                      {category.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ) : null}
-
-            {dependencyCategories.length || oftenUsedWithCategories.length ? (
-              <div className="mt-4 grid gap-4 sm:grid-cols-2">
-                {dependencyCategories.length ? (
-                  <div className={surfaceClass}>
-                    <h2 className="text-base font-semibold tracking-tight text-white">Often depends on</h2>
-                    <p className="mt-2 text-sm leading-7 text-[var(--muted-strong)]">
-                      These categories commonly need to be solved upstream or alongside this vendor’s role in a real deployment.
-                    </p>
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      {dependencyCategories.map((category) => (
-                        <Link key={category.slug} href={`/directory/${category.slug}`} className={accentPillClass}>
-                          {category.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                ) : null}
-
-                {oftenUsedWithCategories.length ? (
-                  <div className={surfaceClass}>
-                    <h2 className="text-base font-semibold tracking-tight text-white">Commonly deployed with</h2>
-                    <p className="mt-2 text-sm leading-7 text-[var(--muted-strong)]">
-                      These neighboring categories are frequently part of the same buyer path, shortlist, or deployment package.
-                    </p>
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      {oftenUsedWithCategories.map((category) => (
-                        <Link key={category.slug} href={`/directory/${category.slug}`} className={accentPillClass}>
-                          {category.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                ) : null}
-              </div>
-            ) : null}
-
             {considerations.length ? (
               <div className={`mt-4 ${surfaceClass}`}>
                 <h2 className="text-base font-semibold tracking-tight text-white">Considerations</h2>
@@ -383,29 +230,6 @@ export default async function VendorPage({
             ) : null}
           </section>
         </div>
-
-        <section className="mt-8 rounded-[1.5rem] border border-[var(--border)] bg-[linear-gradient(135deg,rgba(21,27,34,0.98),rgba(14,20,27,0.98))] p-6 shadow-[var(--shadow-card)]">
-          <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">Next move</p>
-              <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Keep exploring the market around this vendor.</h2>
-              <p className="mt-3 max-w-3xl text-sm leading-7 text-[var(--muted-strong)]">
-                Use the category graph to compare adjacent systems, browse nearby supplier segments, or claim this listing if your team needs to update public details.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-3 lg:justify-end">
-              <Link href={listedInPrimaryCategory} className="rounded-full bg-[var(--accent)] px-5 py-3 text-sm font-semibold text-[#0f141a] transition hover:-translate-y-0.5">
-                Browse this category
-              </Link>
-              <Link href="/categories" className="rounded-full border border-[var(--border)] bg-[var(--background-strong)] px-5 py-3 text-sm font-semibold text-white transition hover:border-[var(--accent)]">
-                Explore adjacent categories
-              </Link>
-              <Link href="/for-vendors/claim" className="rounded-full border border-[var(--accent)] bg-[rgba(127,179,213,0.12)] px-5 py-3 text-sm font-semibold text-[var(--accent-strong)] transition hover:bg-[rgba(127,179,213,0.18)]">
-                Claim or update listing
-              </Link>
-            </div>
-          </div>
-        </section>
       </div>
     </main>
   );
