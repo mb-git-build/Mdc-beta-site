@@ -10246,5 +10246,448 @@
       "https://www.bureauveritas.com"
     ],
     "ingestion_notes": "Approved after targeted validation cleanup; future enrichment can add a more specific data-center citation."
+  },
+  {
+    "slug": "powersecure",
+    "name": "PowerSecure",
+    "website_url": "https://powersecure.com/",
+    "headline": "Distributed energy and microgrid systems integrator focused on resilient power, controls, and monitored energy infrastructure for mission-critical sites.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "generators-and-microgrids",
+      "power-and-electrical",
+      "microgrid-controls-and-integration"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Industrial",
+      "Hyperscale"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Utilities",
+      "Developers"
+    ],
+    "specialties": [
+      "Microgrid integration",
+      "Distributed energy infrastructure",
+      "Power monitoring"
+    ],
+    "proof_points": [
+      "PowerSecure describes itself as a leader in powering microgrids and highlights PowerControl monitoring plus distributed energy integration."
+    ],
+    "featured_capabilities": [
+      "Microgrid orchestration",
+      "DER integration",
+      "24/7 monitored power operations"
+    ],
+    "comparison_notes": [
+      "More valuable as a microgrid control-and-integration operator than as a generic generation brand."
+    ],
+    "hq": "Durham, North Carolina, USA",
+    "service_area": "United States",
+    "project_scale": "Commercial to utility-adjacent deployments",
+    "subcategories": [
+      "microgrid-controls-and-integration"
+    ],
+    "tags": [
+      "microgrid",
+      "distributed-energy",
+      "controls"
+    ],
+    "infrastructure_types": [
+      "power",
+      "controls",
+      "services"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "integrator",
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "scale-microgrids",
+      "asco-power-technologies",
+      "eaton"
+    ],
+    "dependency_category_slugs": [
+      "ups-and-battery-storage"
+    ],
+    "often_used_with_category_slugs": [
+      "site-selection-and-land-strategy",
+      "power-and-electrical"
+    ],
+    "evidence_urls": [
+      "https://powersecure.com/",
+      "https://powersecure.com/?hsLang=en"
+    ],
+    "ingestion_notes": "Sparse-branch correction: added conservatively for microgrid controls depth."
+  },
+  {
+    "slug": "dynapower",
+    "name": "Dynapower",
+    "website_url": "https://dynapower.com/",
+    "headline": "Power conversion and microgrid stability specialist relevant to self-healing, islanded, and energy-storage-backed critical infrastructure environments.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "generators-and-microgrids",
+      "ups-and-battery-storage",
+      "microgrid-controls-and-integration"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Industrial",
+      "Utility"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Energy teams",
+      "Program teams"
+    ],
+    "specialties": [
+      "Power conversion systems",
+      "Microgrid stability",
+      "Islanded operation"
+    ],
+    "proof_points": [
+      "Dynapower explicitly discusses self-healing microgrid behavior, frequency and voltage response, and reliable islanded operation."
+    ],
+    "featured_capabilities": [
+      "PCS response control",
+      "Grid-forming behavior",
+      "Microgrid fault response"
+    ],
+    "comparison_notes": [
+      "Best positioned as a control-layer and power-conversion specialist rather than a broad electrical OEM."
+    ],
+    "hq": "South Burlington, Vermont, USA",
+    "service_area": "North America with broader project relevance",
+    "project_scale": "Critical power and DER-backed deployments",
+    "subcategories": [
+      "microgrid-controls-and-integration"
+    ],
+    "tags": [
+      "microgrid",
+      "power-conversion",
+      "energy-storage"
+    ],
+    "infrastructure_types": [
+      "power",
+      "controls"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "integrator",
+      "manufacturer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "scale-microgrids",
+      "fluence",
+      "asco-power-technologies"
+    ],
+    "dependency_category_slugs": [
+      "ups-and-battery-storage"
+    ],
+    "often_used_with_category_slugs": [
+      "power-and-electrical",
+      "sustainability-and-energy-strategy"
+    ],
+    "evidence_urls": [
+      "https://dynapower.com/energy-storage-microgrids/",
+      "https://dynapower.com/"
+    ],
+    "ingestion_notes": "Sparse-branch correction: added conservatively for microgrid controls depth."
+  },
+  {
+    "slug": "coldlogik",
+    "name": "ColdLogik",
+    "website_url": "https://www.coldlogik.com/",
+    "headline": "Rear-door heat exchanger specialist focused on high-density rack cooling and efficient RDHx deployment for AI and data center environments.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "rear-door-direct-to-chip-cooling",
+      "liquid-cooling"
+    ],
+    "regions": [
+      "Europe",
+      "North America"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Hyperscale",
+      "HPC"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Facilities teams",
+      "Cooling architects"
+    ],
+    "specialties": [
+      "Rear-door heat exchangers",
+      "Rack-level cooling",
+      "High-density thermal management"
+    ],
+    "proof_points": [
+      "ColdLogik publishes dedicated active and passive rear-door heat exchanger product families for data center cooling."
+    ],
+    "featured_capabilities": [
+      "Active RDHx systems",
+      "Passive RDHx systems",
+      "Rack-adjacent thermal efficiency"
+    ],
+    "comparison_notes": [
+      "A true rear-door specialist and one of the cleanest fits for sparse-branch correction in the current taxonomy."
+    ],
+    "hq": "United Kingdom",
+    "service_area": "International project support",
+    "project_scale": "High-density rack and room deployments",
+    "subcategories": [
+      "direct-to-chip-cooling"
+    ],
+    "tags": [
+      "rdhx",
+      "rear-door-cooling",
+      "rack-cooling"
+    ],
+    "infrastructure_types": [
+      "cooling"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "manufacturer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "motivair",
+      "nvent-liquid-cooling",
+      "vertiv"
+    ],
+    "dependency_category_slugs": [
+      "liquid-loop-systems"
+    ],
+    "often_used_with_category_slugs": [
+      "high-density-rack-power",
+      "monitoring-and-controls"
+    ],
+    "evidence_urls": [
+      "https://www.coldlogik.com/all-products/rear-door-heat-exchangers",
+      "https://www.legrand.com/datacenter/gb-en/white-space/cooling/rear-door-cooling"
+    ],
+    "ingestion_notes": "Sparse-branch correction: added conservatively to deepen RDHx coverage."
+  },
+  {
+    "slug": "panduit",
+    "name": "Panduit",
+    "website_url": "https://www.panduit.com/",
+    "headline": "Rack and cabinet infrastructure provider with RDHx-integrated high-density cooling pathways for AI-oriented deployments.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "rear-door-direct-to-chip-cooling",
+      "high-density-rack-power"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "APAC",
+      "LATAM"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Hyperscale",
+      "AI"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Facilities teams",
+      "Infrastructure teams"
+    ],
+    "specialties": [
+      "Rack integration",
+      "RDHx deployment",
+      "Cabinet infrastructure"
+    ],
+    "proof_points": [
+      "Panduit positions its RDHx solution around FlexFusion cabinet integration and AI workload cooling."
+    ],
+    "featured_capabilities": [
+      "Cabinet-integrated RDHx",
+      "High-density rack deployment",
+      "Cooling integration support"
+    ],
+    "comparison_notes": [
+      "Included conservatively for RDHx deployment realism, not as a broad category-sprawl vendor."
+    ],
+    "hq": "Tinley Park, Illinois, USA",
+    "service_area": "Global",
+    "project_scale": "Rack to enterprise-scale deployments",
+    "subcategories": [
+      "direct-to-chip-cooling"
+    ],
+    "tags": [
+      "rdhx",
+      "rack-infrastructure",
+      "cabinet-platform"
+    ],
+    "infrastructure_types": [
+      "cooling",
+      "power"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "integrator",
+      "manufacturer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "motivair",
+      "legrand",
+      "nvent-liquid-cooling"
+    ],
+    "dependency_category_slugs": [
+      "liquid-loop-systems"
+    ],
+    "often_used_with_category_slugs": [
+      "high-density-rack-power",
+      "monitoring-and-controls"
+    ],
+    "evidence_urls": [
+      "https://www.panduit.com/en/products/featured-products/rear-door-heat-exchanger.html",
+      "https://www.panduit.com/en/search.html#q=ai%20workload%20data%20centers"
+    ],
+    "ingestion_notes": "Sparse-branch correction: scoped narrowly to RDHx and rack-integration relevance."
+  },
+  {
+    "slug": "innochill",
+    "name": "InnoChill",
+    "website_url": "https://www.innochill.com/",
+    "headline": "Single-phase immersion cooling specialist for high-density AI, HPC, and data center workloads.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "immersion-cooling",
+      "single-phase-immersion",
+      "commissioning-and-operations"
+    ],
+    "regions": [
+      "APAC",
+      "North America"
+    ],
+    "deployment_types": [
+      "AI",
+      "HPC",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Cooling architects",
+      "Specialized compute teams"
+    ],
+    "specialties": [
+      "Single-phase immersion",
+      "High-density AI cooling",
+      "Dielectric immersion systems"
+    ],
+    "proof_points": [
+      "InnoChill explicitly markets single-phase immersion cooling for AI workloads and data-center-scale deployments."
+    ],
+    "featured_capabilities": [
+      "Single-phase immersion platforms",
+      "100kW+ rack support claims",
+      "Low-PUE cooling path"
+    ],
+    "comparison_notes": [
+      "Added conservatively as a single-phase immersion specialist without broadening into adjacent thermal categories."
+    ],
+    "hq": "China",
+    "service_area": "International project support",
+    "project_scale": "High-density AI and HPC deployments",
+    "subcategories": [
+      "single-phase-immersion"
+    ],
+    "tags": [
+      "single-phase-immersion",
+      "ai-cooling",
+      "dielectric"
+    ],
+    "infrastructure_types": [
+      "cooling"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "manufacturer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "submer",
+      "green-revolution-cooling",
+      "liquidstack"
+    ],
+    "dependency_category_slugs": [
+      "liquid-loop-systems"
+    ],
+    "often_used_with_category_slugs": [
+      "high-density-rack-power",
+      "field-services-and-maintenance"
+    ],
+    "evidence_urls": [
+      "https://www.innochill.com/innochill-immersion-cooling-ai-workloads-data-centers/",
+      "https://www.innochill.com/innochill-single-phase-immersion-cooling-data-center-hpc-cooling-revolution/"
+    ],
+    "ingestion_notes": "Sparse-branch correction: added conservatively for single-phase immersion depth."
   }
 ]
