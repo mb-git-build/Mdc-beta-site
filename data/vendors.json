@@ -4735,7 +4735,8 @@
     "categories": [
       "liquid-cooling",
       "direct-to-chip-cooling",
-      "liquid-loop-systems"
+      "liquid-loop-systems",
+      "rear-door-direct-to-chip-cooling"
     ],
     "regions": [
       "North America",
@@ -4804,7 +4805,13 @@
       "coolit-systems",
       "liquidstack",
       "submer",
-      "dcx-the-liquid-cooling-company"
+      "dcx-the-liquid-cooling-company",
+      "usystems",
+      "coldlogik",
+      "panduit",
+      "vertiv",
+      "nvent-liquid-cooling",
+      "coolcentric"
     ],
     "logo_url": "https://logo.clearbit.com/motivaircorp.com"
   },
@@ -5289,7 +5296,8 @@
     "categories": [
       "liquid-cooling",
       "high-density-rack-power",
-      "fabricated-enclosures-and-shells"
+      "fabricated-enclosures-and-shells",
+      "rear-door-direct-to-chip-cooling"
     ],
     "regions": [
       "North America",
@@ -5359,7 +5367,12 @@
       "motivair",
       "trane",
       "stulz",
-      "sunbird-software"
+      "sunbird-software",
+      "usystems",
+      "coldlogik",
+      "panduit",
+      "vertiv",
+      "coolcentric"
     ],
     "logo_url": "https://logo.clearbit.com/nvent.com",
     "dependency_category_slugs": [
@@ -8268,7 +8281,8 @@
       "power-and-electrical",
       "liquid-cooling",
       "monitoring-and-controls",
-      "high-density-rack-power"
+      "high-density-rack-power",
+      "rear-door-direct-to-chip-cooling"
     ],
     "regions": [
       "North America",
@@ -8353,7 +8367,12 @@
       "resa-power",
       "schneider-electric",
       "climatec",
-      "romco-power-systems"
+      "romco-power-systems",
+      "usystems",
+      "coldlogik",
+      "panduit",
+      "motivair",
+      "nvent-liquid-cooling"
     ],
     "dependency_category_slugs": [
       "generators-and-microgrids",
@@ -10689,5 +10708,88 @@
       "https://www.innochill.com/innochill-single-phase-immersion-cooling-data-center-hpc-cooling-revolution/"
     ],
     "ingestion_notes": "Sparse-branch correction: added conservatively for single-phase immersion depth."
+  },
+  {
+    "slug": "coolcentric",
+    "name": "Coolcentric",
+    "website_url": "https://coolcentric.com/",
+    "headline": "Rear-door heat exchanger and liquid cooling specialist for high-density data center deployments, with active and passive rack-level thermal solutions.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "rear-door-direct-to-chip-cooling",
+      "liquid-cooling"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "AI",
+      "HPC",
+      "Enterprise",
+      "Colocation"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Mechanical teams",
+      "High-density infrastructure planners"
+    ],
+    "specialties": [
+      "Rear-door heat exchangers",
+      "Rack-level liquid cooling",
+      "High-density thermal management"
+    ],
+    "proof_points": [
+      "Official product line explicitly includes rear door heat exchangers for liquid-cooled server rack environments"
+    ],
+    "featured_capabilities": [
+      "Active and passive RDHx systems",
+      "Rack-level heat capture",
+      "Liquid-cooled thermal retrofits"
+    ],
+    "comparison_notes": [
+      "Strong specialist fit for buyers evaluating rack-adjacent liquid cooling paths between traditional air cooling and deeper direct liquid architectures"
+    ],
+    "hq": "North America",
+    "service_area": "North America and data center project markets",
+    "project_scale": "Rack to row deployments",
+    "subcategories": [],
+    "tags": [
+      "rdhx",
+      "rear-door-cooling",
+      "rack-liquid-cooling"
+    ],
+    "infrastructure_types": [
+      "cooling",
+      "facility"
+    ],
+    "cooling_types": [
+      "liquid_loop",
+      "rear_door_heat_exchanger"
+    ],
+    "focus_areas": [
+      "ai",
+      "hpc",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "colocation",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "manufacturer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "usystems",
+      "coldlogik",
+      "panduit",
+      "vertiv",
+      "motivair",
+      "nvent-liquid-cooling"
+    ]
   }
 ]
