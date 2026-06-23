@@ -1852,7 +1852,8 @@
       "ups-and-battery-storage",
       "switchgear-pdu-busway",
       "ats-and-transfer-systems",
-      "prefabricated-power-blocks"
+      "prefabricated-power-blocks",
+      "containerized-data-centers"
     ],
     "regions": [
       "North America",
@@ -6352,7 +6353,8 @@
     "categories": [
       "modular-prefab",
       "power-and-electrical",
-      "fabricated-enclosures-and-shells"
+      "fabricated-enclosures-and-shells",
+      "containerized-data-centers"
     ],
     "regions": [
       "North America",
@@ -8282,7 +8284,8 @@
       "liquid-cooling",
       "monitoring-and-controls",
       "high-density-rack-power",
-      "rear-door-direct-to-chip-cooling"
+      "rear-door-direct-to-chip-cooling",
+      "containerized-data-centers"
     ],
     "regions": [
       "North America",
@@ -10792,4 +10795,240 @@
       "nvent-liquid-cooling"
     ]
   }
+,
+  {
+    "slug": "bladeroom",
+    "name": "BladeRoom",
+    "website_url": "https://bladeroom.com/",
+    "headline": "Off-site data center builder focused on efficient modular delivery, rapid deployment, and scalable facilities from hyperscale to edge.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "containerized-data-centers",
+      "modular-prefab",
+      "construction-and-integration"
+    ],
+    "regions": [
+      "Europe",
+      "North America",
+      "Middle East"
+    ],
+    "deployment_types": [
+      "Modular",
+      "Hyperscale",
+      "Edge"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Operators",
+      "Infrastructure teams"
+    ],
+    "specialties": [
+      "Off-site data center delivery",
+      "Modular facilities",
+      "Rapid deployment"
+    ],
+    "proof_points": [
+      "Explicit off-site data center and modular edge positioning"
+    ],
+    "featured_capabilities": [
+      "Factory-built modular delivery",
+      "Scalable facility design",
+      "Rapid project execution"
+    ],
+    "comparison_notes": [
+      "Strong fit where buyers want purpose-built modular data center delivery rather than only component supply"
+    ],
+    "hq": "United Kingdom",
+    "service_area": "International",
+    "project_scale": "Edge pod to hyperscale campus module",
+    "subcategories": [
+      "fabricated-enclosures-and-shells"
+    ],
+    "tags": [
+      "off-site-construction",
+      "modular-delivery"
+    ],
+    "infrastructure_types": [
+      "facility",
+      "services"
+    ],
+    "focus_areas": [
+      "ai",
+      "edge",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale",
+      "edge"
+    ],
+    "ecosystem_roles": [
+      "integrator",
+      "developer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "compu-dynamics-modular",
+      "edge-modular",
+      "rittal",
+      "vertiv"
+    ]
+  },
+  {
+    "slug": "zella-dc",
+    "name": "Zella DC",
+    "website_url": "https://www.zelladc.com/",
+    "headline": "Factory-built micro data centre provider with integrated power, cooling, security, and monitoring for edge and on-site AI deployments.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "containerized-data-centers",
+      "edge-micro-data-centers",
+      "monitoring-and-controls"
+    ],
+    "regions": [
+      "Europe",
+      "North America",
+      "Middle East",
+      "APAC"
+    ],
+    "deployment_types": [
+      "Edge",
+      "Micro data center",
+      "AI"
+    ],
+    "buyer_types": [
+      "Edge operators",
+      "Enterprise infrastructure teams",
+      "On-site compute buyers"
+    ],
+    "specialties": [
+      "Pre-engineered micro data centres",
+      "Integrated monitoring",
+      "Factory-tested deployment units"
+    ],
+    "proof_points": [
+      "Explicit factory pre-engineered micro data centre positioning"
+    ],
+    "featured_capabilities": [
+      "Integrated PDU and cooling",
+      "Access control and monitoring",
+      "Rapid site deployment"
+    ],
+    "comparison_notes": [
+      "Useful where buyers need compact packaged infrastructure with strong edge and on-site deployment relevance"
+    ],
+    "hq": "United Kingdom",
+    "service_area": "Global",
+    "project_scale": "Single micro data center to distributed rollout",
+    "subcategories": [],
+    "tags": [
+      "micro-data-center",
+      "edge"
+    ],
+    "infrastructure_types": [
+      "facility",
+      "power",
+      "cooling",
+      "controls"
+    ],
+    "focus_areas": [
+      "ai",
+      "edge",
+      "general"
+    ],
+    "scale_focus": [
+      "edge",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "manufacturer",
+      "integrator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "edge-modular",
+      "compu-dynamics-modular",
+      "vertiv",
+      "rittal"
+    ]
+  },
+  {
+    "slug": "instant-data-centers",
+    "name": "Instant Data Centers",
+    "website_url": "https://instantdatacenters.com/",
+    "headline": "Containerized and rapidly deployable data center provider relevant to modular capacity expansion and edge-style infrastructure delivery.",
+    "featured": false,
+    "verified": false,
+    "categories": [
+      "containerized-data-centers",
+      "edge-micro-data-centers"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Containerized",
+      "Modular",
+      "Edge"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Infrastructure teams",
+      "Edge operators"
+    ],
+    "specialties": [
+      "Rapid data center deployment",
+      "Containerized infrastructure",
+      "Modular expansion"
+    ],
+    "proof_points": [
+      "Approved ingestion candidate for containerized data center branch expansion"
+    ],
+    "featured_capabilities": [
+      "Packaged deployment",
+      "Fast capacity rollout",
+      "Compact infrastructure delivery"
+    ],
+    "comparison_notes": [
+      "Good branch-fit addition, though direct evidence was weaker in this environment than the other five approved names"
+    ],
+    "hq": "North America",
+    "service_area": "North America",
+    "project_scale": "Single unit to regional deployment",
+    "subcategories": [],
+    "tags": [
+      "containerized",
+      "rapid-deployment"
+    ],
+    "infrastructure_types": [
+      "facility",
+      "services"
+    ],
+    "focus_areas": [
+      "edge",
+      "general"
+    ],
+    "scale_focus": [
+      "edge",
+      "regional"
+    ],
+    "ecosystem_roles": [
+      "integrator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "zella-dc",
+      "edge-modular",
+      "compu-dynamics-modular"
+    ]
+  }
+
 ]
