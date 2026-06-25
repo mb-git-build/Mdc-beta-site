@@ -1240,7 +1240,8 @@
       "edge-micro-data-centers",
       "liquid-cooling",
       "construction-and-integration",
-      "prefabricated-power-blocks"
+      "prefabricated-power-blocks",
+      "fabricated-enclosures-and-shells"
     ],
     "regions": [
       "North America"
@@ -1262,7 +1263,8 @@
       "Liquid cooling readiness"
     ],
     "proof_points": [
-      "Direct modular data center delivery focus"
+      "Direct modular data center delivery focus",
+      "External evidence indicates turnkey factory-fabricated modular data center solutions for AI and edge infrastructure"
     ],
     "featured_capabilities": [
       "Packaged modular capacity",
@@ -4632,7 +4634,8 @@
       "construction-and-integration",
       "prefabricated-power-blocks",
       "modular-substations",
-      "ats-and-transfer-systems"
+      "ats-and-transfer-systems",
+      "fabricated-enclosures-and-shells"
     ],
     "regions": [
       "North America"
@@ -4653,7 +4656,8 @@
       "Behind-the-meter resilience"
     ],
     "proof_points": [
-      "Strong fit for packaged electrical delivery"
+      "Strong fit for packaged electrical delivery",
+      "External evidence highlights factory-built modular power platforms and integrated power infrastructure relevant to engineered enclosure delivery"
     ],
     "featured_capabilities": [
       "Switchgear and generator packaging",
@@ -5398,7 +5402,8 @@
       "power-and-electrical",
       "containerized-data-centers",
       "construction-and-integration",
-      "prefabricated-power-blocks"
+      "prefabricated-power-blocks",
+      "fabricated-enclosures-and-shells"
     ],
     "regions": [
       "North America"
@@ -5419,7 +5424,8 @@
       "E-houses"
     ],
     "proof_points": [
-      "Useful bridge between modular shells and electrical deployment reality"
+      "Useful bridge between modular shells and electrical deployment reality",
+      "External evidence identifies nVent TRACHTE as a manufacturer of engineered building solutions including modular data centers and large-scale electrical equipment enclosures"
     ],
     "featured_capabilities": [
       "Packaged infrastructure buildings",
@@ -10794,8 +10800,7 @@
       "motivair",
       "nvent-liquid-cooling"
     ]
-  }
-,
+  },
   {
     "slug": "bladeroom",
     "name": "BladeRoom",
@@ -11030,5 +11035,4 @@
       "compu-dynamics-modular"
     ]
   }
-
 ]
