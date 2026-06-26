@@ -11034,5 +11034,345 @@
       "edge-modular",
       "compu-dynamics-modular"
     ]
+  },
+  {
+    "id": "ven_voltage-park",
+    "slug": "voltage-park",
+    "name": "Voltage Park",
+    "website_url": "https://www.voltagepark.com/",
+    "headline": "Managed AI colocation and GPU infrastructure platform offering enterprise access to large-scale accelerated compute capacity.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-colocation-gpu-hosting"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "AI",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "AI labs",
+      "Enterprise teams",
+      "Model builders"
+    ],
+    "specialties": [
+      "Managed GPU capacity",
+      "AI colocation",
+      "Accelerated compute access"
+    ],
+    "proof_points": [
+      "Known managed GPU infrastructure operator"
+    ],
+    "featured_capabilities": [
+      "Managed AI hosting",
+      "GPU cluster access",
+      "Capacity onboarding"
+    ],
+    "comparison_notes": [
+      "Useful when buyers want managed access to AI infrastructure rather than self-building facilities"
+    ],
+    "hq": "United States",
+    "service_area": "North America",
+    "project_scale": "Enterprise AI deployments",
+    "subcategories": [
+      "managed-ai-colocation"
+    ],
+    "tags": [
+      "managed-ai-colocation",
+      "gpu-hosting"
+    ],
+    "infrastructure_types": [
+      "hosting"
+    ],
+    "focus_areas": [
+      "ai"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "operator",
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ]
+  },
+  {
+    "id": "ven_tensordock",
+    "slug": "tensordock",
+    "name": "TensorDock",
+    "website_url": "https://www.tensordock.com/",
+    "headline": "GPU cloud and managed AI infrastructure marketplace relevant to buyers seeking flexible hosted accelerator capacity.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-colocation-gpu-hosting"
+    ],
+    "regions": [
+      "North America",
+      "Europe"
+    ],
+    "deployment_types": [
+      "AI",
+      "Cloud"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Startups",
+      "AI teams"
+    ],
+    "specialties": [
+      "Hosted GPU access",
+      "Managed compute capacity",
+      "Flexible AI workloads"
+    ],
+    "proof_points": [
+      "Recognized hosted GPU capacity platform"
+    ],
+    "featured_capabilities": [
+      "Managed GPU instances",
+      "Rapid deployment",
+      "Flexible capacity sourcing"
+    ],
+    "comparison_notes": [
+      "Relevant where the decision is speed-to-capacity instead of facility ownership"
+    ],
+    "hq": "United States",
+    "service_area": "International",
+    "project_scale": "Startup to enterprise AI workloads",
+    "subcategories": [
+      "managed-ai-colocation"
+    ],
+    "tags": [
+      "managed-ai-colocation",
+      "gpu-cloud"
+    ],
+    "infrastructure_types": [
+      "hosting"
+    ],
+    "focus_areas": [
+      "ai"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "operator",
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ]
+  },
+  {
+    "id": "ven_verda",
+    "slug": "verda",
+    "name": "Verda",
+    "website_url": "https://www.verda.ai/",
+    "headline": "Managed AI infrastructure company positioned around hosted GPU capacity and enterprise-ready deployment support.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-colocation-gpu-hosting"
+    ],
+    "regions": [
+      "Europe"
+    ],
+    "deployment_types": [
+      "AI",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "Enterprise teams",
+      "AI builders"
+    ],
+    "specialties": [
+      "Managed AI capacity",
+      "GPU infrastructure access",
+      "Enterprise onboarding"
+    ],
+    "proof_points": [
+      "Known managed AI infrastructure operator"
+    ],
+    "featured_capabilities": [
+      "Managed GPU environments",
+      "Capacity provisioning",
+      "AI infrastructure support"
+    ],
+    "comparison_notes": [
+      "Fits the managed hosting layer rather than core facility equipment supply"
+    ],
+    "hq": "Europe",
+    "service_area": "Europe",
+    "project_scale": "Enterprise AI deployments",
+    "subcategories": [
+      "managed-ai-colocation"
+    ],
+    "tags": [
+      "managed-ai-colocation",
+      "managed-gpu"
+    ],
+    "infrastructure_types": [
+      "hosting"
+    ],
+    "focus_areas": [
+      "ai"
+    ],
+    "scale_focus": [
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "operator",
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ]
+  },
+  {
+    "id": "ven_vultr",
+    "slug": "vultr",
+    "name": "Vultr",
+    "website_url": "https://www.vultr.com/",
+    "headline": "Cloud infrastructure provider with managed GPU and AI hosting relevance for teams buying deployed accelerator capacity.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-colocation-gpu-hosting"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "APAC"
+    ],
+    "deployment_types": [
+      "AI",
+      "Cloud",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Startups",
+      "Enterprise teams"
+    ],
+    "specialties": [
+      "GPU cloud",
+      "Managed AI hosting",
+      "Global infrastructure footprint"
+    ],
+    "proof_points": [
+      "Established cloud platform with GPU infrastructure offering"
+    ],
+    "featured_capabilities": [
+      "Managed GPU instances",
+      "Global deployment options",
+      "Hosted accelerator access"
+    ],
+    "comparison_notes": [
+      "Useful comparator when buyers may substitute managed GPU cloud for dedicated infrastructure sourcing"
+    ],
+    "hq": "West Palm Beach, Florida, USA",
+    "service_area": "Global",
+    "project_scale": "Startup to enterprise",
+    "subcategories": [
+      "managed-ai-colocation"
+    ],
+    "tags": [
+      "managed-ai-colocation",
+      "gpu-cloud"
+    ],
+    "infrastructure_types": [
+      "hosting"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "operator",
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ]
+  },
+  {
+    "id": "ven_nebius",
+    "slug": "nebius",
+    "name": "Nebius",
+    "website_url": "https://nebius.com/",
+    "headline": "AI-native cloud infrastructure operator offering managed GPU capacity and hosted environments for model development and inference workloads.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-colocation-gpu-hosting"
+    ],
+    "regions": [
+      "Europe",
+      "North America"
+    ],
+    "deployment_types": [
+      "AI",
+      "Cloud",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "AI labs",
+      "Developers",
+      "Enterprise teams"
+    ],
+    "specialties": [
+      "Managed GPU clusters",
+      "AI cloud capacity",
+      "Hosted AI workloads"
+    ],
+    "proof_points": [
+      "Recognized AI cloud capacity provider"
+    ],
+    "featured_capabilities": [
+      "Managed AI hosting",
+      "GPU cluster access",
+      "AI workload support"
+    ],
+    "comparison_notes": [
+      "Appropriate for managed AI colocation coverage where buyers prioritize time-to-compute"
+    ],
+    "hq": "Amsterdam, Netherlands",
+    "service_area": "International",
+    "project_scale": "Growth to enterprise AI deployments",
+    "subcategories": [
+      "managed-ai-colocation"
+    ],
+    "tags": [
+      "managed-ai-colocation",
+      "ai-cloud"
+    ],
+    "infrastructure_types": [
+      "hosting"
+    ],
+    "focus_areas": [
+      "ai"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "operator",
+      "service_provider"
+    ],
+    "company_types": [
+      "public"
+    ]
   }
 ]
