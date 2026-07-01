@@ -63,7 +63,9 @@ function normalizeSearch(value?: string) {
 const categoryVendorCount = new Map(
   categories.map((category) => [
     category.slug,
-    vendors.filter((vendor) => vendor.categories.includes(category.slug)).length,
+    category.layer === "subcategory"
+      ? vendors.filter((vendor) => vendor.subcategories?.includes(category.slug)).length
+      : vendors.filter((vendor) => vendor.categories.includes(category.slug)).length,
   ]),
 );
 

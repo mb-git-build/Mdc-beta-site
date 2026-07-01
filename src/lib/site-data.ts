@@ -290,6 +290,12 @@ export function getVendorBySlug(slug: string) {
 }
 
 export function getVendorsForCategory(slug: string) {
+  const category = getCategory(slug);
+
+  if (category?.layer === "subcategory") {
+    return vendors.filter((vendor) => vendor.subcategories?.includes(slug));
+  }
+
   return vendors.filter((vendor) => vendor.categories.includes(slug));
 }
 
