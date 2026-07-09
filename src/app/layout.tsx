@@ -53,6 +53,27 @@ const compactFooterLinks = [
   { href: "/about", label: "About" },
 ];
 
+const footerEntryPoints = [
+  {
+    title: "Start with the market map",
+    description: "Browse the full category graph when the architecture path is still broad.",
+    href: "/directory",
+    cta: "Open directory",
+  },
+  {
+    title: "Browse companies",
+    description: "Jump into the company index when you already know the infrastructure lane.",
+    href: "/vendors?sort=category_count",
+    cta: "Open companies",
+  },
+  {
+    title: "Understand the method",
+    description: "Review the site methodology before narrowing the field or comparing categories.",
+    href: "/methodology",
+    cta: "Open methodology",
+  },
+];
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -89,8 +110,19 @@ export default function RootLayout({
           {children}
 
           <footer className="border-t border-[var(--border-strong)] bg-[#0b1015] text-[#d6dde6]">
-            <div className="mx-auto max-w-7xl px-4 py-5 lg:px-8">
-              <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+            <div className="mx-auto max-w-7xl px-4 py-6 lg:px-8">
+              <div className="grid gap-6 border-b border-[var(--border)] pb-6 lg:grid-cols-3">
+                {footerEntryPoints.map((item) => (
+                  <Link key={item.href} href={item.href} className="rounded-2xl border border-[var(--border)] bg-[#111820] p-4 transition hover:border-[var(--accent)]">
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Best entry point</p>
+                    <h3 className="mt-2 text-base font-semibold text-white">{item.title}</h3>
+                    <p className="mt-2 text-sm leading-7 text-[var(--muted-strong)]">{item.description}</p>
+                    <span className="mt-4 inline-flex text-sm font-semibold text-white">{item.cta}</span>
+                  </Link>
+                ))}
+              </div>
+
+              <div className="mt-5 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
                 <div className="flex items-center gap-3">
                   <Image src="/site-mark.svg" alt="modulardatacenters.ai" width={28} height={28} className="h-7 w-7 rounded-md" />
                   <div>

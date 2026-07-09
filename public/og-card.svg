@@ -1,61 +1,46 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" rx="36" fill="#0B1015"/>
-  <rect x="24" y="24" width="1152" height="582" rx="30" fill="url(#bg)" stroke="rgba(255,255,255,0.08)"/>
-  <circle cx="980" cy="122" r="180" fill="url(#glow)" fill-opacity="0.55"/>
-  <text x="88" y="124" fill="#8ED1E8" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="0.22em">MODULARDATACENTERS.AI</text>
-  <text x="88" y="208" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="66" font-weight="700">The market map for data</text>
-  <text x="88" y="284" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="66" font-weight="700">center infrastructure</text>
-  <text x="88" y="352" fill="#C4D4DE" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="500">Explore suppliers, categories, and adjacent infrastructure layers across modular delivery, power, cooling, hosting, and operations.</text>
+  <rect width="1200" height="630" fill="#0B1015"/>
+  <rect x="32" y="32" width="1136" height="566" rx="28" fill="url(#panel)" stroke="#2A3C4C"/>
+  <rect x="76" y="84" width="120" height="120" rx="28" fill="#10212F" stroke="#3C5A72"/>
+  <path d="M111.5 161.5L136.5 118.5L161.5 161.5" stroke="#9FE3FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M136.5 118.5V192.5" stroke="#9FE3FF" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="136.5" cy="204.5" r="8.5" fill="#9FE3FF"/>
+
+  <text x="232" y="126" fill="#8DB4CA" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="3.2">MODULARDATACENTERS.AI</text>
+  <text x="76" y="288" fill="#F5FAFF" font-family="Inter, Arial, sans-serif" font-size="66" font-weight="800">The industry directory for</text>
+  <text x="76" y="364" fill="#F5FAFF" font-family="Inter, Arial, sans-serif" font-size="66" font-weight="800">data center infrastructure</text>
+  <text x="76" y="430" fill="#B7C7D5" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">Browse categories, subcategories, and companies across modular delivery,</text>
+  <text x="76" y="468" fill="#B7C7D5" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">power, cooling, hosting, and operations.</text>
 
   <g opacity="0.98">
-    <rect x="88" y="420" width="236" height="54" rx="27" fill="#15384D" stroke="rgba(255,255,255,0.08)"/>
-    <text x="124" y="454" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Explore categories</text>
-    <rect x="344" y="420" width="224" height="54" rx="27" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
-    <text x="380" y="454" fill="#D6E2E9" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Browse companies</text>
+    <rect x="76" y="516" width="188" height="42" rx="21" fill="#17364A" stroke="#3D6580"/>
+    <text x="100" y="543" fill="#E7F7FF" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Category graph</text>
+
+    <rect x="278" y="516" width="176" height="42" rx="21" fill="#15232D" stroke="#314552"/>
+    <text x="302" y="543" fill="#D6E0E8" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Vendor map</text>
+
+    <rect x="468" y="516" width="210" height="42" rx="21" fill="#15232D" stroke="#314552"/>
+    <text x="492" y="543" fill="#D6E0E8" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Infrastructure stack</text>
   </g>
 
-  <g>
-    <rect x="742" y="144" width="364" height="324" rx="28" fill="rgba(9,15,20,0.38)" stroke="rgba(255,255,255,0.08)"/>
-    <text x="778" y="192" fill="#E8F6FB" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Coverage graph</text>
+  <g opacity="0.95">
+    <rect x="782" y="148" width="302" height="92" rx="22" fill="#101820" stroke="#29485C"/>
+    <text x="812" y="188" fill="#78D2FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1.8">DISCOVERY FIRST</text>
+    <text x="812" y="223" fill="#EEF7FF" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Categories → companies</text>
 
-    <path d="M792 236H1052" stroke="#294A60" stroke-width="6" stroke-linecap="round"/>
-    <path d="M792 306H1052" stroke="#294A60" stroke-width="6" stroke-linecap="round"/>
-    <path d="M792 376H1052" stroke="#294A60" stroke-width="6" stroke-linecap="round"/>
+    <rect x="748" y="284" width="336" height="92" rx="22" fill="#101820" stroke="#29485C"/>
+    <text x="778" y="324" fill="#78D2FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1.8">DIRECTORY STRUCTURE</text>
+    <text x="778" y="359" fill="#EEF7FF" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">37 categories · 125 companies</text>
 
-    <circle cx="824" cy="236" r="12" fill="#E8F6FB"/>
-    <circle cx="904" cy="236" r="12" fill="#8ED1E8"/>
-    <circle cx="996" cy="236" r="12" fill="#E8F6FB"/>
-
-    <circle cx="860" cy="306" r="12" fill="#8ED1E8"/>
-    <circle cx="948" cy="306" r="12" fill="#E8F6FB"/>
-    <circle cx="1034" cy="306" r="12" fill="#8ED1E8"/>
-
-    <circle cx="812" cy="376" r="12" fill="#E8F6FB"/>
-    <circle cx="900" cy="376" r="12" fill="#8ED1E8"/>
-    <circle cx="980" cy="376" r="12" fill="#E8F6FB"/>
-
-    <path d="M824 236C840 256 848 274 860 306" stroke="#73E0FF" stroke-width="6" stroke-linecap="round"/>
-    <path d="M904 236C886 258 874 278 860 306" stroke="#8ED1E8" stroke-width="6" stroke-linecap="round"/>
-    <path d="M904 236C920 257 934 281 948 306" stroke="#73E0FF" stroke-width="6" stroke-linecap="round"/>
-    <path d="M996 236C978 254 964 278 948 306" stroke="#8ED1E8" stroke-width="6" stroke-linecap="round"/>
-    <path d="M996 236C1010 256 1022 278 1034 306" stroke="#73E0FF" stroke-width="6" stroke-linecap="round"/>
-
-    <path d="M860 306C846 326 832 347 812 376" stroke="#8ED1E8" stroke-width="6" stroke-linecap="round"/>
-    <path d="M860 306C874 329 886 350 900 376" stroke="#73E0FF" stroke-width="6" stroke-linecap="round"/>
-    <path d="M948 306C931 325 918 347 900 376" stroke="#8ED1E8" stroke-width="6" stroke-linecap="round"/>
-    <path d="M948 306C960 326 970 347 980 376" stroke="#73E0FF" stroke-width="6" stroke-linecap="round"/>
-
-    <text x="778" y="442" fill="#B7C9D4" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="500">Categories → adjacency → vendor coverage</text>
+    <rect x="714" y="420" width="370" height="92" rx="22" fill="#101820" stroke="#29485C"/>
+    <text x="744" y="460" fill="#78D2FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1.8">BUYER UTILITY</text>
+    <text x="744" y="495" fill="#EEF7FF" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Browse the stack with less friction</text>
   </g>
 
   <defs>
-    <linearGradient id="bg" x1="74" y1="42" x2="1118" y2="588" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#102C3C"/>
-      <stop offset="1" stop-color="#17394A"/>
+    <linearGradient id="panel" x1="110" y1="78" x2="1080" y2="564" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F1720"/>
+      <stop offset="1" stop-color="#121D28"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 122) rotate(90) scale(180)">
-      <stop stop-color="#8ED1E8"/>
-      <stop offset="1" stop-color="#8ED1E8" stop-opacity="0"/>
-    </radialGradient>
   </defs>
 </svg>

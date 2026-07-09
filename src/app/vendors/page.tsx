@@ -28,6 +28,24 @@ const vendorFocusLenses = [
   { value: "regional", label: "Regional / niche" },
 ] as const;
 
+const sourcingPathways = [
+  {
+    title: "Power systems",
+    description: "Prefabricated electrical rooms, microgrids, transfer systems, and energization partners.",
+    href: "/vendors?focus=power&sort=category_count",
+  },
+  {
+    title: "Cooling",
+    description: "Liquid, immersion, thermal rejection, and control-layer companies for high-density deployments.",
+    href: "/vendors?focus=cooling&sort=category_count",
+  },
+  {
+    title: "Modular deployment",
+    description: "Packaged deployment, shells, logistics, and field integration companies for fast infrastructure delivery.",
+    href: "/vendors?focus=modular&sort=category_count",
+  },
+] as const;
+
 function normalizeSearch(value?: string) {
   return (value ?? "").trim().toLowerCase();
 }
@@ -226,6 +244,21 @@ export default async function VendorsPage({
               3. Move back into category pages and guides before finalizing outreach.
             </div>
           </div>
+
+          <div className="mt-5 grid gap-3 md:grid-cols-3">
+            {sourcingPathways.map((pathway) => (
+              <Link
+                key={pathway.title}
+                href={pathway.href}
+                className="rounded-2xl border border-[var(--border)] bg-[var(--background-strong)] p-4 transition hover:border-[var(--accent)]"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Pathway</p>
+                <h3 className="mt-2 text-base font-semibold tracking-tight text-white">{pathway.title}</h3>
+                <p className="mt-2 text-sm leading-7 text-[var(--muted-strong)]">{pathway.description}</p>
+              </Link>
+            ))}
+          </div>
+
         </section>
 
         <p className="text-sm text-[var(--muted)]">Showing {sortedVendors.length} company{sortedVendors.length === 1 ? "" : "ies"}{focus ? ` for ${vendorFocusLenses.find((lens) => lens.value === focus)?.label ?? focus}` : ""}.</p>
