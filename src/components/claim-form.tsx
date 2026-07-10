@@ -148,6 +148,14 @@ export function ClaimForm() {
                   </Link>
                 </p>
               </div>
+              <div className="mt-3 rounded-2xl border border-emerald-100 bg-white/90 p-3 text-emerald-900">
+                <p className="text-xs font-semibold uppercase tracking-[0.14em]">Save these now</p>
+                <div className="mt-2 grid gap-1.5 text-sm">
+                  <p>• Save the submission reference and claim token together.</p>
+                  <p>• Forward them to the teammate who controls the company listing if needed.</p>
+                  <p>• Use the verification link immediately if you want the fastest trust review path.</p>
+                </div>
+              </div>
             </>
           ) : null}
           <p className="mt-3 text-[var(--muted)]">Keep this reference and token handy — they are the cleanest path for verification and follow-up.</p>
@@ -159,10 +167,10 @@ export function ClaimForm() {
               <p>• If the listing needs changes, this trail keeps ownership and edits auditable.</p>
             </div>
           </div>
-          <p className="mt-3 text-[var(--muted)]">Need to verify now? Or submit another listing?</p>
+          <p className="mt-3 text-[var(--muted)]">Ready to finish verification now? Or need the parallel submit flow instead?</p>
           <div className="mt-2 flex flex-wrap gap-2">
             <Link href="/for-vendors/claim/verify" className="rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-[var(--foreground)]">
-              Go to verify flow
+              Verify this claim now
             </Link>
             <Link href="/for-vendors/submit" className="rounded-full border border-emerald-200 bg-white px-3 py-1.5 text-xs font-semibold text-emerald-900">
               Submit a new listing

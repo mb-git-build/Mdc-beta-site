@@ -1,14 +1,19 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
 import { navigation, siteMeta } from "@/lib/site-data";
+
+export const viewport: Viewport = {
+  themeColor: "#0f141a",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://modulardatacenters.ai"),
   title: `${siteMeta.name} | ${siteMeta.shortDescriptor}`,
   description: siteMeta.heroDescriptor,
   applicationName: siteMeta.name,
+  manifest: "/site.webmanifest",
   keywords: [
     "modular data centers",
     "data center infrastructure",
@@ -28,13 +33,13 @@ export const metadata: Metadata = {
     url: "https://modulardatacenters.ai",
     siteName: siteMeta.name,
     title: "The industry directory for data center infrastructure",
-    description: "Browse categories, subcategories, and companies across modular delivery, power, cooling, hosting, and operations.",
+    description: "Browse 37 categories and 125 companies across modular delivery, power, cooling, hosting, networking, operations, and site strategy.",
     images: [{ url: "/og-card.svg", width: 1200, height: 630, alt: `${siteMeta.name} directory social card` }],
   },
   twitter: {
     card: "summary_large_image",
     title: "The industry directory for data center infrastructure",
-    description: "Browse categories, subcategories, and companies across modular delivery, power, cooling, hosting, and operations.",
+    description: "Browse 37 categories and 125 companies across modular delivery, power, cooling, hosting, networking, operations, and site strategy.",
     images: ["/og-card.svg"],
   },
 };

@@ -167,13 +167,21 @@ export function VendorSubmissionForm() {
               <p>• Approved listings are shaped into cleaner buyer-facing directory context, not dumped in raw.</p>
             </div>
           </div>
-          <p className="mt-3 text-[var(--muted)]">Helpful next steps while review is in progress:</p>
+          <div className="mt-3 rounded-2xl border border-emerald-100 bg-white/90 p-3 text-emerald-900">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em]">Save this now</p>
+            <div className="mt-2 grid gap-1.5 text-sm">
+              <p>• Save the submission reference where your team tracks listing follow-up.</p>
+              <p>• Share it with the person who will answer any review questions.</p>
+              <p>• Use the category and directory links below to sanity-check how your company should appear.</p>
+            </div>
+          </div>
+          <p className="mt-3 text-[var(--muted)]">Ready to review your positioning while moderation is in progress?</p>
           <div className="mt-2 flex flex-wrap gap-2">
             <Link href="/directory" className="rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-[var(--foreground)]">
-              Browse the directory
+              Review the directory map
             </Link>
             <Link href="/categories" className="rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-[var(--foreground)]">
-              Review category fit
+              Check category fit
             </Link>
             <Link href="/for-vendors/claim" className="rounded-full border border-emerald-200 bg-white px-3 py-1.5 text-xs font-semibold text-emerald-900">
               Claim an existing listing

@@ -1,46 +1,77 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" fill="#0B1015"/>
-  <rect x="32" y="32" width="1136" height="566" rx="28" fill="url(#panel)" stroke="#2A3C4C"/>
-  <rect x="76" y="84" width="120" height="120" rx="28" fill="#10212F" stroke="#3C5A72"/>
-  <path d="M111.5 161.5L136.5 118.5L161.5 161.5" stroke="#9FE3FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M136.5 118.5V192.5" stroke="#9FE3FF" stroke-width="14" stroke-linecap="round"/>
-  <circle cx="136.5" cy="204.5" r="8.5" fill="#9FE3FF"/>
+  <rect width="1200" height="630" fill="#081018"/>
+  <rect x="28" y="28" width="1144" height="574" rx="30" fill="url(#bg)" stroke="#223748"/>
 
-  <text x="232" y="126" fill="#8DB4CA" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="3.2">MODULARDATACENTERS.AI</text>
-  <text x="76" y="288" fill="#F5FAFF" font-family="Inter, Arial, sans-serif" font-size="66" font-weight="800">The industry directory for</text>
-  <text x="76" y="364" fill="#F5FAFF" font-family="Inter, Arial, sans-serif" font-size="66" font-weight="800">data center infrastructure</text>
-  <text x="76" y="430" fill="#B7C7D5" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">Browse categories, subcategories, and companies across modular delivery,</text>
-  <text x="76" y="468" fill="#B7C7D5" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">power, cooling, hosting, and operations.</text>
-
-  <g opacity="0.98">
-    <rect x="76" y="516" width="188" height="42" rx="21" fill="#17364A" stroke="#3D6580"/>
-    <text x="100" y="543" fill="#E7F7FF" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Category graph</text>
-
-    <rect x="278" y="516" width="176" height="42" rx="21" fill="#15232D" stroke="#314552"/>
-    <text x="302" y="543" fill="#D6E0E8" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Vendor map</text>
-
-    <rect x="468" y="516" width="210" height="42" rx="21" fill="#15232D" stroke="#314552"/>
-    <text x="492" y="543" fill="#D6E0E8" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Infrastructure stack</text>
+  <g opacity="0.9">
+    <circle cx="1036" cy="118" r="188" fill="url(#glowA)"/>
+    <circle cx="900" cy="498" r="220" fill="url(#glowB)"/>
   </g>
 
-  <g opacity="0.95">
-    <rect x="782" y="148" width="302" height="92" rx="22" fill="#101820" stroke="#29485C"/>
-    <text x="812" y="188" fill="#78D2FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1.8">DISCOVERY FIRST</text>
-    <text x="812" y="223" fill="#EEF7FF" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Categories → companies</text>
+  <rect x="74" y="76" width="128" height="128" rx="28" fill="#0E1A24" stroke="#39586D"/>
+  <path d="M106 118H170" stroke="#2A4D63" stroke-width="10" stroke-linecap="round"/>
+  <path d="M106 144H170" stroke="#2A4D63" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+  <path d="M106 170H170" stroke="#2A4D63" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="118" cy="118" r="7.5" fill="#E8F6FB"/>
+  <circle cx="146" cy="118" r="7.5" fill="#8ED1E8"/>
+  <circle cx="170" cy="118" r="7.5" fill="#E8F6FB"/>
+  <circle cx="132" cy="144" r="7.5" fill="#8ED1E8"/>
+  <circle cx="158" cy="144" r="7.5" fill="#E8F6FB"/>
+  <circle cx="120" cy="170" r="7.5" fill="#E8F6FB"/>
+  <circle cx="146" cy="170" r="7.5" fill="#8ED1E8"/>
+  <circle cx="172" cy="170" r="7.5" fill="#E8F6FB"/>
+  <path d="M118 118C123 126 127 134 132 144" stroke="#8ED1E8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M146 118C141 127 137 134 132 144" stroke="#73E0FF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M146 118C151 126 155 134 158 144" stroke="#8ED1E8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M170 118C166 128 162 136 158 144" stroke="#73E0FF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M132 144C127 152 123 160 120 170" stroke="#73E0FF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M132 144C137 153 141 161 146 170" stroke="#8ED1E8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M158 144C153 152 149 160 146 170" stroke="#73E0FF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M158 144C164 153 168 160 172 170" stroke="#8ED1E8" stroke-width="5" stroke-linecap="round"/>
 
-    <rect x="748" y="284" width="336" height="92" rx="22" fill="#101820" stroke="#29485C"/>
-    <text x="778" y="324" fill="#78D2FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1.8">DIRECTORY STRUCTURE</text>
-    <text x="778" y="359" fill="#EEF7FF" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">37 categories · 125 companies</text>
+  <text x="230" y="118" fill="#8DB4CA" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="3">MODULARDATACENTERS.AI</text>
+  <text x="74" y="288" fill="#F5FAFF" font-family="Inter, Arial, sans-serif" font-size="68" font-weight="800">The industry directory for</text>
+  <text x="74" y="366" fill="#F5FAFF" font-family="Inter, Arial, sans-serif" font-size="68" font-weight="800">data center infrastructure</text>
+  <text x="74" y="430" fill="#B8C8D6" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">Browse 37 categories and 125 companies across modular delivery,</text>
+  <text x="74" y="468" fill="#B8C8D6" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">power, cooling, hosting, networking, operations, and site strategy.</text>
 
-    <rect x="714" y="420" width="370" height="92" rx="22" fill="#101820" stroke="#29485C"/>
-    <text x="744" y="460" fill="#78D2FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1.8">BUYER UTILITY</text>
-    <text x="744" y="495" fill="#EEF7FF" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Browse the stack with less friction</text>
+  <g>
+    <rect x="74" y="518" width="194" height="42" rx="21" fill="#16364B" stroke="#3C6681"/>
+    <text x="100" y="545" fill="#EAF8FF" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Category graph</text>
+
+    <rect x="282" y="518" width="184" height="42" rx="21" fill="#13212B" stroke="#314552"/>
+    <text x="308" y="545" fill="#D6E0E8" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Company index</text>
+
+    <rect x="480" y="518" width="252" height="42" rx="21" fill="#13212B" stroke="#314552"/>
+    <text x="506" y="545" fill="#D6E0E8" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Compute infrastructure map</text>
+  </g>
+
+  <g opacity="0.97">
+    <rect x="792" y="148" width="308" height="98" rx="22" fill="#0D1720" stroke="#29485C"/>
+    <text x="822" y="188" fill="#78D2FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1.8">DISCOVERY FIRST</text>
+    <text x="822" y="224" fill="#EEF7FF" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Categories → companies</text>
+
+    <rect x="756" y="290" width="344" height="98" rx="22" fill="#0D1720" stroke="#29485C"/>
+    <text x="786" y="330" fill="#78D2FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1.8">DIRECTORY STRUCTURE</text>
+    <text x="786" y="366" fill="#EEF7FF" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">37 categories · 125 companies</text>
+
+    <rect x="720" y="432" width="380" height="98" rx="22" fill="#0D1720" stroke="#29485C"/>
+    <text x="750" y="472" fill="#78D2FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1.8">BUYER UTILITY</text>
+    <text x="750" y="508" fill="#EEF7FF" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Browse the stack with less friction</text>
   </g>
 
   <defs>
-    <linearGradient id="panel" x1="110" y1="78" x2="1080" y2="564" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0F1720"/>
-      <stop offset="1" stop-color="#121D28"/>
+    <linearGradient id="bg" x1="84" y1="58" x2="1096" y2="594" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1720"/>
+      <stop offset="0.55" stop-color="#101B25"/>
+      <stop offset="1" stop-color="#0E1822"/>
     </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1036 118) rotate(90) scale(188)">
+      <stop stop-color="#173C52" stop-opacity="0.56"/>
+      <stop offset="1" stop-color="#173C52" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 498) rotate(90) scale(220)">
+      <stop stop-color="#0F5B78" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#0F5B78" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 </svg>

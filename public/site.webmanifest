@@ -1,0 +1,17 @@
+{
+  "name": "modulardatacenters.ai",
+  "short_name": "MDC.ai",
+  "description": "The industry directory for data center infrastructure.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1015",
+  "theme_color": "#0f141a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
