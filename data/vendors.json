@@ -1728,9 +1728,7 @@
     "hq": "Taipei, Taiwan",
     "service_area": "Global",
     "project_scale": "Component to campus",
-    "subcategories": [
-      "power-monitoring-and-energy-management"
-    ],
+    "subcategories": [],
     "tags": [
       "power-electronics",
       "industrial-supplier"
@@ -2494,9 +2492,7 @@
     "hq": "Edison, New Jersey, USA",
     "service_area": "North America",
     "project_scale": "Site to campus",
-    "subcategories": [
-      "power-monitoring-and-energy-management"
-    ],
+    "subcategories": [],
     "tags": [
       "battery-service",
       "uptime-continuity",
@@ -2756,9 +2752,7 @@
     "hq": "Arlington, Virginia, USA",
     "service_area": "Global",
     "project_scale": "Site and campus",
-    "subcategories": [
-      "power-monitoring-and-energy-management"
-    ],
+    "subcategories": [],
     "tags": [
       "battery-storage",
       "energy-flexibility"
@@ -5534,9 +5528,7 @@
     "hq": "Lincoln, Nebraska, USA",
     "service_area": "North America",
     "project_scale": "Regional to hyperscale programs",
-    "subcategories": [
-      "modular-substations"
-    ],
+    "subcategories": [],
     "tags": [
       "owners-engineer",
       "site-feasibility",
@@ -6921,8 +6913,7 @@
     "verified": true,
     "categories": [
       "monitoring-and-controls",
-      "dcim-and-observability",
-      "power-monitoring-and-energy-management"
+      "dcim-and-observability"
     ],
     "regions": [
       "North America",
@@ -6959,8 +6950,7 @@
     "service_area": "Global",
     "project_scale": "Single site to global fleets",
     "subcategories": [
-      "dcim-and-observability",
-      "power-monitoring-and-energy-management"
+      "dcim-and-observability"
     ],
     "tags": [
       "dcim",
@@ -7952,9 +7942,7 @@
     "hq": "Pasadena, California, USA",
     "service_area": "Global",
     "project_scale": "Regional to hyperscale programs",
-    "subcategories": [
-      "modular-substations"
-    ],
+    "subcategories": [],
     "tags": [
       "owners-engineer",
       "permitting",
