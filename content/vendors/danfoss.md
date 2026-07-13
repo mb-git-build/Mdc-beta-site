@@ -7,21 +7,22 @@ vendor_id: danfoss
 
 # Danfoss
 
-**Category:** Liquid Cooling, Rear-Door and Direct-to-Chip Cooling, HVAC and Thermal Rejection
+**Category:** Liquid Cooling, HVAC and Thermal Rejection
 **Website:** https://www.danfoss.com/
 
 ## Headline
-Thermal systems vendor relevant to CDUs, direct-to-chip cooling, rear-door heat exchangers, and efficient liquid infrastructure.
+Thermal systems supplier relevant to liquid-cooling loops, CDUs, direct-to-chip support architectures, and facility thermal integration.
 
 ## Overview
-Danfoss is useful in the market map because it sits in the supporting thermal layer around liquid cooling: coolant distribution, thermal controls, and hybrid cooling architectures. That makes it a strong connective vendor between rack-level liquid systems and facility-level heat rejection.
+Danfoss fits the graph as a supporting thermal and fluid-handling authority rather than as a full cooling-platform OEM. Its relevance comes from components and subsystems that show up inside data-center liquid-cooling chains: coolant distribution support, heat exchangers, valves, drives, sensors, controllers, quick-disconnect and fluid-conveyance components, and the facility-side thermal interfaces needed to make dense cooling architectures work in production.
 
 ## Key capabilities
-- coolant distribution units
-- direct-to-chip and rear-door system support
-- thermal control and efficiency components
+- coolant distribution and liquid-loop support
+- direct-to-chip support components and fluid-conveyance systems
+- heat exchangers, valves, drives, sensors, and controllers
+- facility thermal integration and heat-rejection-adjacent support
 
 ## Best fit for
-- buyers planning hybrid liquid cooling architectures
-- operators mapping supporting thermal components
-- projects where CDUs and liquid loop design matter
+- buyers evaluating CDU and liquid-loop architecture decisions
+- operators mapping direct-to-chip support layers into facility infrastructure
+- teams comparing component and subsystem authorities around dense cooling deployments

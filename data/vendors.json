@@ -172,6 +172,96 @@
     ]
   },
   {
+    "slug": "akcp",
+    "name": "AKCP",
+    "website_url": "https://www.akcp.com",
+    "headline": "Sensor-driven data center monitoring and thermal optimization platform focused on environmental visibility and facility efficiency.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "dcim-and-observability",
+      "monitoring-and-controls",
+      "commissioning-and-operations"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "APAC"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Colocation",
+      "AI"
+    ],
+    "buyer_types": [
+      "Facilities teams",
+      "Operators",
+      "Thermal managers"
+    ],
+    "specialties": [
+      "Environmental sensing",
+      "Thermal optimization",
+      "Facility monitoring"
+    ],
+    "proof_points": [
+      "AKCP directly positions around data center monitoring and thermal optimization"
+    ],
+    "featured_capabilities": [
+      "Sensor telemetry",
+      "Thermal visibility",
+      "PUE-oriented monitoring"
+    ],
+    "comparison_notes": [
+      "Strengthens the thin observability layer with a practical facility-monitoring specialist"
+    ],
+    "hq": "Bangkok, Thailand",
+    "service_area": "Global",
+    "project_scale": "Rack to site",
+    "subcategories": [
+      "dcim-and-observability"
+    ],
+    "tags": [
+      "sensors",
+      "thermal-monitoring",
+      "dcim"
+    ],
+    "infrastructure_types": [
+      "controls"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "regional"
+    ],
+    "ecosystem_roles": [
+      "manufacturer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "rf-code",
+      "sunbird-software",
+      "nlyte"
+    ],
+    "dependency_category_slugs": [
+      "monitoring-and-controls",
+      "power-monitoring-and-energy-management"
+    ],
+    "often_used_with_category_slugs": [
+      "commissioning-and-operations",
+      "hvac-and-thermal-rejection"
+    ],
+    "evidence_urls": [
+      "https://www.akcp.com",
+      "https://www.akcp.com/solutions/data-center-monitoring/"
+    ],
+    "ingestion_notes": "Validated in Wave 1 evidence sweep."
+  },
+  {
     "slug": "allied-control",
     "name": "Allied Control",
     "website_url": "https://www.allied-control.com",
@@ -344,6 +434,94 @@
       "soluna",
       "qts"
     ]
+  },
+  {
+    "slug": "arista-networks",
+    "name": "Arista Networks",
+    "website_url": "https://www.arista.com",
+    "headline": "Data center and AI networking platform provider focused on high-performance Ethernet fabrics for large-scale compute environments.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "network-fabric-and-connectivity",
+      "monitoring-and-controls",
+      "high-density-rack-power"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "APAC"
+    ],
+    "deployment_types": [
+      "AI",
+      "Hyperscale",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "Network architects",
+      "AI infrastructure teams",
+      "Cloud operators"
+    ],
+    "specialties": [
+      "AI networking",
+      "Ethernet fabrics",
+      "Cloud networking"
+    ],
+    "proof_points": [
+      "Arista directly markets AI networking and data-driven cloud networking for large data center and computing environments"
+    ],
+    "featured_capabilities": [
+      "AI fabric design",
+      "Cloud networking",
+      "Ethernet switching"
+    ],
+    "comparison_notes": [
+      "Essential network anchor for MDC because serious AI infrastructure depends on fabric quality, not just power and cooling"
+    ],
+    "hq": "Santa Clara, California, USA",
+    "service_area": "Global",
+    "project_scale": "Rack to hyperscale fabric",
+    "subcategories": [],
+    "tags": [
+      "ai-networking",
+      "ethernet-fabric",
+      "cloud-networking"
+    ],
+    "infrastructure_types": [
+      "networking",
+      "controls"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "hyperscale",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "manufacturer"
+    ],
+    "company_types": [
+      "public"
+    ],
+    "related_company_slugs": [
+      "nvidia-networking",
+      "commscope",
+      "coreweave"
+    ],
+    "dependency_category_slugs": [
+      "network-fabric-and-connectivity"
+    ],
+    "often_used_with_category_slugs": [
+      "ai-colocation-gpu-hosting",
+      "high-density-rack-power"
+    ],
+    "evidence_urls": [
+      "https://www.arista.com/en/solutions/ai-networking",
+      "https://www.arista.com/en/"
+    ],
+    "ingestion_notes": "Final-clean Wave 1 approved set; evidence and canonical naming validated."
   },
   {
     "slug": "armecold",
@@ -873,6 +1051,87 @@
     ]
   },
   {
+    "slug": "bladeroom",
+    "name": "BladeRoom",
+    "website_url": "https://bladeroom.com/",
+    "headline": "Off-site data center builder focused on efficient modular delivery, rapid deployment, and scalable facilities from hyperscale to edge.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "containerized-data-centers",
+      "modular-prefab",
+      "construction-and-integration"
+    ],
+    "regions": [
+      "Europe",
+      "North America",
+      "Middle East"
+    ],
+    "deployment_types": [
+      "Modular",
+      "Hyperscale",
+      "Edge"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Operators",
+      "Infrastructure teams"
+    ],
+    "specialties": [
+      "Off-site data center delivery",
+      "Modular facilities",
+      "Rapid deployment"
+    ],
+    "proof_points": [
+      "Explicit off-site data center and modular edge positioning"
+    ],
+    "featured_capabilities": [
+      "Factory-built modular delivery",
+      "Scalable facility design",
+      "Rapid project execution"
+    ],
+    "comparison_notes": [
+      "Strong fit where buyers want purpose-built modular data center delivery rather than only component supply"
+    ],
+    "hq": "United Kingdom",
+    "service_area": "International",
+    "project_scale": "Edge pod to hyperscale campus module",
+    "subcategories": [
+      "fabricated-enclosures-and-shells"
+    ],
+    "tags": [
+      "off-site-construction",
+      "modular-delivery"
+    ],
+    "infrastructure_types": [
+      "facility",
+      "services"
+    ],
+    "focus_areas": [
+      "ai",
+      "edge",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale",
+      "edge"
+    ],
+    "ecosystem_roles": [
+      "integrator",
+      "developer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "compu-dynamics-modular",
+      "edge-modular",
+      "rittal",
+      "vertiv"
+    ]
+  },
+  {
     "id": "ven_bloom",
     "slug": "bloom-energy",
     "name": "Bloom Energy",
@@ -1132,6 +1391,95 @@
     "logo_url": "https://logo.clearbit.com/boydcorp.com"
   },
   {
+    "slug": "bureau-veritas",
+    "name": "Bureau Veritas",
+    "website_url": "https://group.bureauveritas.com",
+    "headline": "Testing, inspection, and certification organization relevant to infrastructure quality assurance, compliance, and data center delivery governance.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "epc-and-commissioning",
+      "commissioning-and-operations",
+      "sustainability-and-energy-strategy"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "Middle East",
+      "APAC",
+      "LATAM"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Industrial",
+      "Hyperscale"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Operators",
+      "Program teams"
+    ],
+    "specialties": [
+      "Inspection",
+      "Certification",
+      "Compliance assurance"
+    ],
+    "proof_points": [
+      "Bureau Veritas market structure explicitly includes Buildings & Infrastructure and Data Centers & Telecommunications"
+    ],
+    "featured_capabilities": [
+      "Independent verification",
+      "Infrastructure assurance",
+      "Cross-market certification"
+    ],
+    "comparison_notes": [
+      "Broad corporate platform, but relevant because credibility in the real world often hinges on inspection and certification layers"
+    ],
+    "hq": "Neuilly-sur-Seine, France",
+    "service_area": "Global",
+    "project_scale": "Single project to global program",
+    "subcategories": [],
+    "tags": [
+      "inspection",
+      "certification",
+      "assurance"
+    ],
+    "infrastructure_types": [
+      "services"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "service_provider"
+    ],
+    "company_types": [
+      "public"
+    ],
+    "related_company_slugs": [
+      "uptime-institute",
+      "jensen-hughes",
+      "ul-solutions"
+    ],
+    "dependency_category_slugs": [
+      "epc-and-commissioning"
+    ],
+    "often_used_with_category_slugs": [
+      "commissioning-and-operations",
+      "site-selection-and-land-strategy"
+    ],
+    "evidence_urls": [
+      "https://group.bureauveritas.com",
+      "https://www.bureauveritas.com"
+    ],
+    "ingestion_notes": "Approved after targeted validation cleanup; future enrichment can add a more specific data-center citation."
+  },
+  {
     "slug": "climatec",
     "name": "Climatec",
     "website_url": "https://www.climatec.com",
@@ -1226,6 +1574,354 @@
       "hvac-and-thermal-rejection",
       "monitoring-and-controls"
     ]
+  },
+  {
+    "slug": "coldlogik",
+    "name": "ColdLogik",
+    "website_url": "https://www.coldlogik.com/",
+    "headline": "Rear-door heat exchanger specialist focused on high-density rack cooling and efficient RDHx deployment for AI and data center environments.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "rear-door-direct-to-chip-cooling",
+      "liquid-cooling"
+    ],
+    "regions": [
+      "Europe",
+      "North America"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Hyperscale",
+      "HPC"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Facilities teams",
+      "Cooling architects"
+    ],
+    "specialties": [
+      "Rear-door heat exchangers",
+      "Rack-level cooling",
+      "High-density thermal management"
+    ],
+    "proof_points": [
+      "ColdLogik publishes dedicated active and passive rear-door heat exchanger product families for data center cooling."
+    ],
+    "featured_capabilities": [
+      "Active RDHx systems",
+      "Passive RDHx systems",
+      "Rack-adjacent thermal efficiency"
+    ],
+    "comparison_notes": [
+      "A true rear-door specialist and one of the cleanest fits for sparse-branch correction in the current taxonomy."
+    ],
+    "hq": "United Kingdom",
+    "service_area": "International project support",
+    "project_scale": "High-density rack and room deployments",
+    "subcategories": [],
+    "tags": [
+      "rdhx",
+      "rear-door-cooling",
+      "rack-cooling"
+    ],
+    "infrastructure_types": [
+      "cooling"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "manufacturer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "motivair",
+      "nvent-liquid-cooling",
+      "vertiv"
+    ],
+    "dependency_category_slugs": [
+      "liquid-loop-systems"
+    ],
+    "often_used_with_category_slugs": [
+      "high-density-rack-power",
+      "monitoring-and-controls"
+    ],
+    "evidence_urls": [
+      "https://www.coldlogik.com/all-products/rear-door-heat-exchangers",
+      "https://www.legrand.com/datacenter/gb-en/white-space/cooling/rear-door-cooling"
+    ],
+    "ingestion_notes": "Sparse-branch correction: added conservatively to deepen RDHx coverage."
+  },
+  {
+    "slug": "cologix",
+    "name": "Cologix",
+    "website_url": "https://cologix.com",
+    "headline": "Carrier-neutral colocation and interconnection operator with connectivity ecosystems across North American edge and core markets.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "network-fabric-and-connectivity",
+      "ai-colocation-gpu-hosting",
+      "site-selection-and-land-strategy"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Colocation",
+      "Enterprise",
+      "AI"
+    ],
+    "buyer_types": [
+      "Colocation buyers",
+      "Connectivity teams",
+      "Cloud-adjacent operators"
+    ],
+    "specialties": [
+      "Carrier neutrality",
+      "Interconnection",
+      "Edge-capacity ecosystems"
+    ],
+    "proof_points": [
+      "Cologix explicitly markets colocation, hyperscale edge, and interconnection solutions"
+    ],
+    "featured_capabilities": [
+      "Carrier ecosystems",
+      "Interconnection hubs",
+      "Edge market reach"
+    ],
+    "comparison_notes": [
+      "Useful because it deepens connectivity-rich operator coverage rather than repeating generic capacity names"
+    ],
+    "hq": "Denver, Colorado, USA",
+    "service_area": "North America",
+    "project_scale": "Site to regional portfolio",
+    "subcategories": [],
+    "tags": [
+      "carrier-neutral",
+      "interconnection",
+      "edge-colocation"
+    ],
+    "infrastructure_types": [
+      "networking",
+      "compute",
+      "facility"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "operator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "megaport",
+      "digital-realty",
+      "equinix"
+    ],
+    "dependency_category_slugs": [
+      "network-fabric-and-connectivity"
+    ],
+    "often_used_with_category_slugs": [
+      "ai-colocation-gpu-hosting",
+      "managed-ai-colocation"
+    ],
+    "evidence_urls": [
+      "https://cologix.com",
+      "https://cologix.com/connectivity/"
+    ],
+    "ingestion_notes": "Validated in Wave 1 evidence sweep; connectivity page is the key supporting citation."
+  },
+  {
+    "slug": "colovore",
+    "name": "Colovore",
+    "website_url": "https://www.colovore.com",
+    "headline": "High-density colocation provider built for GPU, DGX, and dense AI deployments that need modern power and cooling support.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-colocation-gpu-hosting",
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "AI",
+      "Enterprise",
+      "Colocation"
+    ],
+    "buyer_types": [
+      "AI operators",
+      "Dense compute teams",
+      "Enterprise GPU buyers"
+    ],
+    "specialties": [
+      "High-density colocation",
+      "GPU deployments",
+      "DGX-ready environments"
+    ],
+    "proof_points": [
+      "Colovore highlights NVIDIA DGX Ready status and dense GPU operational footprint"
+    ],
+    "featured_capabilities": [
+      "Dense rack support",
+      "GPU-ready colocation",
+      "AI deployment hosting"
+    ],
+    "comparison_notes": [
+      "More useful to MDC than another generic operator because density is the whole point"
+    ],
+    "hq": "Santa Clara, California, USA",
+    "service_area": "North America",
+    "project_scale": "Rack to cage",
+    "subcategories": [
+      "managed-ai-colocation"
+    ],
+    "tags": [
+      "gpu-colo",
+      "high-density-colocation"
+    ],
+    "infrastructure_types": [
+      "compute",
+      "power",
+      "cooling"
+    ],
+    "focus_areas": [
+      "ai"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "regional"
+    ],
+    "ecosystem_roles": [
+      "operator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "coreweave",
+      "lambda",
+      "nvidia-networking"
+    ],
+    "dependency_category_slugs": [
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "often_used_with_category_slugs": [
+      "network-fabric-and-connectivity"
+    ],
+    "evidence_urls": [
+      "https://www.colovore.com",
+      "https://www.colovore.com"
+    ],
+    "ingestion_notes": "Validated in Wave 1 evidence sweep with explicit DGX and dense compute positioning."
+  },
+  {
+    "slug": "commscope",
+    "name": "CommScope",
+    "website_url": "https://www.commscope.com",
+    "headline": "Structured cabling, fiber connectivity, and physical network infrastructure partner for modern data centers and high-capacity compute environments.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "network-fabric-and-connectivity",
+      "construction-and-integration",
+      "edge-micro-data-centers"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "APAC",
+      "Middle East"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Colocation",
+      "Hyperscale"
+    ],
+    "buyer_types": [
+      "Network teams",
+      "Data center operators",
+      "Integrators"
+    ],
+    "specialties": [
+      "Fiber connectivity",
+      "Structured cabling",
+      "Data center network plant"
+    ],
+    "proof_points": [
+      "CommScope positions data center solutions around end-to-end fiber cabling infrastructure"
+    ],
+    "featured_capabilities": [
+      "Physical connectivity design",
+      "Fiber plant support",
+      "Network-density scaling"
+    ],
+    "comparison_notes": [
+      "Improves MDC authority by covering the deployable physical layer beneath logical network fabrics"
+    ],
+    "hq": "Hickory, North Carolina, USA",
+    "service_area": "Global",
+    "project_scale": "Rack to campus",
+    "subcategories": [],
+    "tags": [
+      "fiber",
+      "structured-cabling",
+      "data-center-connectivity"
+    ],
+    "infrastructure_types": [
+      "networking",
+      "facility"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "manufacturer"
+    ],
+    "company_types": [
+      "public"
+    ],
+    "related_company_slugs": [
+      "corning",
+      "fs-com",
+      "arista-networks"
+    ],
+    "dependency_category_slugs": [
+      "construction-and-integration"
+    ],
+    "often_used_with_category_slugs": [
+      "network-fabric-and-connectivity",
+      "ai-colocation-gpu-hosting"
+    ],
+    "evidence_urls": [
+      "https://www.commscope.com/solutions/data-center/",
+      "https://www.commscope.com/network-type/data-centers/"
+    ],
+    "ingestion_notes": "Validated in Wave 1 evidence sweep with direct data-center solution evidence."
   },
   {
     "slug": "compu-dynamics-modular",
@@ -1347,6 +2043,89 @@
     "logo_url": "https://logo.clearbit.com/cd-modular.com"
   },
   {
+    "slug": "coolcentric",
+    "name": "Coolcentric",
+    "website_url": "https://coolcentric.com/",
+    "headline": "Rear-door heat exchanger and liquid cooling specialist for high-density data center deployments, with active and passive rack-level thermal solutions.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "rear-door-direct-to-chip-cooling",
+      "liquid-cooling"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "AI",
+      "HPC",
+      "Enterprise",
+      "Colocation"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Mechanical teams",
+      "High-density infrastructure planners"
+    ],
+    "specialties": [
+      "Rear-door heat exchangers",
+      "Rack-level liquid cooling",
+      "High-density thermal management"
+    ],
+    "proof_points": [
+      "Official product line explicitly includes rear door heat exchangers for liquid-cooled server rack environments"
+    ],
+    "featured_capabilities": [
+      "Active and passive RDHx systems",
+      "Rack-level heat capture",
+      "Liquid-cooled thermal retrofits"
+    ],
+    "comparison_notes": [
+      "Strong specialist fit for buyers evaluating rack-adjacent liquid cooling paths between traditional air cooling and deeper direct liquid architectures"
+    ],
+    "hq": "North America",
+    "service_area": "North America and data center project markets",
+    "project_scale": "Rack to row deployments",
+    "subcategories": [],
+    "tags": [
+      "rdhx",
+      "rear-door-cooling",
+      "rack-liquid-cooling"
+    ],
+    "infrastructure_types": [
+      "cooling",
+      "facility"
+    ],
+    "cooling_types": [
+      "liquid_loop",
+      "rear_door_heat_exchanger"
+    ],
+    "focus_areas": [
+      "ai",
+      "hpc",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "colocation",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "manufacturer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "usystems",
+      "coldlogik",
+      "panduit",
+      "vertiv",
+      "motivair",
+      "nvent-liquid-cooling"
+    ]
+  },
+  {
     "slug": "coolit-systems",
     "name": "CoolIT Systems",
     "website_url": "https://www.coolitsystems.com",
@@ -1433,6 +2212,94 @@
       "monitoring-and-controls"
     ],
     "logo_url": "https://logo.clearbit.com/coolitsystems.com"
+  },
+  {
+    "slug": "coreweave",
+    "name": "CoreWeave",
+    "website_url": "https://www.coreweave.com",
+    "headline": "AI-native cloud operator delivering GPU infrastructure and managed compute capacity for training and inference workloads.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-colocation-gpu-hosting",
+      "network-fabric-and-connectivity",
+      "high-density-rack-power"
+    ],
+    "regions": [
+      "North America",
+      "Europe"
+    ],
+    "deployment_types": [
+      "AI",
+      "HPC",
+      "Hyperscale"
+    ],
+    "buyer_types": [
+      "Model builders",
+      "AI teams",
+      "GPU buyers"
+    ],
+    "specialties": [
+      "GPU cloud",
+      "Managed AI infrastructure",
+      "Cluster capacity"
+    ],
+    "proof_points": [
+      "CoreWeave positions itself as the essential cloud for AI"
+    ],
+    "featured_capabilities": [
+      "Managed GPU capacity",
+      "AI-native cloud",
+      "High-performance clusters"
+    ],
+    "comparison_notes": [
+      "A core authority anchor for the supply side of AI infrastructure demand"
+    ],
+    "hq": "Roseland, New Jersey, USA",
+    "service_area": "North America and Europe",
+    "project_scale": "Cluster to hyperscale",
+    "subcategories": [
+      "managed-ai-colocation"
+    ],
+    "tags": [
+      "gpu-cloud",
+      "ai-infrastructure"
+    ],
+    "infrastructure_types": [
+      "compute",
+      "networking"
+    ],
+    "focus_areas": [
+      "ai"
+    ],
+    "scale_focus": [
+      "hyperscale",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "operator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "lambda",
+      "fluidstack",
+      "nvidia-networking"
+    ],
+    "dependency_category_slugs": [
+      "network-fabric-and-connectivity",
+      "high-density-rack-power"
+    ],
+    "often_used_with_category_slugs": [
+      "liquid-cooling",
+      "site-selection-and-land-strategy"
+    ],
+    "evidence_urls": [
+      "https://www.coreweave.com",
+      "https://www.coreweave.com/why-coreweave"
+    ],
+    "ingestion_notes": "Validated in Wave 1 evidence sweep; use current homepage and why-CoreWeave pages as evidence."
   },
   {
     "id": "ven_crusoe",
@@ -1589,6 +2456,108 @@
       "qts",
       "applied-digital",
       "crusoe"
+    ]
+  },
+  {
+    "slug": "danfoss",
+    "name": "Danfoss",
+    "website_url": "https://www.danfoss.com/",
+    "headline": "Thermal systems supplier relevant to liquid-cooling loops, CDUs, direct-to-chip support architectures, and facility thermal integration.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "liquid-cooling",
+      "hvac-and-thermal-rejection"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "APAC",
+      "Middle East"
+    ],
+    "deployment_types": [
+      "AI",
+      "HPC",
+      "Enterprise",
+      "Hyperscale"
+    ],
+    "buyer_types": [
+      "Mechanical teams",
+      "Cooling integrators",
+      "Operators",
+      "OEM platform teams"
+    ],
+    "specialties": [
+      "Coolant distribution units",
+      "Heat exchangers",
+      "Valves, drives, sensors, and controllers",
+      "Direct-to-chip support components",
+      "Quick-disconnect and fluid-conveyance systems"
+    ],
+    "proof_points": [
+      "Official Danfoss data-center cooling materials cover liquid cooling support components including CDUs, fluid conveyance, heat exchangers, and direct-to-chip-adjacent thermal infrastructure."
+    ],
+    "featured_capabilities": [
+      "Liquid-loop support",
+      "CDU-relevant thermal components",
+      "Facility thermal integration"
+    ],
+    "comparison_notes": [
+      "Best used as a supporting thermal authority around liquid loops and facility integration rather than as a full cooling-platform vendor."
+    ],
+    "hq": "Nordborg, Denmark",
+    "service_area": "Global",
+    "project_scale": "Component to facility-scale thermal programs",
+    "subcategories": [
+      "liquid-loop-systems",
+      "direct-to-chip-cooling"
+    ],
+    "tags": [
+      "cdu",
+      "liquid-loop",
+      "heat-exchanger",
+      "fluid-conveyance"
+    ],
+    "infrastructure_types": [
+      "cooling",
+      "controls",
+      "facility"
+    ],
+    "cooling_types": [
+      "liquid_loop",
+      "direct_to_chip",
+      "hybrid"
+    ],
+    "focus_areas": [
+      "ai",
+      "hpc",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "manufacturer"
+    ],
+    "company_types": [
+      "public",
+      "industrial_supplier"
+    ],
+    "related_company_slugs": [
+      "coolit-systems",
+      "motivair",
+      "vertiv",
+      "schneider-electric-uniflair",
+      "kelvion"
+    ],
+    "dependency_category_slugs": [
+      "hvac-and-thermal-rejection"
+    ],
+    "often_used_with_category_slugs": [
+      "liquid-loop-systems",
+      "monitoring-and-controls",
+      "high-density-rack-power"
     ]
   },
   {
@@ -1761,6 +2730,97 @@
     ]
   },
   {
+    "slug": "deugro",
+    "name": "deugro",
+    "website_url": "https://deugro.com",
+    "headline": "Project logistics and freight forwarding specialist for oversized industrial systems, modular infrastructure, and complex delivery programs.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "supply-chain-and-logistics",
+      "infrastructure-logistics",
+      "modular-prefab"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "Middle East",
+      "APAC"
+    ],
+    "deployment_types": [
+      "Industrial",
+      "Modular",
+      "Campus"
+    ],
+    "buyer_types": [
+      "Fabricators",
+      "Developers",
+      "Program teams"
+    ],
+    "specialties": [
+      "Project logistics",
+      "Heavy transport coordination",
+      "Turnkey freight management"
+    ],
+    "proof_points": [
+      "deugro positions itself as an expert in freight forwarding and project logistics for challenging projects worldwide"
+    ],
+    "featured_capabilities": [
+      "Oversized cargo planning",
+      "Modular infrastructure transport",
+      "Schedule-critical logistics"
+    ],
+    "comparison_notes": [
+      "Adds the physical movement layer that makes prefab and power categories more believable"
+    ],
+    "hq": "Houston, Texas, USA",
+    "service_area": "Global",
+    "project_scale": "Component to megaproject",
+    "subcategories": [
+      "infrastructure-logistics"
+    ],
+    "tags": [
+      "project-logistics",
+      "heavy-transport"
+    ],
+    "infrastructure_types": [
+      "logistics",
+      "services"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "mammoet",
+      "barnhart-crane-rigging",
+      "dhl-industrial-projects"
+    ],
+    "dependency_category_slugs": [
+      "prefabricated-power-blocks",
+      "modular-substations"
+    ],
+    "often_used_with_category_slugs": [
+      "construction-and-integration",
+      "field-services-and-maintenance"
+    ],
+    "evidence_urls": [
+      "https://deugro.com/",
+      "https://deugro.com/about-us/"
+    ],
+    "ingestion_notes": "Validated in Wave 1 evidence sweep; preserve lowercase brand styling."
+  },
+  {
     "id": "ven_dlr",
     "slug": "digital-realty",
     "name": "Digital Realty",
@@ -1838,6 +2898,94 @@
       "qts",
       "cyrusone"
     ]
+  },
+  {
+    "slug": "dynapower",
+    "name": "Dynapower",
+    "website_url": "https://dynapower.com/",
+    "headline": "Power conversion and microgrid stability specialist relevant to self-healing, islanded, and energy-storage-backed critical infrastructure environments.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "generators-and-microgrids",
+      "ups-and-battery-storage",
+      "microgrid-controls-and-integration"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Industrial",
+      "Utility"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Energy teams",
+      "Program teams"
+    ],
+    "specialties": [
+      "Power conversion systems",
+      "Microgrid stability",
+      "Islanded operation"
+    ],
+    "proof_points": [
+      "Dynapower explicitly discusses self-healing microgrid behavior, frequency and voltage response, and reliable islanded operation."
+    ],
+    "featured_capabilities": [
+      "PCS response control",
+      "Grid-forming behavior",
+      "Microgrid fault response"
+    ],
+    "comparison_notes": [
+      "Best positioned as a control-layer and power-conversion specialist rather than a broad electrical OEM."
+    ],
+    "hq": "South Burlington, Vermont, USA",
+    "service_area": "North America with broader project relevance",
+    "project_scale": "Critical power and DER-backed deployments",
+    "subcategories": [
+      "microgrid-controls-and-integration"
+    ],
+    "tags": [
+      "microgrid",
+      "power-conversion",
+      "energy-storage"
+    ],
+    "infrastructure_types": [
+      "power",
+      "controls"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "integrator",
+      "manufacturer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "scale-microgrids",
+      "fluence",
+      "asco-power-technologies"
+    ],
+    "dependency_category_slugs": [
+      "ups-and-battery-storage"
+    ],
+    "often_used_with_category_slugs": [
+      "power-and-electrical",
+      "sustainability-and-energy-strategy"
+    ],
+    "evidence_urls": [
+      "https://dynapower.com/energy-storage-microgrids/",
+      "https://dynapower.com/"
+    ],
+    "ingestion_notes": "Sparse-branch correction: added conservatively for microgrid controls depth."
   },
   {
     "id": "ven_eaton",
@@ -2787,6 +3935,181 @@
     ]
   },
   {
+    "slug": "fluidstack",
+    "name": "Fluidstack",
+    "website_url": "https://fluidstack.io",
+    "headline": "Frontier AI infrastructure company building and operating large-scale compute capacity and gigawatt-scale cluster programs.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-colocation-gpu-hosting",
+      "network-fabric-and-connectivity",
+      "site-selection-and-land-strategy"
+    ],
+    "regions": [
+      "North America",
+      "Europe"
+    ],
+    "deployment_types": [
+      "AI",
+      "Hyperscale",
+      "Campus"
+    ],
+    "buyer_types": [
+      "Frontier AI labs",
+      "Compute platform teams"
+    ],
+    "specialties": [
+      "GPU cloud",
+      "Large-scale AI clusters",
+      "Capacity buildout"
+    ],
+    "proof_points": [
+      "Fluidstack explicitly frames itself around frontier AI compute and gigawatt-scale clusters"
+    ],
+    "featured_capabilities": [
+      "Large AI cluster delivery",
+      "Managed compute capacity",
+      "Infrastructure scaling"
+    ],
+    "comparison_notes": [
+      "Strengthens the modern AI supply side with a less-generic, high-signal operator"
+    ],
+    "hq": "London, UK",
+    "service_area": "Global",
+    "project_scale": "Cluster to gigawatt-scale campus",
+    "subcategories": [
+      "managed-ai-colocation"
+    ],
+    "tags": [
+      "frontier-ai",
+      "gpu-cloud"
+    ],
+    "infrastructure_types": [
+      "compute",
+      "networking",
+      "facility"
+    ],
+    "focus_areas": [
+      "ai"
+    ],
+    "scale_focus": [
+      "hyperscale",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "operator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "coreweave",
+      "lambda",
+      "colovore"
+    ],
+    "dependency_category_slugs": [
+      "network-fabric-and-connectivity",
+      "site-selection-and-land-strategy"
+    ],
+    "often_used_with_category_slugs": [
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "evidence_urls": [
+      "https://fluidstack.io",
+      "https://www.fluidstack.io"
+    ],
+    "ingestion_notes": "Validated in Wave 1 evidence sweep; canonical site is fluidstack.io."
+  },
+  {
+    "slug": "fs-com",
+    "name": "FS",
+    "website_url": "https://www.fs.com",
+    "headline": "Optics, transceivers, switching, and structured connectivity supplier that reflects how many buyers actually source data center network hardware.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "network-fabric-and-connectivity",
+      "supply-chain-and-logistics",
+      "high-density-rack-power"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "APAC"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Colocation",
+      "AI"
+    ],
+    "buyer_types": [
+      "Network operators",
+      "Integrators",
+      "Infrastructure buyers"
+    ],
+    "specialties": [
+      "Transceivers",
+      "Structured connectivity",
+      "Data center switching"
+    ],
+    "proof_points": [
+      "FS markets AI infrastructure, data center networking, and high-density modular cabling"
+    ],
+    "featured_capabilities": [
+      "Optics sourcing",
+      "Network supply-chain support",
+      "Physical connectivity kits"
+    ],
+    "comparison_notes": [
+      "Useful not because it is glamorous, but because it mirrors real sourcing behavior in the field"
+    ],
+    "hq": "Wilmington, Delaware, USA",
+    "service_area": "Global",
+    "project_scale": "Component to row",
+    "subcategories": [],
+    "tags": [
+      "optics",
+      "transceivers",
+      "network-supply"
+    ],
+    "infrastructure_types": [
+      "networking",
+      "logistics"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "regional"
+    ],
+    "ecosystem_roles": [
+      "distributor"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "graybar",
+      "commscope",
+      "arista-networks"
+    ],
+    "dependency_category_slugs": [
+      "supply-chain-and-logistics"
+    ],
+    "often_used_with_category_slugs": [
+      "network-fabric-and-connectivity"
+    ],
+    "evidence_urls": [
+      "https://www.fs.com",
+      "https://www.fs.com/c/data-center-1114"
+    ],
+    "ingestion_notes": "Validated in Wave 1 evidence sweep; use brand FS with slug fs-com."
+  },
+  {
     "slug": "gds-associates",
     "name": "GDS Associates",
     "website_url": "https://www.gdsassociates.com",
@@ -2978,6 +4301,94 @@
       "hvac-and-thermal-rejection"
     ],
     "logo_url": "https://logo.clearbit.com/gigaio.com"
+  },
+  {
+    "slug": "graybar",
+    "name": "Graybar",
+    "website_url": "https://www.graybar.com",
+    "headline": "Electrical, datacom, and industrial distribution channel with supply-chain services relevant to network, power, and on-site infrastructure builds.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "supply-chain-and-logistics",
+      "power-and-electrical",
+      "network-fabric-and-connectivity"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Industrial",
+      "Colocation"
+    ],
+    "buyer_types": [
+      "Electrical teams",
+      "Network teams",
+      "Contractors"
+    ],
+    "specialties": [
+      "Electrical distribution",
+      "Datacom supply",
+      "Advanced supply-chain services"
+    ],
+    "proof_points": [
+      "Graybar explicitly positions itself around electrical supply, datacom, industrial equipment, and supply-chain services"
+    ],
+    "featured_capabilities": [
+      "Procurement support",
+      "On-site supply services",
+      "Electrical and network sourcing"
+    ],
+    "comparison_notes": [
+      "Important because sourcing channels are part of the ecosystem moat, not an afterthought"
+    ],
+    "hq": "St. Louis, Missouri, USA",
+    "service_area": "North America",
+    "project_scale": "Component to site program",
+    "subcategories": [],
+    "tags": [
+      "distribution",
+      "datacom-supply",
+      "electrical-channel"
+    ],
+    "infrastructure_types": [
+      "logistics",
+      "power",
+      "networking"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "distributor"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "fs-com",
+      "wesco",
+      "commscope"
+    ],
+    "dependency_category_slugs": [
+      "construction-and-integration",
+      "field-services-and-maintenance"
+    ],
+    "often_used_with_category_slugs": [
+      "power-and-electrical",
+      "network-fabric-and-connectivity"
+    ],
+    "evidence_urls": [
+      "https://www.graybar.com",
+      "https://www.graybar.com/industry-solutions"
+    ],
+    "ingestion_notes": "Validated in Wave 1 evidence sweep; good long-tail channel add."
   },
   {
     "slug": "green-revolution-cooling",
@@ -3519,6 +4930,165 @@
     "logo_url": "https://logo.clearbit.com/iceotope.com"
   },
   {
+    "slug": "innochill",
+    "name": "InnoChill",
+    "website_url": "https://www.innochill.com/",
+    "headline": "Single-phase immersion cooling specialist for high-density AI, HPC, and data center workloads.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "immersion-cooling",
+      "single-phase-immersion",
+      "commissioning-and-operations"
+    ],
+    "regions": [
+      "APAC",
+      "North America"
+    ],
+    "deployment_types": [
+      "AI",
+      "HPC",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Cooling architects",
+      "Specialized compute teams"
+    ],
+    "specialties": [
+      "Single-phase immersion",
+      "High-density AI cooling",
+      "Dielectric immersion systems"
+    ],
+    "proof_points": [
+      "InnoChill explicitly markets single-phase immersion cooling for AI workloads and data-center-scale deployments."
+    ],
+    "featured_capabilities": [
+      "Single-phase immersion platforms",
+      "100kW+ rack support claims",
+      "Low-PUE cooling path"
+    ],
+    "comparison_notes": [
+      "Added conservatively as a single-phase immersion specialist without broadening into adjacent thermal categories."
+    ],
+    "hq": "China",
+    "service_area": "International project support",
+    "project_scale": "High-density AI and HPC deployments",
+    "subcategories": [
+      "single-phase-immersion"
+    ],
+    "tags": [
+      "single-phase-immersion",
+      "ai-cooling",
+      "dielectric"
+    ],
+    "infrastructure_types": [
+      "cooling"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "manufacturer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "submer",
+      "green-revolution-cooling",
+      "liquidstack"
+    ],
+    "dependency_category_slugs": [
+      "liquid-loop-systems"
+    ],
+    "often_used_with_category_slugs": [
+      "high-density-rack-power",
+      "field-services-and-maintenance"
+    ],
+    "evidence_urls": [
+      "https://www.innochill.com/innochill-immersion-cooling-ai-workloads-data-centers/",
+      "https://www.innochill.com/innochill-single-phase-immersion-cooling-data-center-hpc-cooling-revolution/"
+    ],
+    "ingestion_notes": "Sparse-branch correction: added conservatively for single-phase immersion depth."
+  },
+  {
+    "slug": "instant-data-centers",
+    "name": "Instant Data Centers",
+    "website_url": "https://instantdatacenters.com/",
+    "headline": "Containerized and rapidly deployable data center provider relevant to modular capacity expansion and edge-style infrastructure delivery.",
+    "featured": false,
+    "verified": false,
+    "categories": [
+      "containerized-data-centers",
+      "edge-micro-data-centers"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Containerized",
+      "Modular",
+      "Edge"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Infrastructure teams",
+      "Edge operators"
+    ],
+    "specialties": [
+      "Rapid data center deployment",
+      "Containerized infrastructure",
+      "Modular expansion"
+    ],
+    "proof_points": [
+      "Approved ingestion candidate for containerized data center branch expansion"
+    ],
+    "featured_capabilities": [
+      "Packaged deployment",
+      "Fast capacity rollout",
+      "Compact infrastructure delivery"
+    ],
+    "comparison_notes": [
+      "Good branch-fit addition, though direct evidence was weaker in this environment than the other five approved names"
+    ],
+    "hq": "North America",
+    "service_area": "North America",
+    "project_scale": "Single unit to regional deployment",
+    "subcategories": [],
+    "tags": [
+      "containerized",
+      "rapid-deployment"
+    ],
+    "infrastructure_types": [
+      "facility",
+      "services"
+    ],
+    "focus_areas": [
+      "edge",
+      "general"
+    ],
+    "scale_focus": [
+      "edge",
+      "regional"
+    ],
+    "ecosystem_roles": [
+      "integrator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "zella-dc",
+      "edge-modular",
+      "compu-dynamics-modular"
+    ]
+  },
+  {
     "slug": "integra-mission-critical",
     "name": "Integra",
     "website_url": "https://integra.com/",
@@ -3710,6 +5280,94 @@
     ]
   },
   {
+    "slug": "jensen-hughes",
+    "name": "Jensen Hughes",
+    "website_url": "https://www.jensenhughes.com",
+    "headline": "Safety, security, and risk consulting firm with mission-critical relevance across code compliance, fire protection, and secure facility delivery.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "commissioning-and-operations",
+      "epc-and-commissioning",
+      "site-selection-and-land-strategy"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "Middle East",
+      "APAC"
+    ],
+    "deployment_types": [
+      "Mission-critical",
+      "Campus",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Operators",
+      "Facility teams"
+    ],
+    "specialties": [
+      "Fire engineering",
+      "Code compliance",
+      "Risk consulting"
+    ],
+    "proof_points": [
+      "Jensen Hughes site content explicitly references mission critical facilities alongside safety, security, and risk consulting"
+    ],
+    "featured_capabilities": [
+      "Mission-critical advisory",
+      "Fire/life safety planning",
+      "Compliance support"
+    ],
+    "comparison_notes": [
+      "Adds a non-obvious but high-value compliance and risk layer that makes the ecosystem feel more complete"
+    ],
+    "hq": "Baltimore, Maryland, USA",
+    "service_area": "Global",
+    "project_scale": "Single facility to portfolio",
+    "subcategories": [],
+    "tags": [
+      "risk-consulting",
+      "fire-engineering",
+      "mission-critical"
+    ],
+    "infrastructure_types": [
+      "services"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "regional"
+    ],
+    "ecosystem_roles": [
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "uptime-institute",
+      "bureau-veritas",
+      "lenels2"
+    ],
+    "dependency_category_slugs": [
+      "commissioning-and-operations"
+    ],
+    "often_used_with_category_slugs": [
+      "epc-and-commissioning",
+      "site-selection-and-land-strategy"
+    ],
+    "evidence_urls": [
+      "https://www.jensenhughes.com",
+      "https://www.jensenhughes.com/industries/data-centers"
+    ],
+    "ingestion_notes": "Approved after targeted validation cleanup; data-centers path should be rechecked later but current evidence is sufficient."
+  },
+  {
     "slug": "jetcool",
     "name": "Jetcool",
     "website_url": "https://www.jetcool.com",
@@ -3889,6 +5547,94 @@
     "logo_url": "https://logo.clearbit.com/kelvion.com"
   },
   {
+    "slug": "lambda",
+    "name": "Lambda",
+    "website_url": "https://lambda.ai",
+    "headline": "AI cloud platform delivering GPU infrastructure, managed clusters, and high-density AI factory systems for model training and inference.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-colocation-gpu-hosting",
+      "network-fabric-and-connectivity",
+      "high-density-rack-power"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "AI",
+      "HPC",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "AI labs",
+      "Model builders",
+      "Enterprise AI teams"
+    ],
+    "specialties": [
+      "GPU cloud",
+      "Managed clusters",
+      "AI factory systems"
+    ],
+    "proof_points": [
+      "Lambda markets AI cloud infrastructure and managed AI systems built around NVIDIA GPUs"
+    ],
+    "featured_capabilities": [
+      "Elastic GPU instances",
+      "Cluster management",
+      "Dense AI systems"
+    ],
+    "comparison_notes": [
+      "Important because it strengthens the real operator set rather than only colocation incumbents"
+    ],
+    "hq": "San Jose, California, USA",
+    "service_area": "North America",
+    "project_scale": "Single GPU to large-scale clusters",
+    "subcategories": [
+      "managed-ai-colocation"
+    ],
+    "tags": [
+      "gpu-cloud",
+      "managed-ai"
+    ],
+    "infrastructure_types": [
+      "compute",
+      "power",
+      "networking"
+    ],
+    "focus_areas": [
+      "ai"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "operator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "coreweave",
+      "fluidstack",
+      "nvidia-networking"
+    ],
+    "dependency_category_slugs": [
+      "network-fabric-and-connectivity",
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "often_used_with_category_slugs": [
+      "ai-colocation-gpu-hosting"
+    ],
+    "evidence_urls": [
+      "https://lambda.ai",
+      "https://lambda.ai/cloud"
+    ],
+    "ingestion_notes": "Validated in Wave 1 evidence sweep; keep brand name simply Lambda."
+  },
+  {
     "id": "ven_legrand",
     "slug": "legrand",
     "name": "Legrand",
@@ -3965,6 +5711,96 @@
       "vertiv"
     ],
     "logo_url": "https://logo.clearbit.com/legrand.com"
+  },
+  {
+    "slug": "lenels2",
+    "name": "LenelS2",
+    "website_url": "https://buildings.honeywell.com/us/en/brands/our-brands/lenels2",
+    "headline": "Physical security, access control, and video management platform relevant to critical-facility operations, compliance, and secure infrastructure environments.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "monitoring-and-controls",
+      "field-services-and-maintenance",
+      "commissioning-and-operations"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "APAC"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Mission-critical",
+      "Campus"
+    ],
+    "buyer_types": [
+      "Facility operators",
+      "Security teams",
+      "Critical-environment managers"
+    ],
+    "specialties": [
+      "Access control",
+      "Video management",
+      "Mobile credentials"
+    ],
+    "proof_points": [
+      "LenelS2 positions itself as a leader in advanced physical security solutions"
+    ],
+    "featured_capabilities": [
+      "Access control systems",
+      "Security orchestration",
+      "Facility security operations"
+    ],
+    "comparison_notes": [
+      "Taxonomy fit is not perfect, but it meaningfully expands the under-modeled physical security layer around critical environments"
+    ],
+    "hq": "Pittsford, New York, USA",
+    "service_area": "Global",
+    "project_scale": "Single facility to portfolio",
+    "subcategories": [
+      "dcim-and-observability"
+    ],
+    "tags": [
+      "physical-security",
+      "access-control",
+      "video-management"
+    ],
+    "infrastructure_types": [
+      "controls",
+      "services"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "regional"
+    ],
+    "ecosystem_roles": [
+      "developer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "uptime-institute",
+      "jensen-hughes",
+      "rf-code"
+    ],
+    "dependency_category_slugs": [
+      "monitoring-and-controls"
+    ],
+    "often_used_with_category_slugs": [
+      "commissioning-and-operations",
+      "field-services-and-maintenance"
+    ],
+    "evidence_urls": [
+      "https://buildings.honeywell.com/us/en/brands/our-brands/lenels2",
+      "https://buildings.honeywell.com/us/en/brands/our-brands/lenels2/security-solutions"
+    ],
+    "ingestion_notes": "Approved after targeted validation cleanup; canonical site is Honeywell-hosted."
   },
   {
     "slug": "liquidcool-solutions",
@@ -4332,6 +6168,94 @@
       "supply-chain-and-logistics"
     ],
     "logo_url": "https://logo.clearbit.com/mammothfs.com"
+  },
+  {
+    "slug": "megaport",
+    "name": "Megaport",
+    "website_url": "https://www.megaport.com",
+    "headline": "Network-as-a-service and cloud interconnection platform that connects colocation, cloud, and distributed infrastructure ecosystems.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "network-fabric-and-connectivity",
+      "ai-colocation-gpu-hosting",
+      "monitoring-and-controls"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "APAC"
+    ],
+    "deployment_types": [
+      "Colocation",
+      "Enterprise",
+      "AI"
+    ],
+    "buyer_types": [
+      "Network architects",
+      "Cloud infrastructure teams",
+      "Colocation buyers"
+    ],
+    "specialties": [
+      "Cloud interconnection",
+      "NaaS",
+      "Global connectivity"
+    ],
+    "proof_points": [
+      "Megaport positions compute, network, and storage on demand from one platform"
+    ],
+    "featured_capabilities": [
+      "Cloud on-ramps",
+      "Interconnection orchestration",
+      "Elastic connectivity"
+    ],
+    "comparison_notes": [
+      "Adds service-layer connectivity realism rather than another passive operator listing"
+    ],
+    "hq": "Brisbane, Australia",
+    "service_area": "Global",
+    "project_scale": "Single site to multi-region",
+    "subcategories": [],
+    "tags": [
+      "interconnection",
+      "naas",
+      "cloud-connectivity"
+    ],
+    "infrastructure_types": [
+      "networking",
+      "controls"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "regional"
+    ],
+    "ecosystem_roles": [
+      "service_provider"
+    ],
+    "company_types": [
+      "public"
+    ],
+    "related_company_slugs": [
+      "cologix",
+      "coreweave",
+      "lambda"
+    ],
+    "dependency_category_slugs": [
+      "network-fabric-and-connectivity"
+    ],
+    "often_used_with_category_slugs": [
+      "ai-colocation-gpu-hosting",
+      "site-selection-and-land-strategy"
+    ],
+    "evidence_urls": [
+      "https://www.megaport.com",
+      "https://www.megaport.com/platform/"
+    ],
+    "ingestion_notes": "Validated in Wave 1 evidence sweep as interconnection/service-fabric layer."
   },
   {
     "slug": "microcare",
@@ -5097,6 +7021,75 @@
     ]
   },
   {
+    "id": "ven_nebius",
+    "slug": "nebius",
+    "name": "Nebius",
+    "website_url": "https://nebius.com/",
+    "headline": "AI-native cloud infrastructure operator offering managed GPU capacity and hosted environments for model development and inference workloads.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-colocation-gpu-hosting"
+    ],
+    "regions": [
+      "Europe",
+      "North America"
+    ],
+    "deployment_types": [
+      "AI",
+      "Cloud",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "AI labs",
+      "Developers",
+      "Enterprise teams"
+    ],
+    "specialties": [
+      "Managed GPU clusters",
+      "AI cloud capacity",
+      "Hosted AI workloads"
+    ],
+    "proof_points": [
+      "Recognized AI cloud capacity provider"
+    ],
+    "featured_capabilities": [
+      "Managed AI hosting",
+      "GPU cluster access",
+      "AI workload support"
+    ],
+    "comparison_notes": [
+      "Appropriate for managed AI colocation coverage where buyers prioritize time-to-compute"
+    ],
+    "hq": "Amsterdam, Netherlands",
+    "service_area": "International",
+    "project_scale": "Growth to enterprise AI deployments",
+    "subcategories": [
+      "managed-ai-colocation"
+    ],
+    "tags": [
+      "managed-ai-colocation",
+      "ai-cloud"
+    ],
+    "infrastructure_types": [
+      "hosting"
+    ],
+    "focus_areas": [
+      "ai"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "operator",
+      "service_provider"
+    ],
+    "company_types": [
+      "public"
+    ]
+  },
+  {
     "slug": "nei-electric-power-engineering",
     "name": "NEI Electric Power Engineering",
     "website_url": "https://www.neieng.com",
@@ -5483,6 +7476,97 @@
     "logo_url": "https://logo.clearbit.com/nvent.com"
   },
   {
+    "slug": "nvidia-networking",
+    "name": "NVIDIA Networking",
+    "website_url": "https://www.nvidia.com",
+    "headline": "AI networking and high-performance interconnect portfolio spanning Ethernet and InfiniBand fabrics for GPU clusters, cloud-scale environments, and data center compute backbones.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "network-fabric-and-connectivity",
+      "ai-colocation-gpu-hosting",
+      "high-density-rack-power"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "APAC",
+      "Middle East"
+    ],
+    "deployment_types": [
+      "AI",
+      "HPC",
+      "Hyperscale"
+    ],
+    "buyer_types": [
+      "GPU infrastructure teams",
+      "Hyperscalers",
+      "AI platform operators"
+    ],
+    "specialties": [
+      "InfiniBand",
+      "Ethernet fabrics",
+      "AI interconnect"
+    ],
+    "proof_points": [
+      "NVIDIA networking portfolio covers end-to-end Ethernet and InfiniBand solutions for AI and HPC"
+    ],
+    "featured_capabilities": [
+      "AI fabric design",
+      "Low-latency interconnect",
+      "Cluster networking"
+    ],
+    "comparison_notes": [
+      "Critical fabric layer for serious AI infrastructure coverage rather than a peripheral adjacency"
+    ],
+    "hq": "Santa Clara, California, USA",
+    "service_area": "Global",
+    "project_scale": "Rack to hyperscale cluster",
+    "subcategories": [],
+    "tags": [
+      "ai-networking",
+      "infiniband",
+      "ethernet-fabric"
+    ],
+    "infrastructure_types": [
+      "networking",
+      "compute"
+    ],
+    "focus_areas": [
+      "ai",
+      "hpc"
+    ],
+    "scale_focus": [
+      "hyperscale",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "manufacturer"
+    ],
+    "company_types": [
+      "public"
+    ],
+    "related_company_slugs": [
+      "coreweave",
+      "lambda",
+      "arista-networks",
+      "cologix"
+    ],
+    "dependency_category_slugs": [
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "often_used_with_category_slugs": [
+      "ai-colocation-gpu-hosting",
+      "network-fabric-and-connectivity"
+    ],
+    "evidence_urls": [
+      "https://www.nvidia.com/en-us/networking/products/",
+      "https://www.nvidia.com/en-us/networking/products/ethernet/"
+    ],
+    "ingestion_notes": "Validated in Wave 1 evidence sweep; use networking unit naming to make AI fabric role explicit."
+  },
+  {
     "slug": "olsson",
     "name": "Olsson",
     "website_url": "https://www.olsson.com/industries-expertise/data-centers",
@@ -5687,6 +7771,184 @@
     "logo_url": "https://logo.clearbit.com/omicronenergy.com"
   },
   {
+    "slug": "opengear",
+    "name": "Opengear",
+    "website_url": "https://opengear.com",
+    "headline": "Out-of-band management and network resilience provider for distributed, remote, and mission-critical infrastructure operations.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "network-fabric-and-connectivity",
+      "monitoring-and-controls",
+      "commissioning-and-operations"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "APAC"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Mission-critical",
+      "Edge"
+    ],
+    "buyer_types": [
+      "Network operations teams",
+      "Infrastructure operators",
+      "Remote site managers"
+    ],
+    "specialties": [
+      "Out-of-band management",
+      "Network resilience",
+      "Remote infrastructure access"
+    ],
+    "proof_points": [
+      "Opengear explicitly positions around out-of-band management and network resilience"
+    ],
+    "featured_capabilities": [
+      "Resilient remote access",
+      "OOB orchestration",
+      "Operational continuity"
+    ],
+    "comparison_notes": [
+      "Useful long-tail add because real distributed infrastructure needs resilience tooling, not just primary path networking"
+    ],
+    "hq": "Edison, New Jersey, USA",
+    "service_area": "Global",
+    "project_scale": "Single site to distributed fleet",
+    "subcategories": [],
+    "tags": [
+      "out-of-band",
+      "network-resilience",
+      "remote-access"
+    ],
+    "infrastructure_types": [
+      "networking",
+      "controls"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "regional"
+    ],
+    "ecosystem_roles": [
+      "manufacturer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "megaport",
+      "arista-networks",
+      "rf-code"
+    ],
+    "dependency_category_slugs": [
+      "network-fabric-and-connectivity",
+      "monitoring-and-controls"
+    ],
+    "often_used_with_category_slugs": [
+      "commissioning-and-operations",
+      "field-services-and-maintenance"
+    ],
+    "evidence_urls": [
+      "https://opengear.com",
+      "https://opengear.com/solutions-healthcare/"
+    ],
+    "ingestion_notes": "Approved after targeted validation; second evidence URL is imperfectly routed but still demonstrates operational connectivity/resilience use cases."
+  },
+  {
+    "slug": "panduit",
+    "name": "Panduit",
+    "website_url": "https://www.panduit.com/",
+    "headline": "Rack and cabinet infrastructure provider with RDHx-integrated high-density cooling pathways for AI-oriented deployments.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "rear-door-direct-to-chip-cooling",
+      "high-density-rack-power"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "APAC",
+      "LATAM"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Hyperscale",
+      "AI"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Facilities teams",
+      "Infrastructure teams"
+    ],
+    "specialties": [
+      "Rack integration",
+      "RDHx deployment",
+      "Cabinet infrastructure"
+    ],
+    "proof_points": [
+      "Panduit positions its RDHx solution around FlexFusion cabinet integration and AI workload cooling."
+    ],
+    "featured_capabilities": [
+      "Cabinet-integrated RDHx",
+      "High-density rack deployment",
+      "Cooling integration support"
+    ],
+    "comparison_notes": [
+      "Included conservatively for RDHx deployment realism, not as a broad category-sprawl vendor."
+    ],
+    "hq": "Tinley Park, Illinois, USA",
+    "service_area": "Global",
+    "project_scale": "Rack to enterprise-scale deployments",
+    "subcategories": [],
+    "tags": [
+      "rdhx",
+      "rack-infrastructure",
+      "cabinet-platform"
+    ],
+    "infrastructure_types": [
+      "cooling",
+      "power"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "integrator",
+      "manufacturer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "motivair",
+      "legrand",
+      "nvent-liquid-cooling"
+    ],
+    "dependency_category_slugs": [
+      "liquid-loop-systems"
+    ],
+    "often_used_with_category_slugs": [
+      "high-density-rack-power",
+      "monitoring-and-controls"
+    ],
+    "evidence_urls": [
+      "https://www.panduit.com/en/products/featured-products/rear-door-heat-exchanger.html",
+      "https://www.panduit.com/en/search.html#q=ai%20workload%20data%20centers"
+    ],
+    "ingestion_notes": "Sparse-branch correction: scoped narrowly to RDHx and rack-integration relevance."
+  },
+  {
     "slug": "parat-halvorsen",
     "name": "Parat Halvorsen",
     "website_url": "https://www.parat.no",
@@ -5883,6 +8145,96 @@
       "supply-chain-and-logistics"
     ],
     "logo_url": "https://logo.clearbit.com/powellind.com"
+  },
+  {
+    "slug": "powersecure",
+    "name": "PowerSecure",
+    "website_url": "https://powersecure.com/",
+    "headline": "Distributed energy and microgrid systems integrator focused on resilient power, controls, and monitored energy infrastructure for mission-critical sites.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "generators-and-microgrids",
+      "power-and-electrical",
+      "microgrid-controls-and-integration"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Industrial",
+      "Hyperscale"
+    ],
+    "buyer_types": [
+      "Operators",
+      "Utilities",
+      "Developers"
+    ],
+    "specialties": [
+      "Microgrid integration",
+      "Distributed energy infrastructure",
+      "Power monitoring"
+    ],
+    "proof_points": [
+      "PowerSecure describes itself as a leader in powering microgrids and highlights PowerControl monitoring plus distributed energy integration."
+    ],
+    "featured_capabilities": [
+      "Microgrid orchestration",
+      "DER integration",
+      "24/7 monitored power operations"
+    ],
+    "comparison_notes": [
+      "More valuable as a microgrid control-and-integration operator than as a generic generation brand."
+    ],
+    "hq": "Durham, North Carolina, USA",
+    "service_area": "United States",
+    "project_scale": "Commercial to utility-adjacent deployments",
+    "subcategories": [
+      "microgrid-controls-and-integration"
+    ],
+    "tags": [
+      "microgrid",
+      "distributed-energy",
+      "controls"
+    ],
+    "infrastructure_types": [
+      "power",
+      "controls",
+      "services"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "integrator",
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "scale-microgrids",
+      "asco-power-technologies",
+      "eaton"
+    ],
+    "dependency_category_slugs": [
+      "ups-and-battery-storage"
+    ],
+    "often_used_with_category_slugs": [
+      "site-selection-and-land-strategy",
+      "power-and-electrical"
+    ],
+    "evidence_urls": [
+      "https://powersecure.com/",
+      "https://powersecure.com/?hsLang=en"
+    ],
+    "ingestion_notes": "Sparse-branch correction: added conservatively for microgrid controls depth."
   },
   {
     "id": "ven_qts",
@@ -6339,6 +8691,96 @@
       "switchgear-pdu-busway",
       "commissioning-and-operations"
     ]
+  },
+  {
+    "slug": "rf-code",
+    "name": "RF Code",
+    "website_url": "https://www.rfcode.com",
+    "headline": "Data center asset tracking, environmental monitoring, and power visibility provider for real-time operational awareness.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "dcim-and-observability",
+      "monitoring-and-controls",
+      "commissioning-and-operations"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "APAC"
+    ],
+    "deployment_types": [
+      "Enterprise",
+      "Colocation",
+      "AI"
+    ],
+    "buyer_types": [
+      "Operations teams",
+      "Facilities managers",
+      "Capacity planners"
+    ],
+    "specialties": [
+      "Asset tracking",
+      "Environmental monitoring",
+      "Power visibility"
+    ],
+    "proof_points": [
+      "RF Code explicitly positions around real-time asset tracking and data center environmental monitoring"
+    ],
+    "featured_capabilities": [
+      "Facility telemetry",
+      "Environmental sensing",
+      "Operational visibility"
+    ],
+    "comparison_notes": [
+      "A high-value observability add because it improves practical operating realism, not just vendor breadth"
+    ],
+    "hq": "Austin, Texas, USA",
+    "service_area": "Global",
+    "project_scale": "Single site to portfolio",
+    "subcategories": [
+      "dcim-and-observability"
+    ],
+    "tags": [
+      "environmental-monitoring",
+      "asset-tracking"
+    ],
+    "infrastructure_types": [
+      "controls",
+      "services"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "regional"
+    ],
+    "ecosystem_roles": [
+      "developer"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "akcp",
+      "sunbird-software",
+      "nlyte"
+    ],
+    "dependency_category_slugs": [
+      "monitoring-and-controls",
+      "power-monitoring-and-energy-management"
+    ],
+    "often_used_with_category_slugs": [
+      "commissioning-and-operations",
+      "field-services-and-maintenance"
+    ],
+    "evidence_urls": [
+      "https://www.rfcode.com",
+      "https://www.rfcode.com/data-center-environmental-monitoring/"
+    ],
+    "ingestion_notes": "Validated in Wave 1 evidence sweep with direct data-center observability evidence."
   },
   {
     "id": "ven_rittal",
@@ -7893,6 +10335,74 @@
     ]
   },
   {
+    "id": "ven_tensordock",
+    "slug": "tensordock",
+    "name": "TensorDock",
+    "website_url": "https://www.tensordock.com/",
+    "headline": "GPU cloud and managed AI infrastructure marketplace relevant to buyers seeking flexible hosted accelerator capacity.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-colocation-gpu-hosting"
+    ],
+    "regions": [
+      "North America",
+      "Europe"
+    ],
+    "deployment_types": [
+      "AI",
+      "Cloud"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Startups",
+      "AI teams"
+    ],
+    "specialties": [
+      "Hosted GPU access",
+      "Managed compute capacity",
+      "Flexible AI workloads"
+    ],
+    "proof_points": [
+      "Recognized hosted GPU capacity platform"
+    ],
+    "featured_capabilities": [
+      "Managed GPU instances",
+      "Rapid deployment",
+      "Flexible capacity sourcing"
+    ],
+    "comparison_notes": [
+      "Relevant where the decision is speed-to-capacity instead of facility ownership"
+    ],
+    "hq": "United States",
+    "service_area": "International",
+    "project_scale": "Startup to enterprise AI workloads",
+    "subcategories": [
+      "managed-ai-colocation"
+    ],
+    "tags": [
+      "managed-ai-colocation",
+      "gpu-cloud"
+    ],
+    "infrastructure_types": [
+      "hosting"
+    ],
+    "focus_areas": [
+      "ai"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "operator",
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ]
+  },
+  {
     "slug": "tetra-tech",
     "name": "Tetra Tech",
     "website_url": "https://www.tetratech.com/solutions/data-center-solutions/",
@@ -8177,6 +10687,94 @@
     ]
   },
   {
+    "slug": "uptime-institute",
+    "name": "Uptime Institute",
+    "website_url": "https://uptimeinstitute.com",
+    "headline": "Digital infrastructure authority providing certification, advisory, and operational guidance for resilient data center and AI infrastructure programs.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "commissioning-and-operations",
+      "epc-and-commissioning",
+      "site-selection-and-land-strategy"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "APAC",
+      "Middle East"
+    ],
+    "deployment_types": [
+      "Hyperscale",
+      "Enterprise",
+      "AI"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Operators",
+      "Program leads"
+    ],
+    "specialties": [
+      "Certification",
+      "Operational advisory",
+      "Resilience standards"
+    ],
+    "proof_points": [
+      "Uptime positions itself around digital infrastructure authority and AI infrastructure advisory"
+    ],
+    "featured_capabilities": [
+      "Tier certification",
+      "Operational assessment",
+      "AI infrastructure advisory"
+    ],
+    "comparison_notes": [
+      "Adds governance and mission-critical legitimacy to the graph, especially around AI capacity buildouts"
+    ],
+    "hq": "New York, New York, USA",
+    "service_area": "Global",
+    "project_scale": "Single facility to global fleet",
+    "subcategories": [],
+    "tags": [
+      "tier-certification",
+      "mission-critical-advisory"
+    ],
+    "infrastructure_types": [
+      "services"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "jensen-hughes",
+      "bureau-veritas",
+      "ul-solutions"
+    ],
+    "dependency_category_slugs": [
+      "power-and-electrical",
+      "liquid-cooling"
+    ],
+    "often_used_with_category_slugs": [
+      "commissioning-and-operations",
+      "site-selection-and-land-strategy"
+    ],
+    "evidence_urls": [
+      "https://uptimeinstitute.com",
+      "https://uptimeinstitute.com/ai-infrastructure-advisory/"
+    ],
+    "ingestion_notes": "Validated in Wave 1 evidence sweep."
+  },
+  {
     "slug": "usystems",
     "name": "USystems",
     "website_url": "https://www.usystems.com",
@@ -8261,6 +10859,71 @@
       "field-services-and-maintenance"
     ],
     "logo_url": "https://logo.clearbit.com/usystems.com"
+  },
+  {
+    "id": "ven_verda",
+    "slug": "verda",
+    "name": "Verda",
+    "website_url": "https://www.verda.ai/",
+    "headline": "Managed AI infrastructure company positioned around hosted GPU capacity and enterprise-ready deployment support.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-colocation-gpu-hosting"
+    ],
+    "regions": [
+      "Europe"
+    ],
+    "deployment_types": [
+      "AI",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "Enterprise teams",
+      "AI builders"
+    ],
+    "specialties": [
+      "Managed AI capacity",
+      "GPU infrastructure access",
+      "Enterprise onboarding"
+    ],
+    "proof_points": [
+      "Known managed AI infrastructure operator"
+    ],
+    "featured_capabilities": [
+      "Managed GPU environments",
+      "Capacity provisioning",
+      "AI infrastructure support"
+    ],
+    "comparison_notes": [
+      "Fits the managed hosting layer rather than core facility equipment supply"
+    ],
+    "hq": "Europe",
+    "service_area": "Europe",
+    "project_scale": "Enterprise AI deployments",
+    "subcategories": [
+      "managed-ai-colocation"
+    ],
+    "tags": [
+      "managed-ai-colocation",
+      "managed-gpu"
+    ],
+    "infrastructure_types": [
+      "hosting"
+    ],
+    "focus_areas": [
+      "ai"
+    ],
+    "scale_focus": [
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "operator",
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ]
   },
   {
     "id": "ven_vertiv",
@@ -8384,6 +11047,144 @@
     "logo_url": "https://logo.clearbit.com/vertiv.com"
   },
   {
+    "id": "ven_voltage-park",
+    "slug": "voltage-park",
+    "name": "Voltage Park",
+    "website_url": "https://www.voltagepark.com/",
+    "headline": "Managed AI colocation and GPU infrastructure platform offering enterprise access to large-scale accelerated compute capacity.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-colocation-gpu-hosting"
+    ],
+    "regions": [
+      "North America"
+    ],
+    "deployment_types": [
+      "AI",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "AI labs",
+      "Enterprise teams",
+      "Model builders"
+    ],
+    "specialties": [
+      "Managed GPU capacity",
+      "AI colocation",
+      "Accelerated compute access"
+    ],
+    "proof_points": [
+      "Known managed GPU infrastructure operator"
+    ],
+    "featured_capabilities": [
+      "Managed AI hosting",
+      "GPU cluster access",
+      "Capacity onboarding"
+    ],
+    "comparison_notes": [
+      "Useful when buyers want managed access to AI infrastructure rather than self-building facilities"
+    ],
+    "hq": "United States",
+    "service_area": "North America",
+    "project_scale": "Enterprise AI deployments",
+    "subcategories": [
+      "managed-ai-colocation"
+    ],
+    "tags": [
+      "managed-ai-colocation",
+      "gpu-hosting"
+    ],
+    "infrastructure_types": [
+      "hosting"
+    ],
+    "focus_areas": [
+      "ai"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "operator",
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ]
+  },
+  {
+    "id": "ven_vultr",
+    "slug": "vultr",
+    "name": "Vultr",
+    "website_url": "https://www.vultr.com/",
+    "headline": "Cloud infrastructure provider with managed GPU and AI hosting relevance for teams buying deployed accelerator capacity.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-colocation-gpu-hosting"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "APAC"
+    ],
+    "deployment_types": [
+      "AI",
+      "Cloud",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "Developers",
+      "Startups",
+      "Enterprise teams"
+    ],
+    "specialties": [
+      "GPU cloud",
+      "Managed AI hosting",
+      "Global infrastructure footprint"
+    ],
+    "proof_points": [
+      "Established cloud platform with GPU infrastructure offering"
+    ],
+    "featured_capabilities": [
+      "Managed GPU instances",
+      "Global deployment options",
+      "Hosted accelerator access"
+    ],
+    "comparison_notes": [
+      "Useful comparator when buyers may substitute managed GPU cloud for dedicated infrastructure sourcing"
+    ],
+    "hq": "West Palm Beach, Florida, USA",
+    "service_area": "Global",
+    "project_scale": "Startup to enterprise",
+    "subcategories": [
+      "managed-ai-colocation"
+    ],
+    "tags": [
+      "managed-ai-colocation",
+      "gpu-cloud"
+    ],
+    "infrastructure_types": [
+      "hosting"
+    ],
+    "focus_areas": [
+      "ai",
+      "general"
+    ],
+    "scale_focus": [
+      "regional",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "operator",
+      "service_provider"
+    ],
+    "company_types": [
+      "private"
+    ]
+  },
+  {
     "slug": "western-electrical-services",
     "name": "Western Electrical Services",
     "website_url": "https://www.westernelectricalservices.com",
@@ -8486,6 +11287,87 @@
     ]
   },
   {
+    "slug": "zella-dc",
+    "name": "Zella DC",
+    "website_url": "https://www.zelladc.com/",
+    "headline": "Factory-built micro data centre provider with integrated power, cooling, security, and monitoring for edge and on-site AI deployments.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "containerized-data-centers",
+      "edge-micro-data-centers",
+      "monitoring-and-controls"
+    ],
+    "regions": [
+      "Europe",
+      "North America",
+      "Middle East",
+      "APAC"
+    ],
+    "deployment_types": [
+      "Edge",
+      "Micro data center",
+      "AI"
+    ],
+    "buyer_types": [
+      "Edge operators",
+      "Enterprise infrastructure teams",
+      "On-site compute buyers"
+    ],
+    "specialties": [
+      "Pre-engineered micro data centres",
+      "Integrated monitoring",
+      "Factory-tested deployment units"
+    ],
+    "proof_points": [
+      "Explicit factory pre-engineered micro data centre positioning"
+    ],
+    "featured_capabilities": [
+      "Integrated PDU and cooling",
+      "Access control and monitoring",
+      "Rapid site deployment"
+    ],
+    "comparison_notes": [
+      "Useful where buyers need compact packaged infrastructure with strong edge and on-site deployment relevance"
+    ],
+    "hq": "United Kingdom",
+    "service_area": "Global",
+    "project_scale": "Single micro data center to distributed rollout",
+    "subcategories": [],
+    "tags": [
+      "micro-data-center",
+      "edge"
+    ],
+    "infrastructure_types": [
+      "facility",
+      "power",
+      "cooling",
+      "controls"
+    ],
+    "focus_areas": [
+      "ai",
+      "edge",
+      "general"
+    ],
+    "scale_focus": [
+      "edge",
+      "enterprise"
+    ],
+    "ecosystem_roles": [
+      "manufacturer",
+      "integrator"
+    ],
+    "company_types": [
+      "private"
+    ],
+    "related_company_slugs": [
+      "edge-modular",
+      "compu-dynamics-modular",
+      "vertiv",
+      "rittal"
+    ]
+  },
+  {
     "slug": "zutacore",
     "name": "ZutaCore",
     "website_url": "https://zutacore.com",
@@ -8575,2785 +11457,5 @@
     ],
     "logo_url": "https://logo.clearbit.com/zutacore.com",
     "id": "ven_zutacore"
-  },
-  {
-    "slug": "nvidia-networking",
-    "name": "NVIDIA Networking",
-    "website_url": "https://www.nvidia.com",
-    "headline": "AI networking and high-performance interconnect portfolio spanning Ethernet and InfiniBand fabrics for GPU clusters, cloud-scale environments, and data center compute backbones.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "network-fabric-and-connectivity",
-      "ai-colocation-gpu-hosting",
-      "high-density-rack-power"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "APAC",
-      "Middle East"
-    ],
-    "deployment_types": [
-      "AI",
-      "HPC",
-      "Hyperscale"
-    ],
-    "buyer_types": [
-      "GPU infrastructure teams",
-      "Hyperscalers",
-      "AI platform operators"
-    ],
-    "specialties": [
-      "InfiniBand",
-      "Ethernet fabrics",
-      "AI interconnect"
-    ],
-    "proof_points": [
-      "NVIDIA networking portfolio covers end-to-end Ethernet and InfiniBand solutions for AI and HPC"
-    ],
-    "featured_capabilities": [
-      "AI fabric design",
-      "Low-latency interconnect",
-      "Cluster networking"
-    ],
-    "comparison_notes": [
-      "Critical fabric layer for serious AI infrastructure coverage rather than a peripheral adjacency"
-    ],
-    "hq": "Santa Clara, California, USA",
-    "service_area": "Global",
-    "project_scale": "Rack to hyperscale cluster",
-    "subcategories": [],
-    "tags": [
-      "ai-networking",
-      "infiniband",
-      "ethernet-fabric"
-    ],
-    "infrastructure_types": [
-      "networking",
-      "compute"
-    ],
-    "focus_areas": [
-      "ai",
-      "hpc"
-    ],
-    "scale_focus": [
-      "hyperscale",
-      "enterprise"
-    ],
-    "ecosystem_roles": [
-      "manufacturer"
-    ],
-    "company_types": [
-      "public"
-    ],
-    "related_company_slugs": [
-      "coreweave",
-      "lambda",
-      "arista-networks",
-      "cologix"
-    ],
-    "dependency_category_slugs": [
-      "high-density-rack-power",
-      "liquid-cooling"
-    ],
-    "often_used_with_category_slugs": [
-      "ai-colocation-gpu-hosting",
-      "network-fabric-and-connectivity"
-    ],
-    "evidence_urls": [
-      "https://www.nvidia.com/en-us/networking/products/",
-      "https://www.nvidia.com/en-us/networking/products/ethernet/"
-    ],
-    "ingestion_notes": "Validated in Wave 1 evidence sweep; use networking unit naming to make AI fabric role explicit."
-  },
-  {
-    "slug": "commscope",
-    "name": "CommScope",
-    "website_url": "https://www.commscope.com",
-    "headline": "Structured cabling, fiber connectivity, and physical network infrastructure partner for modern data centers and high-capacity compute environments.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "network-fabric-and-connectivity",
-      "construction-and-integration",
-      "edge-micro-data-centers"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "APAC",
-      "Middle East"
-    ],
-    "deployment_types": [
-      "Enterprise",
-      "Colocation",
-      "Hyperscale"
-    ],
-    "buyer_types": [
-      "Network teams",
-      "Data center operators",
-      "Integrators"
-    ],
-    "specialties": [
-      "Fiber connectivity",
-      "Structured cabling",
-      "Data center network plant"
-    ],
-    "proof_points": [
-      "CommScope positions data center solutions around end-to-end fiber cabling infrastructure"
-    ],
-    "featured_capabilities": [
-      "Physical connectivity design",
-      "Fiber plant support",
-      "Network-density scaling"
-    ],
-    "comparison_notes": [
-      "Improves MDC authority by covering the deployable physical layer beneath logical network fabrics"
-    ],
-    "hq": "Hickory, North Carolina, USA",
-    "service_area": "Global",
-    "project_scale": "Rack to campus",
-    "subcategories": [],
-    "tags": [
-      "fiber",
-      "structured-cabling",
-      "data-center-connectivity"
-    ],
-    "infrastructure_types": [
-      "networking",
-      "facility"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "hyperscale"
-    ],
-    "ecosystem_roles": [
-      "manufacturer"
-    ],
-    "company_types": [
-      "public"
-    ],
-    "related_company_slugs": [
-      "corning",
-      "fs-com",
-      "arista-networks"
-    ],
-    "dependency_category_slugs": [
-      "construction-and-integration"
-    ],
-    "often_used_with_category_slugs": [
-      "network-fabric-and-connectivity",
-      "ai-colocation-gpu-hosting"
-    ],
-    "evidence_urls": [
-      "https://www.commscope.com/solutions/data-center/",
-      "https://www.commscope.com/network-type/data-centers/"
-    ],
-    "ingestion_notes": "Validated in Wave 1 evidence sweep with direct data-center solution evidence."
-  },
-  {
-    "slug": "fs-com",
-    "name": "FS",
-    "website_url": "https://www.fs.com",
-    "headline": "Optics, transceivers, switching, and structured connectivity supplier that reflects how many buyers actually source data center network hardware.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "network-fabric-and-connectivity",
-      "supply-chain-and-logistics",
-      "high-density-rack-power"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "APAC"
-    ],
-    "deployment_types": [
-      "Enterprise",
-      "Colocation",
-      "AI"
-    ],
-    "buyer_types": [
-      "Network operators",
-      "Integrators",
-      "Infrastructure buyers"
-    ],
-    "specialties": [
-      "Transceivers",
-      "Structured connectivity",
-      "Data center switching"
-    ],
-    "proof_points": [
-      "FS markets AI infrastructure, data center networking, and high-density modular cabling"
-    ],
-    "featured_capabilities": [
-      "Optics sourcing",
-      "Network supply-chain support",
-      "Physical connectivity kits"
-    ],
-    "comparison_notes": [
-      "Useful not because it is glamorous, but because it mirrors real sourcing behavior in the field"
-    ],
-    "hq": "Wilmington, Delaware, USA",
-    "service_area": "Global",
-    "project_scale": "Component to row",
-    "subcategories": [],
-    "tags": [
-      "optics",
-      "transceivers",
-      "network-supply"
-    ],
-    "infrastructure_types": [
-      "networking",
-      "logistics"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "regional"
-    ],
-    "ecosystem_roles": [
-      "distributor"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "graybar",
-      "commscope",
-      "arista-networks"
-    ],
-    "dependency_category_slugs": [
-      "supply-chain-and-logistics"
-    ],
-    "often_used_with_category_slugs": [
-      "network-fabric-and-connectivity"
-    ],
-    "evidence_urls": [
-      "https://www.fs.com",
-      "https://www.fs.com/c/data-center-1114"
-    ],
-    "ingestion_notes": "Validated in Wave 1 evidence sweep; use brand FS with slug fs-com."
-  },
-  {
-    "slug": "megaport",
-    "name": "Megaport",
-    "website_url": "https://www.megaport.com",
-    "headline": "Network-as-a-service and cloud interconnection platform that connects colocation, cloud, and distributed infrastructure ecosystems.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "network-fabric-and-connectivity",
-      "ai-colocation-gpu-hosting",
-      "monitoring-and-controls"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "APAC"
-    ],
-    "deployment_types": [
-      "Colocation",
-      "Enterprise",
-      "AI"
-    ],
-    "buyer_types": [
-      "Network architects",
-      "Cloud infrastructure teams",
-      "Colocation buyers"
-    ],
-    "specialties": [
-      "Cloud interconnection",
-      "NaaS",
-      "Global connectivity"
-    ],
-    "proof_points": [
-      "Megaport positions compute, network, and storage on demand from one platform"
-    ],
-    "featured_capabilities": [
-      "Cloud on-ramps",
-      "Interconnection orchestration",
-      "Elastic connectivity"
-    ],
-    "comparison_notes": [
-      "Adds service-layer connectivity realism rather than another passive operator listing"
-    ],
-    "hq": "Brisbane, Australia",
-    "service_area": "Global",
-    "project_scale": "Single site to multi-region",
-    "subcategories": [],
-    "tags": [
-      "interconnection",
-      "naas",
-      "cloud-connectivity"
-    ],
-    "infrastructure_types": [
-      "networking",
-      "controls"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "regional"
-    ],
-    "ecosystem_roles": [
-      "service_provider"
-    ],
-    "company_types": [
-      "public"
-    ],
-    "related_company_slugs": [
-      "cologix",
-      "coreweave",
-      "lambda"
-    ],
-    "dependency_category_slugs": [
-      "network-fabric-and-connectivity"
-    ],
-    "often_used_with_category_slugs": [
-      "ai-colocation-gpu-hosting",
-      "site-selection-and-land-strategy"
-    ],
-    "evidence_urls": [
-      "https://www.megaport.com",
-      "https://www.megaport.com/platform/"
-    ],
-    "ingestion_notes": "Validated in Wave 1 evidence sweep as interconnection/service-fabric layer."
-  },
-  {
-    "slug": "coreweave",
-    "name": "CoreWeave",
-    "website_url": "https://www.coreweave.com",
-    "headline": "AI-native cloud operator delivering GPU infrastructure and managed compute capacity for training and inference workloads.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "ai-colocation-gpu-hosting",
-      "network-fabric-and-connectivity",
-      "high-density-rack-power"
-    ],
-    "regions": [
-      "North America",
-      "Europe"
-    ],
-    "deployment_types": [
-      "AI",
-      "HPC",
-      "Hyperscale"
-    ],
-    "buyer_types": [
-      "Model builders",
-      "AI teams",
-      "GPU buyers"
-    ],
-    "specialties": [
-      "GPU cloud",
-      "Managed AI infrastructure",
-      "Cluster capacity"
-    ],
-    "proof_points": [
-      "CoreWeave positions itself as the essential cloud for AI"
-    ],
-    "featured_capabilities": [
-      "Managed GPU capacity",
-      "AI-native cloud",
-      "High-performance clusters"
-    ],
-    "comparison_notes": [
-      "A core authority anchor for the supply side of AI infrastructure demand"
-    ],
-    "hq": "Roseland, New Jersey, USA",
-    "service_area": "North America and Europe",
-    "project_scale": "Cluster to hyperscale",
-    "subcategories": [
-      "managed-ai-colocation"
-    ],
-    "tags": [
-      "gpu-cloud",
-      "ai-infrastructure"
-    ],
-    "infrastructure_types": [
-      "compute",
-      "networking"
-    ],
-    "focus_areas": [
-      "ai"
-    ],
-    "scale_focus": [
-      "hyperscale",
-      "enterprise"
-    ],
-    "ecosystem_roles": [
-      "operator"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "lambda",
-      "fluidstack",
-      "nvidia-networking"
-    ],
-    "dependency_category_slugs": [
-      "network-fabric-and-connectivity",
-      "high-density-rack-power"
-    ],
-    "often_used_with_category_slugs": [
-      "liquid-cooling",
-      "site-selection-and-land-strategy"
-    ],
-    "evidence_urls": [
-      "https://www.coreweave.com",
-      "https://www.coreweave.com/why-coreweave"
-    ],
-    "ingestion_notes": "Validated in Wave 1 evidence sweep; use current homepage and why-CoreWeave pages as evidence."
-  },
-  {
-    "slug": "lambda",
-    "name": "Lambda",
-    "website_url": "https://lambda.ai",
-    "headline": "AI cloud platform delivering GPU infrastructure, managed clusters, and high-density AI factory systems for model training and inference.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "ai-colocation-gpu-hosting",
-      "network-fabric-and-connectivity",
-      "high-density-rack-power"
-    ],
-    "regions": [
-      "North America"
-    ],
-    "deployment_types": [
-      "AI",
-      "HPC",
-      "Enterprise"
-    ],
-    "buyer_types": [
-      "AI labs",
-      "Model builders",
-      "Enterprise AI teams"
-    ],
-    "specialties": [
-      "GPU cloud",
-      "Managed clusters",
-      "AI factory systems"
-    ],
-    "proof_points": [
-      "Lambda markets AI cloud infrastructure and managed AI systems built around NVIDIA GPUs"
-    ],
-    "featured_capabilities": [
-      "Elastic GPU instances",
-      "Cluster management",
-      "Dense AI systems"
-    ],
-    "comparison_notes": [
-      "Important because it strengthens the real operator set rather than only colocation incumbents"
-    ],
-    "hq": "San Jose, California, USA",
-    "service_area": "North America",
-    "project_scale": "Single GPU to large-scale clusters",
-    "subcategories": [
-      "managed-ai-colocation"
-    ],
-    "tags": [
-      "gpu-cloud",
-      "managed-ai"
-    ],
-    "infrastructure_types": [
-      "compute",
-      "power",
-      "networking"
-    ],
-    "focus_areas": [
-      "ai"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "hyperscale"
-    ],
-    "ecosystem_roles": [
-      "operator"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "coreweave",
-      "fluidstack",
-      "nvidia-networking"
-    ],
-    "dependency_category_slugs": [
-      "network-fabric-and-connectivity",
-      "high-density-rack-power",
-      "liquid-cooling"
-    ],
-    "often_used_with_category_slugs": [
-      "ai-colocation-gpu-hosting"
-    ],
-    "evidence_urls": [
-      "https://lambda.ai",
-      "https://lambda.ai/cloud"
-    ],
-    "ingestion_notes": "Validated in Wave 1 evidence sweep; keep brand name simply Lambda."
-  },
-  {
-    "slug": "fluidstack",
-    "name": "Fluidstack",
-    "website_url": "https://fluidstack.io",
-    "headline": "Frontier AI infrastructure company building and operating large-scale compute capacity and gigawatt-scale cluster programs.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "ai-colocation-gpu-hosting",
-      "network-fabric-and-connectivity",
-      "site-selection-and-land-strategy"
-    ],
-    "regions": [
-      "North America",
-      "Europe"
-    ],
-    "deployment_types": [
-      "AI",
-      "Hyperscale",
-      "Campus"
-    ],
-    "buyer_types": [
-      "Frontier AI labs",
-      "Compute platform teams"
-    ],
-    "specialties": [
-      "GPU cloud",
-      "Large-scale AI clusters",
-      "Capacity buildout"
-    ],
-    "proof_points": [
-      "Fluidstack explicitly frames itself around frontier AI compute and gigawatt-scale clusters"
-    ],
-    "featured_capabilities": [
-      "Large AI cluster delivery",
-      "Managed compute capacity",
-      "Infrastructure scaling"
-    ],
-    "comparison_notes": [
-      "Strengthens the modern AI supply side with a less-generic, high-signal operator"
-    ],
-    "hq": "London, UK",
-    "service_area": "Global",
-    "project_scale": "Cluster to gigawatt-scale campus",
-    "subcategories": [
-      "managed-ai-colocation"
-    ],
-    "tags": [
-      "frontier-ai",
-      "gpu-cloud"
-    ],
-    "infrastructure_types": [
-      "compute",
-      "networking",
-      "facility"
-    ],
-    "focus_areas": [
-      "ai"
-    ],
-    "scale_focus": [
-      "hyperscale",
-      "enterprise"
-    ],
-    "ecosystem_roles": [
-      "operator"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "coreweave",
-      "lambda",
-      "colovore"
-    ],
-    "dependency_category_slugs": [
-      "network-fabric-and-connectivity",
-      "site-selection-and-land-strategy"
-    ],
-    "often_used_with_category_slugs": [
-      "high-density-rack-power",
-      "liquid-cooling"
-    ],
-    "evidence_urls": [
-      "https://fluidstack.io",
-      "https://www.fluidstack.io"
-    ],
-    "ingestion_notes": "Validated in Wave 1 evidence sweep; canonical site is fluidstack.io."
-  },
-  {
-    "slug": "colovore",
-    "name": "Colovore",
-    "website_url": "https://www.colovore.com",
-    "headline": "High-density colocation provider built for GPU, DGX, and dense AI deployments that need modern power and cooling support.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "ai-colocation-gpu-hosting",
-      "high-density-rack-power",
-      "liquid-cooling"
-    ],
-    "regions": [
-      "North America"
-    ],
-    "deployment_types": [
-      "AI",
-      "Enterprise",
-      "Colocation"
-    ],
-    "buyer_types": [
-      "AI operators",
-      "Dense compute teams",
-      "Enterprise GPU buyers"
-    ],
-    "specialties": [
-      "High-density colocation",
-      "GPU deployments",
-      "DGX-ready environments"
-    ],
-    "proof_points": [
-      "Colovore highlights NVIDIA DGX Ready status and dense GPU operational footprint"
-    ],
-    "featured_capabilities": [
-      "Dense rack support",
-      "GPU-ready colocation",
-      "AI deployment hosting"
-    ],
-    "comparison_notes": [
-      "More useful to MDC than another generic operator because density is the whole point"
-    ],
-    "hq": "Santa Clara, California, USA",
-    "service_area": "North America",
-    "project_scale": "Rack to cage",
-    "subcategories": [
-      "managed-ai-colocation"
-    ],
-    "tags": [
-      "gpu-colo",
-      "high-density-colocation"
-    ],
-    "infrastructure_types": [
-      "compute",
-      "power",
-      "cooling"
-    ],
-    "focus_areas": [
-      "ai"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "regional"
-    ],
-    "ecosystem_roles": [
-      "operator"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "coreweave",
-      "lambda",
-      "nvidia-networking"
-    ],
-    "dependency_category_slugs": [
-      "high-density-rack-power",
-      "liquid-cooling"
-    ],
-    "often_used_with_category_slugs": [
-      "network-fabric-and-connectivity"
-    ],
-    "evidence_urls": [
-      "https://www.colovore.com",
-      "https://www.colovore.com"
-    ],
-    "ingestion_notes": "Validated in Wave 1 evidence sweep with explicit DGX and dense compute positioning."
-  },
-  {
-    "slug": "deugro",
-    "name": "deugro",
-    "website_url": "https://deugro.com",
-    "headline": "Project logistics and freight forwarding specialist for oversized industrial systems, modular infrastructure, and complex delivery programs.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "supply-chain-and-logistics",
-      "infrastructure-logistics",
-      "modular-prefab"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "Middle East",
-      "APAC"
-    ],
-    "deployment_types": [
-      "Industrial",
-      "Modular",
-      "Campus"
-    ],
-    "buyer_types": [
-      "Fabricators",
-      "Developers",
-      "Program teams"
-    ],
-    "specialties": [
-      "Project logistics",
-      "Heavy transport coordination",
-      "Turnkey freight management"
-    ],
-    "proof_points": [
-      "deugro positions itself as an expert in freight forwarding and project logistics for challenging projects worldwide"
-    ],
-    "featured_capabilities": [
-      "Oversized cargo planning",
-      "Modular infrastructure transport",
-      "Schedule-critical logistics"
-    ],
-    "comparison_notes": [
-      "Adds the physical movement layer that makes prefab and power categories more believable"
-    ],
-    "hq": "Houston, Texas, USA",
-    "service_area": "Global",
-    "project_scale": "Component to megaproject",
-    "subcategories": [
-      "infrastructure-logistics"
-    ],
-    "tags": [
-      "project-logistics",
-      "heavy-transport"
-    ],
-    "infrastructure_types": [
-      "logistics",
-      "services"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "regional",
-      "hyperscale"
-    ],
-    "ecosystem_roles": [
-      "service_provider"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "mammoet",
-      "barnhart-crane-rigging",
-      "dhl-industrial-projects"
-    ],
-    "dependency_category_slugs": [
-      "prefabricated-power-blocks",
-      "modular-substations"
-    ],
-    "often_used_with_category_slugs": [
-      "construction-and-integration",
-      "field-services-and-maintenance"
-    ],
-    "evidence_urls": [
-      "https://deugro.com/",
-      "https://deugro.com/about-us/"
-    ],
-    "ingestion_notes": "Validated in Wave 1 evidence sweep; preserve lowercase brand styling."
-  },
-  {
-    "slug": "graybar",
-    "name": "Graybar",
-    "website_url": "https://www.graybar.com",
-    "headline": "Electrical, datacom, and industrial distribution channel with supply-chain services relevant to network, power, and on-site infrastructure builds.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "supply-chain-and-logistics",
-      "power-and-electrical",
-      "network-fabric-and-connectivity"
-    ],
-    "regions": [
-      "North America"
-    ],
-    "deployment_types": [
-      "Enterprise",
-      "Industrial",
-      "Colocation"
-    ],
-    "buyer_types": [
-      "Electrical teams",
-      "Network teams",
-      "Contractors"
-    ],
-    "specialties": [
-      "Electrical distribution",
-      "Datacom supply",
-      "Advanced supply-chain services"
-    ],
-    "proof_points": [
-      "Graybar explicitly positions itself around electrical supply, datacom, industrial equipment, and supply-chain services"
-    ],
-    "featured_capabilities": [
-      "Procurement support",
-      "On-site supply services",
-      "Electrical and network sourcing"
-    ],
-    "comparison_notes": [
-      "Important because sourcing channels are part of the ecosystem moat, not an afterthought"
-    ],
-    "hq": "St. Louis, Missouri, USA",
-    "service_area": "North America",
-    "project_scale": "Component to site program",
-    "subcategories": [],
-    "tags": [
-      "distribution",
-      "datacom-supply",
-      "electrical-channel"
-    ],
-    "infrastructure_types": [
-      "logistics",
-      "power",
-      "networking"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "regional",
-      "enterprise"
-    ],
-    "ecosystem_roles": [
-      "distributor"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "fs-com",
-      "wesco",
-      "commscope"
-    ],
-    "dependency_category_slugs": [
-      "construction-and-integration",
-      "field-services-and-maintenance"
-    ],
-    "often_used_with_category_slugs": [
-      "power-and-electrical",
-      "network-fabric-and-connectivity"
-    ],
-    "evidence_urls": [
-      "https://www.graybar.com",
-      "https://www.graybar.com/industry-solutions"
-    ],
-    "ingestion_notes": "Validated in Wave 1 evidence sweep; good long-tail channel add."
-  },
-  {
-    "slug": "rf-code",
-    "name": "RF Code",
-    "website_url": "https://www.rfcode.com",
-    "headline": "Data center asset tracking, environmental monitoring, and power visibility provider for real-time operational awareness.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "dcim-and-observability",
-      "monitoring-and-controls",
-      "commissioning-and-operations"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "APAC"
-    ],
-    "deployment_types": [
-      "Enterprise",
-      "Colocation",
-      "AI"
-    ],
-    "buyer_types": [
-      "Operations teams",
-      "Facilities managers",
-      "Capacity planners"
-    ],
-    "specialties": [
-      "Asset tracking",
-      "Environmental monitoring",
-      "Power visibility"
-    ],
-    "proof_points": [
-      "RF Code explicitly positions around real-time asset tracking and data center environmental monitoring"
-    ],
-    "featured_capabilities": [
-      "Facility telemetry",
-      "Environmental sensing",
-      "Operational visibility"
-    ],
-    "comparison_notes": [
-      "A high-value observability add because it improves practical operating realism, not just vendor breadth"
-    ],
-    "hq": "Austin, Texas, USA",
-    "service_area": "Global",
-    "project_scale": "Single site to portfolio",
-    "subcategories": [
-      "dcim-and-observability"
-    ],
-    "tags": [
-      "environmental-monitoring",
-      "asset-tracking"
-    ],
-    "infrastructure_types": [
-      "controls",
-      "services"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "regional"
-    ],
-    "ecosystem_roles": [
-      "developer"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "akcp",
-      "sunbird-software",
-      "nlyte"
-    ],
-    "dependency_category_slugs": [
-      "monitoring-and-controls",
-      "power-monitoring-and-energy-management"
-    ],
-    "often_used_with_category_slugs": [
-      "commissioning-and-operations",
-      "field-services-and-maintenance"
-    ],
-    "evidence_urls": [
-      "https://www.rfcode.com",
-      "https://www.rfcode.com/data-center-environmental-monitoring/"
-    ],
-    "ingestion_notes": "Validated in Wave 1 evidence sweep with direct data-center observability evidence."
-  },
-  {
-    "slug": "uptime-institute",
-    "name": "Uptime Institute",
-    "website_url": "https://uptimeinstitute.com",
-    "headline": "Digital infrastructure authority providing certification, advisory, and operational guidance for resilient data center and AI infrastructure programs.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "commissioning-and-operations",
-      "epc-and-commissioning",
-      "site-selection-and-land-strategy"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "APAC",
-      "Middle East"
-    ],
-    "deployment_types": [
-      "Hyperscale",
-      "Enterprise",
-      "AI"
-    ],
-    "buyer_types": [
-      "Developers",
-      "Operators",
-      "Program leads"
-    ],
-    "specialties": [
-      "Certification",
-      "Operational advisory",
-      "Resilience standards"
-    ],
-    "proof_points": [
-      "Uptime positions itself around digital infrastructure authority and AI infrastructure advisory"
-    ],
-    "featured_capabilities": [
-      "Tier certification",
-      "Operational assessment",
-      "AI infrastructure advisory"
-    ],
-    "comparison_notes": [
-      "Adds governance and mission-critical legitimacy to the graph, especially around AI capacity buildouts"
-    ],
-    "hq": "New York, New York, USA",
-    "service_area": "Global",
-    "project_scale": "Single facility to global fleet",
-    "subcategories": [],
-    "tags": [
-      "tier-certification",
-      "mission-critical-advisory"
-    ],
-    "infrastructure_types": [
-      "services"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "hyperscale"
-    ],
-    "ecosystem_roles": [
-      "service_provider"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "jensen-hughes",
-      "bureau-veritas",
-      "ul-solutions"
-    ],
-    "dependency_category_slugs": [
-      "power-and-electrical",
-      "liquid-cooling"
-    ],
-    "often_used_with_category_slugs": [
-      "commissioning-and-operations",
-      "site-selection-and-land-strategy"
-    ],
-    "evidence_urls": [
-      "https://uptimeinstitute.com",
-      "https://uptimeinstitute.com/ai-infrastructure-advisory/"
-    ],
-    "ingestion_notes": "Validated in Wave 1 evidence sweep."
-  },
-  {
-    "slug": "cologix",
-    "name": "Cologix",
-    "website_url": "https://cologix.com",
-    "headline": "Carrier-neutral colocation and interconnection operator with connectivity ecosystems across North American edge and core markets.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "network-fabric-and-connectivity",
-      "ai-colocation-gpu-hosting",
-      "site-selection-and-land-strategy"
-    ],
-    "regions": [
-      "North America"
-    ],
-    "deployment_types": [
-      "Colocation",
-      "Enterprise",
-      "AI"
-    ],
-    "buyer_types": [
-      "Colocation buyers",
-      "Connectivity teams",
-      "Cloud-adjacent operators"
-    ],
-    "specialties": [
-      "Carrier neutrality",
-      "Interconnection",
-      "Edge-capacity ecosystems"
-    ],
-    "proof_points": [
-      "Cologix explicitly markets colocation, hyperscale edge, and interconnection solutions"
-    ],
-    "featured_capabilities": [
-      "Carrier ecosystems",
-      "Interconnection hubs",
-      "Edge market reach"
-    ],
-    "comparison_notes": [
-      "Useful because it deepens connectivity-rich operator coverage rather than repeating generic capacity names"
-    ],
-    "hq": "Denver, Colorado, USA",
-    "service_area": "North America",
-    "project_scale": "Site to regional portfolio",
-    "subcategories": [],
-    "tags": [
-      "carrier-neutral",
-      "interconnection",
-      "edge-colocation"
-    ],
-    "infrastructure_types": [
-      "networking",
-      "compute",
-      "facility"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "regional",
-      "enterprise"
-    ],
-    "ecosystem_roles": [
-      "operator"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "megaport",
-      "digital-realty",
-      "equinix"
-    ],
-    "dependency_category_slugs": [
-      "network-fabric-and-connectivity"
-    ],
-    "often_used_with_category_slugs": [
-      "ai-colocation-gpu-hosting",
-      "managed-ai-colocation"
-    ],
-    "evidence_urls": [
-      "https://cologix.com",
-      "https://cologix.com/connectivity/"
-    ],
-    "ingestion_notes": "Validated in Wave 1 evidence sweep; connectivity page is the key supporting citation."
-  },
-  {
-    "slug": "akcp",
-    "name": "AKCP",
-    "website_url": "https://www.akcp.com",
-    "headline": "Sensor-driven data center monitoring and thermal optimization platform focused on environmental visibility and facility efficiency.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "dcim-and-observability",
-      "monitoring-and-controls",
-      "commissioning-and-operations"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "APAC"
-    ],
-    "deployment_types": [
-      "Enterprise",
-      "Colocation",
-      "AI"
-    ],
-    "buyer_types": [
-      "Facilities teams",
-      "Operators",
-      "Thermal managers"
-    ],
-    "specialties": [
-      "Environmental sensing",
-      "Thermal optimization",
-      "Facility monitoring"
-    ],
-    "proof_points": [
-      "AKCP directly positions around data center monitoring and thermal optimization"
-    ],
-    "featured_capabilities": [
-      "Sensor telemetry",
-      "Thermal visibility",
-      "PUE-oriented monitoring"
-    ],
-    "comparison_notes": [
-      "Strengthens the thin observability layer with a practical facility-monitoring specialist"
-    ],
-    "hq": "Bangkok, Thailand",
-    "service_area": "Global",
-    "project_scale": "Rack to site",
-    "subcategories": [
-      "dcim-and-observability"
-    ],
-    "tags": [
-      "sensors",
-      "thermal-monitoring",
-      "dcim"
-    ],
-    "infrastructure_types": [
-      "controls"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "regional"
-    ],
-    "ecosystem_roles": [
-      "manufacturer"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "rf-code",
-      "sunbird-software",
-      "nlyte"
-    ],
-    "dependency_category_slugs": [
-      "monitoring-and-controls",
-      "power-monitoring-and-energy-management"
-    ],
-    "often_used_with_category_slugs": [
-      "commissioning-and-operations",
-      "hvac-and-thermal-rejection"
-    ],
-    "evidence_urls": [
-      "https://www.akcp.com",
-      "https://www.akcp.com/solutions/data-center-monitoring/"
-    ],
-    "ingestion_notes": "Validated in Wave 1 evidence sweep."
-  },
-  {
-    "slug": "arista-networks",
-    "name": "Arista Networks",
-    "website_url": "https://www.arista.com",
-    "headline": "Data center and AI networking platform provider focused on high-performance Ethernet fabrics for large-scale compute environments.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "network-fabric-and-connectivity",
-      "monitoring-and-controls",
-      "high-density-rack-power"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "APAC"
-    ],
-    "deployment_types": [
-      "AI",
-      "Hyperscale",
-      "Enterprise"
-    ],
-    "buyer_types": [
-      "Network architects",
-      "AI infrastructure teams",
-      "Cloud operators"
-    ],
-    "specialties": [
-      "AI networking",
-      "Ethernet fabrics",
-      "Cloud networking"
-    ],
-    "proof_points": [
-      "Arista directly markets AI networking and data-driven cloud networking for large data center and computing environments"
-    ],
-    "featured_capabilities": [
-      "AI fabric design",
-      "Cloud networking",
-      "Ethernet switching"
-    ],
-    "comparison_notes": [
-      "Essential network anchor for MDC because serious AI infrastructure depends on fabric quality, not just power and cooling"
-    ],
-    "hq": "Santa Clara, California, USA",
-    "service_area": "Global",
-    "project_scale": "Rack to hyperscale fabric",
-    "subcategories": [],
-    "tags": [
-      "ai-networking",
-      "ethernet-fabric",
-      "cloud-networking"
-    ],
-    "infrastructure_types": [
-      "networking",
-      "controls"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "hyperscale",
-      "enterprise"
-    ],
-    "ecosystem_roles": [
-      "manufacturer"
-    ],
-    "company_types": [
-      "public"
-    ],
-    "related_company_slugs": [
-      "nvidia-networking",
-      "commscope",
-      "coreweave"
-    ],
-    "dependency_category_slugs": [
-      "network-fabric-and-connectivity"
-    ],
-    "often_used_with_category_slugs": [
-      "ai-colocation-gpu-hosting",
-      "high-density-rack-power"
-    ],
-    "evidence_urls": [
-      "https://www.arista.com/en/solutions/ai-networking",
-      "https://www.arista.com/en/"
-    ],
-    "ingestion_notes": "Final-clean Wave 1 approved set; evidence and canonical naming validated."
-  },
-  {
-    "slug": "lenels2",
-    "name": "LenelS2",
-    "website_url": "https://buildings.honeywell.com/us/en/brands/our-brands/lenels2",
-    "headline": "Physical security, access control, and video management platform relevant to critical-facility operations, compliance, and secure infrastructure environments.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "monitoring-and-controls",
-      "field-services-and-maintenance",
-      "commissioning-and-operations"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "APAC"
-    ],
-    "deployment_types": [
-      "Enterprise",
-      "Mission-critical",
-      "Campus"
-    ],
-    "buyer_types": [
-      "Facility operators",
-      "Security teams",
-      "Critical-environment managers"
-    ],
-    "specialties": [
-      "Access control",
-      "Video management",
-      "Mobile credentials"
-    ],
-    "proof_points": [
-      "LenelS2 positions itself as a leader in advanced physical security solutions"
-    ],
-    "featured_capabilities": [
-      "Access control systems",
-      "Security orchestration",
-      "Facility security operations"
-    ],
-    "comparison_notes": [
-      "Taxonomy fit is not perfect, but it meaningfully expands the under-modeled physical security layer around critical environments"
-    ],
-    "hq": "Pittsford, New York, USA",
-    "service_area": "Global",
-    "project_scale": "Single facility to portfolio",
-    "subcategories": [
-      "dcim-and-observability"
-    ],
-    "tags": [
-      "physical-security",
-      "access-control",
-      "video-management"
-    ],
-    "infrastructure_types": [
-      "controls",
-      "services"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "regional"
-    ],
-    "ecosystem_roles": [
-      "developer"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "uptime-institute",
-      "jensen-hughes",
-      "rf-code"
-    ],
-    "dependency_category_slugs": [
-      "monitoring-and-controls"
-    ],
-    "often_used_with_category_slugs": [
-      "commissioning-and-operations",
-      "field-services-and-maintenance"
-    ],
-    "evidence_urls": [
-      "https://buildings.honeywell.com/us/en/brands/our-brands/lenels2",
-      "https://buildings.honeywell.com/us/en/brands/our-brands/lenels2/security-solutions"
-    ],
-    "ingestion_notes": "Approved after targeted validation cleanup; canonical site is Honeywell-hosted."
-  },
-  {
-    "slug": "opengear",
-    "name": "Opengear",
-    "website_url": "https://opengear.com",
-    "headline": "Out-of-band management and network resilience provider for distributed, remote, and mission-critical infrastructure operations.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "network-fabric-and-connectivity",
-      "monitoring-and-controls",
-      "commissioning-and-operations"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "APAC"
-    ],
-    "deployment_types": [
-      "Enterprise",
-      "Mission-critical",
-      "Edge"
-    ],
-    "buyer_types": [
-      "Network operations teams",
-      "Infrastructure operators",
-      "Remote site managers"
-    ],
-    "specialties": [
-      "Out-of-band management",
-      "Network resilience",
-      "Remote infrastructure access"
-    ],
-    "proof_points": [
-      "Opengear explicitly positions around out-of-band management and network resilience"
-    ],
-    "featured_capabilities": [
-      "Resilient remote access",
-      "OOB orchestration",
-      "Operational continuity"
-    ],
-    "comparison_notes": [
-      "Useful long-tail add because real distributed infrastructure needs resilience tooling, not just primary path networking"
-    ],
-    "hq": "Edison, New Jersey, USA",
-    "service_area": "Global",
-    "project_scale": "Single site to distributed fleet",
-    "subcategories": [],
-    "tags": [
-      "out-of-band",
-      "network-resilience",
-      "remote-access"
-    ],
-    "infrastructure_types": [
-      "networking",
-      "controls"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "regional"
-    ],
-    "ecosystem_roles": [
-      "manufacturer"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "megaport",
-      "arista-networks",
-      "rf-code"
-    ],
-    "dependency_category_slugs": [
-      "network-fabric-and-connectivity",
-      "monitoring-and-controls"
-    ],
-    "often_used_with_category_slugs": [
-      "commissioning-and-operations",
-      "field-services-and-maintenance"
-    ],
-    "evidence_urls": [
-      "https://opengear.com",
-      "https://opengear.com/solutions-healthcare/"
-    ],
-    "ingestion_notes": "Approved after targeted validation; second evidence URL is imperfectly routed but still demonstrates operational connectivity/resilience use cases."
-  },
-  {
-    "slug": "jensen-hughes",
-    "name": "Jensen Hughes",
-    "website_url": "https://www.jensenhughes.com",
-    "headline": "Safety, security, and risk consulting firm with mission-critical relevance across code compliance, fire protection, and secure facility delivery.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "commissioning-and-operations",
-      "epc-and-commissioning",
-      "site-selection-and-land-strategy"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "Middle East",
-      "APAC"
-    ],
-    "deployment_types": [
-      "Mission-critical",
-      "Campus",
-      "Enterprise"
-    ],
-    "buyer_types": [
-      "Developers",
-      "Operators",
-      "Facility teams"
-    ],
-    "specialties": [
-      "Fire engineering",
-      "Code compliance",
-      "Risk consulting"
-    ],
-    "proof_points": [
-      "Jensen Hughes site content explicitly references mission critical facilities alongside safety, security, and risk consulting"
-    ],
-    "featured_capabilities": [
-      "Mission-critical advisory",
-      "Fire/life safety planning",
-      "Compliance support"
-    ],
-    "comparison_notes": [
-      "Adds a non-obvious but high-value compliance and risk layer that makes the ecosystem feel more complete"
-    ],
-    "hq": "Baltimore, Maryland, USA",
-    "service_area": "Global",
-    "project_scale": "Single facility to portfolio",
-    "subcategories": [],
-    "tags": [
-      "risk-consulting",
-      "fire-engineering",
-      "mission-critical"
-    ],
-    "infrastructure_types": [
-      "services"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "regional"
-    ],
-    "ecosystem_roles": [
-      "service_provider"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "uptime-institute",
-      "bureau-veritas",
-      "lenels2"
-    ],
-    "dependency_category_slugs": [
-      "commissioning-and-operations"
-    ],
-    "often_used_with_category_slugs": [
-      "epc-and-commissioning",
-      "site-selection-and-land-strategy"
-    ],
-    "evidence_urls": [
-      "https://www.jensenhughes.com",
-      "https://www.jensenhughes.com/industries/data-centers"
-    ],
-    "ingestion_notes": "Approved after targeted validation cleanup; data-centers path should be rechecked later but current evidence is sufficient."
-  },
-  {
-    "slug": "bureau-veritas",
-    "name": "Bureau Veritas",
-    "website_url": "https://group.bureauveritas.com",
-    "headline": "Testing, inspection, and certification organization relevant to infrastructure quality assurance, compliance, and data center delivery governance.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "epc-and-commissioning",
-      "commissioning-and-operations",
-      "sustainability-and-energy-strategy"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "Middle East",
-      "APAC",
-      "LATAM"
-    ],
-    "deployment_types": [
-      "Enterprise",
-      "Industrial",
-      "Hyperscale"
-    ],
-    "buyer_types": [
-      "Developers",
-      "Operators",
-      "Program teams"
-    ],
-    "specialties": [
-      "Inspection",
-      "Certification",
-      "Compliance assurance"
-    ],
-    "proof_points": [
-      "Bureau Veritas market structure explicitly includes Buildings & Infrastructure and Data Centers & Telecommunications"
-    ],
-    "featured_capabilities": [
-      "Independent verification",
-      "Infrastructure assurance",
-      "Cross-market certification"
-    ],
-    "comparison_notes": [
-      "Broad corporate platform, but relevant because credibility in the real world often hinges on inspection and certification layers"
-    ],
-    "hq": "Neuilly-sur-Seine, France",
-    "service_area": "Global",
-    "project_scale": "Single project to global program",
-    "subcategories": [],
-    "tags": [
-      "inspection",
-      "certification",
-      "assurance"
-    ],
-    "infrastructure_types": [
-      "services"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "hyperscale"
-    ],
-    "ecosystem_roles": [
-      "service_provider"
-    ],
-    "company_types": [
-      "public"
-    ],
-    "related_company_slugs": [
-      "uptime-institute",
-      "jensen-hughes",
-      "ul-solutions"
-    ],
-    "dependency_category_slugs": [
-      "epc-and-commissioning"
-    ],
-    "often_used_with_category_slugs": [
-      "commissioning-and-operations",
-      "site-selection-and-land-strategy"
-    ],
-    "evidence_urls": [
-      "https://group.bureauveritas.com",
-      "https://www.bureauveritas.com"
-    ],
-    "ingestion_notes": "Approved after targeted validation cleanup; future enrichment can add a more specific data-center citation."
-  },
-  {
-    "slug": "powersecure",
-    "name": "PowerSecure",
-    "website_url": "https://powersecure.com/",
-    "headline": "Distributed energy and microgrid systems integrator focused on resilient power, controls, and monitored energy infrastructure for mission-critical sites.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "generators-and-microgrids",
-      "power-and-electrical",
-      "microgrid-controls-and-integration"
-    ],
-    "regions": [
-      "North America"
-    ],
-    "deployment_types": [
-      "Enterprise",
-      "Industrial",
-      "Hyperscale"
-    ],
-    "buyer_types": [
-      "Operators",
-      "Utilities",
-      "Developers"
-    ],
-    "specialties": [
-      "Microgrid integration",
-      "Distributed energy infrastructure",
-      "Power monitoring"
-    ],
-    "proof_points": [
-      "PowerSecure describes itself as a leader in powering microgrids and highlights PowerControl monitoring plus distributed energy integration."
-    ],
-    "featured_capabilities": [
-      "Microgrid orchestration",
-      "DER integration",
-      "24/7 monitored power operations"
-    ],
-    "comparison_notes": [
-      "More valuable as a microgrid control-and-integration operator than as a generic generation brand."
-    ],
-    "hq": "Durham, North Carolina, USA",
-    "service_area": "United States",
-    "project_scale": "Commercial to utility-adjacent deployments",
-    "subcategories": [
-      "microgrid-controls-and-integration"
-    ],
-    "tags": [
-      "microgrid",
-      "distributed-energy",
-      "controls"
-    ],
-    "infrastructure_types": [
-      "power",
-      "controls",
-      "services"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "hyperscale"
-    ],
-    "ecosystem_roles": [
-      "integrator",
-      "service_provider"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "scale-microgrids",
-      "asco-power-technologies",
-      "eaton"
-    ],
-    "dependency_category_slugs": [
-      "ups-and-battery-storage"
-    ],
-    "often_used_with_category_slugs": [
-      "site-selection-and-land-strategy",
-      "power-and-electrical"
-    ],
-    "evidence_urls": [
-      "https://powersecure.com/",
-      "https://powersecure.com/?hsLang=en"
-    ],
-    "ingestion_notes": "Sparse-branch correction: added conservatively for microgrid controls depth."
-  },
-  {
-    "slug": "dynapower",
-    "name": "Dynapower",
-    "website_url": "https://dynapower.com/",
-    "headline": "Power conversion and microgrid stability specialist relevant to self-healing, islanded, and energy-storage-backed critical infrastructure environments.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "generators-and-microgrids",
-      "ups-and-battery-storage",
-      "microgrid-controls-and-integration"
-    ],
-    "regions": [
-      "North America"
-    ],
-    "deployment_types": [
-      "Enterprise",
-      "Industrial",
-      "Utility"
-    ],
-    "buyer_types": [
-      "Operators",
-      "Energy teams",
-      "Program teams"
-    ],
-    "specialties": [
-      "Power conversion systems",
-      "Microgrid stability",
-      "Islanded operation"
-    ],
-    "proof_points": [
-      "Dynapower explicitly discusses self-healing microgrid behavior, frequency and voltage response, and reliable islanded operation."
-    ],
-    "featured_capabilities": [
-      "PCS response control",
-      "Grid-forming behavior",
-      "Microgrid fault response"
-    ],
-    "comparison_notes": [
-      "Best positioned as a control-layer and power-conversion specialist rather than a broad electrical OEM."
-    ],
-    "hq": "South Burlington, Vermont, USA",
-    "service_area": "North America with broader project relevance",
-    "project_scale": "Critical power and DER-backed deployments",
-    "subcategories": [
-      "microgrid-controls-and-integration"
-    ],
-    "tags": [
-      "microgrid",
-      "power-conversion",
-      "energy-storage"
-    ],
-    "infrastructure_types": [
-      "power",
-      "controls"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise"
-    ],
-    "ecosystem_roles": [
-      "integrator",
-      "manufacturer"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "scale-microgrids",
-      "fluence",
-      "asco-power-technologies"
-    ],
-    "dependency_category_slugs": [
-      "ups-and-battery-storage"
-    ],
-    "often_used_with_category_slugs": [
-      "power-and-electrical",
-      "sustainability-and-energy-strategy"
-    ],
-    "evidence_urls": [
-      "https://dynapower.com/energy-storage-microgrids/",
-      "https://dynapower.com/"
-    ],
-    "ingestion_notes": "Sparse-branch correction: added conservatively for microgrid controls depth."
-  },
-  {
-    "slug": "coldlogik",
-    "name": "ColdLogik",
-    "website_url": "https://www.coldlogik.com/",
-    "headline": "Rear-door heat exchanger specialist focused on high-density rack cooling and efficient RDHx deployment for AI and data center environments.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "rear-door-direct-to-chip-cooling",
-      "liquid-cooling"
-    ],
-    "regions": [
-      "Europe",
-      "North America"
-    ],
-    "deployment_types": [
-      "Enterprise",
-      "Hyperscale",
-      "HPC"
-    ],
-    "buyer_types": [
-      "Operators",
-      "Facilities teams",
-      "Cooling architects"
-    ],
-    "specialties": [
-      "Rear-door heat exchangers",
-      "Rack-level cooling",
-      "High-density thermal management"
-    ],
-    "proof_points": [
-      "ColdLogik publishes dedicated active and passive rear-door heat exchanger product families for data center cooling."
-    ],
-    "featured_capabilities": [
-      "Active RDHx systems",
-      "Passive RDHx systems",
-      "Rack-adjacent thermal efficiency"
-    ],
-    "comparison_notes": [
-      "A true rear-door specialist and one of the cleanest fits for sparse-branch correction in the current taxonomy."
-    ],
-    "hq": "United Kingdom",
-    "service_area": "International project support",
-    "project_scale": "High-density rack and room deployments",
-    "subcategories": [],
-    "tags": [
-      "rdhx",
-      "rear-door-cooling",
-      "rack-cooling"
-    ],
-    "infrastructure_types": [
-      "cooling"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "hyperscale"
-    ],
-    "ecosystem_roles": [
-      "manufacturer"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "motivair",
-      "nvent-liquid-cooling",
-      "vertiv"
-    ],
-    "dependency_category_slugs": [
-      "liquid-loop-systems"
-    ],
-    "often_used_with_category_slugs": [
-      "high-density-rack-power",
-      "monitoring-and-controls"
-    ],
-    "evidence_urls": [
-      "https://www.coldlogik.com/all-products/rear-door-heat-exchangers",
-      "https://www.legrand.com/datacenter/gb-en/white-space/cooling/rear-door-cooling"
-    ],
-    "ingestion_notes": "Sparse-branch correction: added conservatively to deepen RDHx coverage."
-  },
-  {
-    "slug": "panduit",
-    "name": "Panduit",
-    "website_url": "https://www.panduit.com/",
-    "headline": "Rack and cabinet infrastructure provider with RDHx-integrated high-density cooling pathways for AI-oriented deployments.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "rear-door-direct-to-chip-cooling",
-      "high-density-rack-power"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "APAC",
-      "LATAM"
-    ],
-    "deployment_types": [
-      "Enterprise",
-      "Hyperscale",
-      "AI"
-    ],
-    "buyer_types": [
-      "Operators",
-      "Facilities teams",
-      "Infrastructure teams"
-    ],
-    "specialties": [
-      "Rack integration",
-      "RDHx deployment",
-      "Cabinet infrastructure"
-    ],
-    "proof_points": [
-      "Panduit positions its RDHx solution around FlexFusion cabinet integration and AI workload cooling."
-    ],
-    "featured_capabilities": [
-      "Cabinet-integrated RDHx",
-      "High-density rack deployment",
-      "Cooling integration support"
-    ],
-    "comparison_notes": [
-      "Included conservatively for RDHx deployment realism, not as a broad category-sprawl vendor."
-    ],
-    "hq": "Tinley Park, Illinois, USA",
-    "service_area": "Global",
-    "project_scale": "Rack to enterprise-scale deployments",
-    "subcategories": [],
-    "tags": [
-      "rdhx",
-      "rack-infrastructure",
-      "cabinet-platform"
-    ],
-    "infrastructure_types": [
-      "cooling",
-      "power"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "hyperscale"
-    ],
-    "ecosystem_roles": [
-      "integrator",
-      "manufacturer"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "motivair",
-      "legrand",
-      "nvent-liquid-cooling"
-    ],
-    "dependency_category_slugs": [
-      "liquid-loop-systems"
-    ],
-    "often_used_with_category_slugs": [
-      "high-density-rack-power",
-      "monitoring-and-controls"
-    ],
-    "evidence_urls": [
-      "https://www.panduit.com/en/products/featured-products/rear-door-heat-exchanger.html",
-      "https://www.panduit.com/en/search.html#q=ai%20workload%20data%20centers"
-    ],
-    "ingestion_notes": "Sparse-branch correction: scoped narrowly to RDHx and rack-integration relevance."
-  },
-  {
-    "slug": "innochill",
-    "name": "InnoChill",
-    "website_url": "https://www.innochill.com/",
-    "headline": "Single-phase immersion cooling specialist for high-density AI, HPC, and data center workloads.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "immersion-cooling",
-      "single-phase-immersion",
-      "commissioning-and-operations"
-    ],
-    "regions": [
-      "APAC",
-      "North America"
-    ],
-    "deployment_types": [
-      "AI",
-      "HPC",
-      "Enterprise"
-    ],
-    "buyer_types": [
-      "Operators",
-      "Cooling architects",
-      "Specialized compute teams"
-    ],
-    "specialties": [
-      "Single-phase immersion",
-      "High-density AI cooling",
-      "Dielectric immersion systems"
-    ],
-    "proof_points": [
-      "InnoChill explicitly markets single-phase immersion cooling for AI workloads and data-center-scale deployments."
-    ],
-    "featured_capabilities": [
-      "Single-phase immersion platforms",
-      "100kW+ rack support claims",
-      "Low-PUE cooling path"
-    ],
-    "comparison_notes": [
-      "Added conservatively as a single-phase immersion specialist without broadening into adjacent thermal categories."
-    ],
-    "hq": "China",
-    "service_area": "International project support",
-    "project_scale": "High-density AI and HPC deployments",
-    "subcategories": [
-      "single-phase-immersion"
-    ],
-    "tags": [
-      "single-phase-immersion",
-      "ai-cooling",
-      "dielectric"
-    ],
-    "infrastructure_types": [
-      "cooling"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise"
-    ],
-    "ecosystem_roles": [
-      "manufacturer"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "submer",
-      "green-revolution-cooling",
-      "liquidstack"
-    ],
-    "dependency_category_slugs": [
-      "liquid-loop-systems"
-    ],
-    "often_used_with_category_slugs": [
-      "high-density-rack-power",
-      "field-services-and-maintenance"
-    ],
-    "evidence_urls": [
-      "https://www.innochill.com/innochill-immersion-cooling-ai-workloads-data-centers/",
-      "https://www.innochill.com/innochill-single-phase-immersion-cooling-data-center-hpc-cooling-revolution/"
-    ],
-    "ingestion_notes": "Sparse-branch correction: added conservatively for single-phase immersion depth."
-  },
-  {
-    "slug": "coolcentric",
-    "name": "Coolcentric",
-    "website_url": "https://coolcentric.com/",
-    "headline": "Rear-door heat exchanger and liquid cooling specialist for high-density data center deployments, with active and passive rack-level thermal solutions.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "rear-door-direct-to-chip-cooling",
-      "liquid-cooling"
-    ],
-    "regions": [
-      "North America"
-    ],
-    "deployment_types": [
-      "AI",
-      "HPC",
-      "Enterprise",
-      "Colocation"
-    ],
-    "buyer_types": [
-      "Operators",
-      "Mechanical teams",
-      "High-density infrastructure planners"
-    ],
-    "specialties": [
-      "Rear-door heat exchangers",
-      "Rack-level liquid cooling",
-      "High-density thermal management"
-    ],
-    "proof_points": [
-      "Official product line explicitly includes rear door heat exchangers for liquid-cooled server rack environments"
-    ],
-    "featured_capabilities": [
-      "Active and passive RDHx systems",
-      "Rack-level heat capture",
-      "Liquid-cooled thermal retrofits"
-    ],
-    "comparison_notes": [
-      "Strong specialist fit for buyers evaluating rack-adjacent liquid cooling paths between traditional air cooling and deeper direct liquid architectures"
-    ],
-    "hq": "North America",
-    "service_area": "North America and data center project markets",
-    "project_scale": "Rack to row deployments",
-    "subcategories": [],
-    "tags": [
-      "rdhx",
-      "rear-door-cooling",
-      "rack-liquid-cooling"
-    ],
-    "infrastructure_types": [
-      "cooling",
-      "facility"
-    ],
-    "cooling_types": [
-      "liquid_loop",
-      "rear_door_heat_exchanger"
-    ],
-    "focus_areas": [
-      "ai",
-      "hpc",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "colocation",
-      "hyperscale"
-    ],
-    "ecosystem_roles": [
-      "manufacturer"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "usystems",
-      "coldlogik",
-      "panduit",
-      "vertiv",
-      "motivair",
-      "nvent-liquid-cooling"
-    ]
-  },
-  {
-    "slug": "bladeroom",
-    "name": "BladeRoom",
-    "website_url": "https://bladeroom.com/",
-    "headline": "Off-site data center builder focused on efficient modular delivery, rapid deployment, and scalable facilities from hyperscale to edge.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "containerized-data-centers",
-      "modular-prefab",
-      "construction-and-integration"
-    ],
-    "regions": [
-      "Europe",
-      "North America",
-      "Middle East"
-    ],
-    "deployment_types": [
-      "Modular",
-      "Hyperscale",
-      "Edge"
-    ],
-    "buyer_types": [
-      "Developers",
-      "Operators",
-      "Infrastructure teams"
-    ],
-    "specialties": [
-      "Off-site data center delivery",
-      "Modular facilities",
-      "Rapid deployment"
-    ],
-    "proof_points": [
-      "Explicit off-site data center and modular edge positioning"
-    ],
-    "featured_capabilities": [
-      "Factory-built modular delivery",
-      "Scalable facility design",
-      "Rapid project execution"
-    ],
-    "comparison_notes": [
-      "Strong fit where buyers want purpose-built modular data center delivery rather than only component supply"
-    ],
-    "hq": "United Kingdom",
-    "service_area": "International",
-    "project_scale": "Edge pod to hyperscale campus module",
-    "subcategories": [
-      "fabricated-enclosures-and-shells"
-    ],
-    "tags": [
-      "off-site-construction",
-      "modular-delivery"
-    ],
-    "infrastructure_types": [
-      "facility",
-      "services"
-    ],
-    "focus_areas": [
-      "ai",
-      "edge",
-      "general"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "hyperscale",
-      "edge"
-    ],
-    "ecosystem_roles": [
-      "integrator",
-      "developer"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "compu-dynamics-modular",
-      "edge-modular",
-      "rittal",
-      "vertiv"
-    ]
-  },
-  {
-    "slug": "zella-dc",
-    "name": "Zella DC",
-    "website_url": "https://www.zelladc.com/",
-    "headline": "Factory-built micro data centre provider with integrated power, cooling, security, and monitoring for edge and on-site AI deployments.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "containerized-data-centers",
-      "edge-micro-data-centers",
-      "monitoring-and-controls"
-    ],
-    "regions": [
-      "Europe",
-      "North America",
-      "Middle East",
-      "APAC"
-    ],
-    "deployment_types": [
-      "Edge",
-      "Micro data center",
-      "AI"
-    ],
-    "buyer_types": [
-      "Edge operators",
-      "Enterprise infrastructure teams",
-      "On-site compute buyers"
-    ],
-    "specialties": [
-      "Pre-engineered micro data centres",
-      "Integrated monitoring",
-      "Factory-tested deployment units"
-    ],
-    "proof_points": [
-      "Explicit factory pre-engineered micro data centre positioning"
-    ],
-    "featured_capabilities": [
-      "Integrated PDU and cooling",
-      "Access control and monitoring",
-      "Rapid site deployment"
-    ],
-    "comparison_notes": [
-      "Useful where buyers need compact packaged infrastructure with strong edge and on-site deployment relevance"
-    ],
-    "hq": "United Kingdom",
-    "service_area": "Global",
-    "project_scale": "Single micro data center to distributed rollout",
-    "subcategories": [],
-    "tags": [
-      "micro-data-center",
-      "edge"
-    ],
-    "infrastructure_types": [
-      "facility",
-      "power",
-      "cooling",
-      "controls"
-    ],
-    "focus_areas": [
-      "ai",
-      "edge",
-      "general"
-    ],
-    "scale_focus": [
-      "edge",
-      "enterprise"
-    ],
-    "ecosystem_roles": [
-      "manufacturer",
-      "integrator"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "edge-modular",
-      "compu-dynamics-modular",
-      "vertiv",
-      "rittal"
-    ]
-  },
-  {
-    "slug": "instant-data-centers",
-    "name": "Instant Data Centers",
-    "website_url": "https://instantdatacenters.com/",
-    "headline": "Containerized and rapidly deployable data center provider relevant to modular capacity expansion and edge-style infrastructure delivery.",
-    "featured": false,
-    "verified": false,
-    "categories": [
-      "containerized-data-centers",
-      "edge-micro-data-centers"
-    ],
-    "regions": [
-      "North America"
-    ],
-    "deployment_types": [
-      "Containerized",
-      "Modular",
-      "Edge"
-    ],
-    "buyer_types": [
-      "Developers",
-      "Infrastructure teams",
-      "Edge operators"
-    ],
-    "specialties": [
-      "Rapid data center deployment",
-      "Containerized infrastructure",
-      "Modular expansion"
-    ],
-    "proof_points": [
-      "Approved ingestion candidate for containerized data center branch expansion"
-    ],
-    "featured_capabilities": [
-      "Packaged deployment",
-      "Fast capacity rollout",
-      "Compact infrastructure delivery"
-    ],
-    "comparison_notes": [
-      "Good branch-fit addition, though direct evidence was weaker in this environment than the other five approved names"
-    ],
-    "hq": "North America",
-    "service_area": "North America",
-    "project_scale": "Single unit to regional deployment",
-    "subcategories": [],
-    "tags": [
-      "containerized",
-      "rapid-deployment"
-    ],
-    "infrastructure_types": [
-      "facility",
-      "services"
-    ],
-    "focus_areas": [
-      "edge",
-      "general"
-    ],
-    "scale_focus": [
-      "edge",
-      "regional"
-    ],
-    "ecosystem_roles": [
-      "integrator"
-    ],
-    "company_types": [
-      "private"
-    ],
-    "related_company_slugs": [
-      "zella-dc",
-      "edge-modular",
-      "compu-dynamics-modular"
-    ]
-  },
-  {
-    "id": "ven_voltage-park",
-    "slug": "voltage-park",
-    "name": "Voltage Park",
-    "website_url": "https://www.voltagepark.com/",
-    "headline": "Managed AI colocation and GPU infrastructure platform offering enterprise access to large-scale accelerated compute capacity.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "ai-colocation-gpu-hosting"
-    ],
-    "regions": [
-      "North America"
-    ],
-    "deployment_types": [
-      "AI",
-      "Enterprise"
-    ],
-    "buyer_types": [
-      "AI labs",
-      "Enterprise teams",
-      "Model builders"
-    ],
-    "specialties": [
-      "Managed GPU capacity",
-      "AI colocation",
-      "Accelerated compute access"
-    ],
-    "proof_points": [
-      "Known managed GPU infrastructure operator"
-    ],
-    "featured_capabilities": [
-      "Managed AI hosting",
-      "GPU cluster access",
-      "Capacity onboarding"
-    ],
-    "comparison_notes": [
-      "Useful when buyers want managed access to AI infrastructure rather than self-building facilities"
-    ],
-    "hq": "United States",
-    "service_area": "North America",
-    "project_scale": "Enterprise AI deployments",
-    "subcategories": [
-      "managed-ai-colocation"
-    ],
-    "tags": [
-      "managed-ai-colocation",
-      "gpu-hosting"
-    ],
-    "infrastructure_types": [
-      "hosting"
-    ],
-    "focus_areas": [
-      "ai"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "hyperscale"
-    ],
-    "ecosystem_roles": [
-      "operator",
-      "service_provider"
-    ],
-    "company_types": [
-      "private"
-    ]
-  },
-  {
-    "id": "ven_tensordock",
-    "slug": "tensordock",
-    "name": "TensorDock",
-    "website_url": "https://www.tensordock.com/",
-    "headline": "GPU cloud and managed AI infrastructure marketplace relevant to buyers seeking flexible hosted accelerator capacity.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "ai-colocation-gpu-hosting"
-    ],
-    "regions": [
-      "North America",
-      "Europe"
-    ],
-    "deployment_types": [
-      "AI",
-      "Cloud"
-    ],
-    "buyer_types": [
-      "Developers",
-      "Startups",
-      "AI teams"
-    ],
-    "specialties": [
-      "Hosted GPU access",
-      "Managed compute capacity",
-      "Flexible AI workloads"
-    ],
-    "proof_points": [
-      "Recognized hosted GPU capacity platform"
-    ],
-    "featured_capabilities": [
-      "Managed GPU instances",
-      "Rapid deployment",
-      "Flexible capacity sourcing"
-    ],
-    "comparison_notes": [
-      "Relevant where the decision is speed-to-capacity instead of facility ownership"
-    ],
-    "hq": "United States",
-    "service_area": "International",
-    "project_scale": "Startup to enterprise AI workloads",
-    "subcategories": [
-      "managed-ai-colocation"
-    ],
-    "tags": [
-      "managed-ai-colocation",
-      "gpu-cloud"
-    ],
-    "infrastructure_types": [
-      "hosting"
-    ],
-    "focus_areas": [
-      "ai"
-    ],
-    "scale_focus": [
-      "regional",
-      "enterprise"
-    ],
-    "ecosystem_roles": [
-      "operator",
-      "service_provider"
-    ],
-    "company_types": [
-      "private"
-    ]
-  },
-  {
-    "id": "ven_verda",
-    "slug": "verda",
-    "name": "Verda",
-    "website_url": "https://www.verda.ai/",
-    "headline": "Managed AI infrastructure company positioned around hosted GPU capacity and enterprise-ready deployment support.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "ai-colocation-gpu-hosting"
-    ],
-    "regions": [
-      "Europe"
-    ],
-    "deployment_types": [
-      "AI",
-      "Enterprise"
-    ],
-    "buyer_types": [
-      "Enterprise teams",
-      "AI builders"
-    ],
-    "specialties": [
-      "Managed AI capacity",
-      "GPU infrastructure access",
-      "Enterprise onboarding"
-    ],
-    "proof_points": [
-      "Known managed AI infrastructure operator"
-    ],
-    "featured_capabilities": [
-      "Managed GPU environments",
-      "Capacity provisioning",
-      "AI infrastructure support"
-    ],
-    "comparison_notes": [
-      "Fits the managed hosting layer rather than core facility equipment supply"
-    ],
-    "hq": "Europe",
-    "service_area": "Europe",
-    "project_scale": "Enterprise AI deployments",
-    "subcategories": [
-      "managed-ai-colocation"
-    ],
-    "tags": [
-      "managed-ai-colocation",
-      "managed-gpu"
-    ],
-    "infrastructure_types": [
-      "hosting"
-    ],
-    "focus_areas": [
-      "ai"
-    ],
-    "scale_focus": [
-      "enterprise"
-    ],
-    "ecosystem_roles": [
-      "operator",
-      "service_provider"
-    ],
-    "company_types": [
-      "private"
-    ]
-  },
-  {
-    "id": "ven_vultr",
-    "slug": "vultr",
-    "name": "Vultr",
-    "website_url": "https://www.vultr.com/",
-    "headline": "Cloud infrastructure provider with managed GPU and AI hosting relevance for teams buying deployed accelerator capacity.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "ai-colocation-gpu-hosting"
-    ],
-    "regions": [
-      "North America",
-      "Europe",
-      "APAC"
-    ],
-    "deployment_types": [
-      "AI",
-      "Cloud",
-      "Enterprise"
-    ],
-    "buyer_types": [
-      "Developers",
-      "Startups",
-      "Enterprise teams"
-    ],
-    "specialties": [
-      "GPU cloud",
-      "Managed AI hosting",
-      "Global infrastructure footprint"
-    ],
-    "proof_points": [
-      "Established cloud platform with GPU infrastructure offering"
-    ],
-    "featured_capabilities": [
-      "Managed GPU instances",
-      "Global deployment options",
-      "Hosted accelerator access"
-    ],
-    "comparison_notes": [
-      "Useful comparator when buyers may substitute managed GPU cloud for dedicated infrastructure sourcing"
-    ],
-    "hq": "West Palm Beach, Florida, USA",
-    "service_area": "Global",
-    "project_scale": "Startup to enterprise",
-    "subcategories": [
-      "managed-ai-colocation"
-    ],
-    "tags": [
-      "managed-ai-colocation",
-      "gpu-cloud"
-    ],
-    "infrastructure_types": [
-      "hosting"
-    ],
-    "focus_areas": [
-      "ai",
-      "general"
-    ],
-    "scale_focus": [
-      "regional",
-      "enterprise"
-    ],
-    "ecosystem_roles": [
-      "operator",
-      "service_provider"
-    ],
-    "company_types": [
-      "private"
-    ]
-  },
-  {
-    "id": "ven_nebius",
-    "slug": "nebius",
-    "name": "Nebius",
-    "website_url": "https://nebius.com/",
-    "headline": "AI-native cloud infrastructure operator offering managed GPU capacity and hosted environments for model development and inference workloads.",
-    "featured": false,
-    "verified": true,
-    "categories": [
-      "ai-colocation-gpu-hosting"
-    ],
-    "regions": [
-      "Europe",
-      "North America"
-    ],
-    "deployment_types": [
-      "AI",
-      "Cloud",
-      "Enterprise"
-    ],
-    "buyer_types": [
-      "AI labs",
-      "Developers",
-      "Enterprise teams"
-    ],
-    "specialties": [
-      "Managed GPU clusters",
-      "AI cloud capacity",
-      "Hosted AI workloads"
-    ],
-    "proof_points": [
-      "Recognized AI cloud capacity provider"
-    ],
-    "featured_capabilities": [
-      "Managed AI hosting",
-      "GPU cluster access",
-      "AI workload support"
-    ],
-    "comparison_notes": [
-      "Appropriate for managed AI colocation coverage where buyers prioritize time-to-compute"
-    ],
-    "hq": "Amsterdam, Netherlands",
-    "service_area": "International",
-    "project_scale": "Growth to enterprise AI deployments",
-    "subcategories": [
-      "managed-ai-colocation"
-    ],
-    "tags": [
-      "managed-ai-colocation",
-      "ai-cloud"
-    ],
-    "infrastructure_types": [
-      "hosting"
-    ],
-    "focus_areas": [
-      "ai"
-    ],
-    "scale_focus": [
-      "enterprise",
-      "hyperscale"
-    ],
-    "ecosystem_roles": [
-      "operator",
-      "service_provider"
-    ],
-    "company_types": [
-      "public"
-    ]
   }
 ]
