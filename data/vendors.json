@@ -8061,8 +8061,7 @@
     ],
     "related_company_slugs": [
       "liquidstack",
-      "submer",
-      "tmgcore"
+      "submer"
     ],
     "dependency_category_slugs": [
       "high-density-rack-power",
@@ -8221,9 +8220,7 @@
     "hq": "London, UK",
     "service_area": "Europe and North America",
     "project_scale": "Rack to hall",
-    "subcategories": [
-      "direct-to-chip-cooling"
-    ],
+    "subcategories": [],
     "tags": [
       "rear-door",
       "retrofit-density"
@@ -10485,9 +10482,7 @@
     "hq": "United Kingdom",
     "service_area": "International project support",
     "project_scale": "High-density rack and room deployments",
-    "subcategories": [
-      "direct-to-chip-cooling"
-    ],
+    "subcategories": [],
     "tags": [
       "rdhx",
       "rear-door-cooling",
@@ -10574,9 +10569,7 @@
     "hq": "Tinley Park, Illinois, USA",
     "service_area": "Global",
     "project_scale": "Rack to enterprise-scale deployments",
-    "subcategories": [
-      "direct-to-chip-cooling"
-    ],
+    "subcategories": [],
     "tags": [
       "rdhx",
       "rack-infrastructure",
