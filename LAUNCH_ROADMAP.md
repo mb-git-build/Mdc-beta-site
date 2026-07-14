@@ -600,7 +600,7 @@ Required before launch:
 - **Acceptance criteria:** August 31 deadline, scope, owners, and freeze dates explicit
 - **Owner:** shared Founder/Rook review
 - **Target date:** July 14, 2026
-- **Status:** In Progress
+- **Status:** Complete
 
 ### Gate 2 — Launch-Critical Graph Credibility Pass
 - **Measurable deliverable:** 3–5 launch-critical branches reviewed and hardened
