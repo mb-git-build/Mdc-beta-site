@@ -4220,7 +4220,6 @@
     "verified": true,
     "categories": [
       "immersion-cooling",
-      "ai-colocation-gpu-hosting",
       "high-density-rack-power"
     ],
     "regions": [
@@ -4758,7 +4757,6 @@
     "verified": true,
     "categories": [
       "immersion-cooling",
-      "ai-colocation-gpu-hosting",
       "construction-and-integration"
     ],
     "regions": [
@@ -6178,7 +6176,6 @@
     "verified": true,
     "categories": [
       "network-fabric-and-connectivity",
-      "ai-colocation-gpu-hosting",
       "monitoring-and-controls"
     ],
     "regions": [
@@ -7484,7 +7481,6 @@
     "verified": true,
     "categories": [
       "network-fabric-and-connectivity",
-      "ai-colocation-gpu-hosting",
       "high-density-rack-power"
     ],
     "regions": [
