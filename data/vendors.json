@@ -9875,7 +9875,6 @@
     "verified": true,
     "categories": [
       "generators-and-microgrids",
-      "ai-colocation-gpu-hosting",
       "sustainability-and-energy-strategy"
     ],
     "regions": [
@@ -10864,9 +10863,7 @@
     "headline": "Managed AI infrastructure company positioned around hosted GPU capacity and enterprise-ready deployment support.",
     "featured": false,
     "verified": true,
-    "categories": [
-      "ai-colocation-gpu-hosting"
-    ],
+    "categories": [],
     "regions": [
       "Europe"
     ],
@@ -10897,9 +10894,7 @@
     "hq": "Europe",
     "service_area": "Europe",
     "project_scale": "Enterprise AI deployments",
-    "subcategories": [
-      "managed-ai-colocation"
-    ],
+    "subcategories": [],
     "tags": [
       "managed-ai-colocation",
       "managed-gpu"
