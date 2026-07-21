@@ -91,7 +91,7 @@ Launch intent:
 
 ## 4. P0 / P1 / P2 Scope
 
-### P0 — required before public beta
+### P0 - required before public beta
 - credibility hardening of the launch-critical branches
 - executive-route clarification for core public routes
 - trust and policy layer
@@ -102,14 +102,14 @@ Launch intent:
 - moderation workflow and production verification checklist
 - repository artifact hygiene sufficient for launch operations
 
-### P1 — strongly preferred before public beta
+### P1 - strongly preferred before public beta
 - targeted deepening of launch-critical branches where credibility gaps remain
 - route differentiation improvements across categories/directory/vendors/compare
 - better visible evidence signals and scanability on key public routes
 - selective discovery improvements that make the existing graph easier to use
 - targeted cleanup of public-route confusion or thin-page embarrassment risks
 
-### P2 — explicitly deferred until after launch
+### P2 - explicitly deferred until after launch
 - broad or open-ended ecosystem expansion
 - non-launch-critical ontology expansion
 - cosmetic novelty or visual reinvention
@@ -119,7 +119,7 @@ Launch intent:
 - advanced graph intelligence layers not required for beta trust
 
 ### Scope clarifications
-- **Targeted deepening of 3–5 launch-critical branches is P0/P1.**
+- **Targeted deepening of 3-5 launch-critical branches is P0/P1.**
 - **Broad or open-ended ecosystem expansion is P2 and deferred.**
 - **Cosmetic novelty, large guide expansion, recommendation behavior, and non-launch-critical ontology expansion are deferred.**
 
@@ -155,7 +155,7 @@ These are the backbone lanes that must pass credibility review before launch.
 
 ### 5.3 Modular / Prefab / Containerized Infrastructure
 **Why it matters**
-- closest to the institution’s brand anchor
+- closest to the institution's brand anchor
 - central to credibility of the domain name itself
 
 **Launch acceptance criteria**
@@ -323,7 +323,7 @@ Required before launch:
 
 ## 9. Weekly Milestones
 
-## July 10–14, 2026 — Roadmap Adoption and Scope Freeze
+## July 10-14, 2026 - Roadmap Adoption and Scope Freeze
 **Deliverable**
 - roadmap adopted as launch program control
 - launch scope and stop-doing list fixed
@@ -346,7 +346,7 @@ Required before launch:
 
 ---
 
-## July 15–21, 2026 — Graph Credibility Pass
+## July 15-21, 2026 - Graph Credibility Pass
 **Deliverable**
 - credibility hardening pass across the launch-critical branches
 
@@ -372,7 +372,7 @@ Required before launch:
 
 ---
 
-## July 22–28, 2026 — Executive Route Pass
+## July 22-28, 2026 - Executive Route Pass
 **Deliverable**
 - core executive routes clarified and differentiated
 
@@ -400,7 +400,7 @@ Required before launch:
 
 ---
 
-## July 29–August 4, 2026 — Trust and Policy Layer
+## July 29-August 4, 2026 - Trust and Policy Layer
 **Deliverable**
 - trust/policy pages drafted, reviewed, and prepared for launch
 
@@ -422,7 +422,7 @@ Required before launch:
 
 ---
 
-## August 5–11, 2026 — Launch Operations Hardening
+## August 5-11, 2026 - Launch Operations Hardening
 **Deliverable**
 - launch operations package completed
 
@@ -451,7 +451,7 @@ Required before launch:
 
 ---
 
-## August 12, 2026 — Broad Graph-Expansion Freeze
+## August 12, 2026 - Broad Graph-Expansion Freeze
 **Deliverable**
 - broad graph expansion stops
 
@@ -471,7 +471,7 @@ Required before launch:
 
 ---
 
-## August 12–18, 2026 — Public Beta Candidate Freeze
+## August 12-18, 2026 - Public Beta Candidate Freeze
 **Deliverable**
 - public beta candidate stabilized
 
@@ -493,7 +493,7 @@ Required before launch:
 
 ---
 
-## August 19–25, 2026 — Production Cutover Preparation
+## August 19-25, 2026 - Production Cutover Preparation
 **Deliverable**
 - production cutover plan prepared and ready
 
@@ -518,7 +518,7 @@ Required before launch:
 
 ---
 
-## August 25, 2026 — Latest Safe Production Cutover / Indexing Date
+## August 25, 2026 - Latest Safe Production Cutover / Indexing Date
 **Deliverable**
 - latest safe date for production cutover and indexing posture decision
 
@@ -535,7 +535,7 @@ Required before launch:
 
 ---
 
-## August 26–31, 2026 — Stabilization and Public Beta Opening
+## August 26-31, 2026 - Stabilization and Public Beta Opening
 **Deliverable**
 - public beta opened by August 31
 
@@ -595,63 +595,63 @@ Required before launch:
 
 ## 11. Launch Gates
 
-### Gate 1 — Program Control Adopted
+### Gate 1 - Program Control Adopted
 - **Measurable deliverable:** `LAUNCH_ROADMAP.md` created and adopted
 - **Acceptance criteria:** August 31 deadline, scope, owners, and freeze dates explicit
 - **Owner:** shared Founder/Rook review
 - **Target date:** July 14, 2026
 - **Status:** Complete
 
-### Gate 2 — Launch-Critical Graph Credibility Pass
-- **Measurable deliverable:** 3–5 launch-critical branches reviewed and hardened
+### Gate 2 - Launch-Critical Graph Credibility Pass
+- **Measurable deliverable:** 3-5 launch-critical branches reviewed and hardened
 - **Acceptance criteria:** no embarrassing branch-level incoherence in backbone lanes
 - **Owner:** Rook + Founder review
 - **Target date:** July 21, 2026
-- **Status:** Not Started
+- **Status:** In Progress
 
-### Gate 3 — Executive Route Pass
+### Gate 3 - Executive Route Pass
 - **Measurable deliverable:** `/`, `/categories`, `/directory`, `/vendors`, `/methodology`, `/about` clarified
 - **Acceptance criteria:** every route has distinct purpose and passes founder walkthrough
 - **Owner:** Rook + Founder walkthrough
 - **Target date:** July 28, 2026
 - **Status:** Not Started
 
-### Gate 4 — Trust and Policy Layer
+### Gate 4 - Trust and Policy Layer
 - **Measurable deliverable:** privacy, terms/disclaimer, editorial standards, inclusion policy, correction/claim policy
 - **Acceptance criteria:** all required trust pages public and internally consistent
 - **Owner:** shared Founder/Rook review
 - **Target date:** August 4, 2026
 - **Status:** Not Started
 
-### Gate 5 — Launch Operations Hardening
+### Gate 5 - Launch Operations Hardening
 - **Measurable deliverable:** analytics plan, indexing readiness, sitemap/robots verification, deployment runbook, rollback, moderation workflow, artifact hygiene, production checklist
 - **Acceptance criteria:** operational launch packet complete and usable
 - **Owner:** Rook / Founder / VPS deployment
 - **Target date:** August 11, 2026
 - **Status:** Not Started
 
-### Gate 6 — Broad Graph-Expansion Freeze
+### Gate 6 - Broad Graph-Expansion Freeze
 - **Measurable deliverable:** expansion freeze declared and observed
 - **Acceptance criteria:** no new broad ecosystem expansion started after freeze date
 - **Owner:** Founder + Rook
 - **Target date:** August 12, 2026
 - **Status:** Not Started
 
-### Gate 7 — Public Beta Candidate Freeze
+### Gate 7 - Public Beta Candidate Freeze
 - **Measurable deliverable:** launch candidate stabilized
 - **Acceptance criteria:** only trust/correctness fixes remain
 - **Owner:** shared Founder/Rook review
 - **Target date:** August 18, 2026
 - **Status:** Not Started
 
-### Gate 8 — Production Cutover Ready
+### Gate 8 - Production Cutover Ready
 - **Measurable deliverable:** cutover and indexing package ready
 - **Acceptance criteria:** production plan, rollback, and verification ready by latest safe date
 - **Owner:** Founder + VPS deployment + Rook support
 - **Target date:** August 25, 2026
 - **Status:** Not Started
 
-### Gate 9 — Public Beta Live
+### Gate 9 - Public Beta Live
 - **Measurable deliverable:** public beta live
 - **Acceptance criteria:** institution publicly available and operational by August 31
 - **Owner:** Founder + VPS deployment
@@ -668,7 +668,7 @@ Stop work that does not materially increase August launch readiness:
 - cosmetic novelty and decorative redesign work
 - large guide-library expansion
 - recommendation behavior or buyer-intake product drift
-- conversion-funnel embellishment that competes with the directory’s primary purpose
+- conversion-funnel embellishment that competes with the directory's primary purpose
 - non-launch-critical adjacency experiments
 - speculative product concepts that do not increase trust by August 31
 

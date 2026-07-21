@@ -7,6 +7,21 @@ import { emptyClaimForm, type ClaimFormState } from "@/lib/form-state";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
+const claimPrepCards = [
+  {
+    title: "Fastest path",
+    body: "Use a company email and state exactly what needs to change.",
+  },
+  {
+    title: "Trust review",
+    body: "Verification protects listings and speeds legitimate claims.",
+  },
+  {
+    title: "Use this for",
+    body: "Existing listings that need ownership or profile updates.",
+  },
+];
+
 export function ClaimForm() {
   const [form, setForm] = useState<ClaimFormState>(emptyClaimForm);
   const [status, setStatus] = useState<FormStatus>("idle");
@@ -96,6 +111,14 @@ export function ClaimForm() {
 
   return (
     <form className="mt-8 grid gap-4" onSubmit={onSubmit}>
+      <div className="grid gap-3 md:grid-cols-3">
+        {claimPrepCards.map((card) => (
+          <div key={card.title} className="rounded-[1.1rem] border border-[var(--border)] bg-[rgba(247,250,252,0.72)] px-4 py-3 text-sm leading-7 text-[var(--muted)]">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">{card.title}</p>
+            <p className="mt-2">{card.body}</p>
+          </div>
+        ))}
+      </div>
       <Field label="Company name" value={form.companyName} onChange={(value) => update("companyName", value)} placeholder="Company name" required />
       <Field
         label="Company website"
@@ -152,22 +175,19 @@ export function ClaimForm() {
                 <p className="text-xs font-semibold uppercase tracking-[0.14em]">Save these now</p>
                 <div className="mt-2 grid gap-1.5 text-sm">
                   <p>• Save the submission reference and claim token together.</p>
-                  <p>• Forward them to the teammate who controls the company listing if needed.</p>
-                  <p>• Use the verification link immediately if you want the fastest trust review path.</p>
+                  <p>• Use the verification link now for the fastest review path.</p>
                 </div>
               </div>
             </>
           ) : null}
-          <p className="mt-3 text-[var(--muted)]">Keep this reference and token handy — they are the cleanest path for verification and follow-up.</p>
           <div className="mt-3 rounded-2xl border border-emerald-100 bg-white/80 p-3 text-emerald-900">
             <p className="text-xs font-semibold uppercase tracking-[0.14em]">What happens next</p>
             <div className="mt-2 grid gap-1.5 text-sm">
-              <p>• Complete token verification to prove control of the listing request.</p>
-              <p>• Verified claims move into a stronger trust state for review and publishing.</p>
-              <p>• If the listing needs changes, this trail keeps ownership and edits auditable.</p>
+              <p>• Complete token verification.</p>
+              <p>• Verified claims move forward with a stronger ownership trail.</p>
             </div>
           </div>
-          <p className="mt-3 text-[var(--muted)]">Ready to finish verification now? Or need the parallel submit flow instead?</p>
+          <p className="mt-3 text-[var(--muted)]">Ready to verify now?</p>
           <div className="mt-2 flex flex-wrap gap-2">
             <Link href="/for-vendors/claim/verify" className="rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-[var(--foreground)]">
               Verify this claim now

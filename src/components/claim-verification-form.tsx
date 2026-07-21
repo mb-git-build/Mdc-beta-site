@@ -22,6 +22,21 @@ type VerificationPayload = {
   };
 };
 
+const verificationPrepCards = [
+  {
+    title: "What you need",
+    body: "Enter the submission ID and claim token from your confirmation.",
+  },
+  {
+    title: "Why verify",
+    body: "Verification strengthens the ownership trail for review.",
+  },
+  {
+    title: "Best timing",
+    body: "Verify as soon as you receive the token.",
+  },
+];
+
 export function ClaimVerificationForm({ initialSubmissionId = "", initialClaimToken = "" }: ClaimVerificationFormProps) {
   const [submissionId, setSubmissionId] = useState(initialSubmissionId);
   const [claimToken, setClaimToken] = useState(initialClaimToken);
@@ -70,6 +85,14 @@ export function ClaimVerificationForm({ initialSubmissionId = "", initialClaimTo
 
   return (
     <form className="mt-8 grid gap-4" onSubmit={onSubmit}>
+      <div className="grid gap-3 md:grid-cols-3">
+        {verificationPrepCards.map((card) => (
+          <div key={card.title} className="rounded-[1.1rem] border border-[var(--border)] bg-[rgba(247,250,252,0.72)] px-4 py-3 text-sm leading-7 text-[var(--muted)]">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">{card.title}</p>
+            <p className="mt-2">{card.body}</p>
+          </div>
+        ))}
+      </div>
       <label className="grid gap-2 text-sm font-medium text-[var(--foreground)]">
         Submission ID
         <input
@@ -115,9 +138,9 @@ export function ClaimVerificationForm({ initialSubmissionId = "", initialClaimTo
           <div className="mt-3 rounded-2xl border border-emerald-100 bg-white/80 p-3 text-emerald-900">
             <p className="text-xs font-semibold uppercase tracking-[0.14em]">What this means</p>
             <div className="mt-2 grid gap-1.5 text-sm">
-              <p>• The claim token was accepted and the submission moved into a verified state.</p>
-              <p>• Review can now proceed with a stronger ownership trail.</p>
-              <p>• Keep this submission ID for any later follow-up about the same listing.</p>
+              <p>• The claim has been verified.</p>
+              <p>• Review can proceed with a stronger ownership trail.</p>
+              <p>• Keep this submission ID for follow-up.</p>
             </div>
           </div>
           <p className="mt-3">Return link: <a href={verificationLink ?? "#"} className="text-emerald-900 underline">Open this verification state again</a></p>

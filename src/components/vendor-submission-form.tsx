@@ -35,6 +35,21 @@ const ROUTE_CATEGORY_OPTIONS: RouteCategoryOption[] = [
   },
 ];
 
+const qualificationCards = [
+  {
+    title: "Best fit",
+    body: "Vendors with a clear infrastructure role and enough detail for fast category placement.",
+  },
+  {
+    title: "Speeds review",
+    body: "Use a work email, a credible website, and a concise operator-level summary.",
+  },
+  {
+    title: "Why review exists",
+    body: "Moderation keeps the directory cleaner, more credible, and easier to use.",
+  },
+];
+
 export function VendorSubmissionForm() {
   const [form, setForm] = useState<VendorSubmissionFormState>(emptyVendorSubmissionForm);
   const [status, setStatus] = useState<FormStatus>("idle");
@@ -112,6 +127,14 @@ export function VendorSubmissionForm() {
 
   return (
     <form className="mt-8 grid gap-4" onSubmit={onSubmit}>
+      <div className="grid gap-3 md:grid-cols-3">
+        {qualificationCards.map((card) => (
+          <div key={card.title} className="rounded-[1.1rem] border border-[var(--border)] bg-[rgba(247,250,252,0.72)] px-4 py-3 text-sm leading-7 text-[var(--muted)]">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">{card.title}</p>
+            <p className="mt-2">{card.body}</p>
+          </div>
+        ))}
+      </div>
       <Field label="Company name" value={form.companyName} onChange={(value) => update("companyName", value)} placeholder="Company name" required />
       <Field
         label="Website"
@@ -163,19 +186,10 @@ export function VendorSubmissionForm() {
             <p className="text-xs font-semibold uppercase tracking-[0.14em]">What happens next</p>
             <div className="mt-2 grid gap-1.5 text-sm">
               <p>• We review category fit, trust signals, and listing clarity.</p>
-              <p>• If follow-up is needed, this reference helps tie future updates to the same submission.</p>
-              <p>• Approved listings are shaped into cleaner buyer-facing directory context, not dumped in raw.</p>
+              <p>• Save this reference for follow-up.</p>
             </div>
           </div>
-          <div className="mt-3 rounded-2xl border border-emerald-100 bg-white/90 p-3 text-emerald-900">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em]">Save this now</p>
-            <div className="mt-2 grid gap-1.5 text-sm">
-              <p>• Save the submission reference where your team tracks listing follow-up.</p>
-              <p>• Share it with the person who will answer any review questions.</p>
-              <p>• Use the category and directory links below to sanity-check how your company should appear.</p>
-            </div>
-          </div>
-          <p className="mt-3 text-[var(--muted)]">Ready to review your positioning while moderation is in progress?</p>
+          <p className="mt-3 text-[var(--muted)]">Want to review your positioning while moderation is in progress?</p>
           <div className="mt-2 flex flex-wrap gap-2">
             <Link href="/directory" className="rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-[var(--foreground)]">
               Review the directory map
