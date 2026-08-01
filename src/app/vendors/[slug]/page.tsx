@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getRelatedCompanies, inferVendorRoleProfile } from "@/lib/ecosystem";
-import { categories, getMarkdownVendorBySlug, getVendorBySlug, vendors } from "@/lib/site-data";
+import { categories, getCategory, getMarkdownVendorBySlug, getVendorBySlug, vendors } from "@/lib/site-data";
 import { slugToAccent, vendorGlyph, vendorPrimaryCategory } from "@/lib/visuals";
 
 const surfaceClass = "rounded-[1.25rem] border border-[var(--border)] bg-[var(--card-soft)] p-4";
@@ -44,6 +44,14 @@ export default async function VendorPage({
   const companyType = inferredProfile.ecosystemRoles?.length
     ? inferredProfile.ecosystemRoles.map((item) => item.replaceAll("_", " ")).join(", ")
     : "Deployment-relevant infrastructure vendor";
+
+  const dependencyCategories = (vendor.dependency_category_slugs ?? [])
+    .map((slug) => getCategory(slug))
+    .filter((category): category is NonNullable<ReturnType<typeof getCategory>> => Boolean(category));
+
+  const oftenUsedWithCategories = (vendor.often_used_with_category_slugs ?? [])
+    .map((slug) => getCategory(slug))
+    .filter((category): category is NonNullable<ReturnType<typeof getCategory>> => Boolean(category));
 
   const marketsServed = Array.from(new Set([...(vendor.deployment_types ?? []), ...(inferredProfile.focusAreas ?? [])])).slice(0, 6);
 
@@ -194,6 +202,49 @@ export default async function VendorPage({
                     </span>
                   ))}
                 </div>
+              </div>
+            ) : null}
+
+            {dependencyCategories.length || oftenUsedWithCategories.length ? (
+              <div className={`mt-4 ${surfaceClass}`}>
+                <h2 className="text-base font-semibold tracking-tight text-white">Operational context</h2>
+                <p className="mt-2 text-sm leading-7 text-[var(--muted-strong)]">
+                  These linked categories show where this company typically sits within a broader infrastructure stack.
+                </p>
+
+                {dependencyCategories.length ? (
+                  <div className="mt-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--muted)]">Often depends on</p>
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {dependencyCategories.map((category) => (
+                        <Link
+                          key={category.slug}
+                          href={`/directory/${category.slug}`}
+                          className="rounded-full border border-[var(--border)] bg-[var(--background-strong)] px-3 py-1 text-xs font-medium text-[var(--muted-strong)] transition hover:border-[var(--accent)] hover:text-white"
+                        >
+                          {category.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+
+                {oftenUsedWithCategories.length ? (
+                  <div className="mt-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--muted)]">Commonly deployed with</p>
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {oftenUsedWithCategories.map((category) => (
+                        <Link
+                          key={category.slug}
+                          href={`/directory/${category.slug}`}
+                          className="rounded-full border border-[var(--border)] bg-[var(--background-strong)] px-3 py-1 text-xs font-medium text-[var(--muted-strong)] transition hover:border-[var(--accent)] hover:text-white"
+                        >
+                          {category.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
               </div>
             ) : null}
 
