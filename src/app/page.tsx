@@ -5,22 +5,22 @@ import { getMainDomainRows } from "@/lib/main-domains";
 const startPaths = [
   {
     eyebrow: "Directory",
-    title: "Browse the structured infrastructure ecosystem",
-    body: "Best when you want to scan categories, subcategories, and relevant adjacent infrastructure domains from one place.",
+    title: "Map the infrastructure ecosystem from one place",
+    body: "Best when you want a market-map view across categories, subcategories, adjacent systems, and the companies that show up inside each layer.",
     href: "/directory",
     cta: "Open directory",
   },
   {
     eyebrow: "Compare",
-    title: "Review selected research paths side by side",
-    body: "Best when you want to compare infrastructure approaches or company options without jumping straight into one vendor profile.",
+    title: "Review sourcing paths side by side",
+    body: "Best when you want to compare infrastructure approaches, deployment tradeoffs, or supplier lanes before narrowing into a shortlist.",
     href: "/compare",
     cta: "Open compare",
   },
   {
     eyebrow: "Categories",
-    title: "Explore individual infrastructure domains",
-    body: "Best when you already know the lane and want to dig into a specific category and its subcategories.",
+    title: "Go deeper into a specific infrastructure lane",
+    body: "Best when you already know the domain and want category detail, adjacent dependencies, and a cleaner path into company research.",
     href: "/categories",
     cta: "Browse categories",
   },
@@ -50,11 +50,12 @@ export default function Home() {
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#8ed1e8]">Industry directory</p>
                 <h1 className="mt-3 max-w-4xl text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
-                  Explore infrastructure categories, supplier profiles, and relevant adjacent domains.
+                  The resource-first directory for data center infrastructure research.
                 </h1>
                 <p className="mt-5 max-w-3xl text-sm leading-8 text-[#d6dde6] sm:text-base">
-                  MDC is a research and supplier-discovery surface for data center infrastructure. Start with the ecosystem,
-                  narrow into categories, and move into company research as the question becomes more specific.
+                  MDC is built for category-first discovery across power, cooling, modular delivery, hosting, networking,
+                  operations, and site strategy. Start with the stack, follow the adjacent systems, and only narrow into
+                  company research once the infrastructure path is clearer.
                 </p>
                 <div className="mt-7 flex flex-wrap gap-3">
                   <Link href="/directory" className="rounded-full bg-white px-5 py-3 text-sm font-semibold text-[#102c3c] transition hover:-translate-y-0.5">
@@ -75,7 +76,7 @@ export default function Home() {
                 <StatCard label="Companies" value={String(vendors.length)} />
                 <StatCard label="Verified companies" value={String(verifiedCompanyCount)} />
                 <StatCard label="Featured profiles" value={String(featuredCompanies)} />
-                <StatCard label="Best use" value="Research & discovery" />
+                <StatCard label="Best use" value="Category-first research" />
               </div>
             </div>
           </div>
@@ -84,7 +85,7 @@ export default function Home() {
             <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Pick the right entry point</p>
-                <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Choose the surface that fits the research task.</h2>
+                <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Choose the surface that fits the sourcing question.</h2>
               </div>
               <p className="max-w-2xl text-sm leading-7 text-[var(--muted-strong)]">
                 Use directory for broad ecosystem scanning, categories for domain-specific research, and compare for side-by-side review.
