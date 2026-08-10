@@ -7026,7 +7026,8 @@
     "featured": false,
     "verified": true,
     "categories": [
-      "ai-colocation-gpu-hosting"
+      "ai-colocation-gpu-hosting",
+      "managed-ai-colocation"
     ],
     "regions": [
       "Europe",
@@ -7084,6 +7085,22 @@
     ],
     "company_types": [
       "public"
+    ],
+    "related_company_slugs": [
+      "coreweave",
+      "lambda",
+      "fluidstack",
+      "qts",
+      "equinix"
+    ],
+    "dependency_category_slugs": [
+      "network-fabric-and-connectivity",
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "often_used_with_category_slugs": [
+      "managed-ai-colocation",
+      "ai-colocation-gpu-hosting"
     ]
   },
   {
@@ -10338,7 +10355,8 @@
     "featured": false,
     "verified": true,
     "categories": [
-      "ai-colocation-gpu-hosting"
+      "ai-colocation-gpu-hosting",
+      "managed-ai-colocation"
     ],
     "regions": [
       "North America",
@@ -10395,6 +10413,22 @@
     ],
     "company_types": [
       "private"
+    ],
+    "related_company_slugs": [
+      "coreweave",
+      "lambda",
+      "fluidstack",
+      "qts",
+      "equinix"
+    ],
+    "dependency_category_slugs": [
+      "network-fabric-and-connectivity",
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "often_used_with_category_slugs": [
+      "managed-ai-colocation",
+      "ai-colocation-gpu-hosting"
     ]
   },
   {
@@ -10863,7 +10897,10 @@
     "headline": "Managed AI infrastructure company positioned around hosted GPU capacity and enterprise-ready deployment support.",
     "featured": false,
     "verified": true,
-    "categories": [],
+    "categories": [
+      "ai-colocation-gpu-hosting",
+      "managed-ai-colocation"
+    ],
     "regions": [
       "Europe"
     ],
@@ -10894,7 +10931,9 @@
     "hq": "Europe",
     "service_area": "Europe",
     "project_scale": "Enterprise AI deployments",
-    "subcategories": [],
+    "subcategories": [
+      "managed-ai-colocation"
+    ],
     "tags": [
       "managed-ai-colocation",
       "managed-gpu"
@@ -10914,6 +10953,22 @@
     ],
     "company_types": [
       "private"
+    ],
+    "related_company_slugs": [
+      "coreweave",
+      "lambda",
+      "fluidstack",
+      "qts",
+      "equinix"
+    ],
+    "dependency_category_slugs": [
+      "network-fabric-and-connectivity",
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "often_used_with_category_slugs": [
+      "managed-ai-colocation",
+      "ai-colocation-gpu-hosting"
     ]
   },
   {
@@ -11046,7 +11101,8 @@
     "featured": false,
     "verified": true,
     "categories": [
-      "ai-colocation-gpu-hosting"
+      "ai-colocation-gpu-hosting",
+      "managed-ai-colocation"
     ],
     "regions": [
       "North America"
@@ -11102,6 +11158,22 @@
     ],
     "company_types": [
       "private"
+    ],
+    "related_company_slugs": [
+      "coreweave",
+      "lambda",
+      "fluidstack",
+      "qts",
+      "equinix"
+    ],
+    "dependency_category_slugs": [
+      "network-fabric-and-connectivity",
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "often_used_with_category_slugs": [
+      "managed-ai-colocation",
+      "ai-colocation-gpu-hosting"
     ]
   },
   {
@@ -11113,7 +11185,8 @@
     "featured": false,
     "verified": true,
     "categories": [
-      "ai-colocation-gpu-hosting"
+      "ai-colocation-gpu-hosting",
+      "managed-ai-colocation"
     ],
     "regions": [
       "North America",
@@ -11173,6 +11246,22 @@
     ],
     "company_types": [
       "private"
+    ],
+    "related_company_slugs": [
+      "coreweave",
+      "lambda",
+      "fluidstack",
+      "qts",
+      "equinix"
+    ],
+    "dependency_category_slugs": [
+      "network-fabric-and-connectivity",
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "often_used_with_category_slugs": [
+      "managed-ai-colocation",
+      "ai-colocation-gpu-hosting"
     ]
   },
   {
