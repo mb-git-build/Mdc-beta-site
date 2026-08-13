@@ -747,5 +747,28 @@
       "commissioning-and-operations",
       "sustainability-and-energy-strategy"
     ]
+  },
+  {
+    "id": "cat_ai_hpc_compute_systems",
+    "slug": "ai-hpc-compute-systems",
+    "name": "AI & HPC Compute Systems",
+    "description": "Server OEMs, integrated system vendors, and compute-platform suppliers providing accelerator-dense systems, AI clusters, HPC platforms, and deployment-ready compute infrastructure.",
+    "layer": "segment",
+    "tags": [
+      "compute",
+      "servers",
+      "hpc",
+      "accelerators"
+    ],
+    "adjacent_category_slugs": [
+      "ai-colocation-gpu-hosting",
+      "network-fabric-and-connectivity",
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "often_used_with": [
+      "monitoring-and-controls",
+      "commissioning-and-operations"
+    ]
   }
 ]

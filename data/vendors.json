@@ -4215,12 +4215,13 @@
     "slug": "gigaio-immersion",
     "name": "GigaIO",
     "website_url": "https://www.gigaio.com",
-    "headline": "Composable AI infrastructure and immersion-ready high-density platform designs for GPU clusters and advanced compute environments.",
+    "headline": "Composable AI infrastructure and integrated compute platform provider for GPU clusters and advanced HPC environments.",
     "featured": false,
     "verified": true,
     "categories": [
       "immersion-cooling",
-      "high-density-rack-power"
+      "high-density-rack-power",
+      "ai-hpc-compute-systems"
     ],
     "regions": [
       "North America",
@@ -4255,9 +4256,7 @@
     "hq": "Carlsbad, California, USA",
     "service_area": "North America and Europe",
     "project_scale": "Enterprise to hyperscale pods",
-    "subcategories": [
-      "single-phase-immersion"
-    ],
+    "subcategories": [],
     "tags": [
       "ai-clusters",
       "immersion-ready"
@@ -4288,7 +4287,10 @@
     "related_company_slugs": [
       "submer",
       "liquidstack",
-      "motivair"
+      "motivair",
+      "supermicro",
+      "hewlett-packard-enterprise",
+      "lenovo"
     ],
     "dependency_category_slugs": [
       "liquid-loop-systems",
@@ -4752,12 +4754,13 @@
     "slug": "hypertec",
     "name": "Hypertec",
     "website_url": "https://hypertec.com",
-    "headline": "Compute infrastructure supplier offering immersion-linked AI and HPC system packaging, integration, and high-density deployment support.",
+    "headline": "Compute infrastructure supplier offering AI and HPC system packaging, integrated platform delivery, and high-density deployment support.",
     "featured": false,
     "verified": true,
     "categories": [
       "immersion-cooling",
-      "construction-and-integration"
+      "construction-and-integration",
+      "ai-hpc-compute-systems"
     ],
     "regions": [
       "North America"
@@ -4790,9 +4793,7 @@
     "hq": "Montreal, Quebec, Canada",
     "service_area": "North America",
     "project_scale": "Enterprise and institutional deployments",
-    "subcategories": [
-      "single-phase-immersion"
-    ],
+    "subcategories": [],
     "tags": [
       "ai-platforms",
       "system-packaging"
@@ -4822,7 +4823,10 @@
     "related_company_slugs": [
       "gigaio-immersion",
       "liquidstack",
-      "motivair"
+      "motivair",
+      "supermicro",
+      "hewlett-packard-enterprise",
+      "lenovo"
     ],
     "dependency_category_slugs": [
       "network-fabric-and-connectivity",
@@ -11537,5 +11541,364 @@
     ],
     "logo_url": "https://logo.clearbit.com/zutacore.com",
     "id": "ven_zutacore"
+  },
+  {
+    "slug": "supermicro",
+    "name": "Supermicro",
+    "website_url": "https://www.supermicro.com",
+    "headline": "Server OEM and integrated AI infrastructure supplier delivering GPU-accelerated systems, HGX platforms, and liquid-cooled dense compute solutions for AI and HPC clusters.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-hpc-compute-systems",
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "regions": [
+      "North America",
+      "Global"
+    ],
+    "deployment_types": [
+      "AI",
+      "HPC",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "AI infrastructure buyers",
+      "HPC operators",
+      "Cloud builders"
+    ],
+    "specialties": [
+      "GPU servers",
+      "HGX systems",
+      "Direct liquid-cooled compute systems"
+    ],
+    "proof_points": [
+      "Supermicro GPU systems portfolio for AI/ML/HPC",
+      "Liquid-cooled NVIDIA HGX platforms for dense AI deployments"
+    ],
+    "featured_capabilities": [
+      "Accelerator-dense server systems",
+      "Rack-scale AI compute building blocks"
+    ],
+    "comparison_notes": [
+      "Direct compute-system OEM rather than only an adjacent facility supplier"
+    ],
+    "hq": "San Jose, California, USA",
+    "service_area": "Global",
+    "project_scale": "Rack to fleet",
+    "subcategories": [],
+    "tags": [
+      "gpu-servers",
+      "oem",
+      "ai-systems"
+    ],
+    "infrastructure_types": [
+      "compute",
+      "power",
+      "cooling"
+    ],
+    "cooling_types": [
+      "liquid_loop",
+      "air"
+    ],
+    "focus_areas": [
+      "ai",
+      "hpc"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "manufacturer"
+    ],
+    "company_types": [
+      "public"
+    ],
+    "related_company_slugs": [
+      "nvidia-networking",
+      "hypertec",
+      "gigaio-immersion"
+    ],
+    "dependency_category_slugs": [
+      "network-fabric-and-connectivity",
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "often_used_with_category_slugs": [
+      "monitoring-and-controls",
+      "commissioning-and-operations"
+    ],
+    "logo_url": "https://logo.clearbit.com/supermicro.com"
+  },
+  {
+    "slug": "hewlett-packard-enterprise",
+    "name": "Hewlett Packard Enterprise",
+    "website_url": "https://www.hpe.com",
+    "headline": "Enterprise infrastructure vendor whose HPE Cray portfolio delivers liquid-cooled supercomputing and AI system platforms for dense clustered compute environments.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-hpc-compute-systems",
+      "liquid-cooling",
+      "network-fabric-and-connectivity"
+    ],
+    "regions": [
+      "North America",
+      "Global"
+    ],
+    "deployment_types": [
+      "AI",
+      "HPC",
+      "Research"
+    ],
+    "buyer_types": [
+      "Supercomputing centers",
+      "National labs",
+      "Enterprise AI operators"
+    ],
+    "specialties": [
+      "HPE Cray supercomputing systems",
+      "Liquid-cooled clustered compute systems",
+      "AI and HPC platforms"
+    ],
+    "proof_points": [
+      "HPE Cray EX is a liquid-cooled high-density clustered computer system",
+      "HPE positions Cray around AI and supercomputing acceleration"
+    ],
+    "featured_capabilities": [
+      "Cluster-scale compute platforms",
+      "Integrated AI/HPC system delivery"
+    ],
+    "comparison_notes": [
+      "Canonical vendor should be the company; Cray belongs as portfolio evidence inside the company profile"
+    ],
+    "hq": "Houston, Texas, USA",
+    "service_area": "Global",
+    "project_scale": "Cluster to supercomputing estate",
+    "subcategories": [],
+    "tags": [
+      "supercomputing",
+      "hpc",
+      "cray"
+    ],
+    "infrastructure_types": [
+      "compute",
+      "cooling",
+      "networking"
+    ],
+    "cooling_types": [
+      "liquid_loop"
+    ],
+    "focus_areas": [
+      "ai",
+      "hpc"
+    ],
+    "scale_focus": [
+      "institutional",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "manufacturer",
+      "integrator"
+    ],
+    "company_types": [
+      "public"
+    ],
+    "related_company_slugs": [
+      "supermicro",
+      "lenovo",
+      "nvidia-networking"
+    ],
+    "dependency_category_slugs": [
+      "network-fabric-and-connectivity",
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "often_used_with_category_slugs": [
+      "monitoring-and-controls",
+      "commissioning-and-operations"
+    ],
+    "logo_url": "https://logo.clearbit.com/hpe.com"
+  },
+  {
+    "slug": "lenovo",
+    "name": "Lenovo",
+    "website_url": "https://www.lenovo.com",
+    "headline": "Global infrastructure vendor whose AI server and Neptune platform portfolio delivers accelerated compute systems for enterprise AI and HPC deployments.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-hpc-compute-systems",
+      "liquid-cooling",
+      "network-fabric-and-connectivity"
+    ],
+    "regions": [
+      "Global"
+    ],
+    "deployment_types": [
+      "AI",
+      "HPC",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "Enterprise AI buyers",
+      "HPC operators",
+      "Cloud builders"
+    ],
+    "specialties": [
+      "Accelerated servers",
+      "Neptune liquid-cooled systems",
+      "AI factory platforms"
+    ],
+    "proof_points": [
+      "Lenovo AI server portfolio includes SR650a/SR675/SR680a/SC777 Neptune systems",
+      "Lenovo positions Neptune platforms for AI and HPC workloads"
+    ],
+    "featured_capabilities": [
+      "Dense GPU server systems",
+      "Liquid-cooled AI server platforms"
+    ],
+    "comparison_notes": [
+      "Canonical vendor should be Lenovo; AI Servers is product/portfolio evidence, not a separate company"
+    ],
+    "hq": "Morrisville, North Carolina, USA",
+    "service_area": "Global",
+    "project_scale": "Rack to fleet",
+    "subcategories": [],
+    "tags": [
+      "ai-servers",
+      "oem",
+      "neptune"
+    ],
+    "infrastructure_types": [
+      "compute",
+      "cooling",
+      "networking"
+    ],
+    "cooling_types": [
+      "liquid_loop",
+      "air"
+    ],
+    "focus_areas": [
+      "ai",
+      "hpc"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "manufacturer"
+    ],
+    "company_types": [
+      "public"
+    ],
+    "related_company_slugs": [
+      "supermicro",
+      "hewlett-packard-enterprise",
+      "nvidia-networking"
+    ],
+    "dependency_category_slugs": [
+      "network-fabric-and-connectivity",
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "often_used_with_category_slugs": [
+      "monitoring-and-controls",
+      "commissioning-and-operations"
+    ],
+    "logo_url": "https://logo.clearbit.com/lenovo.com"
+  },
+  {
+    "slug": "dell-technologies",
+    "name": "Dell Technologies",
+    "website_url": "https://www.dell.com",
+    "headline": "Infrastructure vendor whose PowerEdge AI server portfolio delivers accelerated compute systems for AI training, inference, and HPC workloads.",
+    "featured": false,
+    "verified": true,
+    "categories": [
+      "ai-hpc-compute-systems",
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "regions": [
+      "North America",
+      "Global"
+    ],
+    "deployment_types": [
+      "AI",
+      "HPC",
+      "Enterprise"
+    ],
+    "buyer_types": [
+      "Enterprise AI buyers",
+      "Cloud builders",
+      "HPC operators"
+    ],
+    "specialties": [
+      "GPU-accelerated servers",
+      "PowerEdge XE systems",
+      "Rack-scale AI server deployment"
+    ],
+    "proof_points": [
+      "Dell PowerEdge AI servers are purpose-built for accelerated computing, AI training, HPC, and inference",
+      "PowerEdge XE systems emphasize GPU density, bandwidth, power, and cooling"
+    ],
+    "featured_capabilities": [
+      "Accelerated compute systems",
+      "Rack-scale AI server integration"
+    ],
+    "comparison_notes": [
+      "Canonical vendor should be the company; PowerEdge AI Servers is product-family evidence, not a standalone vendor"
+    ],
+    "hq": "Round Rock, Texas, USA",
+    "service_area": "Global",
+    "project_scale": "Rack to fleet",
+    "subcategories": [],
+    "tags": [
+      "poweredge",
+      "gpu-servers",
+      "oem"
+    ],
+    "infrastructure_types": [
+      "compute",
+      "power",
+      "cooling"
+    ],
+    "cooling_types": [
+      "liquid_loop",
+      "air"
+    ],
+    "focus_areas": [
+      "ai",
+      "hpc"
+    ],
+    "scale_focus": [
+      "enterprise",
+      "hyperscale"
+    ],
+    "ecosystem_roles": [
+      "manufacturer"
+    ],
+    "company_types": [
+      "public"
+    ],
+    "related_company_slugs": [
+      "supermicro",
+      "lenovo",
+      "nvidia-networking"
+    ],
+    "dependency_category_slugs": [
+      "network-fabric-and-connectivity",
+      "high-density-rack-power",
+      "liquid-cooling"
+    ],
+    "often_used_with_category_slugs": [
+      "monitoring-and-controls",
+      "commissioning-and-operations"
+    ],
+    "logo_url": "https://logo.clearbit.com/dell.com"
   }
 ]
