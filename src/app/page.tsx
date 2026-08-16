@@ -2,171 +2,117 @@ import Link from "next/link";
 import { categories, vendors } from "@/lib/site-data";
 import { getMainDomainRows } from "@/lib/main-domains";
 
-const startPaths = [
-  {
-    eyebrow: "Directory",
-    title: "Map the infrastructure ecosystem from one place",
-    body: "Best when you want a market-map view across categories, subcategories, adjacent systems, and the companies that show up inside each layer.",
-    href: "/directory",
-    cta: "Open directory",
-  },
-  {
-    eyebrow: "Compare",
-    title: "Review sourcing paths side by side",
-    body: "Best when you want to compare infrastructure approaches, deployment tradeoffs, or supplier lanes before narrowing into a shortlist.",
-    href: "/compare",
-    cta: "Open compare",
-  },
-  {
-    eyebrow: "Categories",
-    title: "Go deeper into a specific infrastructure lane",
-    body: "Best when you already know the domain and want category detail, adjacent dependencies, and a cleaner path into company research.",
-    href: "/categories",
-    cta: "Browse categories",
-  },
-];
-
 const quickStarts = [
-  { label: "Modular & prefab", href: "/directory/modular-prefab" },
-  { label: "GPU hosting", href: "/directory/ai-colocation-gpu-hosting" },
-  { label: "Liquid cooling", href: "/directory/liquid-cooling" },
   { label: "Power & electrical", href: "/directory/power-and-electrical" },
-  { label: "Network fabric", href: "/directory/network-fabric-and-connectivity" },
-  { label: "Site strategy", href: "/directory/site-selection-and-land-strategy" },
+  { label: "Liquid cooling", href: "/directory/liquid-cooling" },
+  { label: "AI colocation & GPU hosting", href: "/directory/ai-colocation-gpu-hosting" },
+  { label: "Modular & prefab", href: "/directory/modular-prefab" },
 ];
 
 export default function Home() {
   const mainDomains = getMainDomainRows();
   const subcategoryCount = categories.filter((category) => category.parent_slug).length;
   const verifiedCompanyCount = vendors.filter((vendor) => vendor.verified).length;
-  const featuredCompanies = vendors.filter((vendor) => vendor.featured).length;
 
   return (
     <main className="bg-[var(--background)] text-[var(--foreground)]">
-      <section>
-        <div className="mx-auto max-w-7xl px-4 py-8 lg:px-8 lg:py-10">
-          <div className="rounded-[1.75rem] border border-[var(--border-strong)] bg-[linear-gradient(135deg,rgba(16,44,60,0.92),rgba(11,20,28,0.96))] p-6 shadow-[0_18px_48px_rgba(0,0,0,0.28)] lg:p-8">
-            <div className="grid gap-8 xl:grid-cols-[1.05fr_0.95fr] xl:items-start">
-              <div>
-                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#8ed1e8]">Industry directory</p>
-                <h1 className="mt-3 max-w-4xl text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
-                  The resource-first directory for data center infrastructure research.
-                </h1>
-                <p className="mt-5 max-w-3xl text-sm leading-8 text-[#d6dde6] sm:text-base">
-                  MDC is built for category-first discovery across power, cooling, modular delivery, hosting, networking,
-                  operations, and site strategy. Start with the stack, follow the adjacent systems, and only narrow into
-                  company research once the infrastructure path is clearer.
-                </p>
-                <div className="mt-7 flex flex-wrap gap-3">
-                  <Link href="/directory" className="rounded-full bg-white px-5 py-3 text-sm font-semibold text-[#102c3c] transition hover:-translate-y-0.5">
-                    Open directory
-                  </Link>
-                  <Link href="/compare" className="rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white transition hover:border-white/40">
-                    Compare paths
-                  </Link>
-                  <Link href="/categories" className="rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white transition hover:border-white/40">
-                    Browse categories
-                  </Link>
-                </div>
-              </div>
+      <div className="mx-auto max-w-7xl px-4 py-8 lg:px-8 lg:py-10">
+        <section className="border-b border-[var(--border)] pb-8">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">Infrastructure ecosystem directory</p>
+          <h1 className="mt-3 max-w-5xl text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-[2.75rem]">
+            The authoritative directory for data center infrastructure research.
+          </h1>
+          <p className="mt-4 max-w-3xl text-sm leading-8 text-[var(--muted-strong)] sm:text-base">
+            MDC maps the infrastructure ecosystem across power, cooling, modular delivery, hosting, networking, operations,
+            logistics, and site strategy. Start with the domain, move into the category structure, and use company profiles as
+            leaves of the graph.
+          </p>
 
-              <div className="grid gap-3 sm:grid-cols-2">
-                <StatCard label="Main domains" value={String(mainDomains.length)} />
-                <StatCard label="Subcategories" value={String(subcategoryCount)} />
-                <StatCard label="Companies" value={String(vendors.length)} />
-                <StatCard label="Verified companies" value={String(verifiedCompanyCount)} />
-                <StatCard label="Featured profiles" value={String(featuredCompanies)} />
-                <StatCard label="Best use" value="Category-first research" />
-              </div>
+          <form action="/directory" method="get" className="mt-6 grid gap-3 border border-[var(--border)] bg-[var(--card)] p-4 lg:grid-cols-[1fr_auto]">
+            <input
+              name="q"
+              placeholder="Search power, cooling, modular, networking, commissioning..."
+              className="w-full border border-[var(--border)] bg-[var(--background-strong)] px-4 py-3 text-sm text-white outline-none placeholder:text-[var(--muted)]"
+            />
+            <button type="submit" className="border border-[var(--border-strong)] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[var(--card-soft)]">
+              Search directory
+            </button>
+          </form>
+
+          <div className="mt-6 grid gap-px border border-[var(--border)] bg-[var(--border)] sm:grid-cols-3 lg:grid-cols-4">
+            <StatCell label="Main domains" value={String(mainDomains.length)} />
+            <StatCell label="Categories" value={String(categories.length - subcategoryCount)} />
+            <StatCell label="Subcategories" value={String(subcategoryCount)} />
+            <StatCell label="Verified companies" value={String(verifiedCompanyCount)} />
+          </div>
+        </section>
+
+        <section className="py-8">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Main domains</p>
+              <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Start with the broad infrastructure lanes.</h2>
+            </div>
+            <div className="flex gap-4 text-sm text-[var(--muted-strong)]">
+              <Link href="/directory" className="font-semibold text-white">Open directory</Link>
+              <Link href="/categories" className="transition hover:text-white">View hierarchy</Link>
             </div>
           </div>
 
-          <section className="mt-8 rounded-[1.5rem] border border-[var(--border)] bg-[var(--card)] p-6 shadow-[var(--shadow-card)]">
-            <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
-              <div>
-                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Pick the right entry point</p>
-                <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Choose the surface that fits the sourcing question.</h2>
-              </div>
-              <p className="max-w-2xl text-sm leading-7 text-[var(--muted-strong)]">
-                Use directory for broad ecosystem scanning, categories for domain-specific research, and compare for side-by-side review.
-              </p>
-            </div>
-
-            <div className="mt-5 grid gap-4 lg:grid-cols-3">
-              {startPaths.map((path) => (
-                <Link key={path.href} href={path.href} className="rounded-[1.25rem] border border-[var(--border)] bg-[#111820] p-5 transition hover:border-[var(--accent)]">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">{path.eyebrow}</p>
-                  <h3 className="mt-2 text-lg font-semibold tracking-tight text-white">{path.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-[var(--muted-strong)]">{path.body}</p>
-                  <p className="mt-5 text-sm font-semibold text-white">{path.cta}</p>
-                </Link>
-              ))}
-            </div>
-          </section>
-
-          <section className="mt-8 rounded-[1.5rem] border border-[var(--border)] bg-[var(--card)] p-6 shadow-[var(--shadow-card)]">
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-              <div>
-                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Quick starts</p>
-                <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Common places to begin infrastructure research.</h2>
-              </div>
-              <Link href="/vendors?sort=category_count" className="text-sm font-semibold text-[var(--accent)]">
-                See all companies
-              </Link>
-            </div>
-            <div className="mt-5 flex flex-wrap gap-2">
-              {quickStarts.map((item) => (
-                <Link key={item.href} href={item.href} className="rounded-full border border-[var(--border)] bg-[#111820] px-4 py-2 text-sm font-medium text-[var(--muted-strong)] transition hover:border-[var(--accent)] hover:text-white">
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-          </section>
-
-          <section className="mt-8">
-            <div className="flex items-center justify-between gap-4">
-              <div>
-                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Main domains</p>
-                <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">Current top-level infrastructure domains.</h2>
-              </div>
-              <Link href="/categories" className="text-sm font-semibold text-[var(--accent)]">
-                Open all categories
-              </Link>
-            </div>
-
-            <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-              {mainDomains.map((domain) => (
-                <section key={domain.slug} className="rounded-xl border border-[var(--border)] bg-[var(--card)] px-4 py-4 shadow-[var(--shadow-card)]">
-                  <div className="flex items-start justify-between gap-3">
-                    <h3 className="text-base font-semibold tracking-tight text-white">{domain.name}</h3>
-                    <span className="text-[11px] font-medium text-[var(--muted)]">{domain.companyCount}</span>
+          <div className="mt-5 border border-[var(--border)]">
+            {mainDomains.map((domain, index) => (
+              <section key={domain.slug} className={index === 0 ? "" : "border-t border-[var(--border)]"}>
+                <div className="grid gap-4 px-4 py-4 lg:grid-cols-[260px_1fr] lg:px-5">
+                  <div>
+                    <h3 className="text-lg font-semibold tracking-tight text-white">{domain.name}</h3>
+                    <p className="mt-2 text-sm text-[var(--muted)]">
+                      {domain.categoryCount} categories · {domain.subcategoryCount} subcategories · {domain.companyCount} companies
+                    </p>
                   </div>
-                  <div className="mt-2 text-xs text-[var(--muted-strong)]">
-                    <span>{domain.categoryCount} categories</span>
-                    <span className="mx-1.5 text-[var(--muted)]">·</span>
-                    <span>{domain.subcategoryCount} subcategories</span>
-                  </div>
-                  <div className="mt-4 space-y-1.5 text-[13px] leading-5">
-                    {domain.categories.slice(0, 5).map((category) => (
-                      <Link key={category.slug} href={`/directory/${category.slug}`} className="block text-[var(--muted-strong)] transition hover:text-white">
-                        {category.name}
+                  <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
+                    {domain.categories.map((category) => (
+                      <Link key={category.slug} href={`/directory/${category.slug}`} className="border border-[var(--border)] px-4 py-3 transition hover:border-[var(--border-strong)] hover:bg-[var(--card-soft)]">
+                        <div className="flex items-start justify-between gap-3">
+                          <span className="text-sm font-medium text-white">{category.name}</span>
+                          <span className="text-xs text-[var(--muted)]">{category.companyCount}</span>
+                        </div>
+                        <p className="mt-2 text-xs text-[var(--muted)]">{category.subcategoryCount} subcategories</p>
                       </Link>
                     ))}
                   </div>
-                </section>
-              ))}
+                </div>
+              </section>
+            ))}
+          </div>
+        </section>
+
+        <section className="border-t border-[var(--border)] pt-6">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Common starting points</p>
+              <h2 className="mt-2 text-xl font-semibold tracking-tight text-white">Frequently researched categories.</h2>
             </div>
-          </section>
-        </div>
-      </section>
+            <Link href="/vendors?sort=category_count" className="text-sm text-[var(--muted-strong)] transition hover:text-white">
+              Browse companies
+            </Link>
+          </div>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {quickStarts.map((item) => (
+              <Link key={item.href} href={item.href} className="border border-[var(--border)] px-3 py-2 text-sm text-[var(--muted-strong)] transition hover:border-[var(--border-strong)] hover:text-white">
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </section>
+      </div>
     </main>
   );
 }
 
-function StatCard({ label, value }: { label: string; value: string }) {
+function StatCell({ label, value }: { label: string; value: string }) {
   return (
-    <article className="rounded-xl border border-white/10 bg-white/5 px-4 py-4 backdrop-blur-sm">
-      <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-[#8ed1e8]">{label}</p>
+    <article className="bg-[var(--card)] px-4 py-4">
+      <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--muted)]">{label}</p>
       <p className="mt-2 text-xl font-semibold text-white">{value}</p>
     </article>
   );

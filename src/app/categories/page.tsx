@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getCategoryLineage } from "@/lib/site-data";
 import { getMainDomainRows } from "@/lib/main-domains";
 
-function GroupCard({
+function GroupSection({
   title,
   rows,
 }: {
@@ -14,36 +14,34 @@ function GroupCard({
   }
 
   return (
-    <section>
-      <div className="mb-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
-        <h2 className="text-2xl font-semibold tracking-tight text-white">{title}</h2>
-        <div className="text-sm text-[var(--muted-strong)]">
-          {rows.length} categories · {rows.reduce((sum, row) => sum + row.subcategoryCount, 0)} subcategories · {rows.reduce((sum, row) => sum + row.companyCount, 0)} companies
+    <section className="border border-[var(--border)]">
+      <div className="border-b border-[var(--border)] px-4 py-4 lg:px-5">
+        <div className="flex flex-col gap-2 lg:flex-row lg:items-end lg:justify-between">
+          <h2 className="text-2xl font-semibold tracking-tight text-white">{title}</h2>
+          <div className="text-sm text-[var(--muted)]">
+            {rows.length} categories · {rows.reduce((sum, row) => sum + row.subcategoryCount, 0)} subcategories · {rows.reduce((sum, row) => sum + row.companyCount, 0)} companies
+          </div>
         </div>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        {rows.map((category) => {
+      <div>
+        {rows.map((category, index) => {
           const lineage = getCategoryLineage(category.slug);
-
           return (
-            <Link key={category.slug} href={`/directory/${category.slug}`} className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 transition hover:border-[var(--border-strong)]">
-              <div className="flex items-center justify-between gap-4">
-                <h3 className="text-base font-semibold tracking-tight text-white">{category.name}</h3>
-                <span className="text-xs text-[var(--muted)]">{category.companyCount}</span>
-              </div>
-              <div className="mt-3 text-sm text-[var(--muted-strong)]">
-                <span>{category.subcategoryCount} subcategories</span>
-                <span className="mx-2 text-[var(--muted)]">·</span>
-                <span>{category.companyCount} companies</span>
-              </div>
-              {lineage.children.length ? (
-                <div className="mt-4 space-y-1 text-sm text-[var(--muted)]">
-                  {lineage.children.slice(0, 4).map((child) => (
-                    <div key={child.slug}>{child.name}</div>
-                  ))}
+            <Link key={category.slug} href={`/directory/${category.slug}`} className={`block px-4 py-4 transition hover:bg-[var(--card-soft)] lg:px-5 ${index === 0 ? "" : "border-t border-[var(--border)]"}`}>
+              <div className="grid gap-3 lg:grid-cols-[minmax(0,1fr)_180px_240px] lg:items-start">
+                <div>
+                  <h3 className="text-base font-semibold tracking-tight text-white">{category.name}</h3>
+                  <p className="mt-2 text-sm leading-7 text-[var(--muted-strong)]">{category.description}</p>
                 </div>
-              ) : null}
+                <div className="text-sm text-[var(--muted)]">
+                  <div>{category.subcategoryCount} subcategories</div>
+                  <div>{category.companyCount} companies</div>
+                </div>
+                <div className="text-sm text-[var(--muted)]">
+                  {lineage.children.length ? lineage.children.slice(0, 4).map((child) => <div key={child.slug}>{child.name}</div>) : <div>No subcategories listed</div>}
+                </div>
+              </div>
             </Link>
           );
         })}
@@ -56,16 +54,19 @@ export default function CategoriesPage() {
   const mainDomains = getMainDomainRows();
 
   return (
-    <main className="min-h-screen bg-[var(--background)] px-5 py-10 lg:px-8 lg:py-12">
+    <main className="min-h-screen bg-[var(--background)] px-5 py-8 lg:px-8 lg:py-10">
       <div className="mx-auto max-w-7xl">
-        <section className="max-w-5xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Categories</p>
-          <h1 className="mt-3 text-4xl font-semibold tracking-tight text-white sm:text-5xl">Main domains → categories → subcategories.</h1>
+        <section className="max-w-4xl border-b border-[var(--border)] pb-6">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">Categories</p>
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">Main domains, categories, and subcategories.</h1>
+          <p className="mt-4 text-sm leading-8 text-[var(--muted-strong)]">
+            This page teaches the hierarchy of the ecosystem. Use it to move from broad infrastructure domains into categories and subcategories before narrowing into companies.
+          </p>
         </section>
 
-        <section className="mt-10 space-y-10">
+        <section className="mt-6 space-y-6">
           {mainDomains.map((domain) => (
-            <GroupCard key={domain.slug} title={domain.name} rows={domain.categories} />
+            <GroupSection key={domain.slug} title={domain.name} rows={domain.categories} />
           ))}
         </section>
       </div>

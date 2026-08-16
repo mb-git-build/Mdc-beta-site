@@ -5,7 +5,7 @@ import "./globals.css";
 import { navigation, siteMeta } from "@/lib/site-data";
 
 export const viewport: Viewport = {
-  themeColor: "#0f141a",
+  themeColor: "#0d1217",
 };
 
 export const metadata: Metadata = {
@@ -44,39 +44,15 @@ export const metadata: Metadata = {
   },
 };
 
-const navItems = navigation.main.map((item) => ({
-  ...item,
-  accent: item.href === "/for-vendors",
-}));
-
-const compactFooterLinks = [
+const researchNav = navigation.main.filter((item) => item.href !== "/for-vendors");
+const institutionalLinks = [
   { href: "/categories", label: "Categories" },
+  { href: "/directory", label: "Directory" },
   { href: "/vendors", label: "Companies" },
   { href: "/methodology", label: "Methodology" },
-  { href: "/for-vendors", label: "For Vendors" },
   { href: "/guides", label: "Guides" },
   { href: "/about", label: "About" },
-];
-
-const footerEntryPoints = [
-  {
-    title: "Start with the market map",
-    description: "Browse the full category graph when the architecture path is still broad.",
-    href: "/directory",
-    cta: "Open directory",
-  },
-  {
-    title: "Browse companies",
-    description: "Jump into the company index when you already know the infrastructure lane.",
-    href: "/vendors?sort=category_count",
-    cta: "Open companies",
-  },
-  {
-    title: "Understand the method",
-    description: "Review the site methodology before narrowing the field or comparing categories.",
-    href: "/methodology",
-    cta: "Open methodology",
-  },
+  { href: "/for-vendors", label: "For Vendors" },
 ];
 
 export default function RootLayout({
@@ -88,56 +64,43 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
-          <header className="sticky top-0 z-40 border-b border-[var(--border-strong)] bg-[rgba(15,20,26,0.97)] backdrop-blur-md">
+          <header className="sticky top-0 z-40 border-b border-[var(--border)] bg-[rgba(13,18,23,0.96)] backdrop-blur-sm">
             <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 lg:flex-row lg:items-center lg:justify-between lg:px-8">
               <Link href="/" className="flex items-center gap-3">
-                <Image src="/site-mark.svg" alt="modulardatacenters.ai" width={36} height={36} className="h-9 w-9 rounded-lg" priority />
+                <Image src="/site-mark.svg" alt="modulardatacenters.ai" width={34} height={34} className="h-8 w-8 rounded-sm" priority />
                 <div>
                   <p className="text-sm font-semibold tracking-tight text-white">modulardatacenters.ai</p>
-                  <p className="text-[11px] text-[var(--muted)]">Infrastructure company directory</p>
+                  <p className="text-[11px] text-[var(--muted)]">Infrastructure ecosystem directory</p>
                 </div>
               </Link>
 
-              <nav className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-sm font-medium text-[var(--muted-strong)]">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className={item.accent ? "rounded-full border border-[#31536a] bg-[#15384d] px-3 py-1.5 text-white transition hover:border-[#4a6c83] hover:bg-[#1b4a63]" : "rounded-full px-2 py-1.5 transition hover:text-white"}
-                  >
+              <nav className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-[var(--muted-strong)]">
+                {researchNav.map((item) => (
+                  <Link key={item.href} href={item.href} className="transition hover:text-white">
                     {item.label}
                   </Link>
                 ))}
+                <Link href="/for-vendors" className="text-[var(--muted)] transition hover:text-white">
+                  For Vendors
+                </Link>
               </nav>
             </div>
           </header>
 
           {children}
 
-          <footer className="border-t border-[var(--border-strong)] bg-[#0b1015] text-[#d6dde6]">
+          <footer className="border-t border-[var(--border)] bg-[var(--background-strong)] text-[var(--muted-strong)]">
             <div className="mx-auto max-w-7xl px-4 py-6 lg:px-8">
-              <div className="grid gap-6 border-b border-[var(--border)] pb-6 lg:grid-cols-3">
-                {footerEntryPoints.map((item) => (
-                  <Link key={item.href} href={item.href} className="rounded-2xl border border-[var(--border)] bg-[#111820] p-4 transition hover:border-[var(--accent)]">
-                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Best entry point</p>
-                    <h3 className="mt-2 text-base font-semibold text-white">{item.title}</h3>
-                    <p className="mt-2 text-sm leading-7 text-[var(--muted-strong)]">{item.description}</p>
-                    <span className="mt-4 inline-flex text-sm font-semibold text-white">{item.cta}</span>
-                  </Link>
-                ))}
-              </div>
-
-              <div className="mt-5 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-                <div className="flex items-center gap-3">
-                  <Image src="/site-mark.svg" alt="modulardatacenters.ai" width={28} height={28} className="h-7 w-7 rounded-md" />
-                  <div>
-                    <p className="text-sm font-semibold text-white">modulardatacenters.ai</p>
-                    <p className="text-xs text-[var(--muted)]">Categories, subcategories, companies.</p>
-                  </div>
+              <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+                <div className="max-w-2xl">
+                  <p className="text-sm font-semibold text-white">modulardatacenters.ai</p>
+                  <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
+                    Built to help people think clearly. Powered by curiosity. Guided by Atlas.
+                  </p>
                 </div>
 
-                <nav className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-[var(--muted-strong)]">
-                  {compactFooterLinks.map((item) => (
+                <nav className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-[var(--muted-strong)] lg:justify-end">
+                  {institutionalLinks.map((item) => (
                     <Link key={item.href} href={item.href} className="transition hover:text-white">
                       {item.label}
                     </Link>
