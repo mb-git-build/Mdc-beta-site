@@ -2,10 +2,10 @@ import type { Metadata, Viewport } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
-import { navigation, siteMeta } from "@/lib/site-data";
+import { siteMeta } from "@/lib/site-data";
 
 export const viewport: Viewport = {
-  themeColor: "#0d1217",
+  themeColor: "#15233b",
 };
 
 export const metadata: Metadata = {
@@ -33,25 +33,30 @@ export const metadata: Metadata = {
     url: "https://modulardatacenters.ai",
     siteName: siteMeta.name,
     title: "The resource-first directory for data center infrastructure",
-    description: "Browse 37 categories and 125 companies across modular delivery, power, cooling, hosting, networking, operations, and site strategy.",
+    description: "Browse 38 infrastructure markets and 127 verified companies across the modular data center ecosystem.",
     images: [{ url: "/og-card.svg", width: 1200, height: 630, alt: `${siteMeta.name} directory social card` }],
   },
   twitter: {
     card: "summary_large_image",
     title: "The resource-first directory for data center infrastructure",
-    description: "Browse 37 categories and 125 companies across modular delivery, power, cooling, hosting, networking, operations, and site strategy.",
+    description: "Browse 38 infrastructure markets and 127 verified companies across the modular data center ecosystem.",
     images: ["/og-card.svg"],
   },
 };
 
-const researchNav = navigation.main.filter((item) => item.href !== "/for-vendors");
-const institutionalLinks = [
+const headerNav = [
+  { href: "/", label: "Home" },
+  { href: "/categories", label: "Categories" },
+  { href: "/vendors", label: "Companies" },
+  { href: "/methodology", label: "Methodology" },
+  { href: "/for-vendors", label: "For Vendors" },
+];
+
+const footerNav = [
   { href: "/categories", label: "Categories" },
   { href: "/directory", label: "Directory" },
   { href: "/vendors", label: "Companies" },
   { href: "/methodology", label: "Methodology" },
-  { href: "/guides", label: "Guides" },
-  { href: "/about", label: "About" },
   { href: "/for-vendors", label: "For Vendors" },
 ];
 
@@ -63,50 +68,42 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
-          <header className="sticky top-0 z-40 border-b border-[var(--border)] bg-[rgba(13,18,23,0.96)] backdrop-blur-sm">
-            <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <div className="min-h-screen bg-[#f7f8fb] text-[var(--foreground)]">
+          <header className="border-b border-[rgba(255,255,255,0.08)] bg-[#111827] text-white">
+            <div className="mx-auto flex max-w-[1180px] flex-col gap-3 px-4 py-3 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
               <Link href="/" className="flex items-center gap-3">
-                <Image src="/site-mark.svg" alt="modulardatacenters.ai" width={34} height={34} className="h-8 w-8 rounded-sm" priority />
-                <div>
-                  <p className="text-sm font-semibold tracking-tight text-white">modulardatacenters.ai</p>
-                  <p className="text-[11px] text-[var(--muted)]">Infrastructure ecosystem directory</p>
-                </div>
+                <Image src="/site-mark.svg" alt="modulardatacenters.ai" width={34} height={34} className="h-[34px] w-[34px] rounded-[6px]" priority />
+                <p className="text-[27px] font-semibold leading-none tracking-[-0.04em] text-white">modulardatacenters.ai</p>
               </Link>
 
-              <nav className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-[var(--muted-strong)]">
-                {researchNav.map((item) => (
+              <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-[15px] leading-6 text-[#e3e8f3]">
+                {headerNav.map((item) => (
                   <Link key={item.href} href={item.href} className="transition hover:text-white">
                     {item.label}
                   </Link>
                 ))}
-                <Link href="/for-vendors" className="text-[var(--muted)] transition hover:text-white">
-                  For Vendors
-                </Link>
               </nav>
             </div>
           </header>
 
           {children}
 
-          <footer className="border-t border-[var(--border)] bg-[var(--background-strong)] text-[var(--muted-strong)]">
-            <div className="mx-auto max-w-7xl px-4 py-6 lg:px-8">
-              <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-                <div className="max-w-2xl">
-                  <p className="text-sm font-semibold text-white">modulardatacenters.ai</p>
-                  <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
-                    Built to help people think clearly. Powered by curiosity. Guided by Atlas.
-                  </p>
-                </div>
-
-                <nav className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-[var(--muted-strong)] lg:justify-end">
-                  {institutionalLinks.map((item) => (
-                    <Link key={item.href} href={item.href} className="transition hover:text-white">
-                      {item.label}
-                    </Link>
-                  ))}
-                </nav>
+          <footer className="border-t border-[#e6eaf1] bg-[#f7f8fb] text-[#5f6c83]">
+            <div className="mx-auto flex max-w-[1180px] flex-col gap-4 px-4 py-8 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+              <div className="max-w-[560px]">
+                <p className="text-[15px] font-semibold text-[#171f2f]">modulardatacenters.ai</p>
+                <p className="mt-1 text-[14px] leading-6 text-[#6a778b]">
+                  Research directory for modular data center infrastructure across power, cooling, hosting, networking, operations, and site strategy.
+                </p>
               </div>
+
+              <nav className="flex flex-wrap gap-x-5 gap-y-2 text-[14px] leading-6 text-[#6a778b] lg:justify-end">
+                {footerNav.map((item) => (
+                  <Link key={item.href} href={item.href} className="transition hover:text-[#171f2f]">
+                    {item.label}
+                  </Link>
+                ))}
+              </nav>
             </div>
           </footer>
         </div>

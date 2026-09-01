@@ -1,27 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0d1217;
-  --background-strong: #0a0f13;
-  --foreground: #eef2f6;
-  --foreground-strong: #ffffff;
-  --muted: #8f9baa;
-  --muted-strong: #c8d1db;
-  --card: #11171d;
-  --card-soft: #141b22;
-  --line: rgba(200, 209, 219, 0.08);
-  --border: rgba(200, 209, 219, 0.12);
-  --border-strong: rgba(200, 209, 219, 0.18);
-  --accent: #9fb7ca;
-  --accent-strong: #dfe8ef;
-  --shadow-soft: none;
-  --shadow-card: none;
+  --background: #f6f8fb;
+  --background-strong: #eef2f6;
+  --foreground: #1a2232;
+  --foreground-strong: #111827;
+  --muted: #738198;
+  --muted-strong: #5f6c83;
+  --card: #ffffff;
+  --card-soft: #f8f9fc;
+  --line: rgba(17, 24, 39, 0.08);
+  --border: rgba(17, 24, 39, 0.1);
+  --border-strong: rgba(17, 24, 39, 0.18);
+  --accent: #88bdd0;
+  --accent-strong: #6e9fb2;
+  --shadow-soft: 0 1px 2px rgba(17, 24, 39, 0.03);
+  --shadow-card: 0 10px 24px rgba(17, 24, 39, 0.03);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-sans: Inter, Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -37,7 +37,7 @@ body {
   min-height: 100vh;
   background: var(--background);
   color: var(--foreground);
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -54,7 +54,20 @@ textarea {
   font: inherit;
 }
 
+.hero-topology {
+  background-color: #122033;
+  background-image:
+    linear-gradient(90deg, transparent 0 8%, rgba(136, 189, 208, 0.08) 8%, rgba(136, 189, 208, 0.08) 8.3%, transparent 8.3% 33%, rgba(136, 189, 208, 0.06) 33%, rgba(136, 189, 208, 0.06) 33.25%, transparent 33.25% 100%),
+    linear-gradient(transparent 0 22%, rgba(136, 189, 208, 0.05) 22%, rgba(136, 189, 208, 0.05) 22.35%, transparent 22.35% 61%, rgba(136, 189, 208, 0.045) 61%, rgba(136, 189, 208, 0.045) 61.3%, transparent 61.3% 100%),
+    radial-gradient(circle at 12% 22%, rgba(136, 189, 208, 0.12) 0 1.5px, transparent 1.7px),
+    radial-gradient(circle at 34% 61%, rgba(136, 189, 208, 0.1) 0 1.5px, transparent 1.7px),
+    radial-gradient(circle at 72% 28%, rgba(136, 189, 208, 0.1) 0 1.5px, transparent 1.7px),
+    radial-gradient(circle at 84% 67%, rgba(136, 189, 208, 0.08) 0 1.5px, transparent 1.7px),
+    linear-gradient(#122033, #122033);
+  background-repeat: no-repeat;
+}
+
 ::selection {
-  background: rgba(159, 183, 202, 0.22);
-  color: #ffffff;
+  background: rgba(136, 189, 208, 0.22);
+  color: #111827;
 }
